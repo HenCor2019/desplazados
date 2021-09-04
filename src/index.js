@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
+import Section from './Section';
 import reportWebVitals from './reportWebVitals';
+import CausesDeco from './images/blue-deco.png';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Section img = {CausesDeco}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

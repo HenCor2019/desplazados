@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Another Typewriter', 'sans-serif'],
+    },
       backgroundImage:{
         'home-background': "url('./Img/Home/TopPaper.png')",
        },
