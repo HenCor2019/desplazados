@@ -1,4 +1,3 @@
-import './App.scss'
 import Home from './Containers/Home'
 
 function App() {
