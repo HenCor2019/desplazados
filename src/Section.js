@@ -17,7 +17,7 @@ function Section(props) {
                     <a href="./index.js" className={aClasses}>En busca de apoyo</a>
                 </nav>
                 {/* Contenido principal */}
-                <SupportMainSect></SupportMainSect>
+                <SupportMainSect />
             </div>
         </div>
     )
