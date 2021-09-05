@@ -1,9 +1,9 @@
 import React from 'react'
-import logoUca from '../images/Home/LogoUCA.png'
-import logoUnicef from '../images/Home/LogoUNICEF.jpg'
+import logoUca from '../../images/Home/LogoUCA.png'
+import logoUnicef from '../../images/Home/LogoUNICEF.jpg'
 
 const Footer = () => (
-  <footer className="h-13/100 flex flex-wrap items-end justify-end overflow-y-auto pb-2.5 z-10">
+  <footer className="h-13/100w flex flex-wrap items-end justify-end overflow-y-auto pb-2.5 z-10">
     <a href="https://www.unicef.org/es" className="w-28 mx-4 md:min-w-10/100">
       <img src={logoUnicef} alt="logo UNICEF" />
     </a>
