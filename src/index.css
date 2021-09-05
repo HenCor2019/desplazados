@@ -61,6 +61,7 @@ q:before, q:after {
   letter-spacing: 0.05rem;
   transform: scale(1.02);
   transition: ease-in-out 0.4s;
+}
 
 table {
 	border-collapse: collapse;
