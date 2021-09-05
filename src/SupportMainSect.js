@@ -25,7 +25,7 @@ function SupportMainSect() {
     }
 
     return (
-        <main className="md:h-auto h-3/5 w-auto m-auto grid grid-cols-10 grid-rows-2 items-center">
+        <main className="h-4/5 w-auto m-auto grid grid-cols-10 grid-rows-2 items-center overflow-y-auto">
             <a href="" className="ml-5 md:mt-16 w-full col-start-2 col-end-4" onMouseEnter={() => setConceptsHover(true)} onMouseLeave={() => setConceptsHover(false)}>
                 <img src={Concepts} style = {style1}/>
             </a>
