@@ -29,9 +29,10 @@ export default function Banner({ background, title, description, bannerImg }) {
 
       <div className={styles.image}>
         <img
-          className="w-4/6 h-4/6"
+          className="w-4/6 h-5/6"
           src={bannerImg}
           alt="desplazados banner causas"
+          loading="lazy"
         />
       </div>
 
