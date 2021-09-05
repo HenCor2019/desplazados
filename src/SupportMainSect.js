@@ -26,15 +26,15 @@ function SupportMainSect() {
 
     return (
         <main className="h-4/5 w-auto m-auto grid grid-cols-10 grid-rows-2 items-center overflow-y-auto">
-            <a href="" className="ml-5 md:mt-16 w-full col-start-2 col-end-4" onMouseEnter={() => setConceptsHover(true)} onMouseLeave={() => setConceptsHover(false)}>
-                <img src={Concepts} style = {style1}/>
+            <a href="" className="md:mt-16 w-full col-start-1 col-end-4" onMouseEnter={() => setConceptsHover(true)} onMouseLeave={() => setConceptsHover(false)}>
+                <img src={Concepts} style = {style1} className="w-5/6"/>
             </a>
-            <a href="" className="w-full col-start-4 col-end-6 ml-16" onMouseEnter={() => setStatisticsHover(true)} onMouseLeave={() => setStatisticsHover(false)}>
-                <img src={Statistics} style = {style2} />
+            <a href="" className="w-full col-start-4 col-end-7" onMouseEnter={() => setStatisticsHover(true)} onMouseLeave={() => setStatisticsHover(false)}>
+                <img src={Statistics} style = {style2} className="w-5/6"/>
             </a>
             <p className="mt-7 md:mt-0 md:row-start-2 col-start-1 md:col-end-7 text-sm col-end-10 box-content text-justify">Luego de la sentencia 411-2017 de la Corte Suprema de Justicia de El Salvador, el Estado se vio obligado a reconocer y legislar en favor de las víctimas de desplazamiento forzado por violencia. Tres años después, se aprobó una ley que carece de reglamento. Aunque existen acuerdos internacionales, como la Convención sobre Refugiados de 1951 y las Declaraciones de Cartagena y de Brasil, en El Salvador son documentos muertos. ¿A qué se enfrentan las familias cuando buscan apoyo de parte del Estado?</p>
-            <a href="" className="w-full md:row-start-2 md:col-start-7 md:col-end-9 row-start-1 col-start-7 col-end-9 ml-16" onMouseEnter={() => setReportHover(true)} onMouseLeave={() => setReportHover(false)}>
-                <img src={Report} style = {style3}/>
+            <a href="" className="w-full md:row-start-2 md:col-start-7 md:col-end-10 row-start-1 col-start-7 col-end-10 ml-0 md:ml-8" onMouseEnter={() => setReportHover(true)} onMouseLeave={() => setReportHover(false)}>
+                <img src={Report} style = {style3} className="w-5/6"/>
             </a>
         </main>
     )
