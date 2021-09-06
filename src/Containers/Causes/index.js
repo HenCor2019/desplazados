@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { MESSAGE } from '../../constants/FooterMessages'
 import { ReactComponent as Gallery } from '../../images/Causes/gallery.svg'
 import { ReactComponent as Story } from '../../images/Causes/story.svg'
-import FooterMessage from '../../components/FooterMessage/FooterMessage'
-import CauseImage from '../../components/CauseImage/CauseImage'
-import '../../components/CauseImage/index.css'
+import FooterMessage from '../../Components/FooterMessage/FooterMessage'
+import CauseImage from '../../Components/CauseImage/CauseImage'
+import '../../Components/CauseImage/index.css'
 
 const styles = {
   mainContainer:
