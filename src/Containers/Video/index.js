@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import ButtonPlay from './ButtonPlay'
-import VideoPlayer from './VideoPlayer'
+import ButtonPlay from '../../Components/VideoPlayer/ButtonPlay'
+import VideoPlayer from '../../Components/VideoPlayer/VideoPlayer'
 
 const styles = {
   mainContainer: 'flex justify-center items-center content-center h-screen'
