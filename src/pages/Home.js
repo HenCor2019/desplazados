@@ -6,7 +6,7 @@ import house4 from '../images/Home/House4.png'
 import firstLine from '../images/Home/FirstLine.png'
 import secondLine from '../images/Home/SecondLine.png'
 import topPaper from '../images/Home/TopPaper.png'
-import Footer from '../Components/Footer'
+import Footer from '../Components/layout/Footer'
 
 function Home() {
   const [isReasonsShown, setIsReasonsShown] = useState(false)

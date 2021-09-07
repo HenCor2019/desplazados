@@ -6,9 +6,10 @@ module.exports = {
       fontFamily: {
         sans: ['Another Typewriter', 'sans-serif']
       },
-      backgroundImage: {
-        'home-background': "url('./images/Home/TopPaper.png')"
-      },
+      backgroundImage: theme => ({
+        'home-background': "url('./assets/images/Home/TopPaper.png')"
+      }),
+      // ./images/Home/TopPaper.png
       screens: {
         'lg-1': '1280px',
         '2xl-1': '1920px'
