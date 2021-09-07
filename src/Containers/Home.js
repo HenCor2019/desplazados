@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import House from '../Components/Home/House';
 import house1 from '../images/Home/House1.png';
 import house2 from '../images/Home/House2.png';
 import house3 from '../images/Home/House3.png';
@@ -79,15 +80,11 @@ function Home() {
   }
 
   return (
-    <div className="bg-background bg-cover bg-center">
-      <img
-        src={topPaper}
-        alt="Top paper"
-        className="absolute -top-5 left-0 z-20 h-15/1 sm-h:display 2xl-1:hidden"
-        loading="lazy"
-      />
-      <main className="h-87/100w">
-        <section className="absolute top-4 right-4 w-5/12 h-1/6 z-30 d overflow-y-auto text-sm font-bold font-sans text-center">
+    <div className="bg-background bg-cover bg-center relative min-h-screen flex flex-col min-w-0">
+      <div
+        style={{backgroundImage:`url(${topPaper})`}}
+        className="w-full sticky z-10 top-0 left-0 bg-cover bg-bottom flex justify-end min-h-20 md:h-28">
+        <section className="p-1 text-sm font-bold font-sans text-center w-full md:p-2 md:w-5/12">
           {isReasonsShown && (
             <p>
               “Si tú le dices algo a tus papás, yo te voy a matar, te lo juro que te mato”, caso Pérez.
@@ -112,98 +109,54 @@ function Home() {
             </p>
           )}
         </section>
-        <section className="h-full flex flex-wrap items-end justify-center overflow-y-auto absolutes">
-          <div className="h-72 w-160 z-10 flex absolute items-center justify-center relative lg-1:items-end">
-            <img
-              src={house1}
-              alt="House1"
-              className="w-2/6 animate-flip"
-              style={{ filter: reasonsGrayscale }}
-              onMouseEnter={ShowReasons}
-              onMouseLeave={DontShowReasons}
-              loading="lazy"
-            />
-            {isReasonsShown && (
-              <img
-                src={house1Text}
-                alt="Causes"
-                className="w-3/6 absolute right-0 left-0 bottom-0 top-0 m-auto lg-1:bottom-8 lg-1:top-auto"
-                onMouseEnter={ShowReasons}
-                onMouseLeave={DontShowReasons}
-                loading="lazy"
-              />
-            )}
-          </div>
-          <div className="h-72 w-160 z-10 flex items-center justify-center lg-1:items-end lg-1:justify-start 2xl-1:justify-center relative">
-            <img
-              src={house2}
-              alt="House2"
-              className="w-2/6 animate-flip"
-              style={{ filter: waitingTimeGrayscale }}
-              onMouseEnter={ShowWaitingTime}
-              onMouseLeave={DontShowWaitingTime}
-              loading="lazy"
-            />
-            {isWaitingTimeShown && (
-              <img
-                src={house2Text}
-                alt="Waiting time"
-                className="w-3/6 absolute right-0 left-0 bottom-0 top-0 m-auto lg-1:-left-12 lg-1:bottom-8 lg-1:right-auto lg-1:top-auto 2xl-1:right-0 2xl-1:left-0"
-                onMouseEnter={ShowWaitingTime}
-                onMouseLeave={DontShowWaitingTime}
-                loading="lazy"
-              />
-            )}
-          </div>
-          <div className="h-72 w-160 z-10 flex items-center justify-center lg-1:items-end relative">
-            <img
-              src={house3}
-              alt="House3"
-              className="w-3/6 lg-1:w-70/100 2xl-1:2/6 animate-flip"
-              style={{ filter: dreamsGrayscale }}
-              onMouseEnter={ShowDreams}
-              onMouseLeave={DontShowDreams}
-              loading="lazy"
-            />
-            {isDreamsShown && (
-              <img
-                src={house3Text}
-                alt="Dreams"
-                className="w-4/6 absolute right-0 left-0 bottom-0 top-0 m-auto lg-1:bottom-8 lg-1:top-auto"
-                onMouseEnter={ShowDreams}
-                onMouseLeave={DontShowDreams}
-                loading="lazy"
-              />
-            )}
-          </div>
-          <div className="h-72 w-160 z-10 flex items-center justify-center lg-1:items-end relative">
-            <img
-              src={house4}
-              alt="House4"
-              className="w-3/6 lg-1:w-70/100 2xl-1:2/6 animate-flip"
-              style={{ filter: helpGrayscale }}
-              onMouseEnter={ShowHelp}
-              onMouseLeave={DontShowHelp}
-              loading="lazy"
-            />
-            {isHelpShown && (
-              <img
-                src={house4Text}
-                alt="Help"
-                className="w-4/6 absolute right-0 left-0 bottom-0 top-0 m-auto lg-1:bottom-16 lg-1:top-auto"
-                onMouseEnter={ShowHelp}
-                onMouseLeave={DontShowHelp}
-                loading="lazy"
-              />
-            )}
-          </div>
-          <div className="absolute hidden top-40/100 right-20/100 left-15/100 lg-1:block 2xl-1:hidden">
-            <img src={firstLine} alt="First Line" loading="lazy" />
-          </div>
-          <div className="absolute hidden bottom-20/100  lg-1:block lg-1:block 2xl-1:hidden">
-            <img src={secondLine} alt="Second Line" loading="lazy" />
-          </div>
-        </section>
+      </div>
+      <main className="flex md:flex-rigid p-4 sm:p-8 md:p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-6 md:gap-0 md:gap-x-32 overflow-y-auto w-full p-2">
+          <House 
+            houseImg={house1}
+            alt={"Causes"}
+            textImg={house1Text}
+            filter={reasonsGrayscale}
+            onMouseEnter={ShowReasons}
+            onMouseLeave={DontShowReasons}
+            isShown={isReasonsShown}
+            line={firstLine}
+            flexes={"justify-end items-end"}
+          />
+          <House 
+            houseImg={house2}
+            alt={"Waiting time"}
+            textImg={house2Text}
+            filter={waitingTimeGrayscale}
+            onMouseEnter={ShowWaitingTime}
+            onMouseLeave={DontShowWaitingTime}
+            isShown={isWaitingTimeShown}
+            line={secondLine}
+            flexes={"justify-start items-end"}
+          />
+          <House 
+            houseImg={house3}
+            alt={"Dreams"}
+            textImg={house3Text}
+            filter={dreamsGrayscale}
+            onMouseEnter={ShowDreams}
+            onMouseLeave={DontShowDreams}
+            isShown={isDreamsShown}
+            line={firstLine}
+            flexes={"justify-end items-end"}
+          />
+          <House 
+            houseImg={house4}
+            alt={"Help"}
+            textImg={house4Text}
+            filter={helpGrayscale}
+            onMouseEnter={ShowHelp}
+            onMouseLeave={DontShowHelp}
+            isShown={isHelpShown}
+            line={secondLine}
+            flexes={"justify-start items-end"}
+          />
+        </div>
       </main>
       <Footer />
     </div>

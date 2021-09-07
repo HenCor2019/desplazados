@@ -60,7 +60,14 @@ module.exports = {
       },
       minWidth: {
         '10/100': '10%',
-        '15/100': '15%'
+        '15/100': '15%',
+        'house-width': '300px',
+      },
+      minHeight: {
+        '20': '100px',
+      },
+      flex: {
+        'rigid':'1 0',
       },
     }
   },
