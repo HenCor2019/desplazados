@@ -1,8 +1,8 @@
-import Home from './Containers/Home'
+import Home from './pages/Home'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Section from './Components/Section/Section'
 
-import './App.css'
+import './assets/css/index.css'
 
 function App() {
   return (

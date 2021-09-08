@@ -1,6 +1,6 @@
 import React from 'react'
-import logoUca from '../../images/Home/LogoUCA.png'
-import logoUnicef from '../../images/Home/LogoUNICEF.jpg'
+import logoUca from '../../assets/images/Home/LogoUCA.png'
+import logoUnicef from '../../assets/images/Home/LogoUNICEF.jpg'
 
 const Footer = () => (
   <footer className="h-13/100w flex flex-wrap items-end justify-end overflow-y-auto pb-2.5 z-10">
