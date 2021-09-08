@@ -8,7 +8,7 @@ import '../../Components/CauseImage/index.css'
 
 const styles = {
   mainContainer:
-    'p-0 sm:p-7 h-full sm:h-3/4 md:h-5/6 w-full mt-9 md:mt-10 sm:justify-center sm:content-center lg:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4'
+    'p-0 sm:p-5 h-full sm:h-3/4 w-full sm:w-5/6 md:w-full mx-auto md:h-5/6 mt-9 md:mt-10 sm:justify-center sm:content-center lg:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4'
 }
 
 export default function Causes() {
@@ -42,6 +42,7 @@ export default function Causes() {
         setGrayscale={setStoriesGrayscale}
       />
 
+      <div></div>
       <FooterMessage message={MESSAGE} />
     </main>
   )

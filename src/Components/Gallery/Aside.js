@@ -7,7 +7,7 @@ export default function Aside({ isActive, handleOnClick }) {
 
   return (
     <div className="w-2/5 flex flex-col justify-start items-start p-4">
-      <p className="w-2/3 h-1/2 pr-3 pt-4 pb-3 text-sm text-gray-700 text font-normal">
+      <p className="w-2/3 h-1/2 pr-3 pt-4 pb-3 text-sm text-gray-700 text font-normal bg-gray-100">
         Amet reiciendis odio odit modi eaque excepturi Quo ratione nulla
         reiciendis nesciunt quos. Ab eos adipisci consequatur vitae est quisquam
       </p>
