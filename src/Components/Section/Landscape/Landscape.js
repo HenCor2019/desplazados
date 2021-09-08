@@ -17,9 +17,9 @@ const Landscape = (props) => {
 
     return (
         <div className="Section flex w-full h-screen min-h-0 overflow-y-hidden overflow-x-auto">
-            <div className="w-96 h-screen sticky left-0">
-              <img
-                className="w-full h-full object-right object-cover" 
+            <div className="w-auto h-screen sticky left-0">
+                <img
+                className="h-full object-right object-cover" 
                 alt="banner" src={props.banner} />
             </div> 
             <div className="flex-rigid min-w-section h-full overflow-y-auto">
