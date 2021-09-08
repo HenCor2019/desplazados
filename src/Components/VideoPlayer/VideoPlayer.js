@@ -9,12 +9,13 @@ const styles = {
     'bg-gradient-to-r from-red-600 via-red-500 to-red-400 font-semibold rounded-full w-24 h-10 text-sm self-end uppercase mr-5 md:mr-10 mb-5 md:mb-9 hover:from-red-700 hover:via-red-600 hover:to-red-500'
 }
 
-export default function VideoPlayer({ url, playing }) {
+export default function VideoPlayer({ url, playing, handleOnSkip }) {
   return (
     <>
       <ReactPlayer
         className={styles.reactPlayer}
         url={url}
+        onEnded={handleOnSkip}
         playing={playing}
         width="100%"
         height="100vh"
@@ -28,7 +29,7 @@ export default function VideoPlayer({ url, playing }) {
       />
 
       <div className={styles.buttonContainer}>
-        <button className={styles.buttonSkipVideo}>Saltar</button>
+        <button onClick={()=> handleOnSkip()} className={styles.buttonSkipVideo}>Saltar</button>
       </div>
     </>
   )

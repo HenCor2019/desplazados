@@ -1,0 +1,82 @@
+.menu {
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    background-color: #4d3004f6;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(200%);
+    transition: all ease-in-out 250ms;
+
+    pointer-events: all;
+
+&.open {
+    transform: translateX(0%);
+}
+
+@media screen and (min-width: 750px){
+    width: 50%;
+}
+
+@media screen and (min-width: 1000px){
+    width: 30%;
+}
+
+ul {
+    flex: 1 0;
+
+    margin-top: 4rem;
+
+    padding: 0;
+    list-style: none;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        a{
+            align-self: stretch;
+            flex: 1 0;
+
+            padding: 1.5rem 1rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-family: "Another Typewriter";
+
+            transition: all ease-in-out 250ms;
+
+            &.active {
+                text-decoration: underline;
+            }
+
+            &:hover {
+              color: #f1d2b3;
+            }
+
+            @media screen and (min-width: 525px){
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+}
