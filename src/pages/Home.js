@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
+import House from '../Components/Home/House'
 import house1 from '../images/Home/House1.png'
 import house2 from '../images/Home/House2.png'
 import house3 from '../images/Home/House3.png'
 import house4 from '../images/Home/House4.png'
+import house1Text from '../images/Home/House1Text.png'
+import house2Text from '../images/Home/House2Text.png'
+import house3Text from '../images/Home/House3Text.png'
+import house4Text from '../images/Home/House4Text.png'
 import firstLine from '../images/Home/FirstLine.png'
 import secondLine from '../images/Home/SecondLine.png'
 import topPaper from '../images/Home/TopPaper.png'
-import Footer from '../Components/layout/Footer'
+import Footer from '../Components/Home/Footer'
 
 function Home() {
   const [isReasonsShown, setIsReasonsShown] = useState(false)
@@ -14,81 +19,151 @@ function Home() {
   const [isDreamsShown, setIsDreamsShown] = useState(false)
   const [isHelpShown, setIsHelpShown] = useState(false)
 
+  const [reasonsGrayscale, setReasonsGrayscale] = useState('')
+  const [waitingTimeGrayscale, setWaitingTimeGrayscale] = useState('')
+  const [dreamsGrayscale, setDreamsGrayscale] = useState('')
+  const [helpGrayscale, setHelpGrayscale] = useState('')
+
+  function ShowReasons() {
+    setIsReasonsShown(true)
+    setWaitingTimeGrayscale('grayscale(100%)')
+    setDreamsGrayscale('grayscale(100%)')
+    setHelpGrayscale('grayscale(100%)')
+  }
+
+  function DontShowReasons() {
+    setIsReasonsShown(false)
+    setWaitingTimeGrayscale('grayscale(0%)')
+    setDreamsGrayscale('grayscale(0%)')
+    setHelpGrayscale('grayscale(0%)')
+  }
+
+  function ShowWaitingTime() {
+    setIsWaitingTimeShown(true)
+    setReasonsGrayscale('grayscale(100%)')
+    setDreamsGrayscale('grayscale(100%)')
+    setHelpGrayscale('grayscale(100%)')
+  }
+
+  function DontShowWaitingTime() {
+    setIsWaitingTimeShown(false)
+    setReasonsGrayscale('grayscale(0%)')
+    setDreamsGrayscale('grayscale(0%)')
+    setHelpGrayscale('grayscale(0%)')
+  }
+
+  function ShowDreams() {
+    setIsDreamsShown(true)
+    setReasonsGrayscale('grayscale(100%)')
+    setWaitingTimeGrayscale('grayscale(100%)')
+    setHelpGrayscale('grayscale(100%)')
+  }
+
+  function DontShowDreams() {
+    setIsDreamsShown(false)
+    setReasonsGrayscale('grayscale(0%)')
+    setWaitingTimeGrayscale('grayscale(0%)')
+    setHelpGrayscale('grayscale(0%)')
+  }
+
+  function ShowHelp() {
+    setIsHelpShown(true)
+    setReasonsGrayscale('grayscale(100%)')
+    setWaitingTimeGrayscale('grayscale(100%)')
+    setDreamsGrayscale('grayscale(100%)')
+  }
+  function DontShowHelp() {
+    setIsHelpShown(false)
+    setReasonsGrayscale('grayscale(0%)')
+    setWaitingTimeGrayscale('grayscale(0%)')
+    setDreamsGrayscale('grayscale(0%)')
+  }
+
   return (
-    <div className="bg-background bg-cover bg-center h-screen">
-      <img
-        src={topPaper}
-        alt="Top paper"
-        className="absolute -top-5 left-0 z-20 h-15/1 2xl-1:hidden"
-        loading="lazy"
-      />
-      <main>
-        <section className="absolute top-4 right-4 w-3/12 h-1/6 z-30 d overflow-y-auto">
+    <div className="bg-background bg-cover bg-center relative min-h-screen flex flex-col min-w-0">
+      <div
+        style={{ backgroundImage: `url(${topPaper})` }}
+        className="w-full sticky z-10 top-0 left-0 bg-cover bg-bottom flex justify-end min-h-20 md:h-28"
+      >
+        <section className="p-1 text-sm font-bold font-sans text-center w-full md:p-2 md:w-5/12">
           {isReasonsShown && (
             <p>
-              I'll appear when you hover over the button reasons. I'll appear
-              when you hover over the button reasons. I'll appear when you hover
-              over the button reasons.
+              “Si tú le dices algo a tus papás, yo te voy a matar, te lo juro
+              que te mato”, caso Pérez.
             </p>
           )}
           {isWaitingTimeShown && (
-            <p>I'll appear when you hover over the button waiting time.</p>
+            <p>
+              “Para mí y para mi niña ha sido duro el hecho de que las
+              navidades, los cumpleaños, las fechas especiales, es siempre sólo
+              ella y yo y aunque él está ahí, por la tecnología, por una
+              videollamada o algo, no es lo mismo”, Caso Hernández.
+            </p>
           )}
           {isDreamsShown && (
-            <p>I'll appear when you hover over the button dreams.</p>
+            <p>
+              “Quiero tener mi trabajo, vivir en paz y crecer a mis hijas. Tengo
+              que acceder a irme no me queda de otra”, caso Marquina.
+            </p>
           )}
           {isHelpShown && (
-            <p>I'll appear when you hover over the button help.</p>
+            <p>
+              “En la televisión salen mucho diciendo tanto la policía, los
+              fiscales y el señor presidente que los homicidios han bajado, pero
+              en realidad no dicen lo que está pasando en el país, todo el
+              sufrimiento de las familias. Nosotros éramos 6, ahora somos 5”,
+              caso Ardón.
+            </p>
           )}
         </section>
-        <section className="h-87/100 flex flex-wrap items-end justify-center overflow-y-auto absolutes">
-          <div className="h-72 w-160 z-10 flex absolute items-center justify-center relative lg-1:items-end">
-            <img
-              src={house1}
-              alt="House1"
-              className="w-2/6"
-              onMouseEnter={() => setIsReasonsShown(true)}
-              onMouseLeave={() => setIsReasonsShown(false)}
-              loading="lazy"
-            />
-          </div>
-          <div className="h-72 w-160 z-10 flex items-center justify-center lg-1:items-end lg-1:justify-start 2xl-1:justify-center">
-            <img
-              src={house2}
-              alt="House2"
-              className="w-2/6"
-              onMouseEnter={() => setIsWaitingTimeShown(true)}
-              onMouseLeave={() => setIsWaitingTimeShown(false)}
-              loading="lazy"
-            />
-          </div>
-          <div className="h-72 w-160 z-10 flex items-center justify-center lg-1:items-end">
-            <img
-              src={house3}
-              alt="House3"
-              className="w-3/6 lg-1:w-70/100 2xl-1:2/6"
-              onMouseEnter={() => setIsDreamsShown(true)}
-              onMouseLeave={() => setIsDreamsShown(false)}
-              loading="lazy"
-            />
-          </div>
-          <div className="h-72 w-160 z-10 flex items-center justify-center lg-1:items-end">
-            <img
-              src={house4}
-              alt="House4"
-              className="w-3/6 lg-1:w-70/100 2xl-1:2/6"
-              onMouseEnter={() => setIsHelpShown(true)}
-              onMouseLeave={() => setIsHelpShown(false)}
-              loading="lazy"
-            />
-          </div>
-          <div className="absolute hidden top-40/100 right-20/100 left-15/100 lg-1:block 2xl-1:hidden">
-            <img src={firstLine} alt="First Line" loading="lazy" />
-          </div>
-          <div className="absolute hidden bottom-20/100  lg-1:block lg-1:block 2xl-1:hidden">
-            <img src={secondLine} alt="Second Line" loading="lazy" />
-          </div>
-        </section>
+      </div>
+      <main className="flex md:flex-rigid p-4 sm:p-8 md:p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-6 md:gap-0 md:gap-x-32 overflow-y-auto w-full p-2">
+          <House
+            houseImg={house1}
+            alt={'Causes'}
+            textImg={house1Text}
+            filter={reasonsGrayscale}
+            onMouseEnter={ShowReasons}
+            onMouseLeave={DontShowReasons}
+            isShown={isReasonsShown}
+            line={firstLine}
+            flexes={'justify-end items-end'}
+          />
+          <House
+            houseImg={house2}
+            alt={'Waiting time'}
+            textImg={house2Text}
+            filter={waitingTimeGrayscale}
+            onMouseEnter={ShowWaitingTime}
+            onMouseLeave={DontShowWaitingTime}
+            isShown={isWaitingTimeShown}
+            line={secondLine}
+            flexes={'justify-start items-end'}
+          />
+          <House
+            houseImg={house3}
+            alt={'Dreams'}
+            textImg={house3Text}
+            filter={dreamsGrayscale}
+            onMouseEnter={ShowDreams}
+            onMouseLeave={DontShowDreams}
+            isShown={isDreamsShown}
+            line={firstLine}
+            flexes={'justify-end items-end'}
+          />
+          <House
+            houseImg={house4}
+            alt={'Help'}
+            textImg={house4Text}
+            filter={helpGrayscale}
+            onMouseEnter={ShowHelp}
+            onMouseLeave={DontShowHelp}
+            isShown={isHelpShown}
+            line={secondLine}
+            flexes={'justify-start items-end'}
+          />
+        </div>
       </main>
       <Footer />
     </div>

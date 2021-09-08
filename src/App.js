@@ -1,6 +1,8 @@
 import Home from './Containers/Home'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Section from './Section';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import Section from './Components/Section/Section'
+
+import './App.css'
 
 function App() {
   return (

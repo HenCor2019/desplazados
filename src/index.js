@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/css/index.css';
 import App from './App';
+//import Section from './Section';
+//import CausesDeco from './images/blue-deco.png';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
