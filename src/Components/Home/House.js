@@ -1,8 +1,12 @@
 import React from 'react';
 
-const House = ({ houseImg, textImg, alt, line, filter, onMouseEnter, onMouseLeave, isShown, flexes }) => (
+import { Link } from 'react-router-dom';
+
+const House = ({ houseImg, textImg, alt, line, filter, onMouseEnter, onMouseLeave, isShown, flexes, pathname }) => (
     <div className={`w-full p-1 flex ${flexes} overflow-hidden`}>
-        <div className="relative w-1/3 min-w-house-width">
+        <Link
+          to={pathname} 
+          className="inline-block relative w-1/3 min-w-house-width">
             <img
                 src={houseImg}
                 alt={alt}
@@ -28,7 +32,7 @@ const House = ({ houseImg, textImg, alt, line, filter, onMouseEnter, onMouseLeav
                     loading="lazy"
                 />
             )}
-        </div>
+        </Link>
     </div>
 );
 

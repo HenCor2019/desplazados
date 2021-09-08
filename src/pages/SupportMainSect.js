@@ -1,68 +1,45 @@
-import React, {useState} from 'react';
-import Concepts from './images/support/concepts.png';
-import Report from './images/support/report.png';
-import Statistics from './images/support/statistics.png';
+    import React, { useState } from 'react';
+import Concepts from '../assets/images/support/concepts.png';
+import Report from '../assets/images/support/report.png';
+import Statistics from '../assets/images/support/statistics.png';
 
 function SupportMainSect() {
-  const [isConceptsHover, setConceptsHover] = useState(false);
-  const [isReportHover, setReportHover] = useState(false);
-  const [isStatisticsHover, setStatisticsHover] = useState(false);
+    const [isConceptsHover, setConceptsHover] = useState(false);
+    const [isReportHover, setReportHover] = useState(false);
+    const [isStatisticsHover, setStatisticsHover] = useState(false);
 
-  let style1, style2, style3;
-  const grayscale = {filter: 'grayscale(1)'};
+    let style1, style2, style3;
+    const grayscale = { 'filter': 'grayscale(1)' }
 
-  if (isConceptsHover) {
-    style2 = grayscale;
-    style3 = grayscale;
-  } else if (isReportHover) {
-    style1 = grayscale;
-    style2 = grayscale;
-  } else if (isStatisticsHover) {
-    style1 = grayscale;
-    style3 = grayscale;
-  }
+    if (isConceptsHover) {
+        style2 = grayscale;
+        style3 = grayscale;
+    }
+    else if (isReportHover) {
+        style1 = grayscale;
+        style2 = grayscale;
+    }
+    else if (isStatisticsHover) {
+        style1 = grayscale;
+        style3 = grayscale;
+    }
 
-  return (
-    <main className="h-4/5 w-auto m-auto grid grid-cols-10 grid-rows-2 items-center overflow-y-auto">
-      <a
-        href=""
-        className="md:mt-16 w-full col-start-1 col-end-4"
-        onMouseEnter={() => setConceptsHover(true)}
-        onMouseLeave={() => setConceptsHover(false)}
-        loading="lazy"
-      >
-        <img src={Concepts} style={style1} className="w-5/6" />
-      </a>
-      <a
-        href=""
-        className="w-full col-start-4 col-end-7"
-        onMouseEnter={() => setStatisticsHover(true)}
-        onMouseLeave={() => setStatisticsHover(false)}
-        loading="lazy"
-      >
-        <img src={Statistics} style={style2} className="w-5/6" />
-      </a>
-      <p className="mt-7 md:mt-0 md:row-start-2 col-start-1 md:col-end-7 text-sm col-end-10 box-content text-justify">
-        Luego de la sentencia 411-2017 de la Corte Suprema de Justicia de El
-        Salvador, el Estado se vio obligado a reconocer y legislar en favor de
-        las víctimas de desplazamiento forzado por violencia. Tres años después,
-        se aprobó una ley que carece de reglamento. Aunque existen acuerdos
-        internacionales, como la Convención sobre Refugiados de 1951 y las
-        Declaraciones de Cartagena y de Brasil, en El Salvador son documentos
-        muertos. ¿A qué se enfrentan las familias cuando buscan apoyo de parte
-        del Estado?
-      </p>
-      <a
-        href=""
-        className="w-full md:row-start-2 md:col-start-7 md:col-end-10 row-start-1 col-start-7 col-end-10 ml-0 md:ml-8"
-        onMouseEnter={() => setReportHover(true)}
-        onMouseLeave={() => setReportHover(false)}
-        loading="lazy"
-      >
-        <img src={Report} style={style3} className="w-5/6" />
-      </a>
-    </main>
-  );
+    return (
+        <main className="w-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-auto gap-4 p-12 lg:p-4 overflow-x-auto">
+            <div className="flex w-full items-center lg:items-end justify-center lg:justify-start p-3 md:p-0">
+                <img src={Concepts} alt="Concepto" style={style1} className="object-contain w-full md:w-3/4 md:min-w-support-image cursor-pointer" onMouseEnter={() => setConceptsHover(true)} onMouseLeave={() => setConceptsHover(false)} loading="lazy" />
+            </div>
+            <div className="flex h-auto w-full items-center lg:items-start justify-center lg:justify-start lg:col-span-2 md:p-8 p-0">
+                <img src={Statistics} alt="Estadísticas" style={style2} className="object-contain w-full md:w-3/8 md:min-w-support-image cursor-pointer" onMouseEnter={() => setStatisticsHover(true)} onMouseLeave={() => setStatisticsHover(false)} loading="lazy" />
+            </div>
+            <div className="flex w-full lg:w-3/4 lg:col-span-2 p-3 md:p-0">
+                <p className="text-justify md:mt-6 leading-5">Luego de la sentencia 411-2017 de la Corte Suprema de Justicia de El Salvador, el Estado se vio obligado a reconocer y legislar en favor de las víctimas de desplazamiento forzado por violencia. Tres años después, se aprobó una ley que carece de reglamento. Aunque existen acuerdos internacionales, como la Convención sobre Refugiados de 1951 y las Declaraciones de Cartagena y de Brasil, en El Salvador son documentos muertos. ¿A qué se enfrentan las familias cuando buscan apoyo de parte del Estado?</p>
+            </div>
+            <div className="flex w-full items-center lg:items-start justify-center lg:justify-start p-3 md:p-0">
+                <img src={Report} alt="Reporte" style={style3} className="object-contain w-full md:w-3/4 md:min-w-support-image cursor-pointer" onMouseEnter={() => setReportHover(true)} onMouseLeave={() => setReportHover(false)} loading="lazy" />
+            </div>
+        </main>
+    )
 }
 
-export default SupportMainSect;
+export default SupportMainSect

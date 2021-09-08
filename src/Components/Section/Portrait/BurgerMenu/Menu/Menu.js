@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 import classes from './Menu.module.scss'
 
-const Menu = ({ open, links }) => {
+const Menu = ({ open, links, closeDrawer }) => {
     const menuClasses = [classes.menu];
 
     if (open) {
@@ -14,7 +16,11 @@ const Menu = ({ open, links }) => {
             <ul>
                 {links.map(link => (
                     <li key={`link_port_${link.title}`}>
-                        <a href={link.path}> {link.title} </a>
+                        <NavLink
+                          exact
+                          onClick={()=> { closeDrawer() }}
+                          activeClassName={classes["active"]}
+                          to={link.path}> {link.title} </NavLink>
                     </li>
                 ))}
             </ul>

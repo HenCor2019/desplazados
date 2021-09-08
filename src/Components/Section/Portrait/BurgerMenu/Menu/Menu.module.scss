@@ -66,11 +66,11 @@ ul {
             transition: all ease-in-out 250ms;
 
             &.active {
-                background-color: crimson;
+                text-decoration: underline;
             }
 
             &:hover {
-            color: #f1d2b3;
+              color: #f1d2b3;
             }
 
             @media screen and (min-width: 525px){

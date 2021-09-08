@@ -1,8 +1,11 @@
 import Home from './pages/Home'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Section from './Components/Section/Section'
+import SupportBanner from './assets/images/support/support-main.png'
 
-import './assets/css/index.css'
+import SupportMainSect from './pages/SupportMainSect'
+
+  import './assets/css/index.css'
 
 function App() {
   return (
@@ -16,7 +19,7 @@ function App() {
           <Section />
           <h2 className="mt-10">Causas Page</h2>
         </Route>
-        <Route exact path="/espera">
+        <Route exact path="/la-espera">
           {/* La espera page */}
           <Section />
           <h2 className="mt-10">La Espera Page</h2>
@@ -28,8 +31,9 @@ function App() {
         </Route>
         <Route exact path="/apoyo">
           {/* En busca de apoyo page */}
-          <Section />
-          <h2 className="mt-10">Apoyo Page</h2>
+          <Section bannerLand={SupportBanner}> 
+            <SupportMainSect/>
+          </Section>
         </Route>
       </Switch>
     </Router>

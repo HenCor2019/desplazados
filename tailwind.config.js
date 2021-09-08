@@ -61,7 +61,10 @@ module.exports = {
       minWidth: {
         '10/100': '10%',
         '15/100': '15%',
+        '1/4': '25%',
+        '3/4': '75%',
         'house-width': '300px',
+        'support-image': "250px"
       },
       minHeight: {
         '20': '100px',

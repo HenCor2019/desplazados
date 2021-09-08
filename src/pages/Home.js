@@ -129,6 +129,7 @@ function Home() {
             isShown={isReasonsShown}
             line={firstLine}
             flexes={'justify-end items-end'}
+            pathname="/causas"
           />
           <House
             houseImg={house2}
@@ -140,6 +141,7 @@ function Home() {
             isShown={isWaitingTimeShown}
             line={secondLine}
             flexes={'justify-start items-end'}
+            pathname="la-espera"
           />
           <House
             houseImg={house3}
@@ -151,6 +153,7 @@ function Home() {
             isShown={isDreamsShown}
             line={firstLine}
             flexes={'justify-end items-end'}
+            pathname="/sueños"
           />
           <House
             houseImg={house4}
@@ -162,6 +165,7 @@ function Home() {
             isShown={isHelpShown}
             line={secondLine}
             flexes={'justify-start items-end'}
+            pathname="/apoyo"
           />
         </div>
       </main>

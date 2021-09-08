@@ -3,17 +3,17 @@ import Landscape from "./Landscape/Landscape";
 import Portrait from "./Portrait/Portrait";
 
 const links = [
-    { title: "Inicio", path: "#" },
-    { title: "Causas", path: "#" },
-    { title: "Tiempo de Espera", path: "#" },
-    { title: "Los sueños", path: "#" },
-    { title: "En busca de apoyo", path: "#" },
+    { title: "Inicio", path: "/" },
+    { title: "Causas", path: "/causas" },
+    { title: "Tiempo de Espera", path: "/la-espera" },
+    { title: "Los sueños", path: "/sueños" },
+    { title: "En busca de apoyo", path: "/apoyo" },
 ];
 
-function Section(props) {
+function Section({ children, bannerLand }) {
     const dimensions = useWindowDimensions();
 
-    const isMobile = dimensions.width < 768;
+    const isMobile = dimensions.width <= 768;
     let layout = null;
 
     if(isMobile){
@@ -21,7 +21,7 @@ function Section(props) {
             <Portrait
                 links = {links}>
 
-                { props.children }
+                { children }
 
             </Portrait>
         );
@@ -29,9 +29,9 @@ function Section(props) {
         layout = (
             <Landscape 
                 links={links} 
-                banner={props.bannerLand}>
+                banner={ bannerLand }>
                 
-                { props.children }
+                { children }
             
             </Landscape>
         );
