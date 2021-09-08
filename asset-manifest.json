@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/desplazados/static/css/main.5dfc1e10.chunk.css",
+    "main.js": "/desplazados/static/js/main.01db2a80.chunk.js",
+    "main.js.map": "/desplazados/static/js/main.01db2a80.chunk.js.map",
+    "runtime-main.js": "/desplazados/static/js/runtime-main.83c7ec74.js",
+    "runtime-main.js.map": "/desplazados/static/js/runtime-main.83c7ec74.js.map",
+    "static/js/2.eef2c912.chunk.js": "/desplazados/static/js/2.eef2c912.chunk.js",
+    "static/js/2.eef2c912.chunk.js.map": "/desplazados/static/js/2.eef2c912.chunk.js.map",
+    "static/js/3.0494747a.chunk.js": "/desplazados/static/js/3.0494747a.chunk.js",
+    "static/js/3.0494747a.chunk.js.map": "/desplazados/static/js/3.0494747a.chunk.js.map",
+    "index.html": "/desplazados/index.html",
+    "static/css/main.5dfc1e10.chunk.css.map": "/desplazados/static/css/main.5dfc1e10.chunk.css.map",
+    "static/js/2.eef2c912.chunk.js.LICENSE.txt": "/desplazados/static/js/2.eef2c912.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/desplazados/static/media/AnotherTypewriter.74b4d918.woff2",
+    "static/media/House1.55b567ec.png": "/desplazados/static/media/House1.55b567ec.png",
+    "static/media/House1Text.86179313.png": "/desplazados/static/media/House1Text.86179313.png",
+    "static/media/House2.dcd9455c.png": "/desplazados/static/media/House2.dcd9455c.png",
+    "static/media/House2Text.b8d04e94.png": "/desplazados/static/media/House2Text.b8d04e94.png",
+    "static/media/House3.1cd5d86e.png": "/desplazados/static/media/House3.1cd5d86e.png",
+    "static/media/House3Text.50bac080.png": "/desplazados/static/media/House3Text.50bac080.png",
+    "static/media/House4.7794d2fd.png": "/desplazados/static/media/House4.7794d2fd.png",
+    "static/media/House4Text.92fb96d2.png": "/desplazados/static/media/House4Text.92fb96d2.png",
+    "static/media/LogoUCA.04d8ebcc.png": "/desplazados/static/media/LogoUCA.04d8ebcc.png",
+    "static/media/LogoUNICEF.3fbe46d1.jpg": "/desplazados/static/media/LogoUNICEF.3fbe46d1.jpg",
+    "static/media/TopPaper.d2c5790a.png": "/desplazados/static/media/TopPaper.d2c5790a.png",
+    "static/media/concepts.d1ed4b22.png": "/desplazados/static/media/concepts.d1ed4b22.png",
+    "static/media/playbutton.d2076464.png": "/desplazados/static/media/playbutton.d2076464.png",
+    "static/media/report.903b0e62.png": "/desplazados/static/media/report.903b0e62.png",
+    "static/media/statistics.93b9cc2c.png": "/desplazados/static/media/statistics.93b9cc2c.png",
+    "static/media/support-main.e1a5ecec.png": "/desplazados/static/media/support-main.e1a5ecec.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83c7ec74.js",
+    "static/js/2.eef2c912.chunk.js",
+    "static/css/main.5dfc1e10.chunk.css",
+    "static/js/main.01db2a80.chunk.js"
+  ]
+}
