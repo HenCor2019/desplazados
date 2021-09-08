@@ -16,13 +16,13 @@ const Landscape = (props) => {
     ));
 
     return (
-        <div className="Section flex w-full h-screen min-h-0 overflow-y-hidden">
-            <div className="h-screen">
+        <div className="Section flex w-full h-screen min-h-0 overflow-y-hidden overflow-x-auto">
+            <div className="w-96 h-screen sticky left-0">
               <img
-                className="w-full h-full object-left" 
+                className="w-full h-full object-right object-cover" 
                 alt="banner" src={props.banner} />
-            </div>
-            <div className="flex-1 h-full overflow-y-auto">
+            </div> 
+            <div className="flex-rigid min-w-section h-full overflow-y-auto">
                 <nav style={{backgroundColor: "#e8e8e7dd"}} className="main-nav flex justify-end p-4 sticky top-0">
                     {linksComponents}
                 </nav>

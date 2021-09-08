@@ -25,7 +25,7 @@ function SupportMainSect() {
     }
 
     return (
-        <main className="w-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-auto gap-4 p-12 lg:p-4 overflow-x-auto">
+        <main className="w-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-auto gap-4 p-12 lg:p-4">
             <div className="flex w-full items-center lg:items-end justify-center lg:justify-start p-3 md:p-0">
                 <img src={Concepts} alt="Concepto" style={style1} className="object-contain w-full md:w-3/4 md:min-w-support-image cursor-pointer" onMouseEnter={() => setConceptsHover(true)} onMouseLeave={() => setConceptsHover(false)} loading="lazy" />
             </div>

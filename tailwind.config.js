@@ -63,6 +63,7 @@ module.exports = {
         '15/100': '15%',
         '1/4': '25%',
         '3/4': '75%',
+        'section': "550px",
         'house-width': '300px',
         'support-image': "250px"
       },
