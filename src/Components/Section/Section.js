@@ -3,7 +3,7 @@ import Landscape from "./Landscape/Landscape";
 import Portrait from "./Portrait/Portrait";
 
 const links = [
-    { title: "Inicio", path: "/" },
+    { title: "Inicio", path: "/home" },
     { title: "Causas", path: "/causas" },
     { title: "Tiempo de Espera", path: "/la-espera" },
     { title: "Los sueños", path: "/sueños" },

@@ -1,4 +1,4 @@
-    import React, { useState } from 'react';
+import React, { useState } from 'react';
 import Concepts from '../assets/images/support/concepts.png';
 import Report from '../assets/images/support/report.png';
 import Statistics from '../assets/images/support/statistics.png';
