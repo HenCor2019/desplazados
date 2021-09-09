@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/desplazados/static/css/main.06332dd0.chunk.css",
-    "main.js": "/desplazados/static/js/main.44307a48.chunk.js",
-    "main.js.map": "/desplazados/static/js/main.44307a48.chunk.js.map",
+    "main.css": "/desplazados/static/css/main.ffbfe79a.chunk.css",
+    "main.js": "/desplazados/static/js/main.390b4cd9.chunk.js",
+    "main.js.map": "/desplazados/static/js/main.390b4cd9.chunk.js.map",
     "runtime-main.js": "/desplazados/static/js/runtime-main.83c7ec74.js",
     "runtime-main.js.map": "/desplazados/static/js/runtime-main.83c7ec74.js.map",
-    "static/js/2.eef2c912.chunk.js": "/desplazados/static/js/2.eef2c912.chunk.js",
-    "static/js/2.eef2c912.chunk.js.map": "/desplazados/static/js/2.eef2c912.chunk.js.map",
+    "static/js/2.98811026.chunk.js": "/desplazados/static/js/2.98811026.chunk.js",
+    "static/js/2.98811026.chunk.js.map": "/desplazados/static/js/2.98811026.chunk.js.map",
     "static/js/3.0494747a.chunk.js": "/desplazados/static/js/3.0494747a.chunk.js",
     "static/js/3.0494747a.chunk.js.map": "/desplazados/static/js/3.0494747a.chunk.js.map",
     "index.html": "/desplazados/index.html",
-    "static/css/main.06332dd0.chunk.css.map": "/desplazados/static/css/main.06332dd0.chunk.css.map",
-    "static/js/2.eef2c912.chunk.js.LICENSE.txt": "/desplazados/static/js/2.eef2c912.chunk.js.LICENSE.txt",
+    "static/css/main.ffbfe79a.chunk.css.map": "/desplazados/static/css/main.ffbfe79a.chunk.css.map",
+    "static/js/2.98811026.chunk.js.LICENSE.txt": "/desplazados/static/js/2.98811026.chunk.js.LICENSE.txt",
     "static/media/index.css": "/desplazados/static/media/AnotherTypewriter.74b4d918.woff2",
     "static/media/House1.55b567ec.png": "/desplazados/static/media/House1.55b567ec.png",
     "static/media/House1Text.86179313.png": "/desplazados/static/media/House1Text.86179313.png",
@@ -24,16 +24,24 @@
     "static/media/LogoUCA.04d8ebcc.png": "/desplazados/static/media/LogoUCA.04d8ebcc.png",
     "static/media/LogoUNICEF.3fbe46d1.jpg": "/desplazados/static/media/LogoUNICEF.3fbe46d1.jpg",
     "static/media/TopPaper.d2c5790a.png": "/desplazados/static/media/TopPaper.d2c5790a.png",
+    "static/media/chart-1.0b11f2b8.png": "/desplazados/static/media/chart-1.0b11f2b8.png",
+    "static/media/chart-2.8914d705.png": "/desplazados/static/media/chart-2.8914d705.png",
+    "static/media/chart-3.9bc21a57.png": "/desplazados/static/media/chart-3.9bc21a57.png",
     "static/media/concepts.d1ed4b22.png": "/desplazados/static/media/concepts.d1ed4b22.png",
+    "static/media/paper-texture.645e9745.png": "/desplazados/static/media/paper-texture.645e9745.png",
     "static/media/playbutton.d2076464.png": "/desplazados/static/media/playbutton.d2076464.png",
     "static/media/report.903b0e62.png": "/desplazados/static/media/report.903b0e62.png",
+    "static/media/statistics-banner.6277fb01.png": "/desplazados/static/media/statistics-banner.6277fb01.png",
+    "static/media/statistics-title.688fbea4.png": "/desplazados/static/media/statistics-title.688fbea4.png",
     "static/media/statistics.93b9cc2c.png": "/desplazados/static/media/statistics.93b9cc2c.png",
-    "static/media/support-main.e1a5ecec.png": "/desplazados/static/media/support-main.e1a5ecec.png"
+    "static/media/support-main.e1a5ecec.png": "/desplazados/static/media/support-main.e1a5ecec.png",
+    "static/media/timeline-1.9c01c1a9.png": "/desplazados/static/media/timeline-1.9c01c1a9.png",
+    "static/media/timeline-2.1e21af19.png": "/desplazados/static/media/timeline-2.1e21af19.png"
   },
   "entrypoints": [
     "static/js/runtime-main.83c7ec74.js",
-    "static/js/2.eef2c912.chunk.js",
-    "static/css/main.06332dd0.chunk.css",
-    "static/js/main.44307a48.chunk.js"
+    "static/js/2.98811026.chunk.js",
+    "static/css/main.ffbfe79a.chunk.css",
+    "static/js/main.390b4cd9.chunk.js"
   ]
 }
