@@ -2,8 +2,10 @@ import Home from './pages/Home'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Section from './Components/Section/Section'
 import SupportBanner from './assets/images/support/support-main.png'
+import WaitingTimeBanner from './assets/images/WaitingTime/banner.png'
 import YoutubeVideo from './pages/Video/index'
 import SupportMainSect from './pages/SupportMainSect'
+import WaitingTime from './pages/WaitingTime/WaitingTime'
 
 import { Helmet } from 'react-helmet';
 
@@ -36,8 +38,9 @@ function App() {
           <Helmet>
             <title> Desplazados - Tiempo de Espera </title>
           </Helmet>
-          <Section />
-          <h2 className="mt-10">Tiempo Espera Page</h2>
+          <Section bannerLand={WaitingTimeBanner} >
+            <WaitingTime/>
+          </Section>
         </Route>
         <Route exact path="/sueños">
           <Helmet>
