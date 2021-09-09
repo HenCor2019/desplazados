@@ -6,6 +6,8 @@ import Lightbox from '../../Components/Lightbox/index'
 import Modal from '../../Components/Modal/Modal'
 import { galleryPhotos } from '../../constants/FooterMessages'
 
+import '../../Components/Gallery/Gallery.css'
+
 export default function () {
   const [isActive, setIsActive] = useState(false)
   const [activePhoto, setActiveImage] = useState(galleryPhotos[0])
@@ -15,35 +17,19 @@ export default function () {
     setActiveImage(imageInformation)
   }
 
-  const handleChangePrevPhoto = ({ index }) => {
-    if (index === 0) return
-
-    const newImageInformation = galleryPhotos[index - 1]
-    setActiveImage(newImageInformation)
-  }
-
-  const handleChangeNextPhoto = ({ index }) => {
-    if (index === galleryPhotos.length - 1) return
-
-    const newImageInformation = galleryPhotos[index + 1]
-    setActiveImage(newImageInformation)
-  }
-
   return (
     <>
-      {isActive && (
+      {false && (
         <Modal>
           <Lightbox
             imageInformation={activePhoto}
             handleOnClick={handleOnClick}
-            handleChangeNextPhoto={handleChangeNextPhoto}
-            handleChangePrevPhoto={handleChangePrevPhoto}
           />
         </Modal>
       )}
 
       <Header isActive={isActive} handleOnClick={handleOnClick} />
-      <div className="w-full h-56 p-3 pt-4 mt-4 flex justify-around items-center content-center">
+      <div className="w-full h-64 md:h-2/4 p-3 pt-4 mt-4 flex sm:flex-col sm:h-full md:flex-row justify-around items-center content-center">
         <Images isActive={isActive} handleOnClick={handleOnClick} />
         <Aside isActive={isActive} handleOnClick={handleOnClick} />
       </div>

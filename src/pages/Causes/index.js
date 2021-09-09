@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { MESSAGE } from '../../constants/FooterMessages'
-import { ReactComponent as Gallery } from '../../images/Causes/gallery.svg'
-import { ReactComponent as Story } from '../../images/Causes/story.svg'
+import { ReactComponent as Gallery } from '../../assets/images/Causes/gallery.svg'
+import { ReactComponent as Story } from '../../assets/images/Causes/story.svg'
 import FooterMessage from '../../Components/FooterMessage/FooterMessage'
 import CauseImage from '../../Components/CauseImage/CauseImage'
 import '../../Components/CauseImage/index.css'
+import { useHistory } from 'react-router-dom'
 
 const styles = {
   mainContainer:
@@ -14,6 +15,7 @@ const styles = {
 export default function Causes() {
   const [galleryGrayscale, setGalleryGrayscale] = useState(false)
   const [storiesGrayscale, setStoriesGrayscale] = useState(false)
+  const { push } = useHistory()
 
   const handleMouseEnter = (save) => {
     save(true)
@@ -24,10 +26,19 @@ export default function Causes() {
     setGalleryGrayscale(false)
   }
 
+  const handleOnComic = {
+    //TODO: (comic section)
+  }
+
+  const handleOnGallery = () => {
+    push('/causes/gallery')
+  }
+
   return (
     <main className={styles.mainContainer}>
       <CauseImage
         Image={Story}
+        handleOnClick={handleOnComic}
         handleMouseEnter={handleMouseEnter}
         handleMouseLeave={handleMouseLeave}
         grayscale={storiesGrayscale}
@@ -36,6 +47,7 @@ export default function Causes() {
 
       <CauseImage
         Image={Gallery}
+        handleOnClick={handleOnGallery}
         handleMouseEnter={handleMouseEnter}
         handleMouseLeave={handleMouseLeave}
         grayscale={galleryGrayscale}

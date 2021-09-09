@@ -1,33 +1,49 @@
-import PlayButton from '../../images/Video/playbutton.png'
+import Button from '../../assets/images/Lightbox/button.png'
 import LightboxImage from './LightboxImage'
 import Slide from './Slide'
+import './Card/Card.css'
+import { galleryPhotos } from '../../constants/FooterMessages'
+import { useState } from 'react'
 
-export default function Lightbox({
-  imageInformation,
-  handleOnClick,
-  handleChangeNextPhoto,
-  handleChangePrevPhoto
-}) {
+export default function Lightbox(props) {
+  const { imageInformation, handleOnClick } = props
+
+  const [newImage, setNewImage] = useState(imageInformation)
+
+  const handleChangePrevPhoto = ({ index }) => {
+    if (index === 0) return
+
+    const newImageInformation = galleryPhotos[index - 1]
+    setNewImage(newImageInformation)
+  }
+
+  const handleChangeNextPhoto = ({ index }) => {
+    if (index === galleryPhotos.length - 1) return
+
+    const newImageInformation = galleryPhotos[index + 1]
+    setNewImage(newImageInformation)
+  }
+
   return (
-    <div className="top-0 absolute w-screen h-screen flex justify-center content-center sm:p-3">
+    <div className="lightbox top-0 absolute w-screen h-screen flex justify-center content-center sm:p-3">
       <Slide
-        src={PlayButton}
+        src={Button}
         alt="playbutton prev desplazados"
         handleOnClick={handleChangePrevPhoto}
-        imageInformation={imageInformation}
+        imageInformation={newImage}
         rotate="-rotate-180"
       />
 
       <LightboxImage
-        imageInformation={imageInformation}
+        imageInformation={newImage}
         handleOnClick={handleOnClick}
       />
 
       <Slide
-        src={PlayButton}
+        src={Button}
         alt="playbutton next desplazados"
         handleOnClick={handleChangeNextPhoto}
-        imageInformation={imageInformation}
+        imageInformation={newImage}
       />
     </div>
   )
