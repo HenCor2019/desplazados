@@ -23,7 +23,7 @@ const Landscape = (props) => {
                 alt="banner" src={props.banner} />
             </div> 
             <div className="flex-rigid min-w-section h-full overflow-y-auto">
-                <nav style={{backgroundColor: "#e8e8e7dd"}} className="main-nav flex justify-end p-4 sticky top-0">
+                <nav style={{backgroundColor: "#e8e8e7dd"}} className="main-nav flex justify-end p-4 sticky top-0 z-10">
                     {linksComponents}
                 </nav>
                 {props.children}

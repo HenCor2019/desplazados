@@ -1,13 +1,15 @@
 import Home from './pages/Home'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Section from './Components/Section/Section'
-import SupportBanner from './assets/images/support/support-main.png'
+import SupportBanner from './assets/images/Support/support-main.png'
 import YoutubeVideo from './pages/Video/index'
-import SupportMainSect from './pages/SupportMainSect'
+import SupportMainSect from './pages/Support/SupportMainSect'
+import Statistics from './pages/Support/Statistics'
+import StatisticsBanner from './assets/images/Support/Statistics/statistics-banner.png'
 
 import { Helmet } from 'react-helmet';
 
-  import './assets/css/index.css'
+import './assets/css/index.css'
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/causas">
-          <Helmet>  
+          <Helmet>
             <title> Desplazados - Causas </title>
           </Helmet>
           <Section />
@@ -50,8 +52,16 @@ function App() {
           <Helmet>
             <title> Desplazados - En busca de apoyo </title>
           </Helmet>
-          <Section bannerLand={SupportBanner}> 
+          <Section bannerLand={SupportBanner}>
             <SupportMainSect/>
+          </Section>
+        </Route>
+        <Route exact path="/apoyo/estadisticas">
+          <Helmet>
+            <title> Desplazados - Estadísticas </title>
+          </Helmet>
+          <Section bannerLand={StatisticsBanner}>
+            <Statistics/>
           </Section>
         </Route>
       </Switch>

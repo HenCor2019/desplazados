@@ -40,7 +40,8 @@ module.exports = {
         '2xl-h': {'raw': '(min-height: 1536px)'},
       },
       colors: {
-        background: '#e8e8e7'
+        'background': '#e8e8e7',
+        'navy-blue': '315d7b',
       },
       width: {
         160: '40rem',
