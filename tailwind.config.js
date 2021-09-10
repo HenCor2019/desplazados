@@ -9,40 +9,66 @@ module.exports = {
             transform: 'perspective(400px) rotateY(90deg)'
           },
           '40%': {
-            transform: 'perspective(400px) rotateY(-20deg)',
+            transform: 'perspective(400px) rotateY(-20deg)'
           },
           '60%': {
             transform: 'perspective(400px) rotateY(10deg)'
           },
           '80%': {
-            transform: 'perspective(400px) rotateY(-5deg)',
+            transform: 'perspective(400px) rotateY(-5deg)'
           },
           '100%': {
-            transform: 'perspective(400px) rotateY(0deg)',
-          },
+            transform: 'perspective(400px) rotateY(0deg)'
+          }
         },
+
+        appearance: {
+          '0%': {
+            opacity: 0
+          },
+
+          '25%': {
+            opacity: 0.25
+          },
+
+          '50%': {
+            opacity: 0.5
+          },
+
+          '75%': {
+            opacity: 0.75
+          },
+
+          '100%': {
+            opacity: 1
+          }
+        }
       },
       animation: {
         flip: 'flip 1s linear 0s 1',
+        appearance: 'appearance 0.2s 0s 1'
       },
       fontFamily: {
         sans: ['Another Typewriter', 'sans-serif'],
-        atwriter: ['atwriter', 'sans-serif']
+        atwriter: ['atwriter', 'sans-serif'],
+        AcuminVariableConcept: ['acumin', 'sans-serif'],
+        crayon: ['crayon', 'sans-serif'],
       },
       // ./images/Home/TopPaper.png
       screens: {
         'lg-1': '1280px',
         '2xl-1': '1920px',
-        'sm-h-1': {'raw': '(min-height: 700px)'},
-        'sm-h': {'raw': '(min-height: 640px)'},
-        'md-h': {'raw': '(min-height: 768px)'},
-        'lg-h': {'raw': '(min-height: 1024px)'},
-        'xl-h': {'raw': '(min-height: 1280px)'},
-        '2xl-h': {'raw': '(min-height: 1536px)'},
+        'sm-h-1': { raw: '(min-height: 700px)' },
+        'sm-h': { raw: '(min-height: 640px)' },
+        'md-h': { raw: '(min-height: 768px)' },
+        'lg-h': { raw: '(min-height: 1024px)' },
+        'xl-h': { raw: '(min-height: 1280px)' },
+        '2xl-h': { raw: '(min-height: 1536px)' }
       },
       colors: {
         background: '#e8e8e7',
-        time:'#b18422'
+        time:'#b18422',
+        homeText: '#2a2c2b'
       },
       width: {
         160: '40rem',
@@ -65,16 +91,16 @@ module.exports = {
         '15/100': '15%',
         '1/4': '25%',
         '3/4': '75%',
-        'section': "550px",
+        section: '550px',
         'house-width': '300px',
-        'support-image': "250px"
+        'support-image': '250px'
       },
       minHeight: {
-        '20': '100px',
+        20: '100px'
       },
       flex: {
-        'rigid':'1 0',
-      },
+        rigid: '1 0'
+      }
     }
   },
   variants: {

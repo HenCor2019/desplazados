@@ -83,9 +83,9 @@ function Home() {
     <div className="bg-background bg-cover bg-center relative min-h-screen flex flex-col min-w-0">
       <div
         style={{ backgroundImage: `url(${topPaper})` }}
-        className="w-full sticky z-10 top-0 left-0 bg-cover bg-bottom flex justify-end min-h-20 md:h-28"
+        className="w-full sticky z-10 top-0 left-0 bg-cover bg-bottom flex justify-end min-h-20 md:h-28 lg:h-32"
       >
-        <section className="p-1 text-sm font-bold font-sans text-center w-full md:p-2 md:w-5/12">
+        <section className="p-1 text-xs font-bold font-sans text-center w-full md:p-2 md:w-5/12">
           {isReasonsShown && (
             <p>
               “Si tú le dices algo a tus papás, yo te voy a matar, te lo juro

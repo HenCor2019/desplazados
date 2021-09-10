@@ -3,11 +3,13 @@ import Image from "../../Components/WaitingTime/Image";
 import processImg from "../../assets/images/WaitingTime/process.png";
 import galleryImg from "../../assets/images/WaitingTime/gallery.png";
 import meanwhileImg from "../../assets/images/WaitingTime/meanwhile.png";
+import { useHistory } from 'react-router-dom'
 
 function WaitingTime() {
     const [isProcessHover, setProcessHover] = useState(false);
     const [isGalleryHover, setGalleryHover] = useState(false);
     const [isMeanwhileHover, setMeanwhileHover] = useState(false);
+    const { push } = useHistory()
 
     let process, gallery, meanwhile;
     const grayscale = {
@@ -27,6 +29,18 @@ function WaitingTime() {
         gallery = grayscale;
     }
 
+    const handleOnProcess = () => {
+        push('/la-espera/meanwhile')
+    }
+
+    const handleOnGallery = () => {
+        push('/la-espera/meanwhile')
+    }
+
+    const handleOnMeanwhile = () => {
+        push('/la-espera/meanwhile')
+    }
+
     return (
         <div className="sm:flex sm:justify-center sm:items-center">
             <main className='grid grid-cols-1 grid-flow-row gap-4 h-full sm:grid-cols-2 md:gap-0'>
@@ -36,6 +50,7 @@ function WaitingTime() {
                     grayscale={process}
                     onMouseEnter={() => setProcessHover(true)}
                     onMouseLeave={() => setProcessHover(false)}
+                    handleOnClick={handleOnProcess}
                     position={"justify-start items-center sm:justify-center"}
                 />
                 <Image
@@ -44,6 +59,7 @@ function WaitingTime() {
                     grayscale={gallery}
                     onMouseEnter={() => setGalleryHover(true)}
                     onMouseLeave={() => setGalleryHover(false)}
+                    handleOnClick={handleOnGallery}
                     position={"justify-end items-center sm:justify-center"}
                 />
                 <div className='bg-time order-1 text-white flex justify-center items-center sm:order-none sm:bg-transparent sm:text-black'>
@@ -64,6 +80,7 @@ function WaitingTime() {
                     grayscale={meanwhile}
                     onMouseEnter={() => setMeanwhileHover(true)}
                     onMouseLeave={() => setMeanwhileHover(false)}
+                    handleOnClick={handleOnMeanwhile}
                     position={"justify-start items-center sm:justify-center"}
                 />
             </main>

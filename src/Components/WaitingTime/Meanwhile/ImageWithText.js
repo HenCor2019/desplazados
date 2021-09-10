@@ -8,7 +8,7 @@ const ImageWihText = ({ img, alt, position, text }) => (
             className="w-9/12 sm:w-10/12 md:w-full lg:w-80 object-contain w-full"
             loading={"lazy"}
         />
-        <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-sans text-2xl text-center md:text-base">
+        <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-crayon text-2xl text-center md:text-base">
             {text}
         </p>
     </div>

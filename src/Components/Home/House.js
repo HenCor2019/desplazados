@@ -26,7 +26,7 @@ const House = ({ houseImg, textImg, alt, line, filter, onMouseEnter, onMouseLeav
                 <img
                     src={textImg}
                     alt={alt}
-                    className="absolute bottom-0 object-contain w-full"
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-contain w-full"
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}
                     loading="lazy"
