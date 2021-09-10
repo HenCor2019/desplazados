@@ -64,6 +64,14 @@ function App() {
             <Statistics/>
           </Section>
         </Route>
+        <Route exact path="/apoyo/reportajes">
+          <Helmet>
+            <title> Desplazados - Estadísticas </title>
+          </Helmet>
+          <Section bannerLand={StatisticsBanner}>
+            <Statistics/>
+          </Section>
+        </Route>
       </Switch>
     </Router>
   )
