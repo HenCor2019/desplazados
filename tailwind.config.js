@@ -26,7 +26,9 @@ module.exports = {
         flip: 'flip 1s linear 0s 1',
       },
       fontFamily: {
-        sans: ['Another Typewriter', 'sans-serif']
+        sans: ['Another Typewriter', 'sans-serif'],
+        acumin: ['Acumin Variable Concept', 'sans-serif'],
+        crayon: ['Crayon Hand Regular', 'sans-serif']
       },
       // ./images/Home/TopPaper.png
       screens: {
