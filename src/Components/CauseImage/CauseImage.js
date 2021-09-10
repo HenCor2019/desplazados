@@ -1,6 +1,4 @@
 const styles = {
-  container: 'w-full h-3/4 sm:h-full sm:h-52 md:h-56 lg:h-72 xl:h-80 mx-auto',
-
   image:
     'w-full px-5 sm:px-2 sm:w-full md:w-full xl:w-5/6 h-full mx-auto cursor-pointer animate-flip'
 }
@@ -12,11 +10,15 @@ export default function CauseImage(props) {
     handleMouseLeave,
     setGrayscale,
     grayscale,
-    handleOnClick
+    handleOnClick,
+    colspan = 1,
+    rowspan = 1
   } = props
 
   return (
-    <div className={styles.container}>
+    <div
+      className={`row-span-${rowspan} col-span-${colspan} w-full h-3/4 sm:h-full mx-auto`}
+    >
       <Image
         className={styles.image + (grayscale ? ' grayscale' : '')}
         onMouseEnter={() => handleMouseEnter(setGrayscale)}

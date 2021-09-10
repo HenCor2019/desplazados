@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom'
 
 const styles = {
   mainContainer:
-    'p-0 sm:p-5 h-full sm:h-3/4 w-full sm:w-5/6 md:w-full mx-auto md:h-5/6 mt-9 md:mt-10 sm:justify-center sm:content-center lg:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4'
+    'p-0 h-full sm:h-3/4 w-full sm:w-5/6 md:w-full mx-auto md:h-5/6 mt-9 md:mt-10 sm:justify-center sm:content-center lg:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 lg:p-14'
 }
 
 export default function Causes() {
@@ -26,8 +26,8 @@ export default function Causes() {
     setGalleryGrayscale(false)
   }
 
-  const handleOnComic = {
-    //TODO: (comic section)
+  const handleOnComic = () => {
+    push('/causes/comic')
   }
 
   const handleOnGallery = () => {
@@ -37,6 +37,7 @@ export default function Causes() {
   return (
     <main className={styles.mainContainer}>
       <CauseImage
+        rowspan={3}
         Image={Story}
         handleOnClick={handleOnComic}
         handleMouseEnter={handleMouseEnter}
@@ -46,6 +47,7 @@ export default function Causes() {
       />
 
       <CauseImage
+        rowspan={2}
         Image={Gallery}
         handleOnClick={handleOnGallery}
         handleMouseEnter={handleMouseEnter}
@@ -53,8 +55,6 @@ export default function Causes() {
         grayscale={galleryGrayscale}
         setGrayscale={setStoriesGrayscale}
       />
-
-      <div></div>
       <FooterMessage message={MESSAGE} />
     </main>
   )

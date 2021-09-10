@@ -10,8 +10,8 @@ import CausesSect from './pages/Causes/index'
 import CausesGallery from './pages/Gallery/index'
 
 import { Helmet } from 'react-helmet'
-
 import './assets/css/index.css'
+import Comic from './pages/Comic/Comic'
 
 function App() {
   return (
@@ -38,6 +38,15 @@ function App() {
 
           <Section bannerLand={CausesBanner}>
             <CausesSect />
+          </Section>
+        </Route>
+
+        <Route exact path="/causes/comic">
+          <Helmet>
+            <title> Desplazados - Comic </title>
+          </Helmet>
+          <Section bannerLand={CausesBanner}>
+            <Comic />
           </Section>
         </Route>
 

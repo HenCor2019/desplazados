@@ -9,7 +9,9 @@ const styles = {
 export default function FooterMessage({ message }) {
   return (
     <div className={styles.textContainer}>
-      <p className={styles.messageDescription}>{message}</p>
+      <p className="w-full md:px-6 md:pt-5 text-gray-300 sm:text-gray-800 lg:text-base sm:text-sm font-medium text-justify overflow-hidden py-1">
+        {message}
+      </p>
     </div>
   )
 }
