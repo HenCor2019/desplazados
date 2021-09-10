@@ -9,6 +9,7 @@ import ImageEight from '../../images/Gallery/8-.png'
 import ImageNine from '../../images/Gallery/9-.png'
 import ImageTen from '../../images/Gallery/10-.png'
 
+import ThumbnailComic from '../../assets/images/Comic/thumbnail-comic.png'
 import ComicOne from '../../assets/images/Comic/1y2-09.png'
 import ComicTwo from '../../assets/images/Comic/1y2-10.png'
 import ComicThree from '../../assets/images/Comic/3-y-4-09.png'
@@ -123,76 +124,81 @@ export const galleryPhotos = [
 export const comicImages = [
   {
     index: 0,
-    src: ComicOne
-  },
-
-  {
-    index: 1,
-    src: ComicTwo
+    src: ThumbnailComic
   },
 
   {
     index: 2,
-    src: ComicThree
+    src: ComicOne
+  },
+
+  {
+    index: 2,
+    src: ComicTwo
   },
 
   {
     index: 3,
-    src: ComicFour
+    src: ComicThree
   },
 
   {
     index: 4,
-    src: ComicFive
+    src: ComicFour
   },
 
   {
     index: 5,
-    src: ComicSix
+    src: ComicFive
   },
 
   {
     index: 6,
-    src: ComicSeven
+    src: ComicSix
   },
 
   {
     index: 7,
-    src: ComicEight
+    src: ComicSeven
   },
 
   {
     index: 8,
-    src: ComicNine
+    src: ComicEight
   },
 
   {
     index: 9,
-    src: ComicTen
+    src: ComicNine
   },
 
   {
     index: 10,
-    src: ComicEleven
+    src: ComicTen
   },
 
   {
     index: 11,
-    src: ComicTwelve
+    src: ComicEleven
   },
 
   {
     index: 12,
-    src: ComicThirteen
+    src: ComicTwelve
   },
 
   {
     index: 13,
-    src: ComicFourteen
+    src: ComicThirteen
   },
 
   {
     index: 14,
+    src: ComicFourteen
+  },
+
+  {
+    index: 15,
     src: ComicFifteen
   }
 ]
