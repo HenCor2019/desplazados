@@ -15,6 +15,7 @@
     transition: all ease-in-out 250ms;
 
     pointer-events: all;
+    z-index: 100;
 
 &.open {
     transform: translateX(0%);
