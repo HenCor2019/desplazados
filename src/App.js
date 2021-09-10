@@ -16,11 +16,11 @@ import CausesSect from './pages/Causes/index'
 import CausesGallery from './pages/Gallery/index'
 import DreamsBanner from './assets/images/Dreams/dreams-banner.png'
 import Dreams from './pages/Dreams/index'
-import WaitingTimeGallery  from './pages/WaitingTime/WaitingTimeGallery'
+import WaitingTimeGallery from './pages/WaitingTime/WaitingTimeGallery'
 
 import { Helmet } from 'react-helmet'
-
 import './assets/css/index.css'
+import Comic from './pages/Comic/FlipPage'
 
 function App() {
   return (
@@ -50,6 +50,15 @@ function App() {
           </Section>
         </Route>
 
+        <Route exact path="/causes/comic">
+          <Helmet>
+            <title> Desplazados - Comic </title>
+          </Helmet>
+          <Section bannerLand={CausesBanner}>
+            <Comic />
+          </Section>
+        </Route>
+
         <Route exact path="/causes/gallery">
           <Helmet>
             <title> Desplazados - Galería </title>
@@ -64,7 +73,7 @@ function App() {
           <Helmet>
             <title> Desplazados - Tiempo de Espera </title>
           </Helmet>
-          <Section bannerLand={WaitingTimeBanner} >
+          <Section bannerLand={WaitingTimeBanner}>
             <WaitingTime />
           </Section>
         </Route>
@@ -75,7 +84,7 @@ function App() {
           </Helmet>
 
           <Section bannerLand={WaitingTimeBanner}>
-            <Meanwhile/>
+            <Meanwhile />
           </Section>
         </Route>
 
@@ -85,7 +94,7 @@ function App() {
           </Helmet>
 
           <Section bannerLand={WaitingTimeBanner}>
-            <WaitingTimeGallery/>
+            <WaitingTimeGallery />
           </Section>
         </Route>
 
@@ -103,7 +112,7 @@ function App() {
             <title> Desplazados - En busca de apoyo </title>
           </Helmet>
           <Section bannerLand={SupportBanner}>
-            <SupportMainSect/>
+            <SupportMainSect />
           </Section>
         </Route>
         <Route exact path="/apoyo/estadisticas">
@@ -111,7 +120,7 @@ function App() {
             <title> Desplazados - Estadísticas </title>
           </Helmet>
           <Section bannerLand={StatisticsBanner}>
-            <Statistics/>
+            <Statistics />
           </Section>
         </Route>
       </Switch>

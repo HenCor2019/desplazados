@@ -9,8 +9,24 @@ import ImageEight from '../../images/Gallery/8-.png'
 import ImageNine from '../../images/Gallery/9-.png'
 import ImageTen from '../../images/Gallery/10-.png'
 
+import ComicOne from '../../assets/images/Comic/1y2-09.png'
+import ComicTwo from '../../assets/images/Comic/1y2-10.png'
+import ComicThree from '../../assets/images/Comic/3-y-4-09.png'
+import ComicFour from '../../assets/images/Comic/3-y-4-10.png'
+import ComicFive from '../../assets/images/Comic/5y6-09.png'
+import ComicSix from '../../assets/images/Comic/5y6-10.png'
+import ComicSeven from '../../assets/images/Comic/7-y8-09.png'
+import ComicEight from '../../assets/images/Comic/7-y8-10.png'
+import ComicNine from '../../assets/images/Comic/9-y-10-09.png'
+import ComicTen from '../../assets/images/Comic/9-y-10-10.png'
+import ComicEleven from '../../assets/images/Comic/11-y12-09.png'
+import ComicTwelve from '../../assets/images/Comic/11-y12-10.png'
+import ComicThirteen from '../../assets/images/Comic/13-y-14-09.png'
+import ComicFourteen from '../../assets/images/Comic/13-y-14-10.png'
+import ComicFifteen from '../../assets/images/Comic/15-08.png'
+
 export const MESSAGE =
-  'Responder la pregunta ¿por qué migramos? debería ser muy sencillo, porque es un derecho. Sin embargo, en El Salvador a veces es la única forma de preservar la vida. De formas inesperadas, la violencia rompe el proyecto de vida de muchas familias y estas sólo tienen una salida: dejar todo y huir en busca de mejores condiciones. A este fenómeno se le llama desplazamiento forzado, pero ¿qué lo causa?, ¿cuáles son algunos de los detonantes?.'
+  'Responder la pregunta ¿por qué migramos? debería ser muy sencillo, porque es un derecho. Sin embargo, en El Salvador a veces es la única forma de preservar la vida.'
 
 export const galleryPhotos = [
   {
@@ -101,5 +117,82 @@ export const galleryPhotos = [
     author: 'Clari, 8 años de edad',
     src: ImageTen,
     index: 9
+  }
+]
+
+export const comicImages = [
+  {
+    index: 0,
+    src: ComicOne
+  },
+
+  {
+    index: 1,
+    src: ComicTwo
+  },
+
+  {
+    index: 2,
+    src: ComicThree
+  },
+
+  {
+    index: 3,
+    src: ComicFour
+  },
+
+  {
+    index: 4,
+    src: ComicFive
+  },
+
+  {
+    index: 5,
+    src: ComicSix
+  },
+
+  {
+    index: 6,
+    src: ComicSeven
+  },
+
+  {
+    index: 7,
+    src: ComicEight
+  },
+
+  {
+    index: 8,
+    src: ComicNine
+  },
+
+  {
+    index: 9,
+    src: ComicTen
+  },
+
+  {
+    index: 10,
+    src: ComicEleven
+  },
+
+  {
+    index: 11,
+    src: ComicTwelve
+  },
+
+  {
+    index: 12,
+    src: ComicThirteen
+  },
+
+  {
+    index: 13,
+    src: ComicFourteen
+  },
+
+  {
+    index: 14,
+    src: ComicFifteen
   }
 ]
