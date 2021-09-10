@@ -4,19 +4,19 @@ import CardHeader from './Card/Header'
 
 const styles = {
   container:
-    'lightbox-image w-full h-full z-40 sm:w-3/5 flex flex-col justify-center content-center items-center p-3'
+    'lightbox-image w-full h-full z-40 sm:w-3/4 lg:w-3/5 flex flex-col justify-center content-center items-center p-3'
 }
 
-export default function LightboxImage({ imageInformation, handleOnClick }) {
+export default function LightboxImage({ content, handleOnClick }) {
   return (
     <div className={styles.container}>
-      <CardHeader handleOnClick={() => handleOnClick(imageInformation)} />
+      <CardHeader onClose={handleOnClick} />
 
       <CardImage
-        src={imageInformation.src}
-        alt={`image ${imageInformation.author} ${imageInformation.title}`}
+        src={content.src}
+        alt={`image ${content.author} ${content.title}`}
       />
-      <CardMessage imageInformation={imageInformation} />
+      <CardMessage content={content} />
     </div>
   )
 }

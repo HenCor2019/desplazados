@@ -10,7 +10,7 @@ import ImageNine from '../../images/Gallery/9-.png'
 import ImageTen from '../../images/Gallery/10-.png'
 
 export const MESSAGE =
-  'Elit dolorem voluptates quisquam ab vero Possimus ab pariatur autem vel hic Rem molestiae at autem aut veniam facilis Dolor tenetur dolorem qui doloremque nostrum'
+  'Responder la pregunta ¿por qué migramos? debería ser muy sencillo, porque es un derecho. Sin embargo, en El Salvador a veces es la única forma de preservar la vida. De formas inesperadas, la violencia rompe el proyecto de vida de muchas familias y estas sólo tienen una salida: dejar todo y huir en busca de mejores condiciones. A este fenómeno se le llama desplazamiento forzado, pero ¿qué lo causa?, ¿cuáles son algunos de los detonantes?.'
 
 export const galleryPhotos = [
   {
@@ -23,7 +23,7 @@ export const galleryPhotos = [
   },
 
   {
-    title: 'Mi personaje favorito de la tele.',
+    title: 'Mi personaje favorito.',
     description:
       '“A mi y a mi hermanita nos gusta ver todas las tardes los BT21 (serie animada).  Tata es mi personaje favorito y el conejo Cooky es el de mi hermana… ahora, con estos vamos a jugar”',
     author: 'Karla, 8 años de edad ',
@@ -77,7 +77,7 @@ export const galleryPhotos = [
   },
 
   {
-    title: 'Mis marionetas de origami.',
+    title: 'Mis marionetas.',
     description:
       '“El gatito Lex, el Perrito Fili, la patita Lola y el zorro Pepe son una familia feliz y juegan todos los días”.',
     author: 'Yesi, 8 años de edad',

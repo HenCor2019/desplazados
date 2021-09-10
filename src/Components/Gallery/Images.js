@@ -1,23 +1,14 @@
 import Image from './Image'
-import { galleryPhotos } from '../../constants/FooterMessages/index'
 
-export default function Images({ isActive, handleOnClick }) {
-  const filterGallery = (photo, index) => {
-    if (index === 0 || index === 1 || index === 9) return false
-    return true
-  }
-
-  const reducerGallery = galleryPhotos.filter(filterGallery)
-
+export default function Images({ isActive, handleOnClick, images }) {
   const isHidden = (index) => {
-    if (index === 0 || index === 1 || index === galleryPhotos.length - 1)
-      return true
+    if (index === 0 || index === 1 || index === images.length - 1) return true
     return false
   }
 
   return (
-    <div className="w-full mx-auto h-full sm:px-5 md:px-0 md:w-3/4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-1 md:mt-10">
-      {galleryPhotos.map((photo) => {
+    <div className="w-full mx-auto h-full sm:px-5 md:px-4 md:h-3/4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-1 md:mt-10 lg:mt-0">
+      {images.map((photo) => {
         const hidden = isHidden(photo.index)
         return (
           <Image

@@ -14,24 +14,34 @@ export default function () {
 
   const handleOnClick = (imageInformation) => {
     setIsActive(!isActive)
-    setActiveImage(imageInformation)
+    if (imageInformation) setActiveImage(imageInformation)
   }
 
   return (
     <>
-      {false && (
+      {isActive && (
         <Modal>
           <Lightbox
-            imageInformation={activePhoto}
+            content={activePhoto}
             handleOnClick={handleOnClick}
+            images={galleryPhotos}
           />
         </Modal>
       )}
 
       <Header isActive={isActive} handleOnClick={handleOnClick} />
-      <div className="w-full h-64 md:h-2/4 p-3 pt-4 mt-4 flex sm:flex-col sm:h-full md:flex-row justify-around items-center content-center">
-        <Images isActive={isActive} handleOnClick={handleOnClick} />
-        <Aside isActive={isActive} handleOnClick={handleOnClick} />
+      <div className="w-full xl:w-11/12 lg:h-80 p-3 pt-4 md:p-0 mt-4 flex sm:flex-col sm:h-full md:h-full lg:flex-row justify-around items-start content-center">
+        <Images
+          isActive={isActive}
+          handleOnClick={handleOnClick}
+          images={galleryPhotos}
+        />
+
+        <Aside
+          isActive={isActive}
+          handleOnClick={handleOnClick}
+          image={galleryPhotos[galleryPhotos.length - 1]}
+        />
       </div>
     </>
   )
