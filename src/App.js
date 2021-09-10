@@ -6,6 +6,8 @@ import YoutubeVideo from './pages/Video/index'
 import SupportMainSect from './pages/Support/SupportMainSect'
 import Statistics from './pages/Support/Statistics'
 import StatisticsBanner from './assets/images/Support/Statistics/statistics-banner.png'
+import Reportages from './pages/Support/Reportages/Reportages'
+import ReportagesBanner from './assets/images/Support/Reportage/reportage-banner.png'
 import SupportBanner from './assets/images/Support/support-main.png'
 import WaitingTimeBanner from './assets/images/WaitingTime/banner.png'
 import WaitingTime from './pages/WaitingTime/WaitingTime'
@@ -121,6 +123,14 @@ function App() {
           </Helmet>
           <Section bannerLand={StatisticsBanner}>
             <Statistics />
+          </Section>
+        </Route>
+        <Route exact path="/apoyo/reportajes">
+          <Helmet>
+            <title> Desplazados - Reportajes </title>
+          </Helmet>
+          <Section bannerLand={ReportagesBanner}>
+            <Reportages/>
           </Section>
         </Route>
       </Switch>
