@@ -70,6 +70,7 @@ module.exports = {
         'background': '#e8e8e7',
         'gray-200': '#c5c5c5',
         'black-700': '#444242',
+        'brownie-gray': "#dddcdb",
         'gray-500': '#9a999e',
       },
       width: {
