@@ -1,4 +1,4 @@
-import StatisticsInfo from './StatisticsInfo'
+import StatisticsInfo from './Statistics/StatisticsInfo'
 import Title from '../../assets/images/Support/Statistics/statistics-title.png'
 import Timeline1 from '../../assets/images/Support/Statistics/timeline-1.png'
 import Timeline2 from '../../assets/images/Support/Statistics/timeline-2.png'
