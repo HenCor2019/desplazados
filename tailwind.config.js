@@ -41,7 +41,9 @@ module.exports = {
       },
       colors: {
         'background': '#e8e8e7',
-        'navy-blue': '315d7b',
+        'gray-200': '#c5c5c5',
+        'black-700': '#444242',
+        'gray-500': '#9a999e',
       },
       width: {
         160: '40rem',
