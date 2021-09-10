@@ -8,7 +8,6 @@ const aClasses = "px-4 font-sans text-gray-500 hover:text-gray-200";
 const Landscape = (props) => {
     const linksComponents = props.links.map(link => (
         <NavLink
-          exact
           key={`link_land_${link.title}`} 
           activeClassName={classes["active"]} 
           to={link.path} 
@@ -23,7 +22,7 @@ const Landscape = (props) => {
                 alt="banner" src={props.banner} />
             </div> 
             <div className="flex-rigid min-w-section h-full overflow-y-auto">
-                <nav style={{backgroundColor: "#e8e8e7dd"}} className="main-nav flex justify-end p-4 sticky top-0 z-10">
+                <nav style={{backgroundColor: "#e8e8e7dd"}} className="main-nav overflow-hidden flex justify-end p-4 sticky top-0 z-10">
                     {linksComponents}
                 </nav>
                 {props.children}

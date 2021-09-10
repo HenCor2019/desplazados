@@ -34,7 +34,7 @@ function WaitingTime() {
     }
 
     const handleOnGallery = () => {
-        push('/la-espera/meanwhile')
+        push('/la-espera/gallery')
     }
 
     const handleOnMeanwhile = () => {
@@ -42,7 +42,7 @@ function WaitingTime() {
     }
 
     return (
-        <div className="sm:flex sm:justify-center sm:items-center">
+        <div className="sm:flex sm:min-w-0 sm:justify-center sm:items-center">
             <main className='grid grid-cols-1 grid-flow-row gap-4 h-full sm:grid-cols-2 md:gap-0'>
                 <Image
                     img={processImg}
