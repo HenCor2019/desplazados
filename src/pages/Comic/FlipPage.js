@@ -1,10 +1,10 @@
-import HTMLFlipBook from 'react-pageflip'
+import FlipPage from 'react-flip-page'
 import { comicImages } from '../../constants/FooterMessages'
 
-export default function Comic(props) {
+export default function () {
   return (
-    <div className="w-full mt-1 sm:w-3/4 h-full md:h-1/2 mx-auto p-3 md:p-12">
-      <HTMLFlipBook width={400} height={600} flippingTime={500}>
+    <div className="w-full mt-10 sm:h-full md:h-5/6 flex justify-center items-center content-center">
+      <FlipPage orientation="horizontal" animationDuration={500}>
         {comicImages.map((comic) => (
           <div key={comic.index} className="w-full h-full bg-gray-200">
             <img
@@ -16,7 +16,7 @@ export default function Comic(props) {
             />
           </div>
         ))}
-      </HTMLFlipBook>
+      </FlipPage>
     </div>
   )
 }

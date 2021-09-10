@@ -8,10 +8,9 @@ import YoutubeVideo from './pages/Video/index'
 import SupportMainSect from './pages/SupportMainSect'
 import CausesSect from './pages/Causes/index'
 import CausesGallery from './pages/Gallery/index'
-
 import { Helmet } from 'react-helmet'
 import './assets/css/index.css'
-import Comic from './pages/Comic/Comic'
+import Comic from './pages/Comic/FlipPage'
 
 function App() {
   return (
