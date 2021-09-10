@@ -1,5 +1,20 @@
 @import url('../fonts/another-typewriter/stylesheet.css');
 
+/* @font-face {
+  font-family: atwriter;
+  src: url('../fonts/another-typewriter/atwriter.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: acumin;
+  src: url('../fonts/another-typewriter/AcuminVariableConcept.otf') format('otf');
+}
+
+@font-face {
+  font-family: crayon;
+  src: url('../fonts/another-typewriter/CrayonHandRegular2016Demo.ttf') format('ttf');
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

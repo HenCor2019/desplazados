@@ -2,7 +2,7 @@ import PlayImage from '../../assets/images/Video/playbutton.png'
 
 const styles = {
   containerDiv:
-    'w-3/4 h-3/4 flex flex-col justify-around items-start content-center',
+    'w-full h-3/4 flex flex-col justify-around items-start content-center',
   skeletonDiv: 'w-1/5 h-9 bg-gray-100 rounded-md',
 
   buttonContainer:
@@ -14,17 +14,15 @@ const styles = {
   iconPlay: 'text-5xl rounded-full',
 
   buttonSkip:
-    'w-full text-white self-end flex justify-center items-end content-end',
+    'w-full text-gray-800 self-end flex justify-end items-end content-end absolute bottom-0 pb-10 pr-7 sm:pr-10',
 
   buttonSkipVideo:
-    'bg-gradient-to-r from-red-600 via-red-500 to-red-400 font-semibold self-end justify-end rounded-full w-24 h-10 text-sm self-end uppercase hover:from-red-700 hover:via-red-600 hover:to-red-500 shadow-md'
+    'border-2 border-gray-600 font-bold self-end justify-end rounded-full w-24 h-10 text-sm self-end uppercase shadow-sm'
 }
 
 export default function ButtonPlay({ handlePlaying, handleOnSkip }) {
-  
   return (
     <div className={styles.containerDiv}>
-
       <div className={styles.buttonContainer}>
         <button className={styles.buttonPlay} onClick={handlePlaying}>
           <img
@@ -34,7 +32,9 @@ export default function ButtonPlay({ handlePlaying, handleOnSkip }) {
           />
         </button>
         <div className={styles.buttonSkip}>
-          <button className={styles.buttonSkipVideo} onClick={handleOnSkip}>Saltar</button>
+          <button className={styles.buttonSkipVideo} onClick={handleOnSkip}>
+            Saltar
+          </button>
         </div>
       </div>
     </div>
