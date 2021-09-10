@@ -50,9 +50,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Another Typewriter', 'sans-serif'],
-        atwriter: ['atwriter', 'sans-serif'],
-        AcuminVariableConcept: ['acumin', 'sans-serif'],
-        crayon: ['crayon', 'sans-serif'],
+        acumin: ['Acumin Variable Concept', 'sans-serif'],
+        crayon: ['Crayon Hand Regular', 'sans-serif']
       },
       // ./images/Home/TopPaper.png
       screens: {
@@ -69,7 +68,9 @@ module.exports = {
         'time':'#b18422',
         'homeText': '#2a2c2b',
         'background': '#e8e8e7',
-        'navy-blue': '315d7b',
+        'gray-200': '#c5c5c5',
+        'black-700': '#444242',
+        'gray-500': '#9a999e',
       },
       width: {
         160: '40rem',
