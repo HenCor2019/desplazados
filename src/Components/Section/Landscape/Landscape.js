@@ -3,7 +3,7 @@ import React from "react";
 import { NavLink } from 'react-router-dom';
 import classes from './Landscape.module.scss';
 
-const aClasses = "px-4 font-sans text-gray-500 hover:text-gray-400";
+const aClasses = "px-4 font-sans text-gray-500 hover:text-gray-200";
 
 const Landscape = (props) => {
     const linksComponents = props.links.map(link => (
