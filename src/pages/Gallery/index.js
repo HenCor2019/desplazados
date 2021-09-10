@@ -30,7 +30,7 @@ export default function () {
       )}
 
       <Header isActive={isActive} handleOnClick={handleOnClick} />
-      <div className="w-full xl:w-11/12 lg:h-80 p-3 pt-4 md:p-0 mt-4 flex sm:flex-col sm:h-full md:h-full lg:flex-row justify-around items-start content-center">
+      <div className="w-full xl:w-11/12 lg:h-auto p-3 pt-4 md:p-0 mt-4 flex sm:flex-col sm:h-full md:h-full lg:flex-row justify-around items-start content-center">
         <Images
           isActive={isActive}
           handleOnClick={handleOnClick}
