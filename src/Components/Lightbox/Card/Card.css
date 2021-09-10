@@ -1,0 +1,15 @@
+.lightbox-image {
+  background-image: url('../../../assets/images/Lightbox/background_gallery.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-close {
+  background-image: url('../../../assets/images/Lightbox/cerrar_button.png');
+  background-size: cover;
+  background-position: center;
+}
