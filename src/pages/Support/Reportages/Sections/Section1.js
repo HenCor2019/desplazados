@@ -41,7 +41,6 @@ const Section1 = () => {
                         Sus hijos se sometieron a un confinamiento total y ellos comenzaron a buscar ayuda para salir de su comunidad. Los pandilleros se dieron cuenta y un día, de regreso a casa, los interceptaron y sentenciaron: -no se vayan a mover de donde están, si se llegan a ir, nosotros tenemos contactos y los vamos a encontrar. Ahí se van a morir todos-.
                         <br></br><br/>
                     </p>
-                    <p className="text-2xl font-bold text-right bottom-0">***</p>
                 </div>
             </section>
     )
