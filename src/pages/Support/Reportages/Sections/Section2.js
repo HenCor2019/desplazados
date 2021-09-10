@@ -16,7 +16,7 @@ const Section2 = () => {
             </div>
             <div className="lg:row-span-2 lg:col-start-2 lg:col-end-4">
                 <div className="w-full h-72 lg:h-3/4 mt-6 lg:mt-0">
-                    <SimpleVideoPlayer embedId="P69HBu-nrqM" />
+                    <SimpleVideoPlayer embedId="3FYF-ENXrPI" />
                 </div>
                 <div className="my-6 lg:mt-6 lg:h-1/4">
                 <p className="font-acumin text-black-700 leading-6 text-justify font-bold">
