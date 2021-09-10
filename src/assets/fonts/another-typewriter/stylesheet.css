@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Another Typewriter';
     src: url('AnotherTypewriter.woff2') format('woff2'),
-        url('AnotherTypewriter.woff') format('woff');
+        url('AnotherTypewriter.woff') format('woff'),
+        url('atwriter.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

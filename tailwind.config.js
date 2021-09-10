@@ -26,7 +26,8 @@ module.exports = {
         flip: 'flip 1s linear 0s 1',
       },
       fontFamily: {
-        sans: ['Another Typewriter', 'sans-serif']
+        sans: ['Another Typewriter', 'sans-serif'],
+        atwriter: ['atwriter', 'sans-serif']
       },
       // ./images/Home/TopPaper.png
       screens: {

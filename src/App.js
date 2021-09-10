@@ -5,7 +5,8 @@ import SupportBanner from './assets/images/support/support-main.png'
 import WaitingTimeBanner from './assets/images/WaitingTime/banner.png'
 import YoutubeVideo from './pages/Video/index'
 import SupportMainSect from './pages/SupportMainSect'
-import WaitingTime from './pages/WaitingTime/WaitingTime'
+//import WaitingTime from './pages/WaitingTime/WaitingTime'
+import Meanwhile from './pages/WaitingTime/Meanwhile'
 
 import { Helmet } from 'react-helmet';
 
@@ -39,7 +40,7 @@ function App() {
             <title> Desplazados - Tiempo de Espera </title>
           </Helmet>
           <Section bannerLand={WaitingTimeBanner} >
-            <WaitingTime/>
+            <Meanwhile/>
           </Section>
         </Route>
         <Route exact path="/sueños">
