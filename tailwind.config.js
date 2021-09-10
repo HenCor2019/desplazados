@@ -66,9 +66,10 @@ module.exports = {
         '2xl-h': { raw: '(min-height: 1536px)' }
       },
       colors: {
-        background: '#e8e8e7',
-        time:'#b18422',
-        homeText: '#2a2c2b'
+        'time':'#b18422',
+        'homeText': '#2a2c2b',
+        'background': '#e8e8e7',
+        'navy-blue': '315d7b',
       },
       width: {
         160: '40rem',

@@ -1,14 +1,17 @@
 import Home from './pages/Home'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Section from './Components/Section/Section'
-import SupportBanner from './assets/images/support/support-main.png'
+
+import YoutubeVideo from './pages/Video/index'
+import SupportMainSect from './pages/Support/SupportMainSect'
+import Statistics from './pages/Support/Statistics'
+import StatisticsBanner from './assets/images/Support/Statistics/statistics-banner.png'
+import SupportBanner from './assets/images/Support/support-main.png'
 import WaitingTimeBanner from './assets/images/WaitingTime/banner.png'
 import WaitingTime from './pages/WaitingTime/WaitingTime'
 import Meanwhile from './pages/WaitingTime/Meanwhile'
 import CausesBanner from './assets/images/Causes/causes-banner.png'
 import CausesBannerText from './assets/images/Causes/green_banner_text.png'
-import YoutubeVideo from './pages/Video/index'
-import SupportMainSect from './pages/SupportMainSect'
 import CausesSect from './pages/Causes/index'
 import CausesGallery from './pages/Gallery/index'
 import WaitingTimeGallery  from './pages/WaitingTime/WaitingTimeGallery'
@@ -97,7 +100,15 @@ function App() {
             <title> Desplazados - En busca de apoyo </title>
           </Helmet>
           <Section bannerLand={SupportBanner}>
-            <SupportMainSect />
+            <SupportMainSect/>
+          </Section>
+        </Route>
+        <Route exact path="/apoyo/estadisticas">
+          <Helmet>
+            <title> Desplazados - Estadísticas </title>
+          </Helmet>
+          <Section bannerLand={StatisticsBanner}>
+            <Statistics/>
           </Section>
         </Route>
       </Switch>
