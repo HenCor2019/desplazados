@@ -14,6 +14,8 @@ import CausesBanner from './assets/images/Causes/causes-banner.png'
 import CausesBannerText from './assets/images/Causes/green_banner_text.png'
 import CausesSect from './pages/Causes/index'
 import CausesGallery from './pages/Gallery/index'
+import DreamsBanner from './assets/images/Dreams/dreams-banner.png'
+import Dreams from './pages/Dreams/index'
 import WaitingTimeGallery  from './pages/WaitingTime/WaitingTimeGallery'
 
 import { Helmet } from 'react-helmet'
@@ -91,8 +93,9 @@ function App() {
           <Helmet>
             <title> Desplazados - Los Sueños </title>
           </Helmet>
-          <Section />
-          <h2 className="mt-10">Los Sueños Page</h2>
+          <Section bannerLand={DreamsBanner}>
+            <Dreams />
+          </Section>
         </Route>
 
         <Route exact path="/apoyo">
