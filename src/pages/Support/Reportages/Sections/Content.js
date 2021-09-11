@@ -1,18 +1,18 @@
-import TitleDeco from '../../../assets/images/Support/Reportage/purple-paper-min.png'
 import Landscape from './Sections/Landscape/Landscape';
 import Portrait from './Sections/Portrait/Portrait';
 
 import { useConfigContext } from "../../../contexts/ConfigContext";
 
-const Reportages = () => {
+const Content = () => {
     const { isMobile } = useConfigContext();
     const { isTablet } = useConfigContext();
+    const { isMonitor } = useConfigContext();
     let reportage = null;
     
     if(isTablet || isMobile) {
         reportage = ( <Portrait /> )
     } 
-    else {
+    else if(isMonitor){
         reportage = ( <Landscape /> )
     }
 
