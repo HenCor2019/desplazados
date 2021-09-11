@@ -1,6 +1,6 @@
 const Section3 = () => {
     return (
-        <section className="mt-8 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-8">
+        <section className="mt-4 md:mt-8 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-8 p-4 mb-4 md:mb-0">
             <div>
                 <p className="font-acumin text-black-700 leading-5 text-justify">
                     Roberto no se quedó de brazos cruzados. Emprendió una búsqueda de apoyo. Fue a la alcaldía de su municipio, el edil aceptó ayudarles, pero los pandilleros al darse cuenta de esto, también lo amenazaron y este desistió por temor a represalias. Buscó ayuda en la Asamblea Legislativa, con un diputado que conocía desde hace mucho tiempo, pero tampoco encontró la respuesta que esperaba.
