@@ -7,8 +7,50 @@
   transform: scale(2.1);
 }
 
+.images-container {
+  grid-template-rows: masonry;
+  grid-auto-flow: dense;
+}
+
+.inner-grid {
+  grid-template-rows: masonry;
+  grid-auto-flow: dense;
+}
+
 @media (min-width: 768px) and (max-width: 1105px) {
   .lightbox-container:hover img {
     transform: scale(1.9);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 895px) {
+  .gallery-content img {
+    margin-top: 3.8rem;
+  }
+}
+
+@media (min-height: 700px) {
+  .gallery-content div {
+    transform: translate(-8rem, 0rem);
+  }
+}
+
+@media (min-height: 765px) {
+  .gallery-content div {
+    transform: translate(-6rem, 2rem);
+  }
+}
+
+@media (min-height: 1024px) {
+  .gallery-content div {
+    transform: translate(-12rem, 1.5rem);
+  }
+
+  .close-container {
+    transform: translateY(5rem);
+  }
+
+  .lightbox-image {
+    height: 75%;
   }
 }
