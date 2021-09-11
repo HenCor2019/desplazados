@@ -12,36 +12,59 @@ import Image7 from "../../assets/images/WaitingTime/gallery/Image7.png";
 import Image8 from "../../assets/images/WaitingTime/gallery/Image8.png";
 import Image9 from "../../assets/images/WaitingTime/gallery/Image9.png";
 import Image10 from "../../assets/images/WaitingTime/gallery/Image10.png";
+import Modal from "../../Components/Modal/Modal";
+import Lightbox from "../../Components/Lightbox/index";
 
 function WaitingTimeGallery() {
+  const [isActive, setIsActive] = useState(false)
+  const [activeImage, setActiveImage] = useState(galleryImage[0])
+
+  const handleOnClick = (imageInformation) => {
+    setIsActive(!isActive)
+    if (imageInformation) setActiveImage(imageInformation)
+  }
+
   return (
-    <div className=' grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-5 lg:grid-rows-4 gap-6 lg:gap-0'>
-      <div className={"px-4 flex justify-center items-center relative lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2"}>
-          <img className={"w-7/12"} src={Title} alt="La cotidianidad: la casa de espera y el albergue" />
-      </div>
-      {galleryImage.map((galleryImage) => (
-        <>
-          <Image
-            img={galleryImage.src}
-            alt={galleryImage.title}
-            position={galleryImage.imgPosition}
+    <>
+      {isActive && (
+        <Modal>
+          <Lightbox
+            content={activeImage}
+            handleOnClick={handleOnClick}
+            images={galleryImage}
           />
-          <Text 
-            title={galleryImage.title}
-            description={galleryImage.description}
-            author={galleryImage.author}
-          />
-        </>
-      ))}
-      <div className="bg-time order-5 sm:order-4 sm:bg-transparent lg:bg-white lg:col-start-4 lg:col-end-6 lg:row-start-4 lg:row-end-5">
-          <p className="text-sm text-justify text-white p-6 sm:text-black">
-            Al salir de casa, obligados por la violencia, las familias no pueden
-            llevar consigo muchas pertenencias. A veces se reubican por sus propios
-            medios, a veces es necesario un albergue. ¿Cómo es vivir, desde los ojos
-            de una niña o un niño, esta realidad?
-          </p>
+        </Modal>
+      )}
+      <div className=' grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-5 lg:grid-rows-4 gap-6 lg:gap-0'>
+        <div className={"px-4 flex justify-center items-center relative lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2"}>
+            <img className={"w-7/12"} src={Title} alt="La cotidianidad: la casa de espera y el albergue" />
+        </div>
+        {galleryImage.map((galleryImage) => (
+          <>
+            <Image
+              key={galleryImage.index}
+              img={galleryImage}
+              alt={galleryImage.title}
+              position={galleryImage.imgPosition}
+              onClick={handleOnClick}
+            />
+            <Text
+              title={galleryImage.title}
+              description={galleryImage.description}
+              author={galleryImage.author}
+            />
+          </>
+        ))}
+        <div className="bg-time order-5 sm:order-4 sm:bg-transparent lg:bg-white lg:col-start-4 lg:col-end-6 lg:row-start-4 lg:row-end-5">
+            <p className="text-sm text-justify text-white p-6 sm:text-black">
+              Al salir de casa, obligados por la violencia, las familias no pueden
+              llevar consigo muchas pertenencias. A veces se reubican por sus propios
+              medios, a veces es necesario un albergue. ¿Cómo es vivir, desde los ojos
+              de una niña o un niño, esta realidad?
+            </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

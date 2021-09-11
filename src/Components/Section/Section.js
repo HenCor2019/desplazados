@@ -1,6 +1,7 @@
-import useWindowDimensions from "../../Hooks/UseWindowsDimensions";
 import Landscape from "./Landscape/Landscape";
 import Portrait from "./Portrait/Portrait";
+
+import { useConfigContext } from "../../contexts/ConfigContext";
 
 const links = [
     { title: "Inicio", path: "/home" },
@@ -11,9 +12,7 @@ const links = [
 ];
 
 function Section({ children, bannerLand }) {
-    const dimensions = useWindowDimensions();
-
-    const isMobile = dimensions.width <= 768;
+    const { isMobile } = useConfigContext();
     let layout = null;
 
     if(isMobile){

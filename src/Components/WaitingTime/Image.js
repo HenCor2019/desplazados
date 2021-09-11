@@ -1,18 +1,21 @@
 import React from 'react';
 
+import Hoverable from '../../wrappers/Hoverable/Hoverable';
+
 const Image = ({ img, alt, grayscale, position, onMouseEnter, onMouseLeave, handleOnClick }) => (
-    <div className={`px-4 flex ${position}`}>
+    <Hoverable 
+        onHoverIn={onMouseEnter}
+        onHoverOut={onMouseLeave}
+        onClick={handleOnClick}
+        className={`px-4 flex ${position}`}>
         <img
             src={img}
             alt={alt}
             style={grayscale}
             className="w-9/12 sm:w-10/12 md:w-full lg:w-80 animate-flip"
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-            onClick={handleOnClick}
             loading={"lazy"}
         />
-    </div>
+    </Hoverable>
 );
 
 export default Image;
