@@ -1,6 +1,6 @@
 const Section1 = () => {
     return (
-        <section className="mt-8 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-8">
+        <section className="mt-2 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-8 p-4">
                 <div>
                     <p className="font-acumin text-gray-500 text-2xl mb-6">"Vos sabés como estamos en el país, podés investigar por tu propia cuenta y cuando sepás dónde está tu hijo, nos venís a decir para irlo a levantar"</p>
                     <p className="font-acumin text-black-700 leading-5 text-justify">

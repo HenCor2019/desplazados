@@ -2,7 +2,7 @@ import SimpleVideoPlayer from '../../../../Components/VideoPlayer/SimpleVideoPla
 
 const Section2 = () => {
     return (
-        <section className="h-full mt-8 lg:grid lg:grid-cols-3 lg:grids-rows-4 lg:grid-flow-col lg:gap-8 bg-brownie-gray p-6">
+        <section className="h-full mt-8 lg:grid lg:grid-cols-3 lg:grids-rows-4 lg:grid-flow-col lg:gap-8 bg-brownie-gray p-4">
             <div className="row-span-3">
                 <p className="font-acumin text-black-700 leading-5 text-justify">
                     El reconocimiento del desplazamiento forzado en El Salvador es reciente. En 2017, la Sala de lo Constitucional de la Corte Suprema de Justicia, emitió la sentencia 411 a favor de una familia que sufrió desplazamiento. Este caso fue acompañado por Cristosal, una organización que desde 2015 apoya a víctimas de este fenómeno.

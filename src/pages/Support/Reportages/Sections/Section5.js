@@ -1,6 +1,6 @@
 const Section5 = () => {
     return (
-        <section className="mt-8 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-8">
+        <section className="mt-8 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-8 p-4">
             <div>
                 <p className="font-acumin text-black-700 leading-5 text-justify">
                     Durante los 9 meses después de poner la denuncia, Jackeline, Roberto y sus hijos fueron acompañados por el psicólogo, abogada y trabajadora social. El IDHUCA les presentó opciones: reubicarlos en otro municipio o salir del país. La familia se decidió por la segunda. Durante este tiempo recopilaron todos los documentos que ampararan su caso. Al llegar al país de destino, solicitarían formalmente el asilo.
