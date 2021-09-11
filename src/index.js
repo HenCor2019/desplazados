@@ -5,10 +5,13 @@ import App from './App';
 //import Section from './Section';
 //import CausesDeco from './images/blue-deco.png';
 import reportWebVitals from './reportWebVitals';
+import { ConfigProvider } from './contexts/ConfigContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ConfigProvider>
+      <App />
+    </ConfigProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

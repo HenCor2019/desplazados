@@ -35,7 +35,7 @@ export default function Causes() {
   }
 
   return (
-    <main className={styles.mainContainer}>
+    <main className="p-0 h-full sm:h-3/5 w-full sm:w-5/6 md:w-full mx-auto md:h-2/3 lg:h-4/5 mt-9 md:mt-10 sm:justify-center sm:content-center lg:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 xl:p-14">
       <CauseImage
         rowspan={3}
         Image={Story}

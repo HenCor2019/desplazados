@@ -69,6 +69,7 @@ module.exports = {
         'homeText': '#2a2c2b',
         'background': '#e8e8e7',
         'gray-200': '#c5c5c5',
+        'brownie-gray': '#dddcdb',
         'black-700': '#444242',
         'brownie-gray': "#dddcdb",
         'gray-500': '#9a999e',
