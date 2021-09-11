@@ -2,7 +2,7 @@ import SimpleVideoPlayer from '../../../../Components/VideoPlayer/SimpleVideoPla
 
 const Section4 = () => {
     return (
-        <section className="h-full mt-8 lg:grid lg:grid-cols-3 lg:grids-rows-4 lg:grid-flow-col lg:gap-8 bg-brownie-gray p-4">
+        <section className="h-full mt-4 md:mt-8 lg:grid lg:grid-cols-3 lg:grids-rows-4 lg:grid-flow-col lg:gap-8 bg-brownie-gray p-4 mb-4 md:mb-0">
             <div className="row-span-3">
                 <p className="font-acumin text-black-700 leading-5 text-justify">
                     Los procesos de acompañamiento a víctimas de desplazamiento forzado han ido cambiando con los años. Cristosal, COMCAVIS-TRANS, SSPAS, la Iglesia Luterana y el IDHUCA sostienen que sus programas surgieron de manera progresiva. Algunas organizaciones comenzaron con proyectos sobre migración y retorno. Pero cada vez, de 2014 en adelante, fueron más frecuentes los casos de personas que buscaban protección frente a un persecutor que amenazaba su integridad física.
