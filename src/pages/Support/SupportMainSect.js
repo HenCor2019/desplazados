@@ -27,7 +27,8 @@ function SupportMainSect() {
 
     return (
         <main className="h-auto w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:grid-rows-min gap-4 p-0 md:p-8 lg:p-4">
-            <Link to="/conceptos" className="h-auto flex md:w-full items-center lg:items-end justify-start md:justify-center lg:justify-start p-4 md:p-0">
+            <Link to="/apoyo/conceptos" 
+            className="h-auto flex md:w-full items-center lg:items-end justify-start md:justify-center lg:justify-start p-4 md:p-0">
                 <img src={ Concepts } alt="Concepto" style={ style1 } className="animate-flip object-contain w-10/12 md:w-3/4 md:min-w-support-image cursor-pointer" onMouseEnter={() => setConceptsHover(true)} onMouseLeave={() => setConceptsHover(false)} loading="lazy" />
             </Link>
             <Link to="/apoyo/estadisticas" className="flex h-auto w-full justify-end md:items-center lg:items-start md:justify-center lg:justify-start lg:col-span-2 md:p-8 p-4">

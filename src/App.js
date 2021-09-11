@@ -8,6 +8,8 @@ import Statistics from './pages/Support/Statistics/Statistics'
 import StatisticsBanner from './assets/images/Support/Statistics/statistics-banner.png'
 import Reportages from './pages/Support/Reportages/Reportages'
 import ReportagesBanner from './assets/images/Support/Reportage/reportage-banner.png'
+import Concepts from './pages/Support/Concepts/Concepts'
+import ConceptsBanner from './assets/images/Support/Concepts/concepts-banner.png'
 import SupportBanner from './assets/images/Support/support-main.png'
 import WaitingTimeBanner from './assets/images/WaitingTime/banner.png'
 import WaitingTime from './pages/WaitingTime/WaitingTime'
@@ -115,6 +117,14 @@ function App() {
           </Helmet>
           <Section bannerLand={SupportBanner}>
             <SupportMainSect />
+          </Section>
+        </Route>
+        <Route exact path="/apoyo/conceptos">
+          <Helmet>
+            <title> Desplazados - Estadísticas </title>
+          </Helmet>
+          <Section bannerLand={ConceptsBanner}>
+            <Concepts />
           </Section>
         </Route>
         <Route exact path="/apoyo/estadisticas">
