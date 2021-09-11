@@ -5,17 +5,11 @@ import useOnClickOutside from "../../Hooks/UseOnClickOutside";
 
 import { useConfigContext } from '../../contexts/ConfigContext';
 
-const Hoverable = ({ children, onHoverIn, onHoverOut, onClick, ...rest }) => {
+const Hoverable = ({ onHoverIn=()=>{}, onHoverOut=()=>{}, onClick=()=>{}, HtmlTag="div",...rest }) => {
   const mainRef = useRef();
 
   const { isTouchable } = useConfigContext();
   const [isClicked, setIsClicked] = useState(false);
-
-  const isMobile = isTouchable 
-
-  useEffect(() => {
-    console.log("Cambie wey!", isTouchable);
-  }, [isTouchable])
 
   useEffect(()=> {
     if(isClicked) {
@@ -26,37 +20,36 @@ const Hoverable = ({ children, onHoverIn, onHoverOut, onClick, ...rest }) => {
   }, [isClicked]);
 
   useOnClickOutside(mainRef, ()=> {
-    isMobile && setIsClicked(false);
+    isTouchable && setIsClicked(false);
   });
 
   const onMouseEnterHandler = (e) => {
-    !isMobile  && onHoverIn();
+    !isTouchable  && onHoverIn();
   }
 
   const onMouseLeaveHandler = (e) => {
-    !isMobile  && onHoverOut();
+    !isTouchable  && onHoverOut();
   }
 
   const onClickHandler = (e) => {
-    if(!isMobile ) {
+    if(!isTouchable ) {
       onClick();
     } else {
       if(!isClicked) {
         setIsClicked(true);
       }else {
+        setIsClicked(false);
         onClick();
       }
     }
   }
 
   return(
-    <div ref={mainRef}
+    <HtmlTag ref={mainRef}
       {...rest}
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
-      onClick={onClickHandler}> 
-      { children }
-    </div>
+      onClick={onClickHandler}/>
   );
 }
 

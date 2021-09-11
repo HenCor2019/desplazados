@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Concepts from '../../assets/images/Support/concepts.png';
 import Report from '../../assets/images/Support/report.png';
 import Statistics from '../../assets/images/Support/statistics.png';
+import Hoverable from '../../wrappers/Hoverable/Hoverable';
 
 function SupportMainSect() {
+    const { push } = useHistory();
     const [isConceptsHover, setConceptsHover] = useState(false);
     const [isReportHover, setReportHover] = useState(false);
     const [isStatisticsHover, setStatisticsHover] = useState(false);
@@ -27,9 +29,17 @@ function SupportMainSect() {
 
     return (
         <main className="h-auto w-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:grid-rows-2 grid-rows-min gap-4 p-12 md:p-8 lg:p-4">
-            <Link to="/conceptos" className="h-auto flex w-full items-center lg:items-end justify-center lg:justify-start p-3 md:p-0">
-                <img src={ Concepts } alt="Concepto" style={ style1 } className="animate-flip object-contain w-full md:w-3/4 md:min-w-support-image cursor-pointer" onMouseEnter={() => setConceptsHover(true)} onMouseLeave={() => setConceptsHover(false)} loading="lazy" />
-            </Link>
+            <div to="/conceptos" className="h-auto flex w-full items-center lg:items-end justify-center lg:justify-start p-3 md:p-0">
+                <Hoverable src={ Concepts }
+                    HtmlTag="img" 
+                    alt="Concepto" 
+                    style={ style1 } 
+                    className="animate-flip object-contain w-full md:w-3/4 md:min-w-support-image cursor-pointer"
+                    onClick={()=> { push("/conceptos") }}
+                    onHoverIn={() => setConceptsHover(true)} 
+                    onHoverOut={() => setConceptsHover(false)} 
+                    loading="lazy" />
+            </div>
             <Link to="/apoyo/estadisticas" className="flex h-auto w-full items-center lg:items-start justify-center lg:justify-start lg:col-span-2 md:p-8 p-0">
                 <img src={ Statistics } alt="Estadísticas" style={ style2 } className="animate-flip object-contain w-full md:w-3/8 md:min-w-support-image cursor-pointer" onMouseEnter={() => setStatisticsHover(true)} onMouseLeave={() => setStatisticsHover(false)} loading="lazy"/>
             </Link>
