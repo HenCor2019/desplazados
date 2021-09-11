@@ -71,7 +71,7 @@ export const galleryPhotos = [
     description:
       '“El caracol aviador y el elefante volador son mejores amigos y viven juntos en las praderas de su casa”.',
     author: 'Marcos, 14 años de edad',
-    src: ImageFive,
+    src: ImageSix,
     index: 4
   },
 
@@ -80,7 +80,7 @@ export const galleryPhotos = [
     description:
       '“Este es mi Santa de papel, lo puse también para que decore nuestro árbol de navidad”.',
     author: 'Yoselin, 13 años de edad',
-    src: ImageSix,
+    src: ImageFive,
     index: 5
   },
 
