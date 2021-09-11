@@ -33,7 +33,9 @@ export default function Lightbox(props) {
         rotate="-rotate-180"
       />
 
-      <LightboxImage content={newImage} handleOnClick={handleOnClick} />
+      <div className="w-full flex items-center lg:justify-center lg:flex-row">
+        <LightboxImage content={newImage} handleOnClick={handleOnClick} />
+      </div>
 
       <Slide
         src={Button}

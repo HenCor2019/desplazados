@@ -12,3 +12,17 @@
     transform: scale(1.9);
   }
 }
+
+@media (min-height: 880px) {
+  .lightbox-card-message {
+    transform: translateY(0%);
+    height: 25%;
+  }
+}
+
+@media (min-height: 1024px) {
+  .lightbox-card-message {
+    transform: translateY(-90%);
+    height: 18%;
+  }
+}

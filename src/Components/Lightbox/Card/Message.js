@@ -1,19 +1,14 @@
 const styles = {
-  container:
-    'bg-white shadow-lg rounded-md p-4 mb-1 text-gray-700 hidden sm:flex flex-col justify-between items-start ml-0 sm:ml-4 transform sm:translate-x-3/4 w-3/5 sm:w-1/2 lg:w-1/2',
-  author: 'text-sm w-full text-right font-semibold',
-  title: 'text-base font-semibold whitespace-nowrap pb-4',
-  description: 'text-xs lg:text-sm pb-4'
+  author: 'text-sm w-full text-right font-semibold'
 }
 
 export default function CardMessage({ content }) {
-  console.log({ content })
   const { title, description, author } = content
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>{title}</h1>
-      <h2 className={styles.description}>{description}</h2>
-      <p className={styles.author}>{author}</p>
+    <div className="lightbox-card-message flex flex-col justify-between rounded-md bg-gray-50 shadow-lg text-gray-700 w-3/5 lg:w-2/5 lg:translate-x-1/2 md:h-1/3 self-end mb-6 py-2 pl-2 pr-5 absolute bottom-0 lg:right-0 transform translate-y-2/3 md:translate-y-1/3 lg:translate-y-0 md:pb-3">
+      <h1 className="text-base font-medium whitespace-nowrap pb-2">{title}</h1>
+      <h2 className="text-sm font-light pb-2">{description}</h2>
+      <p className="text-sm w-full text-right font-medium">{author}</p>
     </div>
   )
 }
