@@ -71,6 +71,7 @@ module.exports = {
         'gray-200': '#c5c5c5',
         'brownie-gray': '#dddcdb',
         'black-700': '#444242',
+        'brownie-gray': "#dddcdb",
         'gray-500': '#9a999e',
       },
       width: {

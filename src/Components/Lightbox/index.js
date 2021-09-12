@@ -24,7 +24,7 @@ export default function Lightbox(props) {
   }
 
   return (
-    <div className="lightbox w-full h-full flex justify-between lg:justify-around content-center sm:p-3">
+    <div className="lightbox w-full h-full flex justify-between lg:justify-around content-center z-40 sm:p-3">
       <Slide
         src={Button}
         alt="playbutton prev desplazados"

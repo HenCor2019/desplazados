@@ -3,7 +3,7 @@ import BurgerMenu from './BurgerMenu/BurgerMenu'
 const Portrait = ({ banner, links, children }) => {
   return (
     <div className="w-full min-h-screen">
-      <header className="w-full h-24 bg-red-600 sticky top-0 left-0 z-10">
+      <header className="w-full h-24 bg-red-600 sticky top-0 left-0 z-20">
         {/* Banner */}
         <BurgerMenu links={links} />
       </header>
@@ -14,4 +14,3 @@ const Portrait = ({ banner, links, children }) => {
 }
 
 export default Portrait
-
