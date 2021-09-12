@@ -9,22 +9,15 @@ import ImageEight from '../../assets/images/Causes/Gallery/8texto.png'
 import ImageNine from '../../assets/images/Causes/Gallery/9texto.png'
 import ImageTen from '../../assets/images/Causes/Gallery/10texto.png'
 
-import ThumbnailComic from '../../assets/images/Comic/thumbnail-comic.png'
-import ComicOne from '../../assets/images/Comic/1y2-09.png'
-import ComicTwo from '../../assets/images/Comic/1y2-10.png'
-import ComicThree from '../../assets/images/Comic/3-y-4-09.png'
-import ComicFour from '../../assets/images/Comic/3-y-4-10.png'
-import ComicFive from '../../assets/images/Comic/5y6-09.png'
-import ComicSix from '../../assets/images/Comic/5y6-10.png'
-import ComicSeven from '../../assets/images/Comic/7-y8-09.png'
-import ComicEight from '../../assets/images/Comic/7-y8-10.png'
-import ComicNine from '../../assets/images/Comic/9-y-10-09.png'
-import ComicTen from '../../assets/images/Comic/9-y-10-10.png'
-import ComicEleven from '../../assets/images/Comic/11-y12-09.png'
-import ComicTwelve from '../../assets/images/Comic/11-y12-10.png'
-import ComicThirteen from '../../assets/images/Comic/13-y-14-09.png'
-import ComicFourteen from '../../assets/images/Comic/13-y-14-10.png'
-import ComicFifteen from '../../assets/images/Comic/15-08.png'
+import ThumbnailComic from '../../assets/images/Comic/cover.png'
+import ComicOne from '../../assets/images/Comic/layer_1.png'
+import ComicTwo from '../../assets/images/Comic/layer_2.png'
+import ComicThree from '../../assets/images/Comic/layer_3.png'
+import ComicFour from '../../assets/images/Comic/layer_4.png'
+import ComicFive from '../../assets/images/Comic/layer_5.png'
+import ComicSix from '../../assets/images/Comic/layer_6.png'
+import ComicSeven from '../../assets/images/Comic/layer_7.png'
+import ComicEight from '../../assets/images/Comic/back.png'
 
 export const MESSAGE =
   'Responder la pregunta ¿por qué migramos? debería ser muy sencillo, porque es un derecho. Sin embargo, en El Salvador a veces es la única forma de preservar la vida.'
@@ -165,40 +158,7 @@ export const comicImages = [
   {
     index: 8,
     src: ComicEight
-  },
-
-  {
-    index: 9,
-    src: ComicNine
-  },
-
-  {
-    index: 10,
-    src: ComicTen
-  },
-
-  {
-    index: 11,
-    src: ComicEleven
-  },
-
-  {
-    index: 12,
-    src: ComicTwelve
-  },
-
-  {
-    index: 13,
-    src: ComicThirteen
-  },
-
-  {
-    index: 14,
-    src: ComicFourteen
-  },
-
-  {
-    index: 15,
-    src: ComicFifteen
   }
 ]
+
+export const smallImages = [1, 5, 8, 9]

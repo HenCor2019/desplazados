@@ -11,6 +11,7 @@ export default function LightboxImage({ content, handleOnClick }) {
         <CardImage
           src={content.src}
           alt={`image ${content.author} ${content.title}`}
+          index={content.index}
         />
         <CardMessage content={content} />
       </div>
