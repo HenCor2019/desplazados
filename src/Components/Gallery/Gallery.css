@@ -7,22 +7,32 @@
   transform: scale(2.1);
 }
 
+.images-container {
+  grid-template-rows: masonry;
+  grid-auto-flow: dense;
+}
+
+.inner-grid {
+  grid-template-rows: masonry;
+  grid-auto-flow: dense;
+}
+
 @media (min-width: 768px) and (max-width: 1105px) {
   .lightbox-container:hover img {
     transform: scale(1.9);
   }
 }
 
-@media (min-height: 880px) {
+@media (min-height: 768px) {
   .lightbox-card-message {
-    transform: translateY(0%);
+    transform: translateY(10%);
     height: 25%;
   }
 }
 
 @media (min-height: 1024px) {
   .lightbox-card-message {
-    transform: translateY(-90%);
+    transform: translateY(-50%);
     height: 18%;
   }
 }
