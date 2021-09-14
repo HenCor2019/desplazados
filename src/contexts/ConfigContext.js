@@ -41,7 +41,7 @@ export const ConfigProvider = (props) => {
     loading: loading,
     startLoading,
     stopLoading
-  }), [isMobile, loading, isTouchable]);
+  }), [isMobile, isTablet, isMonitor, loading, isTouchable]);
   
   return <ConfigContext.Provider value={ result } {...props}/>
 }
