@@ -53,6 +53,12 @@ module.exports = {
         acumin: ['Acumin Variable Concept', 'sans-serif'],
         crayon: ['Crayon Hand Regular', 'sans-serif']
       },
+      fontSize: {
+        'ultra-xs': '.5rem',
+      },
+      gridTemplateRows: {
+       'infographic': '50px 1fr',
+      },
       // ./images/Home/TopPaper.png
       screens: {
         'lg-1': '1280px',

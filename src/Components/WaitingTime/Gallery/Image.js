@@ -5,14 +5,14 @@ function Image({ img, alt, position, onClick }) {
 
   return (
     <div
-      className={`px-4 flex justify-center items-center ${position} relative order-5`}
+      className={`flex justify-center items-center ${position} relative order-5`}
       onMouseEnter={() => setIsImageHover(true)}
       onMouseLeave={() => setIsImageHover(false)}
       onClick = {() => onClick(img)}>
       <img
-        src={img.src}
+        src={img.thumbnail}
         alt={alt}
-        className='w-9/12 sm:w-10/12 md:w-full lg:w-80 object-contain w-full rounded-2xl'
+        className='object-contain min-w-0 min-h-0'
         loading={"lazy"}
       />
     </div>

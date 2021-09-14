@@ -1,22 +1,45 @@
 import React, { useState } from "react";
 
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import "../../assets/css/waitingTimeProcess/waitingTimeProcess.css";
+
+import Image1 from "../../assets/images/WaitingTime/infographic/1.png"
+import Image2 from "../../assets/images/WaitingTime/infographic/2.png"
+import Image3 from "../../assets/images/WaitingTime/infographic/3.png"
+import Image4 from "../../assets/images/WaitingTime/infographic/4.png"
+import Image5 from "../../assets/images/WaitingTime/infographic/5.png"
+
+import { LazySection } from "../../HOC/LazySection/LazySection";
+
 function WaitingTimeProcess(){
     return(
-        <>
-            <h1>Procesos que siguen las familias que viven desplazamiento forzado</h1>
-            <div className="grid grid-cols-1 grid-rows-2 bg-blue-500 rounded-t-lg">
-                <nav className="flex flex-row flex-wrap justify-around items-center rounded-t-lg">
-                    <div className="bg-red-700 p-4 w-1/5 text-center rounded-tl-lg">La familia de Andrés</div>
-                    <div className="bg-red-600 p-4 w-1/5 text-center">Búsqueda de ayuda</div>
-                    <div className="bg-red-500 p-4 w-1/5 text-center">Seguimiento</div>
-                    <div className="bg-red-400 p-4 w-1/5 text-center">Acompañamiento</div>
-                    <div className="bg-red-300 p-4 w-1/5 text-center rounded-tr-lg">Soluciones duraderas</div>
-                </nav>
-                <div>
-
-                </div>
+            <div className="flex justify-center items-center">
+                <Tabs className="react-tabs grid grid-cols-1 w-9/12">
+                    <TabList>
+                        <Tab className="familyText react-tabs__tab text-xs md:text-base">La familia de Andrés</Tab>
+                        <Tab className="searchText react-tabs__tab  text-xs md:text-base">Búsqueda de ayuda</Tab>
+                        <Tab className="trackingText react-tabs__tab  text-xs md:text-base">Seguimiento</Tab>
+                        <Tab className="accompanimentText react-tabs__tab  text-xs md:text-base">Acompañamiento</Tab>
+                        <Tab className="solutionsText react-tabs__tab">Soluciones duraderas</Tab>
+                    </TabList>
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content p-1">
+                        <img className="object-contain" src={Image5} />
+                    </TabPanel>
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content p-1">
+                        <img className="object-contain" src={Image4} />
+                    </TabPanel>
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content  p-1">
+                        <img className="object-contain" src={Image3} />
+                    </TabPanel>
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content  p-1">
+                        <img className="object-contain" src={Image2} />
+                    </TabPanel>
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content  p-1">
+                        <img className="object-contain" src={Image1} />
+                    </TabPanel>
+                </Tabs>
             </div>
-        </>
     );
 }
+
 export default WaitingTimeProcess;

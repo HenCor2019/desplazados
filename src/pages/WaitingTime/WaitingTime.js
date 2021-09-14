@@ -5,6 +5,8 @@ import galleryImg from "../../assets/images/WaitingTime/gallery.png";
 import meanwhileImg from "../../assets/images/WaitingTime/meanwhile.png";
 import { useHistory } from 'react-router-dom'
 
+import { LazySection } from "../../HOC/LazySection/LazySection";
+
 function WaitingTime() {
     const [isProcessHover, setProcessHover] = useState(false);
     const [isGalleryHover, setGalleryHover] = useState(false);
@@ -42,7 +44,7 @@ function WaitingTime() {
     }
 
     return (
-        <div className="sm:flex sm:min-w-0 sm:justify-center sm:items-center">
+        <div className="sm:flex sm:min-w-0 sm:justify-center sm:items-center h-full">
             <main className='grid grid-cols-1 grid-flow-row gap-4 h-full sm:grid-cols-2 md:gap-0'>
                 <Image
                     img={processImg}
@@ -63,7 +65,7 @@ function WaitingTime() {
                     position={"justify-end items-center sm:justify-center"}
                 />
                 <div className='bg-time order-1 text-white flex justify-center items-center sm:order-none sm:bg-transparent sm:text-black'>
-                    <p className='text-sm sm:text-base text-justify p-4 md:p-8 max-w-md'>
+                    <p className='text-sm sm:text-base text-justify leading-snug p-4 md:p-8 max-w-md'>
                         Luego de sufrir una ruptura en su proyecto de vida, algunas familias
                         buscan apoyo en organizaciones no gubernamentales, que han
                         desarrollado protocolos de atención a víctimas de desplazamiento
@@ -88,4 +90,4 @@ function WaitingTime() {
     );
 }
 
-export default WaitingTime;
+export default LazySection(WaitingTime);

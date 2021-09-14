@@ -1,0 +1,95 @@
+.react-tabs {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+    border: none;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.react-tabs__tab {
+    display: block;
+    border: none;
+    list-style: none;
+    cursor: pointer;
+    padding: 1rem;
+    margin:0;
+    border-radius: 0;
+    width: 100%;
+    height: 3.75rem;
+    text-align: center;
+    transition: ease-in-out 0.2s;
+    color: #fff;
+}
+
+.react-tabs__tab:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.react-tabs__tab--selected {
+    background: #000;
+    color: #fff;
+}
+
+.react-tabs__tab--selected:hover {
+    background: #fff;
+}
+
+.react-tabs__tab--disabled {
+    cursor: default;
+}
+
+.react-tabs__tab:focus {
+    border-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.react-tabs__tab:focus:after {
+    background: none;
+}
+
+.react-tabs__tab-panel {
+    display: none;
+}
+
+.react-tabs__tab-panel--selected {
+    display: block;
+}
+
+.familyText{
+    background-color: #f76b5c;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.searchText{
+    background-color: #3722ff;
+}
+
+.trackingText{
+    background-color: #2d0775;
+}
+
+.accompanimentText{
+    background-color: #ff8b1f;
+}
+
+.solutionsText{
+    background-color: #009bf9;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.image-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    width: 15%;
+    font-size: 1.1rem;
+    margin-right: 2px;
+}

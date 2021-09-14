@@ -87,7 +87,7 @@ function App() {
           </Helmet>
 
           <Section bannerLand={WaitingTimeBanner}>
-            <Meanwhile title="Hola" />
+            <Meanwhile />
           </Section>
         </Route>
 
