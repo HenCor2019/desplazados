@@ -17,7 +17,7 @@ const NotesImages = ({ content }) => {
 
     return (
         <div className={style}>
-            <img src={content.src} alt={content.alt}></img>
+            <img src={content.src} alt={content.alt} className="m-auto"></img>
         </div>
     )
 }
