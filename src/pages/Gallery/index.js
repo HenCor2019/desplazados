@@ -1,114 +1,132 @@
 import { useState } from 'react'
-import Aside from '../../Components/Gallery/Aside'
-import Header from '../../Components/Gallery/Header'
-import Images from '../../Components/Gallery/Images'
+import '../../Components/Gallery/Gallery.css'
 import Lightbox from '../../Components/Lightbox/index'
+import Image from '../../Components/Gallery/Image'
 import Modal from '../../Components/Modal/Modal'
 import { galleryPhotos } from '../../constants/FooterMessages'
-
-import '../../Components/Gallery/Gallery.css'
+import { useConfigContext } from '../../contexts/ConfigContext'
 
 export default function () {
+  const { isMobile } = useConfigContext()
   const [isActive, setIsActive] = useState(false)
   const [activePhoto, setActiveImage] = useState(galleryPhotos[0])
 
-  const handleOnClick = (imageInformation) => {
+  const onClickHandler = (imageInformation) => {
     setIsActive(!isActive)
     if (imageInformation) setActiveImage(imageInformation)
   }
 
   return (
     <>
-      {true && (
+      {!isMobile && isActive && (
         <Modal>
           <Lightbox
             current={activePhoto}
-            onClick={handleOnClick}
+            onClick={onClickHandler}
             images={galleryPhotos}
           />
         </Modal>
       )}
 
-      <div className="grid grid-cols-1 grid-flow-row sm:grid-cols-causesGallery gap-4">
-        <div className="bg-red-500 flex justify-center items-center text-justify p-8 lg:p-16 text-xs md:text-sm sm:col-start-1 sm:col-end-3 sm:row-start-1 sm:row-end-2 overflow-y-scrol order-5">
-          <p>
-            Ipsum officia praesentium tempore voluptatem facere perspiciatis?
-            Dolorem dolor distinctio mollitia quam consectetur Eius at quidem
-            dolor fugit pariatur. Maiores velit sunt ipsum ab repellat. Illo
-            reiciendis repellendus pariatur delectus quas Quam unde facilis
-            reiciendis.
-          </p>
-        </div>
-        <div className="bg-blue-500 sm:col-start-3 sm:col-end-5 sm:row-start-1 sm:row-end-2 order-5">
-          <img
-            src={galleryPhotos[0].src}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="bg-yellow-500 sm:col-start-5 sm:col-end-6 sm:row-start-1 sm:row-end-3 order-5">
-          <img
-            src={galleryPhotos[1].src}
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <div className="md:w-11/12 lg:w-3/4 m-auto md:mt-10 xl:mt-0 sm:p-5 md:p-0">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row md:grid-cols-causesGallery gap-2">
+          <div className="font-sans bg-gray-50 flex justify-center items-center text-justify p-6 xl:p-5 text-xs font-medium lg:text-sm text-gray-700 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 order-6 sm:order-1 md:order-5">
+            <p>
+              Niñas y niños de familias que han tenido que desplazarse por la
+              violencia que vive El Salvador cuentan que por medio de los
+              colores, plastilinas, collage y origami lo que han tenido que
+              dejar atras luego de salir de casa. Desde sus programas de
+              telesvisión, hasta sus amigos mas cercanos
+            </p>
+          </div>
 
-        <div className="bg-gray-500 sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-5 order-5">
-          <img
-            src={galleryPhotos[2].src}
-            className="w-full h-full object-cover"
+          <Image
+            content={galleryPhotos[0]}
+            onClick={onClickHandler}
+            cols={{ sm: [1, 2], md: [3, 5] }}
+            rows={{ sm: [1, 2], md: [1, 2] }}
+            isMobile={isMobile}
           />
-        </div>
-        <div className="bg-pink-500 sm:col-start-2 sm:col-end-4 sm:row-start-2 sm:row-end-4 order-5">
-          <img
-            src={galleryPhotos[3].src}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="bg-red-300 sm:col-start-4 sm:col-end-5 sm:row-start-2 sm:row-end-5 order-5">
-          <img
-            src={galleryPhotos[4].src}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="bg-green-300 sm:col-start-5 sm:col-end-6 sm:row-start-3 sm:row-end-5 order-5">
-          <p>
-            Ipsum officia praesentium tempore voluptatem facere perspiciatis?
-            Dolorem dolor distinctio mollitia quam consectetur Eius at quidem
-            dolor fugit pariatur. Maiores velit sunt ipsum ab repellat. Illo
-          </p>
-        </div>
 
-        <div className="bg-blue-300 sm:col-start-2 sm:col-end-4 sm:row-start-4 sm:row-end-5 order-5">
-          <img
-            src={galleryPhotos[5].src}
-            className="w-full h-full object-cover"
+          <Image
+            content={galleryPhotos[1]}
+            onClick={onClickHandler}
+            cols={{ md: [5, 6] }}
+            rows={{ md: [1, 3] }}
+            isMobile={isMobile}
           />
-        </div>
 
-        <div className="bg-yellow-300 sm:col-start-1 sm:col-end-2 sm:row-start-5 sm:row-end-6 order-5">
-          <img
-            src={galleryPhotos[6].src}
-            className="w-full h-full object-cover"
+          <Image
+            content={galleryPhotos[2]}
+            onClick={onClickHandler}
+            cols={{ md: [1, 2] }}
+            rows={{ md: [2, 5] }}
+            isMobile={isMobile}
           />
-        </div>
-        <div className="bg-gray-300 sm:col-start-2 sm:col-end-4 sm:row-start-5 sm:row-end-6 order-5">
-          <img
-            src={galleryPhotos[7].src}
-            className="w-full h-full object-cover"
+
+          <Image
+            content={galleryPhotos[3]}
+            onClick={onClickHandler}
+            cols={{ md: [2, 4] }}
+            rows={{ md: [2, 4] }}
+            isMobile={isMobile}
           />
-        </div>
-        <div className="bg-pink-300 sm:col-start-4 sm:col-end-5 sm:row-start-5 sm:row-end-6 order-5">
-          <img
-            src={galleryPhotos[8].src}
-            className="w-full h-full object-cover"
+
+          <Image
+            content={galleryPhotos[4]}
+            onClick={onClickHandler}
+            cols={{ md: [4, 5] }}
+            rows={{ md: [2, 5] }}
+            isMobile={isMobile}
           />
-        </div>
-        <div className="bg-pink-300 sm:col-start-5 sm:col-end-6 sm:row-start-5 sm:row-end-6 order-5">
-          <img
-            src={galleryPhotos[9].src}
-            className="w-full h-full object-cover"
+
+          <div className="bg-gray-50 font-sans text-gray-700 text-xs font-medium p-6 sm:px-2 sm:py-1 flex justify-center items-center content-center md:col-start-5 md:col-end-6 md:row-start-3 md:row-end-5 order-6 sm:order-2 md:order-5 text-justify">
+            <p>
+              La imaginación , la creatividad, el aprendizaje y las emociones
+              fueron las principales herramientas para elaborar cada producto
+            </p>
+          </div>
+
+          <Image
+            content={galleryPhotos[5]}
+            onClick={onClickHandler}
+            cols={{ md: [2, 4] }}
+            rows={{ md: [4, 5] }}
+            isMobile={isMobile}
           />
-        </div>
+
+          <Image
+            content={galleryPhotos[6]}
+            onClick={onClickHandler}
+            cols={{ md: [1, 2] }}
+            rows={{ md: [5, 6] }}
+            isMobile={isMobile}
+          />
+
+          <Image
+            content={galleryPhotos[7]}
+            onClick={onClickHandler}
+            cols={{ md: [2, 4] }}
+            rows={{ md: [5, 6] }}
+            isMobile={isMobile}
+          />
+
+          <Image
+            content={galleryPhotos[8]}
+            onClick={onClickHandler}
+            cols={{ md: [4, 5] }}
+            rows={{ md: [5, 6] }}
+            isMobile={isMobile}
+          />
+
+          <Image
+            content={galleryPhotos[9]}
+            onClick={onClickHandler}
+            cols={{ md: [5, 6] }}
+            rows={{ md: [5, 6] }}
+            isMobile={isMobile}
+          />
+        </ul>
       </div>
     </>
   )

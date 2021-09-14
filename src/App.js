@@ -130,7 +130,7 @@ function App() {
             <title> Desplazados - Reportajes </title>
           </Helmet>
           <Section bannerLand={ReportagesBanner}>
-            <Reportages/>
+            <Reportages />
           </Section>
         </Route>
       </Switch>
