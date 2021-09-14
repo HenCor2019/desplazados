@@ -22,7 +22,7 @@ export default function VideoLightbox({ video, onClick }) {
             <h1 className="text-center md:px-10 md:leading-normal text-sm md:text-lg bg-red-300 h-2/6 font-normal text-gray-800 w-full md:text-left transform -translate-y-1/3 flex justify-center items-center">
               {title}
             </h1>
-            <p className="w-full h-4/6 text-justify lg:pr-5 text-xs md:text-sm xl:text-base leading-tight">
+            <p className="w-full h-4/6 text-justify text-xs md:text-sm xl:text-base leading-tight">
               {description}
             </p>
           </div>
