@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 
-function Image({ img, alt, position, onClick }) {
+function Image({ img, alt, position, onClick, isMobile }) {
   const [isImageHover, setIsImageHover] = useState(false);
+
+  const source = isMobile ? img.src : img.thumbnail
 
   return (
     <div
-      className={`px-4 flex justify-center items-center ${position} relative order-5`}
+      className={`flex justify-center items-center ${position} relative order-5`}
       onMouseEnter={() => setIsImageHover(true)}
       onMouseLeave={() => setIsImageHover(false)}
       onClick = {() => onClick(img)}>
       <img
-        src={img.src}
+        src={source}
         alt={alt}
-        className='w-9/12 sm:w-10/12 md:w-full lg:w-80 object-contain w-full rounded-2xl'
+        className='object-contain min-w-0 min-h-0 p-4 sm:p-2'
         loading={"lazy"}
       />
     </div>

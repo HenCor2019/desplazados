@@ -2,22 +2,37 @@ import React, { useState } from "react";
 import Image from "../../Components/WaitingTime/Gallery/Image";
 import Text from "../../Components/WaitingTime/Gallery/Text";
 import Title from "../../assets/images/WaitingTime/gallery/Title.png"
-import Image1 from "../../assets/images/WaitingTime/gallery/Image1.png";
-import Image2 from "../../assets/images/WaitingTime/gallery/Image2.png";
-import Image3 from "../../assets/images/WaitingTime/gallery/Image3.png";
-import Image4 from "../../assets/images/WaitingTime/gallery/Image4.png";
-import Image5 from "../../assets/images/WaitingTime/gallery/Image5.png";
-import Image6 from "../../assets/images/WaitingTime/gallery/Image6.png";
-import Image7 from "../../assets/images/WaitingTime/gallery/Image7.png";
-import Image8 from "../../assets/images/WaitingTime/gallery/Image8.png";
-import Image9 from "../../assets/images/WaitingTime/gallery/Image9.png";
-import Image10 from "../../assets/images/WaitingTime/gallery/Image10.png";
+import Image1 from "../../assets/images/WaitingTime/thumbnail/1.png";
+import Image2 from "../../assets/images/WaitingTime/thumbnail/2.png";
+import Image3 from "../../assets/images/WaitingTime/thumbnail/3.png";
+import Image4 from "../../assets/images/WaitingTime/thumbnail/4.png";
+import Image5 from "../../assets/images/WaitingTime/thumbnail/5.png";
+import Image6 from "../../assets/images/WaitingTime/thumbnail/6.png";
+import Image7 from "../../assets/images/WaitingTime/thumbnail/7.png";
+import Image8 from "../../assets/images/WaitingTime/thumbnail/8.png";
+import Image9 from "../../assets/images/WaitingTime/thumbnail/9.png";
+import Image10 from "../../assets/images/WaitingTime/thumbnail/10.png";
+import ImageGallery1 from "../../assets/images/WaitingTime/gallery/Image1.png";
+import ImageGallery2 from "../../assets/images/WaitingTime/gallery/Image2.png";
+import ImageGallery3 from "../../assets/images/WaitingTime/gallery/Image3.png";
+import ImageGallery4 from "../../assets/images/WaitingTime/gallery/Image4.png";
+import ImageGallery5 from "../../assets/images/WaitingTime/gallery/Image5.png";
+import ImageGallery6 from "../../assets/images/WaitingTime/gallery/Image6.png";
+import ImageGallery7 from "../../assets/images/WaitingTime/gallery/Image7.png";
+import ImageGallery8 from "../../assets/images/WaitingTime/gallery/Image8.png";
+import ImageGallery9 from "../../assets/images/WaitingTime/gallery/Image9.png";
+import ImageGallery10 from "../../assets/images/WaitingTime/gallery/Image10.png";
 import Modal from "../../Components/Modal/Modal";
 import Lightbox from "../../Components/Lightbox/index";
+
+import { useConfigContext } from "../../contexts/ConfigContext";
+import { LazySection } from "../../HOC/LazySection/LazySection";
 
 function WaitingTimeGallery() {
   const [isActive, setIsActive] = useState(false)
   const [activeImage, setActiveImage] = useState(galleryImage[0])
+
+  const {isMobile, isTablet} = useConfigContext()
 
   const handleOnClick = (imageInformation) => {
     setIsActive(!isActive)
@@ -25,8 +40,8 @@ function WaitingTimeGallery() {
   }
 
   return (
-    <>
-      {isActive && (
+    <div className="sm:flex sm:min-w-0 sm:justify-center sm:items-center h-full">
+      {!isMobile && isActive && (
         <Modal>
           <Lightbox
             content={activeImage}
@@ -35,36 +50,41 @@ function WaitingTimeGallery() {
           />
         </Modal>
       )}
-      <div className=' grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-5 lg:grid-rows-4 gap-6 lg:gap-0'>
-        <div className={"px-4 flex justify-center items-center relative lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2"}>
-            <img className={"w-7/12"} src={Title} alt="La cotidianidad: la casa de espera y el albergue" />
+      <main className='flex flex-col'>
+        <div className="flex justify-center items-center py-6 lg:p-0 lg:justify-start lg:items-start">
+          <img className={"w-72 md:w-3/12"} src={Title} alt="La cotidianidad: la casa de espera y el albergue" />
         </div>
-        {galleryImage.map((galleryImage) => (
-          <>
-            <Image
-              key={galleryImage.index}
-              img={galleryImage}
-              alt={galleryImage.title}
-              position={galleryImage.imgPosition}
-              onClick={handleOnClick}
-            />
-            <Text
-              title={galleryImage.title}
-              description={galleryImage.description}
-              author={galleryImage.author}
-            />
-          </>
-        ))}
-        <div className="bg-time order-5 sm:order-4 sm:bg-transparent lg:bg-white lg:col-start-4 lg:col-end-6 lg:row-start-4 lg:row-end-5">
-            <p className="text-sm text-justify text-white p-6 sm:text-black">
-              Al salir de casa, obligados por la violencia, las familias no pueden
-              llevar consigo muchas pertenencias. A veces se reubican por sus propios
-              medios, a veces es necesario un albergue. ¿Cómo es vivir, desde los ojos
-              de una niña o un niño, esta realidad?
-            </p>
+        <div className="flex justify-center items-start">
+          <div className='grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 min-w-0 min-h-0 md:gap-y-4 gap-2'>
+            {galleryImage.map((galleryImage) => (
+              <>
+                <Image
+                  key={galleryImage.index}
+                  img={galleryImage}
+                  alt={galleryImage.title}
+                  position={galleryImage.imgPosition}
+                  onClick={handleOnClick}
+                  isMobile={isMobile}
+                />
+                {isTablet && <Text
+                  title={galleryImage.title}
+                  description={galleryImage.description}
+                  author={galleryImage.author}
+                />}
+              </>
+            ))}
+            <div className="bg-time order-5 sm:order-4 sm:col-start-1 sm:col-end-3 sm:bg-transparent lg:bg-white lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 overflow-auto">
+              <p className="text-xs lg:h-10 text-justify text-white p-4 md:p-0 lg:p-4 sm:text-black">
+                Al salir de casa, obligados por la violencia, las familias no pueden
+                llevar consigo muchas pertenencias. A veces se reubican por sus propios
+                medios, a veces es necesario un albergue. ¿Cómo es vivir, desde los ojos
+                de una niña o un niño, esta realidad?
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </>
+      </main>
+    </div>
   );
 }
 
@@ -73,9 +93,10 @@ const galleryImage = [
     title: "Pasos de colores",
     description:
       "“Estos son mis zapatos que uso todos los días para jugar en mi casa”.",
-    imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
+    imgPosition: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2",
     author: "Dani, 9 años de edad",
-    src: Image1,
+    thumbnail: Image1,
+    src: ImageGallery1,
     index: 0,
   },
   {
@@ -83,8 +104,9 @@ const galleryImage = [
     description:
       "“Esta es la olla donde mi mami nos hace sopa de pollo… le queda bien rica”.",
     author: "José, 14 años de edad",
-    imgPosition: "lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3",
-    src: Image2,
+    imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+    thumbnail: Image2,
+    src: ImageGallery2,
     index: 1,
   },
   {
@@ -92,8 +114,9 @@ const galleryImage = [
     description:
       "“Mi mamá me hace pan con huevo para desayunar, le pone salsa, huevo, queso y pan”.",
     author: "Flor, 10 años de edad",
-    imgPosition: "lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-3",
-    src: Image3,
+    imgPosition: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2",
+    thumbnail: Image3,
+    src: ImageGallery3,
     index: 2,
   },
   {
@@ -101,8 +124,9 @@ const galleryImage = [
     description:
       "“Con mi mamá nos pusimos a sembrar semillas de una papaya que había salido dulce y nació”.",
     author: "Alberto, 15 años de edad",
-    imgPosition: "lg:col-start-5 lg:col-end-6 lg:row-start-2 lg:row-end-3",
-    src: Image4,
+    imgPosition: "lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-2",
+    thumbnail: Image4,
+    src: ImageGallery4,
     index: 3,
   },
   {
@@ -110,8 +134,9 @@ const galleryImage = [
     description:
       "“Esta es la puerta de la casa donde vivimos, casi siempre la mantenemos cerrada”.",
     author: "Carlos, 13 años de edad",
-    imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4",
-    src: Image5,
+    imgPosition: "lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3",
+    thumbnail: Image5,
+    src: ImageGallery5,
     index: 4,
   },
   {
@@ -119,8 +144,9 @@ const galleryImage = [
     description:
       "“En el cuarto donde estamos solo cabe un camarote y el ropero, todos dormimos en el camarote, mi mamá, mi papá, mi hermana y yo, casi no hay espacio”.",
     author: "Carlos, 13 años de edad",
-    imgPosition: "lg:col-start-3 lg:col-end-4 lg:row-start-3 lg:row-end-4",
-    src: Image6,
+    imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
+    thumbnail: Image6,
+    src: ImageGallery6,
     index: 5,
   },
   {
@@ -128,8 +154,9 @@ const galleryImage = [
     description:
       "“Este me lo regaló mi abuelita, tiene muchos colores porque está feliz”.",
     author: "Valeria, 12 años de edad",
-    imgPosition: "lg:col-start-4 lg:col-end-5 lg:row-start-3 lg:row-end-4",
-    src: Image7,
+    imgPosition: "lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3",
+    thumbnail: Image7,
+    src: ImageGallery7,
     index: 6,
   },
   {
@@ -137,8 +164,9 @@ const galleryImage = [
     description:
       "“Este me lo regaló mi abuelita, tiene muchos colores porque está feliz”.",
     author: "Karla, 9 años de edad",
-    imgPosition: "lg:col-start-5 lg:col-end-6 lg:row-start-3 lg:row-end-4",
-    src: Image8,
+    imgPosition: "lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-3",
+    thumbnail: Image8,
+    src: ImageGallery8,
     index: 7,
   },
   {
@@ -146,8 +174,9 @@ const galleryImage = [
     description:
       "“Mi papá siempre nos dice que nos lavemos los dientes en la noche”.",
     author: "Jonathan, 11 años de edad",
-    imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-4 lg:row-end-5",
-    src: Image9,
+    imgPosition: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+    thumbnail: Image9,
+    src: ImageGallery9,
     index: 8,
   },
   {
@@ -155,10 +184,11 @@ const galleryImage = [
     description:
       "“A veces en las tardes sacamos la fruta que tenemos congelada en la refri y nos la comemos así, nos gusta la fruta congelada”.",
     author: "Camila, 13 años de edad",
-    imgPosition: "lg:col-start-3 lg:col-end-4 lg:row-start-4 lg:row-end-5",
-    src: Image10,
+    imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4",
+    thumbnail: Image10,
+    src: ImageGallery10,
     index: 9,
   },
 ];
 
-export default WaitingTimeGallery;
+export default LazySection(WaitingTimeGallery);

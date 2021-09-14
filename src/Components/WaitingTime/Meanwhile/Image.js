@@ -1,18 +1,36 @@
 import React, { useState } from "react";
 import playButton from "../../../assets/images/Video/playbutton.png";
 
-function Image({ img, alt, position }) {
-  const [isImageHover, setIsImageHover] = useState(false);
+function Image({ img, alt, position, isMobile }) {
+
+  const ComponentToShow = isMobile ? Video : ImageOfVideo;
 
   return (
+    <ComponentToShow img={img} alt={alt} position={position} />
+  );
+}
+function Video({img,alt,position}){
+  return(
+    <div className={`flex ${position} relative`}>
+      <iframe width="100%" height="100%" className="absolute inset-0"
+      src={img.Video}>
+      </iframe>
+    </div>
+  );
+}
+function ImageOfVideo({ img, alt, position}){
+  const [isImageHover, setIsImageHover] = useState(false);
+
+  return(
     <div
-      className={`px-4 flex ${position} relative`}
+      className={`flex ${position} relative`}
       onMouseEnter={() => setIsImageHover(true)}
       onMouseLeave={() => setIsImageHover(false)}>
+
       <img
         src={img}
         alt={alt}
-        className='w-9/12 sm:w-10/12 md:w-full lg:w-80 object-contain w-full'
+        className='w-9/12 md:w-full object-contain sm:w-10/12 md:w-full'
         loading={"lazy"}
       />
       {isImageHover && (
@@ -28,5 +46,6 @@ function Image({ img, alt, position }) {
     </div>
   );
 }
+
 
 export default Image;

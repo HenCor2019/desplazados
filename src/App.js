@@ -29,6 +29,7 @@ import DreamsPortBanner from './assets/images/Banners/Mobile/dreams-banner.png'
 import DreamsportBanner2 from './assets/images/Banners/Mobile/dreams.png'
 import Dreams from './pages/Dreams/index'
 import WaitingTimeGallery from './pages/WaitingTime/WaitingTimeGallery'
+import WaitingTimeProcess from './pages/WaitingTime/Process'
 
 import { Helmet } from 'react-helmet'
 import './assets/css/index.css'
@@ -107,6 +108,16 @@ function App() {
 
           <Section bannerLand={WaitingTimeBanner} bannerPort={WaitingPortBanner2}>
             <WaitingTimeGallery />
+          </Section>
+        </Route>
+
+        <Route exact path="/la-espera/process">
+          <Helmet>
+            <title> Desplazados - Procesos </title>
+          </Helmet>
+
+          <Section bannerLand={WaitingTimeBanner}>
+            <WaitingTimeProcess />
           </Section>
         </Route>
 

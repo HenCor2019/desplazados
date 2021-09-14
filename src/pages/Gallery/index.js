@@ -8,7 +8,9 @@ import { galleryPhotos } from '../../constants/FooterMessages'
 
 import '../../Components/Gallery/Gallery.css'
 
-export default function () {
+import { LazySection } from '../../HOC/LazySection/LazySection'
+
+export default LazySection (function () {
   const [isActive, setIsActive] = useState(false)
   const [activePhoto, setActiveImage] = useState(galleryPhotos[0])
 
@@ -45,4 +47,4 @@ export default function () {
       </div>
     </>
   )
-}
+})
