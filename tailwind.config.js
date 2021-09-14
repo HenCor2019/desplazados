@@ -75,7 +75,7 @@ module.exports = {
         'gray-500': '#9a999e',
       },
       width: {
-        160: '40rem',
+        '160': '40rem',
         '70/100': '70%',
         '55/100': '55%',
         '3/8': '37.5%'
@@ -95,12 +95,16 @@ module.exports = {
         '15/100': '15%',
         '1/4': '25%',
         '3/4': '75%',
-        section: '550px',
+        'section': '550px',
         'house-width': '300px',
         'support-image': '250px'
       },
       minHeight: {
-        20: '100px'
+        '20': '100px',
+        'half-screen':'50vh'
+      },
+      maxHeight: {
+        'nav': '12rem',
       },
       flex: {
         rigid: '1 0'

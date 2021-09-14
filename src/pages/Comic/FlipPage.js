@@ -1,7 +1,10 @@
 import FlipPage from 'react-flip-page'
 import { comicImages } from '../../constants/FooterMessages'
 
-export default function () {
+import { LazySection } from '../../HOC/LazySection/LazySection'
+
+
+const Comic = () => {
   return (
     <div className="w-full mt-10 sm:h-full md:h-5/6 flex justify-center items-center content-center">
       <FlipPage orientation="horizontal" animationDuration={500}>
@@ -20,3 +23,5 @@ export default function () {
     </div>
   )
 }
+
+export default LazySection(Comic)

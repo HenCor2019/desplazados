@@ -1,7 +1,9 @@
 import HTMLFlipBook from 'react-pageflip'
 import { comicImages } from '../../constants/FooterMessages'
 
-export default function Comic(props) {
+import { LazySection } from '../../HOC/LazySection/LazySection'
+
+function Comic(props) {
   return (
     <div className="w-full mt-1 sm:w-3/4 h-full md:h-1/2 mx-auto p-3 md:p-12">
       <HTMLFlipBook width={400} height={600} flippingTime={500}>
@@ -11,8 +13,8 @@ export default function Comic(props) {
               key={comic.index}
               src={comic.src}
               className="w-full h-full p-3 sm:p-0"
-              loading="lazy"
               alt=""
+              loading="lazy"
             />
           </div>
         ))}
@@ -20,3 +22,5 @@ export default function Comic(props) {
     </div>
   )
 }
+
+export default LazySection(Comic)

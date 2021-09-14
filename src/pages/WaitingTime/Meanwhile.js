@@ -10,6 +10,8 @@ import image5 from "../../assets/images/Meanwhile/Image5.png";
 import theme from "../../assets/images/Meanwhile/Theme.png";
 import Modal from "../../Components/Modal/Modal";
 
+import {LazySection} from "../../HOC/LazySection/LazySection";
+
 function WaitingTime() {
   const [isActive, setIsActive] = useState(false);
   const [activeVideo, setActiveVideo] = useState(galleryVideos[0]);
@@ -118,11 +120,11 @@ const galleryVideos = [
     video: "https://youtu.be/aL4qJjWPjn8",
     img: image5,
     imgPosition:
-      "justify-center items-center order-5 lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4 lg:pt-4",
+      "justify-center items-center order-5 lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4 2xl:pt-4",
     textPosition: "justify-center items-center order-5",
     textVisibility: "lg:hidden",
     index: 4,
   },
 ];
 
-export default WaitingTime;
+export default LazySection(WaitingTime);
