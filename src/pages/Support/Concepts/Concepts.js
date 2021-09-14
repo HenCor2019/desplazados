@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Title from '../../../assets/images/Support/Concepts/concepts-title.png'
 
-const pStyle = "font-crayon py-1.5 px-4.5"
+const pStyle = "font-crayon py-2 px-4.5"
 
 const Concepts = () => {
     const [isConceptsHover, setConceptsHover] = useState(false);

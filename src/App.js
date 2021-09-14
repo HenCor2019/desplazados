@@ -11,14 +11,18 @@ import ReportagesBanner from './assets/images/Support/Reportage/reportage-banner
 import Concepts from './pages/Support/Concepts/Concepts'
 import ConceptsBanner from './assets/images/Support/Concepts/concepts-banner.png'
 import SupportBanner from './assets/images/Support/support-main.png'
+import SupportPortBanner from './assets/images/Banners/Mobile/support-banner.png'
 import WaitingTimeBanner from './assets/images/WaitingTime/banner.png'
+import WaitingPortBanner from './assets/images/Banners/Mobile/waiting-banner.png'
 import WaitingTime from './pages/WaitingTime/WaitingTime'
 import Meanwhile from './pages/WaitingTime/Meanwhile'
 import CausesBanner from './assets/images/Causes/causes-banner.png'
+import CausesPortBanner from './assets/images/Banners/Mobile/causes-banner.png'
 import CausesBannerText from './assets/images/Causes/green_banner_text.png'
 import CausesSect from './pages/Causes/index'
 import CausesGallery from './pages/Gallery/index'
 import DreamsBanner from './assets/images/Dreams/dreams-banner.png'
+import DreamsPortBanner from './assets/images/Banners/Mobile/dreams-banner.png'
 import Dreams from './pages/Dreams/index'
 import WaitingTimeGallery from './pages/WaitingTime/WaitingTimeGallery'
 
@@ -49,7 +53,7 @@ function App() {
             <title> Desplazados - Causas </title>
           </Helmet>
 
-          <Section bannerLand={CausesBanner}>
+          <Section bannerLand={CausesBanner} bannerPort={CausesPortBanner}>
             <CausesSect />
           </Section>
         </Route>
@@ -77,7 +81,7 @@ function App() {
           <Helmet>
             <title> Desplazados - Tiempo de Espera </title>
           </Helmet>
-          <Section bannerLand={WaitingTimeBanner}>
+          <Section bannerLand={WaitingTimeBanner} bannerPort={WaitingPortBanner}>
             <WaitingTime />
           </Section>
         </Route>
@@ -106,7 +110,7 @@ function App() {
           <Helmet>
             <title> Desplazados - Los Sueños </title>
           </Helmet>
-          <Section bannerLand={DreamsBanner}>
+          <Section bannerLand={DreamsBanner} bannerPort={DreamsPortBanner}>
             <Dreams />
           </Section>
         </Route>
@@ -115,7 +119,7 @@ function App() {
           <Helmet>
             <title> Desplazados - En busca de apoyo </title>
           </Helmet>
-          <Section bannerLand={SupportBanner}>
+          <Section bannerLand={SupportBanner} bannerPort={SupportPortBanner}>
             <SupportMainSect />
           </Section>
         </Route>

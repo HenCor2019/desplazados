@@ -11,14 +11,15 @@ const links = [
     { title: "En busca de apoyo", path: "/apoyo" },
 ];
 
-function Section({ children, bannerLand }) {
+function Section({ children, bannerLand, bannerPort }) {
     const { isMobile } = useConfigContext();
     let layout = null;
 
     if(isMobile){
         layout = (
             <Portrait
-                links = {links}>
+                links = {links}
+                banner={ bannerPort } >
 
                 { children }
 
