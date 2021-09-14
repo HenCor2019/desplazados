@@ -13,7 +13,9 @@
   flex-direction: column;
   justify-content: space-around;
 
-  z-index: 101;
+  position: relative;
+
+  z-index: 110;
   cursor: pointer;
   pointer-events: all;
 
