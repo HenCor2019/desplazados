@@ -7,8 +7,8 @@ export default function () {
       <FlipPage
         orientation="horizontal"
         animationDuration={500}
-        width={460}
-        height={510}
+        width={440}
+        height={530}
       >
         {comicImages.map((comic) => (
           <div key={comic.index} className="w-full h-full bg-gray-200">

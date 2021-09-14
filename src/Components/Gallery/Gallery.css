@@ -23,6 +23,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .grid-container {
+    width: 70%;
+  }
+}
+
 @media (min-height: 768px) {
   .lightbox-card-message {
     transform: translateY(10%);

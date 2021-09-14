@@ -28,7 +28,7 @@ export default function () {
         </Modal>
       )}
 
-      <div className="md:w-11/12 lg:w-3/4 m-auto md:mt-10 xl:mt-0 sm:p-5 md:p-0">
+      <div className="md:w-11/12 lg:w-3/4 m-auto md:mt-10 xl:mt-0 sm:p-5 md:p-0 lg:pb-1">
         <ul className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row md:grid-cols-causesGallery gap-2">
           <div className="font-sans bg-gray-50 flex justify-center items-center text-justify p-6 xl:p-5 text-xs font-medium lg:text-sm text-gray-700 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 order-6 sm:order-1 md:order-5">
             <p>
@@ -43,7 +43,7 @@ export default function () {
           <Image
             content={galleryPhotos[0]}
             onClick={onClickHandler}
-            cols={{ sm: [1, 2], md: [3, 5] }}
+            cols={{ sm: [1, 3], md: [3, 5] }}
             rows={{ sm: [1, 2], md: [1, 2] }}
             isMobile={isMobile}
           />
