@@ -44,8 +44,8 @@ function WaitingTimeGallery() {
       {!isMobile && isActive && (
         <Modal>
           <Lightbox
-            content={activeImage}
-            handleOnClick={handleOnClick}
+            current={activeImage}
+            onClick={handleOnClick}
             images={galleryImage}
           />
         </Modal>
@@ -66,7 +66,7 @@ function WaitingTimeGallery() {
                   onClick={handleOnClick}
                   isMobile={isMobile}
                 />
-                {isTablet && <Text
+                {isTablet || isMobile && <Text
                   title={galleryImage.title}
                   description={galleryImage.description}
                   author={galleryImage.author}
@@ -176,7 +176,7 @@ const galleryImage = [
     author: "Jonathan, 11 años de edad",
     imgPosition: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
     thumbnail: Image9,
-    src: ImageGallery9,
+    src: ImageGallery10,
     index: 8,
   },
   {
@@ -186,7 +186,7 @@ const galleryImage = [
     author: "Camila, 13 años de edad",
     imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4",
     thumbnail: Image10,
-    src: ImageGallery10,
+    src: ImageGallery9,
     index: 9,
   },
 ];

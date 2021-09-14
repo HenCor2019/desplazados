@@ -14,7 +14,7 @@ import { LazySection } from "../../HOC/LazySection/LazySection";
 function WaitingTimeProcess(){
     return(
             <div className="flex justify-center items-center">
-                <Tabs className="react-tabs flex flex-col w-9/12 gap-4">
+                <Tabs className="react-tabs flex flex-col w-9/12">
                     <TabList>
                         <Tab className="familyText react-tabs__tab text-xs md:text-base">La familia de Andrés</Tab>
                         <Tab className="searchText react-tabs__tab  text-xs md:text-base">Búsqueda de ayuda</Tab>

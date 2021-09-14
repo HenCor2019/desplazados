@@ -21,7 +21,7 @@ const Concepts = () => {
                 className="w-64 md:w-72 lg:w-80 block mb-2"
                 alt="Conceptos: Para conocer mejor"
             />
-            <ul className="md:flex md:flex-wrap md:justify-evenly p-2">
+            <ul className="md:flex md:flex-wrap md:items-center md:content-center md:justify-evenly p-2">
 
                 {concepts.map((concept) => (
                     <Concept 
