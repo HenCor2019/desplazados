@@ -1,30 +1,34 @@
-import ImageOne from '../../images/Gallery/1-.png'
-import ImageTwo from '../../images/Gallery/2-.png'
-import ImageThree from '../../images/Gallery/3-.png'
-import ImageFour from '../../images/Gallery/4-.png'
-import ImageFive from '../../images/Gallery/5-.png'
-import ImageSix from '../../images/Gallery/6-.png'
-import ImageSeven from '../../images/Gallery/7-.png'
-import ImageEight from '../../images/Gallery/8-.png'
-import ImageNine from '../../images/Gallery/9-.png'
-import ImageTen from '../../images/Gallery/10-.png'
+import ThumbnailOne from '../../assets/images/Causes/Gallery/1causas.png'
+import ThumbnailTwo from '../../assets/images/Causes/Gallery/2causas.png'
+import ThumbnailThree from '../../assets/images/Causes/Gallery/3causas.png'
+import ThumbnailFour from '../../assets/images/Causes/Gallery/4causas.png'
+import ThumbnailFive from '../../assets/images/Causes/Gallery/5causas.png'
+import ThumbnailSix from '../../assets/images/Causes/Gallery/6causas.png'
+import ThumbnailSeven from '../../assets/images/Causes/Gallery/7causas.png'
+import ThumbnailEight from '../../assets/images/Causes/Gallery/8causas.png'
+import ThumbnailNine from '../../assets/images/Causes/Gallery/9causas.png'
+import ThumbnailTen from '../../assets/images/Causes/Gallery/10causas.png'
 
-import ThumbnailComic from '../../assets/images/Comic/thumbnail-comic.png'
-import ComicOne from '../../assets/images/Comic/1y2-09.png'
-import ComicTwo from '../../assets/images/Comic/1y2-10.png'
-import ComicThree from '../../assets/images/Comic/3-y-4-09.png'
-import ComicFour from '../../assets/images/Comic/3-y-4-10.png'
-import ComicFive from '../../assets/images/Comic/5y6-09.png'
-import ComicSix from '../../assets/images/Comic/5y6-10.png'
-import ComicSeven from '../../assets/images/Comic/7-y8-09.png'
-import ComicEight from '../../assets/images/Comic/7-y8-10.png'
-import ComicNine from '../../assets/images/Comic/9-y-10-09.png'
-import ComicTen from '../../assets/images/Comic/9-y-10-10.png'
-import ComicEleven from '../../assets/images/Comic/11-y12-09.png'
-import ComicTwelve from '../../assets/images/Comic/11-y12-10.png'
-import ComicThirteen from '../../assets/images/Comic/13-y-14-09.png'
-import ComicFourteen from '../../assets/images/Comic/13-y-14-10.png'
-import ComicFifteen from '../../assets/images/Comic/15-08.png'
+import ImageOne from '../../assets/images/Causes/Gallery/1texto.png'
+import ImageTwo from '../../assets/images/Causes/Gallery/2texto.png'
+import ImageThree from '../../assets/images/Causes/Gallery/3texto.png'
+import ImageFour from '../../assets/images/Causes/Gallery/4texto.png'
+import ImageFive from '../../assets/images/Causes/Gallery/5texto.png'
+import ImageSix from '../../assets/images/Causes/Gallery/6texto.png'
+import ImageSeven from '../../assets/images/Causes/Gallery/7texto.png'
+import ImageEight from '../../assets/images/Causes/Gallery/8texto.png'
+import ImageNine from '../../assets/images/Causes/Gallery/9texto.png'
+import ImageTen from '../../assets/images/Causes/Gallery/10texto.png'
+
+import ThumbnailComic from '../../assets/images/Comic/cover.png'
+import ComicOne from '../../assets/images/Comic/layer_1.png'
+import ComicTwo from '../../assets/images/Comic/layer_2.png'
+import ComicThree from '../../assets/images/Comic/layer_3.png'
+import ComicFour from '../../assets/images/Comic/layer_4.png'
+import ComicFive from '../../assets/images/Comic/layer_5.png'
+import ComicSix from '../../assets/images/Comic/layer_6.png'
+import ComicSeven from '../../assets/images/Comic/layer_7.png'
+import ComicEight from '../../assets/images/Comic/back.png'
 
 export const MESSAGE =
   'Responder la pregunta ¿por qué migramos? debería ser muy sencillo, porque es un derecho. Sin embargo, en El Salvador a veces es la única forma de preservar la vida.'
@@ -36,6 +40,7 @@ export const galleryPhotos = [
       '“Mi gato se llama Jack, todas las mañanas despierta muy hambriento y sediento. Luego va a divertirse en su caja de arena”.',
     author: 'Karla, 8 años de edad ',
     src: ImageOne,
+    thumbnail: ThumbnailOne,
     index: 0
   },
 
@@ -45,6 +50,7 @@ export const galleryPhotos = [
       '“A mi y a mi hermanita nos gusta ver todas las tardes los BT21 (serie animada).  Tata es mi personaje favorito y el conejo Cooky es el de mi hermana… ahora, con estos vamos a jugar”',
     author: 'Karla, 8 años de edad ',
     src: ImageTwo,
+    thumbnail: ThumbnailTwo,
     index: 1
   },
 
@@ -54,6 +60,7 @@ export const galleryPhotos = [
       '“Siempre me han gustado los lobos, por el pelo y porque siempre andan en manada. Ami hermano le gustan los zorros. Ahí se encuentran conviviendo en el bosque”.',
     author: 'Milton y Jacob, 8 y 16 años de edad',
     src: ImageThree,
+    thumbnail: ThumbnailThree,
     index: 2
   },
 
@@ -63,6 +70,7 @@ export const galleryPhotos = [
       '“Mi momento preferido del día es cuando llueve, truena y sale el sol”.',
     author: 'Mayra, 15 años de edad',
     src: ImageFour,
+    thumbnail: ThumbnailFour,
     index: 3
   },
 
@@ -71,7 +79,8 @@ export const galleryPhotos = [
     description:
       '“El caracol aviador y el elefante volador son mejores amigos y viven juntos en las praderas de su casa”.',
     author: 'Marcos, 14 años de edad',
-    src: ImageFive,
+    src: ImageSix,
+    thumbnail: ThumbnailSix,
     index: 4
   },
 
@@ -80,7 +89,8 @@ export const galleryPhotos = [
     description:
       '“Este es mi Santa de papel, lo puse también para que decore nuestro árbol de navidad”.',
     author: 'Yoselin, 13 años de edad',
-    src: ImageSix,
+    src: ImageFive,
+    thumbnail: ThumbnailFive,
     index: 5
   },
 
@@ -90,6 +100,7 @@ export const galleryPhotos = [
       '“Este es mi Santa de papel, lo puse también para que decore nuestro árbol de navidad”.',
     author: 'Yoselin, 13 años de edad',
     src: ImageSeven,
+    thumbnail: ThumbnailSeven,
     index: 6
   },
 
@@ -99,6 +110,7 @@ export const galleryPhotos = [
       '“El gatito Lex, el Perrito Fili, la patita Lola y el zorro Pepe son una familia feliz y juegan todos los días”.',
     author: 'Yesi, 8 años de edad',
     src: ImageEight,
+    thumbnail: ThumbnailEight,
     index: 7
   },
 
@@ -108,6 +120,7 @@ export const galleryPhotos = [
       '“Hice una carta de rollitos de papel que forman un corazón para entregársela a mi mamá en este día tan especial”.',
     author: 'Jeni, 13 años de edad',
     src: ImageNine,
+    thumbnail: ThumbnailNine,
     index: 8
   },
 
@@ -117,6 +130,7 @@ export const galleryPhotos = [
       '“Me gusta  el parque, que tenga un árbol de manzana, flores, el sol y las nubes… ella es mi mamá”.',
     author: 'Clari, 8 años de edad',
     src: ImageTen,
+    thumbnail: ThumbnailTen,
     index: 9
   }
 ]
@@ -165,40 +179,7 @@ export const comicImages = [
   {
     index: 8,
     src: ComicEight
-  },
-
-  {
-    index: 9,
-    src: ComicNine
-  },
-
-  {
-    index: 10,
-    src: ComicTen
-  },
-
-  {
-    index: 11,
-    src: ComicEleven
-  },
-
-  {
-    index: 12,
-    src: ComicTwelve
-  },
-
-  {
-    index: 13,
-    src: ComicThirteen
-  },
-
-  {
-    index: 14,
-    src: ComicFourteen
-  },
-
-  {
-    index: 15,
-    src: ComicFifteen
   }
 ]
+
+export const smallImages = [1, 4, 8, 9]

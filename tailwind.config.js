@@ -114,6 +114,12 @@ module.exports = {
       },
       flex: {
         rigid: '1 0'
+      },
+      gridTemplateColumns: {
+       'causesGallery': '33fr 22fr 5fr 18fr 22fr',
+      },
+      gridTemplateRows: {
+       'causesGallery': '34% 11% 11% 15% 24%',
       }
     }
   },

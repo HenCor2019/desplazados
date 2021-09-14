@@ -7,8 +7,38 @@
   transform: scale(2.1);
 }
 
+.images-container {
+  grid-template-rows: masonry;
+  grid-auto-flow: dense;
+}
+
+.inner-grid {
+  grid-template-rows: masonry;
+  grid-auto-flow: dense;
+}
+
 @media (min-width: 768px) and (max-width: 1105px) {
   .lightbox-container:hover img {
     transform: scale(1.9);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    width: 70%;
+  }
+}
+
+@media (min-height: 768px) {
+  .lightbox-card-message {
+    transform: translateY(10%);
+    height: 25%;
+  }
+}
+
+@media (min-height: 1024px) {
+  .lightbox-card-message {
+    transform: translateY(-50%);
+    height: 18%;
   }
 }
