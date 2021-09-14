@@ -19,6 +19,7 @@ import CausesGallery from './pages/Gallery/index'
 import DreamsBanner from './assets/images/Dreams/dreams-banner.png'
 import Dreams from './pages/Dreams/index'
 import WaitingTimeGallery from './pages/WaitingTime/WaitingTimeGallery'
+import WaitingTimeProcess from './pages/WaitingTime/Process'
 
 import { Helmet } from 'react-helmet'
 import './assets/css/index.css'
@@ -97,6 +98,16 @@ function App() {
 
           <Section bannerLand={WaitingTimeBanner}>
             <WaitingTimeGallery />
+          </Section>
+        </Route>
+
+        <Route exact path="/la-espera/process">
+          <Helmet>
+            <title> Desplazados - Procesos </title>
+          </Helmet>
+
+          <Section bannerLand={WaitingTimeBanner}>
+            <WaitingTimeProcess />
           </Section>
         </Route>
 

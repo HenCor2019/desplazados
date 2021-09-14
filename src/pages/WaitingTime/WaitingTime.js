@@ -30,7 +30,7 @@ function WaitingTime() {
     }
 
     const handleOnProcess = () => {
-        push('/la-espera/meanwhile')
+        push('/la-espera/process')
     }
 
     const handleOnGallery = () => {

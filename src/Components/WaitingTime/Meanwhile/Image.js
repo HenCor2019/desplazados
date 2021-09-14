@@ -6,13 +6,13 @@ function Image({ img, alt, position }) {
 
   return (
     <div
-      className={`px-4 flex ${position} relative`}
+      className={`flex ${position} relative`}
       onMouseEnter={() => setIsImageHover(true)}
       onMouseLeave={() => setIsImageHover(false)}>
       <img
         src={img}
         alt={alt}
-        className='w-9/12 sm:w-10/12 md:w-full lg:w-80 object-contain w-full'
+        className='w-9/12 md:w-full object-contain sm:w-10/12 md:w-full'
         loading={"lazy"}
       />
       {isImageHover && (
