@@ -7,6 +7,8 @@ const ConfigContext = React.createContext();
 
 export const ConfigProvider = (props) => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+  const [isMonitor, setIsMonitor] = useState(false);
   const [isTouchable, setIsTouchable] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -14,6 +16,8 @@ export const ConfigProvider = (props) => {
 
   useEffect(()=> {
     setIsMobile(width <= 768);
+    setIsTablet(width > 768 && width <= 1024);
+    setIsMonitor(width > 1024);
   }, [width]);
 
   useEffect(()=> {
@@ -33,10 +37,12 @@ export const ConfigProvider = (props) => {
   const result = useMemo(()=> ({
     isMobile: isMobile,
     isTouchable: isTouchable,
+    isTablet: isTablet,
+    isMonitor: isMonitor,
     loading: loading,
     startLoading,
     stopLoading
-  }), [isMobile, loading, isTouchable]);
+  }), [isMobile, isTablet, isMonitor, loading, isTouchable]);
   
   return <ConfigContext.Provider value={ result } {...props}/>
 }
