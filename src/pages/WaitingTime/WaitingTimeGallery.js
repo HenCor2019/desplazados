@@ -25,11 +25,14 @@ import ImageGallery10 from "../../assets/images/WaitingTime/gallery/Image10.png"
 import Modal from "../../Components/Modal/Modal";
 import Lightbox from "../../Components/Lightbox/index";
 
+import { useConfigContext } from "../../contexts/ConfigContext";
 import { LazySection } from "../../HOC/LazySection/LazySection";
 
 function WaitingTimeGallery() {
   const [isActive, setIsActive] = useState(false)
   const [activeImage, setActiveImage] = useState(galleryImage[0])
+
+  const {isMobile, isTablet} = useConfigContext()
 
   const handleOnClick = (imageInformation) => {
     setIsActive(!isActive)
@@ -38,7 +41,7 @@ function WaitingTimeGallery() {
 
   return (
     <div className="sm:flex sm:min-w-0 sm:justify-center sm:items-center h-full">
-      {isActive && (
+      {!isMobile && isActive && (
         <Modal>
           <Lightbox
             content={activeImage}
@@ -61,12 +64,13 @@ function WaitingTimeGallery() {
                   alt={galleryImage.title}
                   position={galleryImage.imgPosition}
                   onClick={handleOnClick}
+                  isMobile={isMobile}
                 />
-                <Text
+                {isTablet && <Text
                   title={galleryImage.title}
                   description={galleryImage.description}
                   author={galleryImage.author}
-                />
+                />}
               </>
             ))}
             <div className="bg-time order-5 sm:order-4 sm:col-start-1 sm:col-end-3 sm:bg-transparent lg:bg-white lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 overflow-auto">

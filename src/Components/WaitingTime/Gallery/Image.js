@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
-function Image({ img, alt, position, onClick }) {
+function Image({ img, alt, position, onClick, isMobile }) {
   const [isImageHover, setIsImageHover] = useState(false);
+
+  const source = isMobile ? img.src : img.thumbnail
 
   return (
     <div
@@ -10,9 +12,9 @@ function Image({ img, alt, position, onClick }) {
       onMouseLeave={() => setIsImageHover(false)}
       onClick = {() => onClick(img)}>
       <img
-        src={img.thumbnail}
+        src={source}
         alt={alt}
-        className='object-contain min-w-0 min-h-0'
+        className='object-contain min-w-0 min-h-0 p-4 sm:p-2'
         loading={"lazy"}
       />
     </div>

@@ -14,7 +14,7 @@ import { LazySection } from "../../HOC/LazySection/LazySection";
 function WaitingTimeProcess(){
     return(
             <div className="flex justify-center items-center">
-                <Tabs className="react-tabs grid grid-cols-1 w-9/12">
+                <Tabs className="react-tabs flex flex-col w-9/12 gap-4">
                     <TabList>
                         <Tab className="familyText react-tabs__tab text-xs md:text-base">La familia de Andrés</Tab>
                         <Tab className="searchText react-tabs__tab  text-xs md:text-base">Búsqueda de ayuda</Tab>
@@ -22,19 +22,19 @@ function WaitingTimeProcess(){
                         <Tab className="accompanimentText react-tabs__tab  text-xs md:text-base">Acompañamiento</Tab>
                         <Tab className="solutionsText react-tabs__tab">Soluciones duraderas</Tab>
                     </TabList>
-                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content p-1">
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content flex-rigid p-1">
                         <img className="object-contain" src={Image5} />
                     </TabPanel>
-                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content p-1">
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content flex-rigid p-1">
                         <img className="object-contain" src={Image4} />
                     </TabPanel>
-                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content  p-1">
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content  flex-rigid p-1">
                         <img className="object-contain" src={Image3} />
                     </TabPanel>
-                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content  p-1">
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content  flex-rigid p-1">
                         <img className="object-contain" src={Image2} />
                     </TabPanel>
-                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content  p-1">
+                    <TabPanel className="react-tabs__tab-panel react-tabs__tab-panel--selected image-content  flex-rigid p-1">
                         <img className="object-contain" src={Image1} />
                     </TabPanel>
                 </Tabs>

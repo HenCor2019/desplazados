@@ -11,10 +11,13 @@ import theme from "../../assets/images/Meanwhile/Theme.png";
 import Modal from "../../Components/Modal/Modal";
 
 import {LazySection} from "../../HOC/LazySection/LazySection";
+import { useConfigContext } from "../../contexts/ConfigContext";
 
 function WaitingTimeMeanwhile() {
   const [isActive, setIsActive] = useState(false);
   const [activeVideo, setActiveVideo] = useState(galleryVideos[0]);
+
+  const {isMobile} = useConfigContext()
 
   const handleOnClick = (videoInformation) => {
     setIsActive(!isActive);
@@ -23,7 +26,7 @@ function WaitingTimeMeanwhile() {
 
   return (
     <>
-      {isActive && <Modal></Modal>}
+      {isMobile && isActive && <Modal></Modal>}
       <div className="flex justify-center items-center h-full">
         <main className='bg-white-500 grid grid-cols-1 grid-flow-row gap-4 sm:gap-4 sm:grid-cols-2 sm:p-4 lg:grid-cols-3 lg:grid-cols-3 w-11/12'>
           {galleryVideos.map((galleryVideos) => (
@@ -34,6 +37,7 @@ function WaitingTimeMeanwhile() {
                 isActive={isActive}
                 position={galleryVideos.imgPosition}
                 handleOnClick={handleOnClick}
+                isMobile={isMobile}
               />
               <Text
                 text={galleryVideos.description}
