@@ -18,9 +18,10 @@ export const ConfigProvider = (props) => {
 
   useEffect(()=> {
     const interval = setInterval(()=> {
-      setIsTouchable((('ontouchstart' in window) ||
+      /* setIsTouchable((('ontouchstart' in window) ||
         (navigator.maxTouchPoints > 0) ||
-        (navigator.msMaxTouchPoints > 0)));
+        (navigator.msMaxTouchPoints > 0))); */
+      setIsTouchable(window.matchMedia("(hover:none)").matches)
     }, 250);
 
     return () => { clearInterval(interval) }

@@ -14,11 +14,11 @@ const BurgerMenu = ({ links }) => {
     });
 
     return (
-        <div className="p-4" ref={menuRef}>
-            <Menu closeDrawer={()=> setMenuOpen(false)} open={menuOpen} links={links} />
+        <div className="p-4 absolute top-0 left-0" ref={menuRef}>
             <Burger
                 onClick={() => { setMenuOpen(!menuOpen) }}
                 open={menuOpen} />
+            <Menu closeDrawer={()=> setMenuOpen(false)} open={menuOpen} links={links} />
         </div>
     );
 }
