@@ -5,6 +5,15 @@ import ConceptPortrait from '../../../../Components/Concepts/ConceptPortrait'
 import { concepts } from '../../../../constants/Concepts/SupportConcepts'
 
 const Portrait = () => {
+    const [isActive, setActive] = useState(false);
+    const [activeConcept, setActiveConcept] = useState(concepts[0])
+
+    const handleOnClick = (conceptInfo) => {
+        setActive(!isActive);
+
+        if (conceptInfo) setActiveConcept(conceptInfo);
+    }
+
     return (
         <div>
             <img
@@ -14,10 +23,15 @@ const Portrait = () => {
             />
             <div className="md:flex md:flex-wrap md:items-center md:content-center md:justify-evenly p-2">
                 {concepts.map((concept) => (
+                    <div>
                     <ConceptPortrait
                         key={concept.index}
+                        active={isActive}
                         concept={concept}
+                        onClick={handleOnClick}
                     />
+                    { activeConcept.index == concept.index && <img src={concept.src} alt={concept.alt} className="class"></img> }
+                    </div>
                 ))}
             </div>
         </div>
