@@ -63,7 +63,7 @@ function App() {
           </Section>
         </Route>
 
-        <Route exact path="/causes/comic">
+        <Route exact path="/causas/comic">
           <Helmet>
             <title> Desplazados - Comic </title>
           </Helmet>
@@ -72,7 +72,7 @@ function App() {
           </Section>
         </Route>
 
-        <Route exact path="/causes/gallery">
+        <Route exact path="/causas/galeria">
           <Helmet>
             <title> Desplazados - Galería </title>
           </Helmet>
@@ -86,7 +86,10 @@ function App() {
           <Helmet>
             <title> Desplazados - Tiempo de Espera </title>
           </Helmet>
-          <Section bannerLand={WaitingTimeBanner} bannerPort={WaitingPortBanner}>
+          <Section
+            bannerLand={WaitingTimeBanner}
+            bannerPort={WaitingPortBanner}
+          >
             <WaitingTime />
           </Section>
         </Route>
@@ -96,7 +99,10 @@ function App() {
             <title> Desplazados - Mientras esperamos </title>
           </Helmet>
 
-          <Section bannerLand={WaitingTimeBanner} bannerPort={WaitingPortBanner2}>
+          <Section
+            bannerLand={WaitingTimeBanner}
+            bannerPort={WaitingPortBanner2}
+          >
             <Meanwhile />
           </Section>
         </Route>
@@ -106,7 +112,10 @@ function App() {
             <title> Desplazados - Galería </title>
           </Helmet>
 
-          <Section bannerLand={WaitingTimeBanner} bannerPort={WaitingPortBanner2}>
+          <Section
+            bannerLand={WaitingTimeBanner}
+            bannerPort={WaitingPortBanner2}
+          >
             <WaitingTimeGallery />
           </Section>
         </Route>
@@ -150,7 +159,10 @@ function App() {
           <Helmet>
             <title> Desplazados - Estadísticas </title>
           </Helmet>
-          <Section bannerLand={StatisticsBanner} bannerPort={SupportPortBanner2}>
+          <Section
+            bannerLand={StatisticsBanner}
+            bannerPort={SupportPortBanner2}
+          >
             <Statistics />
           </Section>
         </Route>
@@ -158,8 +170,11 @@ function App() {
           <Helmet>
             <title> Desplazados - Reportajes </title>
           </Helmet>
-          <Section bannerLand={ReportagesBanner} bannerPort={SupportPortBanner2}>
-            <Reportages/>
+          <Section
+            bannerLand={ReportagesBanner}
+            bannerPort={SupportPortBanner2}
+          >
+            <Reportages />
           </Section>
         </Route>
       </Switch>

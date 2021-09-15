@@ -30,9 +30,6 @@ import ComicSix from '../../assets/images/Comic/layer_6.png'
 import ComicSeven from '../../assets/images/Comic/layer_7.png'
 import ComicEight from '../../assets/images/Comic/back.png'
 
-export const MESSAGE =
-  'Responder la pregunta ¿por qué migramos? debería ser muy sencillo, porque es un derecho. Sin embargo, en El Salvador a veces es la única forma de preservar la vida.'
-
 export const galleryPhotos = [
   {
     title: 'Mi mascota preferida.',
@@ -189,6 +186,74 @@ export const comicImages = [
   {
     index: 8,
     src: ComicEight
+  }
+]
+
+export const gridDimensions = [
+  {
+    cols: {
+      sm: 'sm:col-start-1 sm:col-end-3',
+      md: 'md:col-start-3 md:col-end-5'
+    },
+
+    rows: {
+      sm: 'sm:row-start-1 sm:row-end-2',
+      md: 'md:row-start-1 md:row-end-2'
+    }
+  },
+
+  {
+    cols: { md: 'md:col-start-5 md:col-end-6' },
+
+    rows: { md: 'md:row-start-1 md:row-end-3' }
+  },
+
+  {
+    cols: { md: 'md:col-start-1 md:col-end-2' },
+
+    rows: { md: 'md:row-start-2 md:row-end-5' }
+  },
+
+  {
+    cols: { md: 'md:col-start-2 md:col-end-4' },
+
+    rows: { md: 'md:row-start-2 md:row-end-4' }
+  },
+
+  {
+    cols: { md: 'md:col-start-4 md:col-end-5' },
+
+    rows: { md: 'md:row-start-2 md:row-end-5' }
+  },
+
+  {
+    cols: { md: 'md:col-start-2 md:col-end-4' },
+
+    rows: { md: 'md:row-start-4 md:row-end-5' }
+  },
+
+  {
+    cols: { md: 'md:col-start-1 md:col-end-2' },
+
+    rows: { md: 'md:row-start-5 md:row-end-6' }
+  },
+
+  {
+    cols: { md: 'md:col-start-2 md:col-end-4' },
+
+    rows: { md: 'md:row-start-5 md:row-end-6' }
+  },
+
+  {
+    cols: { md: 'md:col-start-4 md:col-end-5' },
+
+    rows: { md: 'md:row-start-5 md:row-end-6' }
+  },
+
+  {
+    cols: { md: 'md:col-start-5 md:col-end-6' },
+
+    rows: { md: 'md:row-start-5 md:row-end-6' }
   }
 ]
 

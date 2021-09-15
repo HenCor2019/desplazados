@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import FlipPage from 'react-flip-page'
-import { comicImages } from '../../constants/FooterMessages'
+import { comicImages } from '../../constants/Galleries'
 import { useConfigContext } from '../../contexts/ConfigContext'
 import { LazySection } from '../../HOC/LazySection/LazySection'
 
@@ -59,4 +59,3 @@ const Comic = () => {
 }
 
 export default LazySection(Comic)
-
