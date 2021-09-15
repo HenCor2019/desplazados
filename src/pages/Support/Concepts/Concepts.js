@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Landscape from './Lanscape/Landscape'
 import Portrait from './Portrait/Portrait'
 import { useConfigContext } from "../../../contexts/ConfigContext";

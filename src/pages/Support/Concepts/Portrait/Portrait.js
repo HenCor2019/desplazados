@@ -9,9 +9,13 @@ const Portrait = () => {
     const [activeConcept, setActiveConcept] = useState(concepts[0])
 
     const handleOnClick = (conceptInfo) => {
-        setActive(!isActive);
-
-        if (conceptInfo) setActiveConcept(conceptInfo);
+        if (conceptInfo.index == activeConcept.index && isActive) {
+            setActive(false)
+        }
+        else {
+            setActive(true)
+        }
+        setActiveConcept(conceptInfo);
     }
 
     return (
@@ -26,11 +30,13 @@ const Portrait = () => {
                     <div>
                     <ConceptPortrait
                         key={concept.index}
-                        active={isActive}
                         concept={concept}
                         onClick={handleOnClick}
+                        style={ (activeConcept.index == concept.index && isActive) ? 
+                                "font-crayon py-4 px-4 ease-in-out w-auto hover:bg-brownie-gray cursor-pointer bg-brownie-gray" 
+                                : "font-crayon py-4 px-4 ease-in-out w-auto hover:bg-brownie-gray cursor-pointer" }
                     />
-                    { activeConcept.index == concept.index && <img src={concept.src} alt={concept.alt} className="class"></img> }
+                    { activeConcept.index == concept.index && isActive && <img src={concept.src} alt={concept.alt} className="class"></img> }
                     </div>
                 ))}
             </div>
