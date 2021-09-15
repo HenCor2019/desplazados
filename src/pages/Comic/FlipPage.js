@@ -9,9 +9,9 @@ const Comic = () => {
     <div className="w-full mt-8 sm:h-full md:h-5/6 flex justify-center items-center content-center">
       <FlipPage
         orientation="horizontal"
-        animationDuration={500}
-        width={440}
-        height={530}
+        animationDuration={600}
+        width={470}
+        height={510}
       >
         {comicImages.map((comic) => (
           <div key={comic.index} className="w-full h-full bg-gray-200">

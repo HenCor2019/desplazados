@@ -2,10 +2,11 @@ export default function Image({ content, cols, rows, onClick, isMobile }) {
   const { src, title, description, author, thumbnail } = content
   const source = isMobile ? src : thumbnail
 
-  const { sm = [1, 3] } = cols
+  const { sm = "sm:col-start-1 sm:col-end-3" } = cols
+
   return (
     <div
-      className={`sm:col-start-${sm[0]} sm:col-end-${sm[1]} md:col-start-${cols.md[0]} md:col-end-${cols.md[1]} md:row-start-${rows.md[0]} md:row-end-${rows.md[1]} order-5`}
+      className={`${sm} ${cols.md} ${rows.md} order-5`}
     >
       <div className="w-full sm:grid sm:grid-cols-2 md:block h-full text-gray-700 overflow-hidden">
         <img

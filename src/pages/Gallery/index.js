@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../../Components/Gallery/Gallery.css'
-import Lightbox from '../../Components/Lightbox/index'
+import Lightbox from '../../Components/Lightbox/Image/index'
 import Image from '../../Components/Gallery/Image'
 import Modal from '../../Components/Modal/Modal'
 import { galleryPhotos } from '../../constants/FooterMessages'
@@ -32,7 +32,7 @@ export default LazySection (function () {
 
       <div className="md:w-11/12 lg:w-3/4 m-auto md:mt-10 xl:mt-0 sm:p-5 md:p-0 lg:pb-1">
         <ul className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row md:grid-cols-causesGallery gap-2">
-          <div className="font-sans bg-gray-50 flex justify-center items-center text-justify p-6 xl:p-5 text-xs font-medium lg:text-sm text-gray-700 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 order-6 sm:order-1 md:order-5">
+          <div className="font-sans bg-gray-50 flex justify-center items-center text-justify p-6 xl:p-5 text-xs font-medium lg:text-sm text-gray-700 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 order-1 md:order-5">
             <p>
               Niñas y niños de familias que han tenido que desplazarse por la
               violencia que vive El Salvador cuentan que por medio de los
@@ -45,24 +45,24 @@ export default LazySection (function () {
           <Image
             content={galleryPhotos[0]}
             onClick={onClickHandler}
-            cols={{ sm: [1, 3], md: [3, 5] }}
-            rows={{ sm: [1, 2], md: [1, 2] }}
+            cols={{ sm: "sm:col-start-1 sm:col-end-3", md: "md:col-start-3 md:col-end-5" }}
+            rows={{ sm: "sm:row-start-1 sm:row-end-2", md: "md:row-start-1 md:row-end-2" }}
             isMobile={isMobile}
           />
 
           <Image
             content={galleryPhotos[1]}
             onClick={onClickHandler}
-            cols={{ md: [5, 6] }}
-            rows={{ md: [1, 3] }}
+            cols={{ md: "md:col-start-5 md:col-end-6" }}
+            rows={{ md: "md:row-start-1 md:row-end-3" }}
             isMobile={isMobile}
           />
 
           <Image
             content={galleryPhotos[2]}
             onClick={onClickHandler}
-            cols={{ md: [1, 2] }}
-            rows={{ md: [2, 5] }}
+            cols={{ md: "md:col-start-1 md:col-end-2"}}
+            rows={{ md: "md:row-start-2 md:row-end-5"}}
             isMobile={isMobile}
           />
 
@@ -71,14 +71,16 @@ export default LazySection (function () {
             onClick={onClickHandler}
             cols={{ md: [2, 4] }}
             rows={{ md: [2, 4] }}
+            cols={{ md: "md:col-start-2 md:col-end-4" }}
+            rows={{ md: "md:row-start-2 md:row-end-4" }}
             isMobile={isMobile}
           />
 
           <Image
             content={galleryPhotos[4]}
             onClick={onClickHandler}
-            cols={{ md: [4, 5] }}
-            rows={{ md: [2, 5] }}
+            cols={{ md: "md:col-start-4 md:col-end-5" }}
+            rows={{ md: "md:row-start-2 md:row-end-5" }}
             isMobile={isMobile}
           />
 
@@ -91,41 +93,41 @@ export default LazySection (function () {
 
           <Image
             content={galleryPhotos[5]}
-            onClick={onClickHandler}
-            cols={{ md: [2, 4] }}
-            rows={{ md: [4, 5] }}
+            onClick={onClickHandler}            
+            cols={{ md: "md:col-start-2 md:col-end-4" }}
+            rows={{ md: "md:row-start-4 md:row-end-5" }}
             isMobile={isMobile}
           />
 
           <Image
             content={galleryPhotos[6]}
             onClick={onClickHandler}
-            cols={{ md: [1, 2] }}
-            rows={{ md: [5, 6] }}
+            cols={{ md: "md:col-start-1 md:col-end-2" }}
+            rows={{ md: "md:row-start-5 md:row-end-6" }}
             isMobile={isMobile}
           />
 
           <Image
             content={galleryPhotos[7]}
             onClick={onClickHandler}
-            cols={{ md: [2, 4] }}
-            rows={{ md: [5, 6] }}
+            cols={{ md: "md:col-start-2 md:col-end-4" }}
+            rows={{ md: "md:row-start-5 md:row-end-6" }}
             isMobile={isMobile}
           />
 
           <Image
             content={galleryPhotos[8]}
             onClick={onClickHandler}
-            cols={{ md: [4, 5] }}
-            rows={{ md: [5, 6] }}
+            cols={{ md: "md:col-start-4 md:col-end-5" }}
+            rows={{ md: "md:row-start-5 md:row-end-6" }}
             isMobile={isMobile}
           />
 
           <Image
             content={galleryPhotos[9]}
             onClick={onClickHandler}
-            cols={{ md: [5, 6] }}
-            rows={{ md: [5, 6] }}
+            cols={{ md: "md:col-start-5 md:col-end-6" }}
+            rows={{ md: "md:row-start-5 md:row-end-6" }}
             isMobile={isMobile}
           />
         </ul>

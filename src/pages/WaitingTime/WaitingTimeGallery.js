@@ -23,7 +23,7 @@ import ImageGallery8 from "../../assets/images/WaitingTime/gallery/Image8.png";
 import ImageGallery9 from "../../assets/images/WaitingTime/gallery/Image9.png";
 import ImageGallery10 from "../../assets/images/WaitingTime/gallery/Image10.png";
 import Modal from "../../Components/Modal/Modal";
-import Lightbox from "../../Components/Lightbox/index";
+import Lightbox from "../../Components/Lightbox/Image/index";
 
 import { useConfigContext } from "../../contexts/ConfigContext";
 import { LazySection } from "../../HOC/LazySection/LazySection";

@@ -1,9 +1,9 @@
-import BtnChangeImage from '../../assets/images/Lightbox/button.png'
-import LightboxImage from './LightboxImage'
-import Button from './Slide'
+import BtnChangeImage from '../../../assets/images/Lightbox/button.png'
+import LightboxImage from './Image'
+import Button from './Button'
 import { useState } from 'react'
 
-import './index.css'
+import '../index.css'
 
 export default function Lightbox(props) {
   const { current, onClick, images } = props
@@ -32,6 +32,7 @@ export default function Lightbox(props) {
         handleOnClick={handleChangePrevPhoto}
         content={newImage}
         rotate="-rotate-180"
+        opacity={newImage.index === 0 ? 'opacity-0' : 'opacity-100'}
       />
 
       <div className="w-full flex items-center lg:justify-center lg:flex-row">
@@ -43,6 +44,7 @@ export default function Lightbox(props) {
         alt="playbutton next desplazados"
         handleOnClick={handleChangeNextPhoto}
         content={newImage}
+        opacity={newImage.index === images.length-1 ? 'opacity-0' : 'opacity-100'}
       />
     </div>
   )

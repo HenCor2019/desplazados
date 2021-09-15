@@ -1,17 +1,3 @@
-.lightbox-container:hover img {
-  transform: scale(1.5);
-}
-
-.lightbox-container img {
-  transition: transform 0.3s ease-out;
-  transform: scale(2.1);
-}
-
-.images-container {
-  grid-template-rows: masonry;
-  grid-auto-flow: dense;
-}
-
 .inner-grid {
   grid-template-rows: masonry;
   grid-auto-flow: dense;

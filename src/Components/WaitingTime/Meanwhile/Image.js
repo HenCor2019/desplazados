@@ -13,7 +13,7 @@ function Image({ img, alt, position, isMobile, video, handleOnClick }) {
 
 function Video({img, alt, position, video}){
   return(
-    <div className={`flex ${position} relative`}>
+    <div className={`flex ${position} relative h-72 px-2 sm:h-auto sm:px-0`}>
       <SimpleVideoPlayer embedId={video.embedId}/>
     </div>
   );

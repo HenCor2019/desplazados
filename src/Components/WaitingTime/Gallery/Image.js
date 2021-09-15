@@ -14,7 +14,7 @@ function Image({ img, alt, position, onClick, isMobile }) {
       <img
         src={source}
         alt={alt}
-        className='object-contain min-w-0 min-h-0 p-4 sm:p-2'
+        className='object-contain min-w-0 min-h-0 p-4 sm:p-2 cursor-pointer'
         loading={"lazy"}
       />
     </div>
