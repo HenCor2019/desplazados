@@ -34,7 +34,7 @@ function SupportMainSect() {
                     HtmlTag="img" 
                     alt="Concepto" 
                     style={ style1 } 
-                    className="animate-flip object-contain w-10/12 md:w-3/4 md:min-w-support-image cursor-pointer"
+                    className="object-contain w-10/12 md:w-3/4 md:min-w-support-image cursor-pointer"
                     onClick={()=> { push("/apoyo/conceptos") }}
                     onHoverIn={() => setConceptsHover(true)} 
                     onHoverOut={() => setConceptsHover(false)} 
@@ -45,7 +45,7 @@ function SupportMainSect() {
                     HtmlTag="img" 
                     alt="Estadísticas" 
                     style={ style2 } 
-                    className="animate-flip object-contain w-10/12 md:w-3/8 md:min-w-support-image cursor-pointer" 
+                    className="object-contain w-10/12 md:w-3/8 md:min-w-support-image cursor-pointer" 
                     onClick={()=> { push("/apoyo/estadisticas") }}
                     onHoverIn={() => setStatisticsHover(true)} 
                     onHoverOut={() => setStatisticsHover(false)} 
@@ -59,7 +59,7 @@ function SupportMainSect() {
                     HtmlTag="img" 
                     alt="Reporte" 
                     style={ style3 } 
-                    className="animate-flip object-contain w-10/12 md:w-3/4 md:min-w-support-image cursor-pointer"
+                    className="object-contain w-10/12 md:w-3/4 md:min-w-support-image cursor-pointer"
                     onClick={()=> { push("/apoyo/reportajes") }}
                     onHoverIn={() => setReportHover(true)} 
                     onHoverOut={() => setReportHover(false)} 
