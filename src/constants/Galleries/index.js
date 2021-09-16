@@ -30,9 +30,6 @@ import ComicSix from '../../assets/images/Comic/layer_6.png'
 import ComicSeven from '../../assets/images/Comic/layer_7.png'
 import ComicEight from '../../assets/images/Comic/back.png'
 
-export const MESSAGE =
-  'Responder la pregunta ¿por qué migramos? debería ser muy sencillo, porque es un derecho. Sin embargo, en El Salvador a veces es la única forma de preservar la vida.'
-
 export const galleryPhotos = [
   {
     title: 'Mi mascota preferida.',
@@ -41,6 +38,7 @@ export const galleryPhotos = [
     author: 'Karla, 8 años de edad ',
     src: ImageOne,
     thumbnail: ThumbnailOne,
+    isCauseGallery: true,
     index: 0
   },
 
@@ -51,77 +49,8 @@ export const galleryPhotos = [
     author: 'Karla, 8 años de edad ',
     src: ImageTwo,
     thumbnail: ThumbnailTwo,
+    isCauseGallery: true,
     index: 1
-  },
-
-  {
-    title: 'Mi animal favorito.',
-    description:
-      '“Siempre me han gustado los lobos, por el pelo y porque siempre andan en manada. Ami hermano le gustan los zorros. Ahí se encuentran conviviendo en el bosque”.',
-    author: 'Milton y Jacob, 8 y 16 años de edad',
-    src: ImageThree,
-    thumbnail: ThumbnailThree,
-    index: 2
-  },
-
-  {
-    title: 'Lluvia y sol.',
-    description:
-      '“Mi momento preferido del día es cuando llueve, truena y sale el sol”.',
-    author: 'Mayra, 15 años de edad',
-    src: ImageFour,
-    thumbnail: ThumbnailFour,
-    index: 3
-  },
-
-  {
-    title: 'En la pradera.',
-    description:
-      '“El caracol aviador y el elefante volador son mejores amigos y viven juntos en las praderas de su casa”.',
-    author: 'Marcos, 14 años de edad',
-    src: ImageSix,
-    thumbnail: ThumbnailSix,
-    index: 4
-  },
-
-  {
-    title: 'Feliz Navidad.',
-    description:
-      '“Este es mi Santa de papel, lo puse también para que decore nuestro árbol de navidad”.',
-    author: 'Yoselin, 13 años de edad',
-    src: ImageFive,
-    thumbnail: ThumbnailFive,
-    index: 5
-  },
-
-  {
-    title: 'Feliz Navidad.',
-    description:
-      '“Este es mi Santa de papel, lo puse también para que decore nuestro árbol de navidad”.',
-    author: 'Yoselin, 13 años de edad',
-    src: ImageSeven,
-    thumbnail: ThumbnailSeven,
-    index: 6
-  },
-
-  {
-    title: 'Mis marionetas.',
-    description:
-      '“El gatito Lex, el Perrito Fili, la patita Lola y el zorro Pepe son una familia feliz y juegan todos los días”.',
-    author: 'Yesi, 8 años de edad',
-    src: ImageEight,
-    thumbnail: ThumbnailEight,
-    index: 7
-  },
-
-  {
-    title: 'Feliz día del amor.',
-    description:
-      '“Hice una carta de rollitos de papel que forman un corazón para entregársela a mi mamá en este día tan especial”.',
-    author: 'Jeni, 13 años de edad',
-    src: ImageNine,
-    thumbnail: ThumbnailNine,
-    index: 8
   },
 
   {
@@ -129,8 +58,86 @@ export const galleryPhotos = [
     description:
       '“Me gusta  el parque, que tenga un árbol de manzana, flores, el sol y las nubes… ella es mi mamá”.',
     author: 'Clari, 8 años de edad',
+    src: ImageThree,
+    thumbnail: ThumbnailThree,
+    isCauseGallery: true,
+    index: 2
+  },
+
+  {
+    title: 'Mi animal favorito',
+    description:
+      '“Siempre me han gustado los lobos, por el pelo y porque siempre andan en manada. Ami hermano le gustan los zorros. Ahí se encuentran conviviendo en el bosque”.',
+    author: 'Milton y Jacob, 8 y 16 años de edad.',
+    src: ImageFour,
+    thumbnail: ThumbnailFour,
+    isCauseGallery: true,
+    index: 3
+  },
+
+  {
+    title: 'Feliz Navidad.',
+    description:
+      '“Este es mi Santa de papel, lo puse también para que decore nuestro árbol de navidad”.',
+    author: 'Yoselin, 13 años de edad',
+    src: ImageSix,
+    thumbnail: ThumbnailSix,
+    isCauseGallery: true,
+    index: 4
+  },
+
+  {
+    title: 'Mis marionetas',
+    description:
+      '“El gatito Lex, el Perrito Fili, la patita Lola y el zorro Pepe son una familia feliz y juegan todos los días”.',
+    author: 'Yesi, 8 años de edad',
+    src: ImageFive,
+    thumbnail: ThumbnailFive,
+    isCauseGallery: true,
+    index: 5
+  },
+
+  {
+    title: 'En la pradera',
+    description:
+      '“El caracol aviador y el elefante volador son mejores amigos y viven juntos en las praderas de su casa”.',
+    author: 'Marcos, 14 años de edad',
+    src: ImageSeven,
+    thumbnail: ThumbnailSeven,
+    isCauseGallery: true,
+    index: 6
+  },
+
+  {
+    title: 'Los juegos que extraño',
+    description:
+      '“Lo que más extraño de donde vivíamos antes era jugar. Compraba -jacks-, saltaba peregrina y cuerda y a veces hasta de maestra. Eso es lo que quier ser”.',
+    author: 'Marta, 15 años',
+    src: ImageEight,
+    thumbnail: ThumbnailEight,
+    isCauseGallery: true,
+    index: 7
+  },
+
+  {
+    title: 'Feliz día del amor',
+    description:
+      '“Hice una carta de rollitos de papel que forman un corazón para entregársela a mi mamá en este día tan especial”.',
+    author: 'Jeni, 13 años de edad',
+    src: ImageNine,
+    thumbnail: ThumbnailNine,
+    isCauseGallery: true,
+    index: 8
+  },
+
+  {
+    title: 'Lluvia y sol',
+    description:
+      '“Mi momento preferido del día es cuando llueve, truena y sale el sol”.',
+    author: 'Mayra, 15 años de edad',
     src: ImageTen,
     thumbnail: ThumbnailTen,
+    isCauseGallery: true,
     index: 9
   }
 ]
@@ -179,6 +186,74 @@ export const comicImages = [
   {
     index: 8,
     src: ComicEight
+  }
+]
+
+export const gridDimensions = [
+  {
+    cols: {
+      sm: 'sm:col-start-1 sm:col-end-3',
+      md: 'md:col-start-3 md:col-end-5'
+    },
+
+    rows: {
+      sm: 'sm:row-start-1 sm:row-end-2',
+      md: 'md:row-start-1 md:row-end-2'
+    }
+  },
+
+  {
+    cols: { md: 'md:col-start-5 md:col-end-6' },
+
+    rows: { md: 'md:row-start-1 md:row-end-3' }
+  },
+
+  {
+    cols: { md: 'md:col-start-1 md:col-end-2' },
+
+    rows: { md: 'md:row-start-2 md:row-end-5' }
+  },
+
+  {
+    cols: { md: 'md:col-start-2 md:col-end-4' },
+
+    rows: { md: 'md:row-start-2 md:row-end-4' }
+  },
+
+  {
+    cols: { md: 'md:col-start-4 md:col-end-5' },
+
+    rows: { md: 'md:row-start-2 md:row-end-5' }
+  },
+
+  {
+    cols: { md: 'md:col-start-2 md:col-end-4' },
+
+    rows: { md: 'md:row-start-4 md:row-end-5' }
+  },
+
+  {
+    cols: { md: 'md:col-start-1 md:col-end-2' },
+
+    rows: { md: 'md:row-start-5 md:row-end-6' }
+  },
+
+  {
+    cols: { md: 'md:col-start-2 md:col-end-4' },
+
+    rows: { md: 'md:row-start-5 md:row-end-6' }
+  },
+
+  {
+    cols: { md: 'md:col-start-4 md:col-end-5' },
+
+    rows: { md: 'md:row-start-5 md:row-end-6' }
+  },
+
+  {
+    cols: { md: 'md:col-start-5 md:col-end-6' },
+
+    rows: { md: 'md:row-start-5 md:row-end-6' }
   }
 ]
 

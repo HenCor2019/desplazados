@@ -44,7 +44,9 @@ export default function Lightbox(props) {
         alt="playbutton next desplazados"
         handleOnClick={handleChangeNextPhoto}
         content={newImage}
-        opacity={newImage.index === images.length-1 ? 'opacity-0' : 'opacity-100'}
+        opacity={
+          newImage.index === images.length - 1 ? 'opacity-0' : 'opacity-100'
+        }
       />
     </div>
   )
