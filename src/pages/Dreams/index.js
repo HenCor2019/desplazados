@@ -21,7 +21,7 @@ export default function Dreams() {
           src={Podcast}
           alt="Podcast"
           style={stylePodcast}
-          className="animate-flip object-contain w-full md:w-2/3 2xl:w-1/2 md:min-w-support-image cursor-pointer"
+          className="object-contain w-full md:w-2/3 2xl:w-1/2 md:min-w-support-image cursor-pointer"
           onMouseEnter={() => setIsPodcastHover(true)}
           onMouseLeave={() => setIsPodcastHover(false)}
           loading="lazy"
@@ -32,7 +32,7 @@ export default function Dreams() {
           src={Gallery}
           alt="Galería"
           style={styleGallery}
-          className="animate-flip object-contain w-full md:w-2/3 2xl:w-1/2 md:min-w-support-image cursor-pointer"
+          className="object-contain w-full md:w-2/3 2xl:w-1/2 md:min-w-support-image cursor-pointer"
           onMouseEnter={() => setIsGalleryHover(true)}
           onMouseLeave={() => setIsGalleryHover(false)}
           loading="lazy"
