@@ -8,6 +8,7 @@ export default function Gallery({ photos, onClick, dimensions, isMobile }) {
       return (
         <>
           <Message
+            key={photo.src + secondaryCauseMessage}
             text={'text-xs'}
             cols={{ md: 'md:col-start-5 md:col-end-6' }}
             rows={{ md: 'md:row-start-3 md:row-end-5' }}
@@ -15,6 +16,7 @@ export default function Gallery({ photos, onClick, dimensions, isMobile }) {
             message={secondaryCauseMessage}
           />
           <Image
+            key={photo.src}
             content={photo}
             onClick={onClick}
             cols={dimensions[index].cols}
@@ -26,6 +28,7 @@ export default function Gallery({ photos, onClick, dimensions, isMobile }) {
 
     return (
       <Image
+        key={photo + index}
         content={photo}
         onClick={onClick}
         cols={dimensions[index].cols}
