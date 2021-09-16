@@ -16,7 +16,7 @@ const House = ({ houseImg, textImg, alt, line, filter, onMouseEnter, onMouseLeav
                 <img
                     src={houseImg}
                     alt={alt}
-                    className="w-full max-w-xs object-contain animate-flip"
+                    className="w-full max-w-xs object-contain"
                     style={{ filter: filter }}
                     loading="lazy"
                 />

@@ -125,7 +125,7 @@ function App() {
             <title> Desplazados - Procesos </title>
           </Helmet>
 
-          <Section bannerLand={WaitingTimeBanner}>
+          <Section bannerLand={WaitingTimeBanner} bannerPort={WaitingPortBanner2}>
             <WaitingTimeProcess />
           </Section>
         </Route>
