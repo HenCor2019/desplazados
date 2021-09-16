@@ -36,7 +36,7 @@ const Portrait = () => {
                                 "font-crayon py-4 px-4 ease-in-out w-auto hover:bg-brownie-gray cursor-pointer bg-brownie-gray" 
                                 : "font-crayon py-4 px-4 ease-in-out w-auto hover:bg-brownie-gray cursor-pointer" }
                     />
-                    { activeConcept.index == concept.index && isActive && <img src={concept.src} alt={concept.alt} className="class"></img> }
+                    { activeConcept.index == concept.index && isActive && <img src={concept.src} alt={concept.alt}></img> }
                     </div>
                 ))}
             </div>
