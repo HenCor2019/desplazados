@@ -78,7 +78,8 @@ module.exports = {
         'brownie-gray': '#dddcdb',
         'black-700': '#444242',
         'brownie-gray': '#dddcdb',
-        'gray-500': '#9a999e'
+        'gray-500': '#9a999e',
+        cause: '#1fa737'
       },
       width: {
         160: '40rem',

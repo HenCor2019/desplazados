@@ -1,4 +1,4 @@
-import { secondaryCauseMessage } from '../../constants/Causes'
+import { secondaryCauseMessage } from '../../../constants/Causes'
 import Image from './Image'
 import Message from './Message'
 

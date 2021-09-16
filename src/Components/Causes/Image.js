@@ -21,7 +21,7 @@ export default function CauseImage(props) {
       onClick={() => onClick(route)}
     >
       <Image
-        className={`w-full px-5 sm:px-2 sm:w-full md:w-2/3 h-full mx-auto cursor-pointer animate-flip ${
+        className={`w-full px-5 sm:px-2 sm:w-full md:w-2/3 h-full mx-auto cursor-pointer ${
           grayscale ? ' grayscale' : ''
         }`}
       />
