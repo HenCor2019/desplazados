@@ -68,7 +68,8 @@ module.exports = {
         'md-h': { raw: '(min-height: 768px)' },
         'lg-h': { raw: '(min-height: 1024px)' },
         'xl-h': { raw: '(min-height: 1280px)' },
-        '2xl-h': { raw: '(min-height: 1536px)' }
+        '2xl-h': { raw: '(min-height: 1536px)' },
+        'lg-2': { raw: '(min-width: 1025px)' },
       },
       colors: {
         time: '#b18422',
@@ -117,11 +118,16 @@ module.exports = {
       flex: {
         rigid: '1 0'
       },
+      flexShrink: {
+        '3': 3,
+      },
       gridTemplateColumns: {
-        causesGallery: '33fr 22fr 5fr 18fr 22fr'
+        causesGallery: '33fr 22fr 5fr 18fr 22fr',
+        dreamsGallery: '20fr 5fr 30fr 5fr 40fr'
       },
       gridTemplateRows: {
-        causesGallery: '34% 11% 11% 15% 24%'
+        causesGallery: '34% 11% 11% 15% 24%',
+        dreamsGallery: '2fr 3fr 1fr 2fr 2fr'
       }
     }
   },

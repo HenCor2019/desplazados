@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Title from '../../../../assets/images/Support/Concepts/concepts-title.png'
 import ConceptPortrait from '../../../../Components/Concepts/ConceptPortrait'

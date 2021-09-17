@@ -9,7 +9,7 @@ const styles = {
 }
 
 const URL =
-  'https://www.youtube.com/watch?v=DP8UJlECM6o&t=278s&ab_channel=HistoryLatinoam%C3%A9rica'
+  'https://youtu.be/H1OTcUY7vK4'
 
 export default function YoutubeVideo() {
   const [playing, setPlaying] = useState(false)

@@ -18,8 +18,8 @@ export default function VideoPlayer({ url, playing, handleOnSkip }) {
         url={url}
         onEnded={handleOnSkip}
         playing={playing}
-        width="100%"
-        height="100vh"
+        width="110vw"
+        height="143vh"
         config={{
           youtube: {
             controls: 0,

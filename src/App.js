@@ -26,7 +26,7 @@ import CausesSect from './pages/Causes/index'
 import CausesGallery from './pages/Gallery/index'
 import DreamsBanner from './assets/images/Dreams/dreams-banner.png'
 import DreamsPortBanner from './assets/images/Banners/Mobile/dreams-banner.png'
-import DreamsportBanner2 from './assets/images/Banners/Mobile/dreams.png'
+import DreamsGallery from './pages/DreamsGallery'
 import Dreams from './pages/Dreams/index'
 import WaitingTimeGallery from './pages/WaitingTime/WaitingTimeGallery'
 import WaitingTimeProcess from './pages/WaitingTime/Process'
@@ -139,6 +139,19 @@ function App() {
           </Section>
         </Route>
 
+        <Route exact path="/sueños/galeria">
+          <Helmet>
+            <title> Desplazados - Galería </title>
+          </Helmet>
+
+          <Section
+            bannerLand={DreamsBanner}
+            bannerPort={DreamsPortBanner}
+          >
+            <DreamsGallery />
+          </Section>
+        </Route>
+
         <Route exact path="/apoyo">
           <Helmet>
             <title> Desplazados - En busca de apoyo </title>
@@ -149,7 +162,7 @@ function App() {
         </Route>
         <Route exact path="/apoyo/conceptos">
           <Helmet>
-            <title> Desplazados - Estadísticas </title>
+            <title> Desplazados - Conceptos </title>
           </Helmet>
           <Section bannerLand={ConceptsBanner} bannerPort={SupportPortBanner2}>
             <Concepts />
