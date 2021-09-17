@@ -37,7 +37,7 @@ const Comic = () => {
     <div className="w-full mb-3 sm:mb-0 sm:mt-8 sm:h-full md:h-5/6 flex justify-center items-center content-center">
       <FlipPage
         orientation="horizontal"
-        animationDuration={600}
+        animationDuration={1000}
         onStartPageChange={onStartPageChangeHandler}
         width={width}
         height={height}

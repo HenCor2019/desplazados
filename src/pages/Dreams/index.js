@@ -49,7 +49,7 @@ export default function Dreams() {
           }
         />
 
-        <div className="bg-red-600 md:bg-transparent order-1 text-white md:text-black flex justify-center items-center md:items-start md:w-full md:col-span-2 lg:col-span-1 lg:row-start-3 lg:-mt-16 2xl:-mt-24">
+        <div className="bg-red-600 md:bg-transparent order-1 text-white md:text-black flex justify-center items-center md:items-start md:w-full md:col-span-2 lg:col-span-1 lg:row-start-3 lg:mt-0 2xl:-mt-24">
           <p className="text-sm sm:text-base text-justify leading-snug p-4 md:pt-4 lg:p-8 lg:max-w-md">
             Soñar es imaginar algo que se persigue o se anhela con mucho deseo,
             que probablemente difiera en gran medida de la realidad, pero que

@@ -248,3 +248,12 @@ table {
   border-spacing: 0;
 }
 
+.background-waitingTimeGallery {
+  background-image: url(../images/WaitingTime/gallery/background.png);
+}
+
+@media (max-width: 1024px) {
+  .background-waitingTimeGallery {
+    background: transparent;
+  }
+}

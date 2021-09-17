@@ -87,13 +87,13 @@ function Home() {
       >
         <section className="p-1 h-14 text-xs font-sans text-center w-full md:p-2 md:w-5/12 text-homeText overflow-auto">
           {isReasonsShown && (
-            <p>
+            <p className="font-sans">
               “Si tú le dices algo a tus papás, yo te voy a matar, te lo juro
               que te mato”, caso Pérez.
             </p>
           )}
           {isWaitingTimeShown && (
-            <p>
+            <p className="font-sans">
               “Para mí y para mi niña ha sido duro el hecho de que las
               navidades, los cumpleaños, las fechas especiales, es siempre sólo
               ella y yo y aunque él está ahí, por la tecnología, por una
@@ -101,13 +101,13 @@ function Home() {
             </p>
           )}
           {isDreamsShown && (
-            <p>
+            <p className="font-sans">
               “Quiero tener mi trabajo, vivir en paz y crecer a mis hijas. Tengo
               que acceder a irme no me queda de otra”, caso Marquina.
             </p>
           )}
           {isHelpShown && (
-            <p>
+            <p className="font-sans">
               “En la televisión salen mucho diciendo tanto la policía, los
               fiscales y el señor presidente que los homicidios han bajado, pero
               en realidad no dicen lo que está pasando en el país, todo el

@@ -22,6 +22,8 @@ import ImageGallery7 from "../../assets/images/WaitingTime/gallery/Image7.png";
 import ImageGallery8 from "../../assets/images/WaitingTime/gallery/Image8.png";
 import ImageGallery9 from "../../assets/images/WaitingTime/gallery/Image9.png";
 import ImageGallery10 from "../../assets/images/WaitingTime/gallery/Image10.png";
+import Background from "../../assets/images/WaitingTime/gallery/background.png" ;
+
 import Modal from "../../Components/Modal/Modal";
 import Lightbox from "../../Components/Lightbox/Image/index";
 
@@ -55,7 +57,7 @@ function WaitingTimeGallery() {
           <img className={"w-72 md:w-3/12"} src={Title} alt="La cotidianidad: la casa de espera y el albergue" />
         </div>
         <div className="flex justify-center items-start">
-          <div className='grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 min-w-0 min-h-0 md:gap-y-4 gap-2'>
+          <div className='p-6 grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 min-w-0 min-h-0 md:gap-y-4 gap-2 background-waitingTimeGallery' >
             {galleryImage.map((galleryImage) => (
               <>
                 <Image
@@ -73,8 +75,8 @@ function WaitingTimeGallery() {
                 />}
               </>
             ))}
-            <div className="bg-time order-5 sm:order-4 sm:col-start-1 sm:col-end-3 sm:bg-transparent lg:bg-white lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 overflow-auto">
-              <p className="text-xs lg:h-10 text-justify text-white p-4 md:p-0 lg:p-4 sm:text-black">
+            <div className="border-0 lg:border-2 m-2 border-gray-gallery border-solid bg-time order-5 sm:order-4 sm:col-start-1 sm:col-end-3 sm:bg-transparent lg:bg-white lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 overflow-auto">
+              <p className="lg:h-10 text-justify text-white md:p-2 xl:p-4 sm:text-black">
                 Al salir de casa, obligados por la violencia, las familias no pueden
                 llevar consigo muchas pertenencias. A veces se reubican por sus propios
                 medios, a veces es necesario un albergue. ¿Cómo es vivir, desde los ojos

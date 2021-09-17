@@ -3,8 +3,8 @@ export default function Image({ content, onClick, isMobile }) {
   const source = isMobile ? src : thumbnail
 
   return (
-    <div className={`${imgPosition} order-5`}>
-      <div className="bg-red-300 w-full h-full md:h-36 grid grid-cols-1 sm:grid-cols-2 md:block text-gray-700 overflow-hidden">
+    <div className={`${imgPosition} order-5 mb-2 sm:mb-0`}>
+      <div className=" w-full h-full md:h-36 grid grid-cols-1 sm:grid-cols-2 md:block text-gray-700 overflow-hidden">
         <img
           src={source}
           alt={`gallery image desplazados ${title} ${author}`}

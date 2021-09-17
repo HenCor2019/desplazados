@@ -34,19 +34,19 @@ function WaitingTimeProcess() {
         </div>
         <Subtitle name='La familia de Andrés' color='#F76856'/>
         <div className='w-full xl:hidden'>
-          <img src={Image1} alt='La familia de Andrés'></img>
+          <img src={Image5} alt='La familia de Andrés'></img>
         </div>
         <Subtitle name='Búsqueda de ayuda' color='#3722FF' />
         <div className='w-full xl:hidden'>
-          <img src={Image1} alt='Búsqueda de ayuda'></img>
+          <img src={Image4} alt='Búsqueda de ayuda'></img>
         </div>
         <Subtitle name='Seguimiento' color='#2D0775'/>
         <div className='w-full xl:hidden'>
-          <img src={Image1} alt='Seguimiento'></img>
+          <img src={Image3} alt='Seguimiento'></img>
         </div>
         <Subtitle name='Acompañamiento' color='#FF881F'/>
         <div className='w-full xl:hidden'>
-          <img src={Image1} alt='Acompañamiento'></img>
+          <img src={Image2} alt='Acompañamiento'></img>
         </div>
         <Subtitle name='Soluciones duraderas' color='#009BF9'/>
         <div className='w-full xl:hidden'>

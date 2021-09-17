@@ -54,7 +54,8 @@ module.exports = {
         crayon: ['Crayon Hand Regular', 'sans-serif']
       },
       fontSize: {
-        'ultra-xs': '.5rem'
+        'ultra-xs': '.5rem',
+        'title': '1.7rem',
       },
       gridTemplateRows: {
         infographic: '50px 1fr'
@@ -80,6 +81,7 @@ module.exports = {
         'black-700': '#444242',
         'brownie-gray': '#dddcdb',
         'gray-500': '#9a999e',
+        'gray-gallery': '#6b6b6b',
         cause: '#1fa737'
       },
       width: {
@@ -104,9 +106,10 @@ module.exports = {
         '15/100': '15%',
         '1/4': '25%',
         '3/4': '75%',
-        section: '550px',
+        'section': '550px',
         'house-width': '300px',
-        'support-image': '250px'
+        'support-image': '250px',
+        'dreams-note': '95px'
       },
       minHeight: {
         20: '100px',
@@ -116,10 +119,12 @@ module.exports = {
         nav: '12rem'
       },
       flex: {
-        rigid: '1 0'
+        rigid: '1 0',
+        gallery: '2 1'
       },
       flexShrink: {
         '3': 3,
+        '2': 2,
       },
       gridTemplateColumns: {
         causesGallery: '33fr 22fr 5fr 18fr 22fr',
