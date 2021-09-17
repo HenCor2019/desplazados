@@ -139,6 +139,16 @@ function App() {
           </Section>
         </Route>
 
+        <Route exact path="/sueños/podcast">
+          <Helmet>
+            <title> Desplazados - Poadcast </title>
+          </Helmet>
+
+          <Section bannerLand={DreamsBanner} bannerPort={DreamsportBanner2}>
+            <Poadcast />
+          </Section>
+        </Route>
+        
         <Route exact path="/sueños/galeria">
           <Helmet>
             <title> Desplazados - Galería </title>
@@ -192,7 +202,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
