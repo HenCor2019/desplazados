@@ -162,7 +162,7 @@ const galleryImage = [
   {
     title: "Kati Cat",
     description:
-      "“Este me lo regaló mi abuelita, tiene muchos colores porque está feliz”.",
+      "“Este es mi peluche preferido, me gustan los gatos, él duerme conmigo”.",
     author: "Karla, 9 años de edad",
     imgPosition: "lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-3",
     thumbnail: Image8,

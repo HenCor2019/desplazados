@@ -13,9 +13,10 @@ const links = [
 
 function Section({ children, bannerLand, bannerPort }) {
     const { isMobile } = useConfigContext();
+    const { isTablet } = useConfigContext();
     let layout = null;
 
-    if(isMobile){
+    if(isMobile || isTablet){
         layout = (
             <Portrait
                 links = {links}

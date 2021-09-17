@@ -65,7 +65,7 @@ function WaitingTime() {
                     position={"justify-end items-center sm:justify-center"}
                 />
                 <div className='bg-time order-1 text-white flex justify-center items-center sm:order-none sm:bg-transparent sm:text-black'>
-                    <p className='text-sm sm:text-base text-justify leading-snug p-4 md:p-8 max-w-md'>
+                    <p className='text-sm sm:text-base text-justify leading-snug p-4 md:p-8 max-w-md font-acumin'>
                         Luego de sufrir una ruptura en su proyecto de vida, algunas familias
                         buscan apoyo en organizaciones no gubernamentales, que han
                         desarrollado protocolos de atención a víctimas de desplazamiento

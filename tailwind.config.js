@@ -54,10 +54,10 @@ module.exports = {
         crayon: ['Crayon Hand Regular', 'sans-serif']
       },
       fontSize: {
-        'ultra-xs': '.5rem',
+        'ultra-xs': '.5rem'
       },
       gridTemplateRows: {
-       'infographic': '50px 1fr',
+        infographic: '50px 1fr'
       },
       // ./images/Home/TopPaper.png
       screens: {
@@ -68,26 +68,29 @@ module.exports = {
         'md-h': { raw: '(min-height: 768px)' },
         'lg-h': { raw: '(min-height: 1024px)' },
         'xl-h': { raw: '(min-height: 1280px)' },
-        '2xl-h': { raw: '(min-height: 1536px)' }
+        '2xl-h': { raw: '(min-height: 1536px)' },
+        'lg-2': { raw: '(min-width: 1025px)' },
       },
       colors: {
-        'time':'#b18422',
-        'homeText': '#2a2c2b',
-        'background': '#e8e8e7',
+        time: '#b18422',
+        homeText: '#2a2c2b',
+        background: '#e8e8e7',
         'gray-200': '#c5c5c5',
         'brownie-gray': '#dddcdb',
         'black-700': '#444242',
-        'brownie-gray': "#dddcdb",
+        'brownie-gray': '#dddcdb',
         'gray-500': '#9a999e',
+        cause: '#1fa737'
       },
       width: {
-        '160': '40rem',
+        160: '40rem',
         '70/100': '70%',
         '55/100': '55%',
         '3/8': '37.5%'
       },
       height: {
         '15/100': '15%',
+        '90/100': '90%',
         '13/100w': '13vh',
         '87/100w': '87vh'
       },
@@ -101,25 +104,30 @@ module.exports = {
         '15/100': '15%',
         '1/4': '25%',
         '3/4': '75%',
-        'section': '550px',
+        section: '550px',
         'house-width': '300px',
         'support-image': '250px'
       },
       minHeight: {
-        '20': '100px',
-        'half-screen':'50vh'
+        20: '100px',
+        'half-screen': '50vh'
       },
       maxHeight: {
-        'nav': '12rem',
+        nav: '12rem'
       },
       flex: {
         rigid: '1 0'
       },
+      flexShrink: {
+        '3': 3,
+      },
       gridTemplateColumns: {
-       'causesGallery': '33fr 22fr 5fr 18fr 22fr',
+        causesGallery: '33fr 22fr 5fr 18fr 22fr',
+        dreamsGallery: '20fr 5fr 30fr 5fr 40fr'
       },
       gridTemplateRows: {
-       'causesGallery': '34% 11% 11% 15% 24%',
+        causesGallery: '34% 11% 11% 15% 24%',
+        dreamsGallery: '2fr 3fr 1fr 2fr 2fr'
       }
     }
   },
