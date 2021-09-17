@@ -13,7 +13,7 @@ import ConceptsBanner from './assets/images/Support/Concepts/concepts-banner.png
 import SupportBanner from './assets/images/Support/support-main.png'
 import SupportPortBanner from './assets/images/Banners/Mobile/support-banner.png'
 import SupportPortBanner2 from './assets/images/Banners/Mobile/support.png'
-import WaitingTimeBanner from './assets/images/WaitingTime/banner.png'
+import WaitingTimeBanner from './assets/images/WaitingTime/largeBanner.png'
 import WaitingPortBanner from './assets/images/Banners/Mobile/waiting-banner.png'
 import WaitingPortBanner2 from './assets/images/Banners/Mobile/waiting.png'
 import WaitingTime from './pages/WaitingTime/WaitingTime'
@@ -25,11 +25,16 @@ import CausesBannerText from './assets/images/Causes/green_banner_text.png'
 import CausesSect from './pages/Causes/index'
 import CausesGallery from './pages/Gallery/index'
 import DreamsBanner from './assets/images/Dreams/dreams-banner.png'
+import PodcastBanner from './assets/images/Banners/dream-podcast.png'
+import DreamsGalleryBanner from './assets/images/Banners/dreams-gallery.png'
 import DreamsPortBanner from './assets/images/Banners/Mobile/dreams-banner.png'
+import DreamsPortBanner2 from './assets/images/Banners/Mobile/dreams.png'
 import DreamsGallery from './pages/DreamsGallery'
 import Dreams from './pages/Dreams/index'
 import WaitingTimeGallery from './pages/WaitingTime/WaitingTimeGallery'
+import WaitingSmallBanner from './assets/images/Banners/wait-s-banner.png'
 import WaitingTimeProcess from './pages/WaitingTime/Process'
+import Poadcast from './pages/Dreams/Poadcast'
 
 import { Helmet } from 'react-helmet'
 import './assets/css/index.css'
@@ -67,7 +72,7 @@ function App() {
           <Helmet>
             <title> Desplazados - Comic </title>
           </Helmet>
-          <Section bannerLand={CausesBanner} bannerPort={CausesPortBanner2}>
+          <Section bannerLand={CausesBannerText} bannerPort={CausesPortBanner2}>
             <Comic />
           </Section>
         </Route>
@@ -100,7 +105,7 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={WaitingTimeBanner}
+            bannerLand={WaitingSmallBanner}
             bannerPort={WaitingPortBanner2}
           >
             <Meanwhile />
@@ -113,7 +118,7 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={WaitingTimeBanner}
+            bannerLand={WaitingSmallBanner}
             bannerPort={WaitingPortBanner2}
           >
             <WaitingTimeGallery />
@@ -125,7 +130,7 @@ function App() {
             <title> Desplazados - Procesos </title>
           </Helmet>
 
-          <Section bannerLand={WaitingTimeBanner} bannerPort={WaitingPortBanner2}>
+          <Section bannerLand={WaitingSmallBanner} bannerPort={WaitingPortBanner2}>
             <WaitingTimeProcess />
           </Section>
         </Route>
@@ -139,14 +144,24 @@ function App() {
           </Section>
         </Route>
 
+        <Route exact path="/sueños/podcast">
+          <Helmet>
+            <title> Desplazados - Poadcast </title>
+          </Helmet>
+
+          <Section bannerLand={PodcastBanner} bannerPort={DreamsPortBanner2}>
+            <Poadcast />
+          </Section>
+        </Route>
+        
         <Route exact path="/sueños/galeria">
           <Helmet>
             <title> Desplazados - Galería </title>
           </Helmet>
 
           <Section
-            bannerLand={DreamsBanner}
-            bannerPort={DreamsPortBanner}
+            bannerLand={DreamsGalleryBanner}
+            bannerPort={DreamsPortBanner2}
           >
             <DreamsGallery />
           </Section>
@@ -192,7 +207,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
