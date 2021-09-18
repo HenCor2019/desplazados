@@ -1,26 +1,21 @@
-.active-song {
-  color: red;
-}
-
-.rhap_progress-section {
+.active-song,
+.rhap_progress-section,
+.audio-player svg {
   color: red;
 }
 
 .rhap_container {
   border: none;
   box-shadow: none;
-
   background-color: transparent;
 }
 
-.audio-player svg {
-  color: red;
-}
-
-.rhap_bar-color {
+.rhap_bar-color,
+.rhap_progress-bar > [class^='rhap_progress'],
+.rhap_volume-indicator {
   background-color: red;
 }
 
-.rhap_progress-bar > [class^='rhap_progress'] {
-  background-color: red;
+.rhap_volume-bar {
+  background-color: rgba(255, 0, 0, 0.4);
 }

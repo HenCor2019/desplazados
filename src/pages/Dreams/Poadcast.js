@@ -1,17 +1,13 @@
 import React, { useState } from 'react'
-
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
+
+import Papel from '../../assets/images/Dreams/Poadcast/Papel.png'
+import PlayButton from '../../assets/images/Dreams/Poadcast/play1.png'
+import QueSoniamos from '../../assets/images/Dreams/Poadcast/quesonamos.png'
 import { ReactComponent as Backward } from '../../assets/svg/backward.svg'
 import { ReactComponent as Forward } from '../../assets/svg/forward.svg'
 import { ReactComponent as Pause } from '../../assets/svg/pause.svg'
-import { ReactComponent as Shuffle } from '../../assets/svg/shuffle.svg'
-
-//assets
-import Papel from '../../assets/images/Dreams/Poadcast/Papel.png'
-import QueSoniamos from '../../assets/images/Dreams/Poadcast/quesonamos.png'
-import PlayButton from '../../assets/images/Dreams/Poadcast/play1.png'
-
 import { audios } from '../../constants/Dreams/Podcast'
 import './index.css'
 
@@ -24,25 +20,16 @@ const poadcastPlayerStyle = {
 
 export default function Poadcast() {
   const [activeAudio, setActiveAudio] = useState(audios[0])
-  const [isRandomAudio, setIsRandomAudio] = useState(false)
 
-  const getRandomAudio = (currentIndex) => {
-    let newAudioIndex = Math.trunc(Math.random() * audios.length)
-
-    if (currentIndex == newAudioIndex) newAudioIndex++
-
-    if (newAudioIndex >= audios.length) newAudioIndex = 0
-
-    return audios[newAudioIndex]
+  const customIcons = {
+    pause: <Pause className="h-10 w-10 cursor-pointer" />,
+    previous: (
+      <Backward className="h-5 w-5 sm:h-9 m-auto sm:w-9 cursor-pointer" />
+    ),
+    next: <Forward className="h-5 w-5 sm:h-9 m-auto  sm:w-9 cursor-pointer" />
   }
 
   const onEnded = () => {
-    if (isRandomAudio) {
-      const newAudio = getRandomAudio(activeAudio.index)
-      setActiveAudio(newAudio)
-      return
-    }
-
     if (activeAudio.index === audios.length - 1) {
       setActiveAudio(audios[0])
       return
@@ -52,16 +39,12 @@ export default function Poadcast() {
   }
 
   const onNext = () => {
-    if (activeAudio.index === 4) {
+    if (activeAudio.index === audios.length - 1) {
       setActiveAudio(audios[0])
       return
     }
 
     setActiveAudio(audios[activeAudio.index + 1])
-  }
-
-  const onShuffle = () => {
-    setIsRandomAudio(!isRandomAudio)
   }
 
   const onPrevious = () => {
@@ -101,26 +84,12 @@ export default function Poadcast() {
                   autoPlayAfterSrcChange={true}
                   src={activeAudio.src}
                   onEnded={onEnded}
-                  customVolumeControls={[
-                    <Shuffle
-                      onClick={onShuffle}
-                      className="h-5 w-5 sm:h-9 sm:w-9 md:w-6 md:h-6 cursor-pointer"
-                    />
-                  ]}
                   showJumpControls={false}
                   showSkipControls={true}
                   customAdditionalControls={[RHAP_UI.LOOP]}
                   onClickPrevious={onPrevious}
                   onClickNext={onNext}
-                  customIcons={{
-                    pause: <Pause className="h-10 w-10 cursor-pointer" />,
-                    previous: (
-                      <Backward className="h-5 w-5 sm:h-9 m-auto sm:w-9 cursor-pointer" />
-                    ),
-                    next: (
-                      <Forward className="h-5 w-5 sm:h-9 m-auto  sm:w-9 cursor-pointer" />
-                    )
-                  }}
+                  customIcons={customIcons}
                 />
               </div>
             </div>
@@ -143,7 +112,7 @@ export default function Poadcast() {
           <div className="flex flex-col justify-around items-center w-10/12 m-4">
             {audios.map((audio) => (
               <div
-                className={` ${
+                className={`${
                   activeAudio.index === audio.index ? 'active-song' : ''
                 } flex flex-row justify-start items-center cursor-pointer w-full text-left m-2`}
                 onClick={() => setActiveAudio(audio)}

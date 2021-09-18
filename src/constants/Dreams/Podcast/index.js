@@ -14,31 +14,31 @@ export const audios = [
   {
     image: NuevaOportunidadImg,
     src: NuevaOportunidadAudio,
-    title: '"Una nueva oportunidad"',
+    title: '“Una nueva oportunidad”',
     index: 0
   },
   {
     image: VidaNormalImg,
     src: VidaNormalAudio,
-    title: '"Deseo llevar una vida normal, como antes"',
+    title: '“Deseo llevar una vida normal, como antes”',
     index: 1
   },
   {
     image: PazTranquilidadImg,
     src: PazTranquilidadAudio,
-    title: '"Paz, tranquilidad y seguridad"',
+    title: '“Paz, tranquilidad y seguridad”',
     index: 2
   },
   {
     image: PermisoImg,
     src: PermisoAudio,
-    title: '"Cuando tenga el permiso de trabajar, luchar por mi vida"',
+    title: '“Cuando tenga el permiso de trabajar, luchar por mi vida”',
     index: 3
   },
   {
     image: SalirAdelanteImg,
     src: SalirAdelanteAudio,
-    title: '"Tenemos que salir adelante porque nos tenemos la una a la otra"',
+    title: '“Tenemos que salir adelante porque nos tenemos la una a la otra”',
     index: 4
   }
 ]
