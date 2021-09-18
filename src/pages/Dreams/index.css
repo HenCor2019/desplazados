@@ -16,6 +16,58 @@
   background-color: red;
 }
 
+.rhap_container {
+  padding: 0;
+}
+
 .rhap_volume-bar {
   background-color: rgba(255, 0, 0, 0.4);
+}
+
+@media (min-width: 300px) {
+  .audio-player-container {
+    width: 100%;
+  }
+
+  .rhap_main-controls {
+    margin: 0 0 0 0.5rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 640px) {
+  .audio-player-container {
+    width: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .audio-player-container {
+    width: 75%;
+  }
+
+  .rhap_main-controls {
+    margin: 0 0 0 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .rhap_main-controls {
+    margin: 0 0 0 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .audio-player-container {
+    width: 83%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rhap_main-controls {
+    margin: 0 0 0 2.5rem;
+  }
+
+  .audio-player-container {
+    width: 100%;
+  }
 }

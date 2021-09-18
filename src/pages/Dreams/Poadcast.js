@@ -24,9 +24,11 @@ export default function Poadcast() {
   const customIcons = {
     pause: <Pause className="h-10 w-10 cursor-pointer" />,
     previous: (
-      <Backward className="h-5 w-5 sm:h-9 m-auto sm:w-9 cursor-pointer" />
+      <Backward className="h-5 w-5 sm:h-9 sm:w-9 md:w-7 md:h-7 m-auto lg:w-9 lg:h-9 pl-1  cursor-pointer" />
     ),
-    next: <Forward className="h-5 w-5 sm:h-9 m-auto  sm:w-9 cursor-pointer" />
+    next: (
+      <Forward className="h-5 w-5 sm:h-9 m-auto sm:w-9 md:w-7 md:h-7 lg:w-9 lg:h-9  pr-1 cursor-pointer" />
+    )
   }
 
   const onEnded = () => {
@@ -73,11 +75,11 @@ export default function Poadcast() {
                 alt={activeAudio.title}
               />
 
-              <p className="my-6 font-sans text-xs md:text-sm lg:text-base text-lg text-center tracking-wider">
+              <p className="w-3/4 sm:w-auto my-6 font-sans text-sm md:text-sm lg:text-base text-center tracking-wider">
                 {activeAudio.title}
               </p>
 
-              <div className="w-auto sm:w-3/4">
+              <div className="audio-player-container sm:w-3/4 lg:w-5/6 xl:w-full">
                 <AudioPlayer
                   autoPlay={true}
                   className="w-full bg-transparent"
@@ -86,7 +88,8 @@ export default function Poadcast() {
                   onEnded={onEnded}
                   showJumpControls={false}
                   showSkipControls={true}
-                  customAdditionalControls={[RHAP_UI.LOOP]}
+                  customAdditionalControls={[RHAP_UI.VOLUME]}
+                  customVolumeControls={[RHAP_UI.LOOP]}
                   onClickPrevious={onPrevious}
                   onClickNext={onNext}
                   customIcons={customIcons}
