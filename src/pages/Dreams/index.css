@@ -1,0 +1,26 @@
+.active-song {
+  color: red;
+}
+
+.rhap_progress-section {
+  color: red;
+}
+
+.rhap_container {
+  border: none;
+  box-shadow: none;
+
+  background-color: transparent;
+}
+
+.audio-player svg {
+  color: red;
+}
+
+.rhap_bar-color {
+  background-color: red;
+}
+
+.rhap_progress-bar > [class^='rhap_progress'] {
+  background-color: red;
+}
