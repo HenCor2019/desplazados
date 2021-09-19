@@ -1,8 +1,8 @@
-import NuevaOportunidadImg from '../../../assets/images/Dreams/Poadcast/una-nueva-oportunidad.png'
-import PermisoImg from '../../../assets/images/Dreams/Poadcast/cuando-tenga-permiso.png'
-import VidaNormalImg from '../../../assets/images/Dreams/Poadcast/deseo-vida-normal.png'
-import PazTranquilidadImg from '../../../assets/images/Dreams/Poadcast/paz-tranqulidad.png'
-import SalirAdelanteImg from '../../../assets/images/Dreams/Poadcast/tenemos-que-salir-adelante.png'
+import NuevaOportunidadImg from '../../../assets/images/Dreams/Poadcast/new-opportunity.png'
+import PermisoImg from '../../../assets/images/Dreams/Poadcast/permission.png'
+import VidaNormalImg from '../../../assets/images/Dreams/Poadcast/normal-life.png'
+import PazTranquilidadImg from '../../../assets/images/Dreams/Poadcast/peace.png'
+import SalirAdelanteImg from '../../../assets/images/Dreams/Poadcast/get-ahead.png'
 
 import NuevaOportunidadAudio from '../../../assets/audios/Gladis_nueva_oportunidad_VM.mp3'
 import VidaNormalAudio from '../../../assets/audios/Joaquin_vida_normal_como_antes_VM.mp3'
