@@ -201,4 +201,4 @@ const galleryImage = [
   },
 ];
 
-export default WaitingTimeGallery;
+export default LazySection(WaitingTimeGallery);

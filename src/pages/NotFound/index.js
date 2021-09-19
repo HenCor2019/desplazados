@@ -5,7 +5,7 @@ import './index.css'
 
 export default function NotFound() {
   return (
-    <section className="font-sans text-gray-500 min-w-full min-h-screen sm:h-screen flex flex-col">
+    <section className="p-3 sm:p-0 font-sans text-gray-500 min-w-full min-h-screen sm:h-screen flex flex-col">
       <div className="min-h-screen w-full sm:min-h-0 sm:h-3/4 flex flex-col justify-center items-center">
         <h1 className="not-found-title w-full tracking-widest text-center">
           404

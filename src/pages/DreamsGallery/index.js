@@ -67,4 +67,4 @@ function DreamsGallery() {
   )
 }
 
-export default DreamsGallery
+export default LazySection(DreamsGallery)

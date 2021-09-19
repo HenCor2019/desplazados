@@ -9,6 +9,7 @@ import { ReactComponent as Backward } from '../../assets/svg/backward.svg'
 import { ReactComponent as Forward } from '../../assets/svg/forward.svg'
 import { ReactComponent as Pause } from '../../assets/svg/pause.svg'
 import { audios } from '../../constants/Dreams/Podcast'
+import { LazySection } from '../../HOC/LazySection/LazySection';
 import './index.css'
 
 const poadcastPlayerStyle = {
@@ -18,7 +19,7 @@ const poadcastPlayerStyle = {
   backgroundRepeat: 'no-repeat'
 }
 
-export default function Poadcast() {
+export default LazySection(function Poadcast() {
   const [activeAudio, setActiveAudio] = useState(audios[0])
 
   const customIcons = {
@@ -131,3 +132,4 @@ export default function Poadcast() {
     </main>
   )
 }
+)

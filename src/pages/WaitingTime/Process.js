@@ -92,4 +92,4 @@ function WaitingTimeProcess() {
   )
 }
 
-export default WaitingTimeProcess
+export default LazySection(WaitingTimeProcess)
