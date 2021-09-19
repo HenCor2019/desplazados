@@ -54,7 +54,7 @@ function WaitingTimeGallery() {
         </Modal>
       )}
       <main className='flex flex-col justify-center items-center xl:justify-start xl:items-start'>
-        <div className='flex justify-center items-center py-6 xl:p-0 xl:justify-start xl:items-start md:w-11/12 lg:w-3/4'>
+        <div className='flex justify-center items-center py-6 px-6 sm:px-0 xl:p-0 xl:justify-start xl:items-start md:w-11/12 lg:w-3/4'>
           <img
             className={"w-full sm:w-3/4 md:w-3/5 lg:w-1/2 "}
             src={Title}

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import Banner from '../../assets/images/Home/TopPaper.png'
+import { LazySection } from '../../HOC/LazySection/LazySection';
 
 import './index.css'
 
-export default function NotFound() {
+export default LazySection(function NotFound() {
   return (
     <section className="p-3 sm:p-0 font-sans text-gray-500 min-w-full min-h-screen sm:h-screen flex flex-col">
       <div className="min-h-screen w-full sm:min-h-0 sm:h-3/4 flex flex-col justify-center items-center">
@@ -26,3 +27,4 @@ export default function NotFound() {
     </section>
   )
 }
+)

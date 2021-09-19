@@ -3,6 +3,7 @@ import Landscape from './Sections/Landscape/Landscape';
 import Portrait from './Sections/Portrait/Portrait';
 
 import { useConfigContext } from "../../../contexts/ConfigContext";
+import { LazySection } from '../../../HOC/LazySection/LazySection';
 
 const Reportages = () => {
     const { isMobile } = useConfigContext();
@@ -29,4 +30,4 @@ const Reportages = () => {
     )
 }
 
-export default Reportages;
+export default LazySection(Reportages);

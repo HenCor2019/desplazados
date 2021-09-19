@@ -85,7 +85,7 @@ function Home() {
         style={{ backgroundImage: `url(${topPaper})` }}
         className="w-full sticky z-10 top-0 left-0 bg-cover bg-bottom flex justify-end min-h-20 md:h-28 lg:h-32"
       >
-        <section className="p-1 h-14 text-ultra-xs sm:text-xs font-sans text-center w-full md:p-2 md:w-5/12 text-homeText overflow-auto">
+        <section className="p-1 h-14 text-ultra-xs sm:text-xs font-sans text-center w-full md:p-2 xl:w-5/12 text-homeText">
           {isReasonsShown && (
             <p className="font-sans">
               “Si tú le dices algo a tus papás, yo te voy a matar, te lo juro
