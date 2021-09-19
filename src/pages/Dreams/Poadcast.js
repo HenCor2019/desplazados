@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 
-import Papel from '../../assets/images/Dreams/Poadcast/Papel.png'
+import Paper from '../../assets/images/Dreams/Poadcast/podcast-bg.png'
 import PlayButton from '../../assets/images/Dreams/Poadcast/play1.png'
 import QueSoniamos from '../../assets/images/Dreams/Poadcast/quesonamos.png'
 import { ReactComponent as Backward } from '../../assets/svg/backward.svg'
@@ -13,7 +13,7 @@ import { LazySection } from '../../HOC/LazySection/LazySection';
 import './index.css'
 
 const poadcastPlayerStyle = {
-  backgroundImage: `url(${Papel})`,
+  backgroundImage: `url(${Paper})`,
   backgroundPosition: 'center',
   backgroundSize: 'contain',
   backgroundRepeat: 'no-repeat'
@@ -64,10 +64,10 @@ export default LazySection(function Poadcast() {
       <section className="grid w-full h-auto grid-cols-1 grid-rows-2 xl:grid-cols-2 xl:grid-rows-1">
         <div className="relative w-full h-full flex justify-center items-center order-5 md:my-2 lg:m-0">
           <div style={poadcastPlayerStyle} className="relative w-full h-full">
-            <div className="audio-player absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8/12 h-auto flex flex-col justify-center items-center pl-4 relative">
+            <div className="audio-player absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8/12 h-auto flex flex-col justify-center items-center pl-2 relative">
               <img
                 src={QueSoniamos}
-                className="-left-8 -top-20 absolute transform -rotate-12 z-20 w-36 sm:hidden"
+                className="-top-24 absolute transform z-20 w-36 sm:hidden"
                 alt="¿Que soñamos?"
               />
               <img
