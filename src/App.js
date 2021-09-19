@@ -39,6 +39,8 @@ import Poadcast from './pages/Dreams/Poadcast'
 import { Helmet } from 'react-helmet'
 import './assets/css/index.css'
 import Comic from './pages/Comic/FlipPage'
+import NotesImages from './pages/Support/Concepts/NotesImages'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -130,7 +132,10 @@ function App() {
             <title> Desplazados - Procesos </title>
           </Helmet>
 
-          <Section bannerLand={WaitingSmallBanner} bannerPort={WaitingPortBanner2}>
+          <Section
+            bannerLand={WaitingSmallBanner}
+            bannerPort={WaitingPortBanner2}
+          >
             <WaitingTimeProcess />
           </Section>
         </Route>
@@ -153,7 +158,7 @@ function App() {
             <Poadcast />
           </Section>
         </Route>
-        
+
         <Route exact path="/sueños/galeria">
           <Helmet>
             <title> Desplazados - Galería </title>
@@ -205,9 +210,15 @@ function App() {
             <Reportages />
           </Section>
         </Route>
+        <Route path="/">
+          <Helmet>
+            <title>Desplazados - Página no encontrada</title>
+          </Helmet>
+          <NotFound />
+        </Route>
       </Switch>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
