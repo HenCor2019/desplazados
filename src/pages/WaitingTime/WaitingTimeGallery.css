@@ -1,0 +1,41 @@
+@media (min-width: 0px) {
+  .text-custom-gallery-size {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .text-custom-gallery-size {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-custom-gallery-size {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-custom-gallery-size {
+    font-size: 40%;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-custom-gallery-size {
+    font-size: 58%;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 1536px) {
+  .text-custom-gallery-size {
+    font-size: 75%;
+    line-height: normal;
+  }
+}
