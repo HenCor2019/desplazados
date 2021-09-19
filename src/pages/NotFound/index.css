@@ -1,0 +1,12 @@
+.not-found-title {
+  font-size: 10rem;
+}
+
+@media (min-width: 640px) {
+  .not-found-title {
+    font-size: 13rem;
+  }
+  .not-found {
+    height: 75%;
+  }
+}
