@@ -7,7 +7,7 @@ function Image({ img, alt, position, onClick, isMobile }) {
 
   return (
     <div
-      className={`p-6 flex justify-center items-center ${position} relative order-5`}
+      className={`p-6 md:p-4 flex justify-center items-center ${position} relative order-5`}
       onMouseEnter={() => setIsImageHover(true)}
       onMouseLeave={() => setIsImageHover(false)}
       onClick={() => onClick(img)}
@@ -15,7 +15,7 @@ function Image({ img, alt, position, onClick, isMobile }) {
       <img
         src={source}
         alt={alt}
-        className="object-contain min-w-0 min-h-0 p-4 sm:p-2 cursor-pointer"
+        className="object-contain min-w-0 min-h-0 p-4 sm:p-2 md:p-0 cursor-pointer"
         loading={'lazy'}
       />
     </div>

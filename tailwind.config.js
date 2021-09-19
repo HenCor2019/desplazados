@@ -54,7 +54,7 @@ module.exports = {
         crayon: ['Crayon Hand Regular', 'sans-serif']
       },
       fontSize: {
-        'ultra-xs': '.5rem',
+        'ultra-xs': '.65rem',
         'title': '1.7rem',
       },
       gridTemplateRows: {
@@ -71,7 +71,10 @@ module.exports = {
         'xl-h': { raw: '(min-height: 1280px)' },
         '2xl-h': { raw: '(min-height: 1536px)' },
         'lg-2': { raw: '(min-width: 1025px)' },
-      },
+      },      
+      spacing: {
+        '9/50': '1.125rem',
+       },
       colors: {
         time: '#b18422',
         homeText: '#2a2c2b',
@@ -116,7 +119,7 @@ module.exports = {
         'half-screen': '50vh'
       },
       maxHeight: {
-        nav: '12rem'
+        nav: '12rem',
       },
       flex: {
         rigid: '1 0',

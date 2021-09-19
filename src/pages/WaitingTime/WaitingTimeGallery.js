@@ -1,48 +1,48 @@
-import React, { useState } from 'react'
-import Image from '../../Components/WaitingTime/Gallery/Image'
-import Text from '../../Components/WaitingTime/Gallery/Text'
-import Title from '../../assets/images/WaitingTime/gallery/Title.png'
-import Image1 from '../../assets/images/WaitingTime/thumbnail/1.png'
-import Image2 from '../../assets/images/WaitingTime/thumbnail/2.png'
-import Image3 from '../../assets/images/WaitingTime/thumbnail/3.png'
-import Image4 from '../../assets/images/WaitingTime/thumbnail/4.png'
-import Image5 from '../../assets/images/WaitingTime/thumbnail/5.png'
-import Image6 from '../../assets/images/WaitingTime/thumbnail/6.png'
-import Image7 from '../../assets/images/WaitingTime/thumbnail/7.png'
-import Image8 from '../../assets/images/WaitingTime/thumbnail/8.png'
-import Image9 from '../../assets/images/WaitingTime/thumbnail/9.png'
-import Image10 from '../../assets/images/WaitingTime/thumbnail/10.png'
-import ImageGallery1 from '../../assets/images/WaitingTime/gallery/Image1.png'
-import ImageGallery2 from '../../assets/images/WaitingTime/gallery/Image2.png'
-import ImageGallery3 from '../../assets/images/WaitingTime/gallery/Image3.png'
-import ImageGallery4 from '../../assets/images/WaitingTime/gallery/Image4.png'
-import ImageGallery5 from '../../assets/images/WaitingTime/gallery/Image5.png'
-import ImageGallery6 from '../../assets/images/WaitingTime/gallery/Image6.png'
-import ImageGallery7 from '../../assets/images/WaitingTime/gallery/Image7.png'
-import ImageGallery8 from '../../assets/images/WaitingTime/gallery/Image8.png'
-import ImageGallery9 from '../../assets/images/WaitingTime/gallery/Image9.png'
-import ImageGallery10 from '../../assets/images/WaitingTime/gallery/Image10.png'
-import Background from '../../assets/images/WaitingTime/gallery/background.png'
+import React, { useState } from "react";
+import Image from "../../Components/WaitingTime/Gallery/Image";
+import Text from "../../Components/WaitingTime/Gallery/Text";
+import Title from "../../assets/images/WaitingTime/gallery/Title.png";
+import Image1 from "../../assets/images/WaitingTime/thumbnail/1.png";
+import Image2 from "../../assets/images/WaitingTime/thumbnail/2.png";
+import Image3 from "../../assets/images/WaitingTime/thumbnail/3.png";
+import Image4 from "../../assets/images/WaitingTime/thumbnail/4.png";
+import Image5 from "../../assets/images/WaitingTime/thumbnail/5.png";
+import Image6 from "../../assets/images/WaitingTime/thumbnail/6.png";
+import Image7 from "../../assets/images/WaitingTime/thumbnail/7.png";
+import Image8 from "../../assets/images/WaitingTime/thumbnail/8.png";
+import Image9 from "../../assets/images/WaitingTime/thumbnail/9.png";
+import Image10 from "../../assets/images/WaitingTime/thumbnail/10.png";
+import ImageGallery1 from "../../assets/images/WaitingTime/gallery/Image1.png";
+import ImageGallery2 from "../../assets/images/WaitingTime/gallery/Image2.png";
+import ImageGallery3 from "../../assets/images/WaitingTime/gallery/Image3.png";
+import ImageGallery4 from "../../assets/images/WaitingTime/gallery/Image4.png";
+import ImageGallery5 from "../../assets/images/WaitingTime/gallery/Image5.png";
+import ImageGallery6 from "../../assets/images/WaitingTime/gallery/Image6.png";
+import ImageGallery7 from "../../assets/images/WaitingTime/gallery/Image7.png";
+import ImageGallery8 from "../../assets/images/WaitingTime/gallery/Image8.png";
+import ImageGallery9 from "../../assets/images/WaitingTime/gallery/Image9.png";
+import ImageGallery10 from "../../assets/images/WaitingTime/gallery/Image10.png";
+import Background from "../../assets/images/WaitingTime/gallery/background.png";
 
-import Modal from '../../Components/Modal/Modal'
-import Lightbox from '../../Components/Lightbox/Image/index'
+import Modal from "../../Components/Modal/Modal";
+import Lightbox from "../../Components/Lightbox/Image/index";
 
-import { useConfigContext } from '../../contexts/ConfigContext'
-import { LazySection } from '../../HOC/LazySection/LazySection'
+import { useConfigContext } from "../../contexts/ConfigContext";
+import { LazySection } from "../../HOC/LazySection/LazySection";
 
 function WaitingTimeGallery() {
-  const [isActive, setIsActive] = useState(false)
-  const [activeImage, setActiveImage] = useState(galleryImage[0])
+  const [isActive, setIsActive] = useState(false);
+  const [activeImage, setActiveImage] = useState(galleryImage[0]);
 
-  const { isMobile, isTablet } = useConfigContext()
+  const { isMobile, isTablet } = useConfigContext();
 
   const handleOnClick = (imageInformation) => {
-    setIsActive(!isActive)
-    if (imageInformation) setActiveImage(imageInformation)
-  }
+    setIsActive(!isActive);
+    if (imageInformation) setActiveImage(imageInformation);
+  };
 
   return (
-    <div className="sm:flex sm:min-w-0 sm:justify-center sm:items-center h-full">
+    <div className='sm:flex sm:min-w-0 sm:justify-center sm:items-center h-full'>
       {!isMobile && isActive && (
         <Modal>
           <Lightbox
@@ -52,16 +52,16 @@ function WaitingTimeGallery() {
           />
         </Modal>
       )}
-      <main className="flex flex-col">
-        <div className="flex justify-center items-center py-6 lg:p-0 lg:justify-start lg:items-start">
+      <main className='flex flex-col'>
+        <div className='flex justify-center items-center py-6 xl:p-0 xl:justify-start xl:items-start'>
           <img
-            className={'w-72 md:w-3/12'}
+            className={"w-80 lg:w-6/12 lg:w-3/12"}
             src={Title}
-            alt="La cotidianidad: la casa de espera y el albergue"
+            alt='La cotidianidad: la casa de espera y el albergue'
           />
         </div>
-        <div className="flex justify-center items-start">
-          <div className="grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 min-w-0 min-h-0 md:gap-y-4 gap-2 background-waitingTimeGallery">
+        <div className='flex justify-center items-start'>
+          <div className='grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 min-w-0 min-h-0 md:gap-y-0 gap-2 md:gap-0 background-waitingTimeGallery'>
             {galleryImage.map((galleryImage) => (
               <>
                 <Image
@@ -82,8 +82,8 @@ function WaitingTimeGallery() {
                   ))}
               </>
             ))}
-            <div className="border-0 lg:border-2 sm:m-2 border-gray-gallery border-solid bg-time order-5 sm:order-4 sm:col-start-1 sm:col-end-3 sm:bg-transparent lg:bg-white lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 overflow-auto">
-              <p className="p-4 text-base sm:text-base sm:p-0 lg:h-10 text-justify text-white md:p-2 xl:p-4 sm:text-black">
+            <div className='bg-time sm:bg-transparent lg:bg-white p-4 lg:m-4 order-last sm:order-4 sm:col-start-1 sm:col-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 lg:border xl:border-2 xl:border-gray-gallery border-solid'>
+              <p className='text-justify text-white sm:text-black text-base md:text-xs 2xl:text-sm font-acumin overflow-auto lg:max-h-4 xl:max-h-10 2xl:max-h-20'>
                 Al salir de casa, obligados por la violencia, las familias no
                 pueden llevar consigo muchas pertenencias. A veces se reubican
                 por sus propios medios, a veces es necesario un albergue. ¿Cómo
@@ -94,110 +94,110 @@ function WaitingTimeGallery() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 const galleryImage = [
   {
-    title: 'Pasos de colores',
+    title: "Pasos de colores",
     description:
-      '“Estos son mis zapatos que uso todos los días para jugar en mi casa”.',
-    imgPosition: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2',
-    author: 'Dani, 9 años de edad',
+      "“Estos son mis zapatos que uso todos los días para jugar en mi casa”.",
+    imgPosition: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2",
+    author: "Dani, 9 años de edad",
     thumbnail: Image1,
     src: ImageGallery1,
-    index: 0
+    index: 0,
   },
   {
-    title: 'Sopa rica.',
+    title: "Sopa rica.",
     description:
-      '“Esta es la olla donde mi mami nos hace sopa de pollo… le queda bien rica”.',
-    author: 'José, 14 años de edad',
-    imgPosition: 'lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2',
+      "“Esta es la olla donde mi mami nos hace sopa de pollo… le queda bien rica”.",
+    author: "José, 14 años de edad",
+    imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2",
     thumbnail: Image2,
     src: ImageGallery2,
-    index: 1
+    index: 1,
   },
   {
-    title: 'Desayuno con huevo.',
+    title: "Desayuno con huevo.",
     description:
-      '“Mi mamá me hace pan con huevo para desayunar, le pone salsa, huevo, queso y pan”.',
-    author: 'Flor, 10 años de edad',
-    imgPosition: 'lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2',
+      "“Mi mamá me hace pan con huevo para desayunar, le pone salsa, huevo, queso y pan”.",
+    author: "Flor, 10 años de edad",
+    imgPosition: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2",
     thumbnail: Image3,
     src: ImageGallery3,
-    index: 2
+    index: 2,
   },
   {
-    title: 'Vidas nuevas.',
+    title: "Vidas nuevas.",
     description:
-      '“Con mi mamá nos pusimos a sembrar semillas de una papaya que había salido dulce y nació”.',
-    author: 'Alberto, 15 años de edad',
-    imgPosition: 'lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-2',
+      "“Con mi mamá nos pusimos a sembrar semillas de una papaya que había salido dulce y nació”.",
+    author: "Alberto, 15 años de edad",
+    imgPosition: "lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-2",
     thumbnail: Image4,
     src: ImageGallery4,
-    index: 3
+    index: 3,
   },
   {
-    title: 'Geometría del hogar.',
+    title: "Geometría del hogar.",
     description:
-      '“Esta es la puerta de la casa donde vivimos, casi siempre la mantenemos cerrada”.',
-    author: 'Carlos, 13 años de edad',
-    imgPosition: 'lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3',
+      "“Esta es la puerta de la casa donde vivimos, casi siempre la mantenemos cerrada”.",
+    author: "Carlos, 13 años de edad",
+    imgPosition: "lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3",
     thumbnail: Image5,
     src: ImageGallery5,
-    index: 4
+    index: 4,
   },
   {
-    title: 'Limites marcados.',
+    title: "Limites marcados.",
     description:
-      '“En el cuarto donde estamos solo cabe un camarote y el ropero, todos dormimos en el camarote, mi mamá, mi papá, mi hermana y yo, casi no hay espacio”.',
-    author: 'Carlos, 13 años de edad',
-    imgPosition: 'lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3',
+      "“En el cuarto donde estamos solo cabe un camarote y el ropero, todos dormimos en el camarote, mi mamá, mi papá, mi hermana y yo, casi no hay espacio”.",
+    author: "Carlos, 13 años de edad",
+    imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
     thumbnail: Image6,
     src: ImageGallery6,
-    index: 5
+    index: 5,
   },
   {
-    title: 'Perro Balu.',
+    title: "Perro Balu.",
     description:
-      '“Este me lo regaló mi abuelita, tiene muchos colores porque está feliz”.',
-    author: 'Valeria, 12 años de edad',
-    imgPosition: 'lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3',
+      "“Este me lo regaló mi abuelita, tiene muchos colores porque está feliz”.",
+    author: "Valeria, 12 años de edad",
+    imgPosition: "lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3",
     thumbnail: Image7,
     src: ImageGallery7,
-    index: 6
+    index: 6,
   },
   {
-    title: 'Kati Cat',
+    title: "Kati Cat",
     description:
-      '“Este es mi peluche preferido, me gustan los gatos, él duerme conmigo”.',
-    author: 'Karla, 9 años de edad',
-    imgPosition: 'lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-3',
+      "“Este es mi peluche preferido, me gustan los gatos, él duerme conmigo”.",
+    author: "Karla, 9 años de edad",
+    imgPosition: "lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-3",
     thumbnail: Image8,
     src: ImageGallery8,
-    index: 7
+    index: 7,
   },
   {
-    title: 'Disciplina Bucal.',
+    title: "Disciplina Bucal.",
     description:
-      '“Mi papá siempre nos dice que nos lavemos los dientes en la noche”.',
-    author: 'Jonathan, 11 años de edad',
-    imgPosition: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
+      "“Mi papá siempre nos dice que nos lavemos los dientes en la noche”.",
+    author: "Jonathan, 11 años de edad",
+    imgPosition: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
     thumbnail: Image9,
     src: ImageGallery10,
-    index: 8
+    index: 8,
   },
   {
-    title: 'Fruta congelada.',
+    title: "Fruta congelada.",
     description:
-      '“A veces en las tardes sacamos la fruta que tenemos congelada en la refri y nos la comemos así, nos gusta la fruta congelada”.',
-    author: 'Camila, 13 años de edad',
-    imgPosition: 'lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4',
+      "“A veces en las tardes sacamos la fruta que tenemos congelada en la refri y nos la comemos así, nos gusta la fruta congelada”.",
+    author: "Camila, 13 años de edad",
+    imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4",
     thumbnail: Image10,
     src: ImageGallery9,
-    index: 9
-  }
-]
+    index: 9,
+  },
+];
 
-export default LazySection(WaitingTimeGallery)
+export default WaitingTimeGallery;
