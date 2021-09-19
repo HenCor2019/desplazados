@@ -13,7 +13,7 @@ export default function CardMessage({ content }) {
       <h1 className="text-justify text-base font-semibold whitespace-nowrap pb-2">
         {title}
       </h1>
-      <h2 className="text-justify text-sm font-light pb-2 w-full">
+      <h2 className="text-justify text-sm lg:text-xs xl:text-sm font-light pb-2 w-full">
         {description}
       </h2>
       <p className="text-justify text-sm self-end font-medium">{author}</p>

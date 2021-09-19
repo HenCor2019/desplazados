@@ -1,28 +1,28 @@
-import Podcast from '../../assets/images/Dreams/podcast-dreams.png';
-import Gallery from '../../assets/images/Dreams/gallery-dreams.png';
-import React, {useState} from 'react';
-import {useHistory} from 'react-router-dom';
+import Podcast from '../../assets/images/Dreams/podcast-dreams.png'
+import Gallery from '../../assets/images/Dreams/gallery-dreams.png'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 
-import Image from '../../Components/WaitingTime/Image';
+import Image from '../../Components/WaitingTime/Image'
 
 export default function Dreams() {
-  const [isPodcastHover, setIsPodcastHover] = useState(false);
-  const [isGalleryHover, setIsGalleryHover] = useState(false);
-  const {push} = useHistory();
+  const [isPodcastHover, setIsPodcastHover] = useState(false)
+  const [isGalleryHover, setIsGalleryHover] = useState(false)
+  const { push } = useHistory()
 
-  let stylePodcast, styleGallery;
-  const grayscale = {filter: 'grayscale(1)'};
+  let stylePodcast, styleGallery
+  const grayscale = { filter: 'grayscale(1)' }
 
-  if (isPodcastHover) styleGallery = grayscale;
-  else if (isGalleryHover) stylePodcast = grayscale;
+  if (isPodcastHover) styleGallery = grayscale
+  else if (isGalleryHover) stylePodcast = grayscale
 
   const handleOnDrawsGallery = () => {
-    push('/sueños/galeria');
-  };
+    push('/sueños/galeria')
+  }
 
   const handleOnPodcast = () => {
-    push('/sueños/podcast');
-  };
+    push('/sueños/podcast')
+  }
 
   return (
     <main className="sm:flex sm:min-w-0 sm:justify-center sm:items-center h-full">
@@ -61,5 +61,5 @@ export default function Dreams() {
         </div>
       </section>
     </main>
-  );
+  )
 }

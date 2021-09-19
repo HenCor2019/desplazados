@@ -9,7 +9,7 @@ export default function Gallery({ photos, onClick, dimensions, isMobile }) {
         <>
           <Message
             key={photo.src + secondaryCauseMessage}
-            text={'text-xs'}
+            text={'text-xs font-acumin'}
             cols={{ md: 'md:col-start-5 md:col-end-6' }}
             rows={{ md: 'md:row-start-3 md:row-end-5' }}
             order={{ base: 'order-6', sm: 'sm:order-2', md: 'md:order-5' }}
