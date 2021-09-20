@@ -61,44 +61,51 @@
   }
 
   .rhap_main-controls {
-    margin: 0 0 0 3rem;
+    padding: 0 0 0 1.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .rhap_main-controls {
-    margin: 0 0 0 4rem;
+    padding: 0 0 0 1.5rem;
+  }
+
+  .rhap_container {
+    width: 80%;
   }
 }
 
 @media (min-width: 1024px) {
   .rhap_container {
-    width: 68%;
+    width: 70%;
   }
 }
 
 @media (min-width: 1280px) {
   .rhap_main-controls {
-    margin: 0 0 0 2.5rem;
+    padding: 0 0 0 1.3rem;
+  }
+  .rhap_container {
+    width: 95%;
   }
 
 @media (min-width: 1440px) {
   .rhap_container {
-    width: 85%;
+    width: 89%;
   }
 }
 
   .audio-player-container {
-    width: 100%;
+    width: 96%;
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 2000px) {
   .rhap_main-controls {
-    margin: 0 0 0 2.5rem;
+    padding: 0 0 0 1.4rem;
   }
 
   .audio-player-container {
-    width: 100%;
+    width: 90%;
   }
 }

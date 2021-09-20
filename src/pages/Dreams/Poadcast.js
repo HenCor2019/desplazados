@@ -77,7 +77,7 @@ export default function Poadcast() {
                 alt={activeAudio.title}
               />
 
-              <p className="w-3/4 sm:w-auto md:w-4/6 lg:w-1/2 my-6 font-sans text-sm md:text-sm lg:text-base text-center tracking-wider">
+              <p className="w-4/6 sm:w-auto md:w-4/6 lg:w-1/2 xl:w-5/6 my-6 font-sans text-sm md:text-sm lg:text-base text-center tracking-wider">
                 {activeAudio.title}
               </p>
 
