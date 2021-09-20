@@ -1,6 +1,6 @@
 .lightbox-image {
   background-image: url('../../assets/images/Lightbox/Image/background_gallery.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
