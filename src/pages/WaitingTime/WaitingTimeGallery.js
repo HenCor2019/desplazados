@@ -23,7 +23,7 @@ import ImageGallery8 from "../../assets/images/WaitingTime/gallery/Image8.png";
 import ImageGallery9 from "../../assets/images/WaitingTime/gallery/Image9.png";
 import ImageGallery10 from "../../assets/images/WaitingTime/gallery/Image10.png";
 import Background from "../../assets/images/WaitingTime/gallery/background.png";
-import './WaitingTimeGallery.css'
+import "./WaitingTimeGallery.css";
 
 import Modal from "../../Components/Modal/Modal";
 import Lightbox from "../../Components/Lightbox/Image/index";
@@ -43,7 +43,7 @@ function WaitingTimeGallery() {
   };
 
   return (
-    <div className='sm:flex sm:min-w-0 sm:justify-center sm:items-center h-full'>
+    <div className='sm:flex sm:justify-center sm:items-center h-full w-full'>
       {!isMobile && isActive && (
         <Modal>
           <Lightbox
@@ -53,8 +53,8 @@ function WaitingTimeGallery() {
           />
         </Modal>
       )}
-      <main className='flex flex-col justify-center items-center xl:justify-start xl:items-start'>
-        <div className='flex justify-center items-center py-6 px-6 sm:px-0 xl:p-0 xl:justify-start xl:items-start md:w-11/12 lg:w-3/4'>
+      <main className='flex flex-col justify-center items-center xl:justify-start xl:items-start w-full'>
+        <div className='flex justify-center items-center py-6 px-6 sm:px-0 xl:p-0 xl:justify-start xl:items-start md:w-11/12 lg:w-8/12'>
           <img
             className={"w-full sm:w-3/4 md:w-3/5 lg:w-1/2 "}
             src={Title}
@@ -62,7 +62,7 @@ function WaitingTimeGallery() {
           />
         </div>
         <div className='flex justify-center items-start'>
-          <div className='grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 min-w-0 min-h-0 md:gap-y-0 gap-2 md:gap-0 background-waitingTimeGallery'>
+          <div className='grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 background-waitingTimeGallery bg-no-repeat bg-center bg-cover lg:gap-6 lg:p-6 lg:pr-10 m-2 xl-2:m-8'>
             {galleryImage.map((galleryImage) => (
               <>
                 <Image
@@ -83,7 +83,7 @@ function WaitingTimeGallery() {
                   ))}
               </>
             ))}
-            <div className='bg-time sm:bg-transparent lg:bg-white p-4 lg:m-4 order-last sm:order-4 sm:col-start-1 sm:col-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 lg:border xl:border-2 xl:border-gray-gallery border-solid'>
+            <div className='bg-time sm:bg-transparent lg:bg-white p-4 sm:px-10 md:px-5 lg:p-2 order-last sm:order-4 sm:col-start-1 sm:col-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 lg:border xl:border-2 xl-2:border-3 xl:border-gray-gallery border-solid'>
               <p className='text-justify text-white sm:text-black font-acumin text-custom-gallery-size'>
                 Al salir de casa, obligados por la violencia, las familias no
                 pueden llevar consigo muchas pertenencias. A veces se reubican

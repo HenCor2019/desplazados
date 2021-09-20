@@ -72,7 +72,10 @@ module.exports = {
         '2xl-h': { raw: '(min-height: 1536px)' },
         'lg-2': { raw: '(min-width: 1025px)' },
         'xl-2': { raw: '(min-width: 1800px)' },
-      },      
+      },
+      borderWidth: {
+       '3': '3px',
+      },
       spacing: {
         '9/50': '1.125rem',
        },

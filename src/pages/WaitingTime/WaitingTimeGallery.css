@@ -28,7 +28,7 @@
 
 @media (min-width: 1280px) {
   .text-custom-gallery-size {
-    font-size: 58%;
+    font-size: 50%;
     line-height: normal;
   }
 }
@@ -36,6 +36,34 @@
 @media (min-width: 1536px) {
   .text-custom-gallery-size {
     font-size: 75%;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 1800px) {
+  .text-custom-gallery-size {
+    font-size: 100%;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 2000px) {
+  .text-custom-gallery-size {
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 2200px) {
+  .text-custom-gallery-size {
+    font-size: 1.3rem;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 2400px) {
+  .text-custom-gallery-size {
+    font-size: 1.5rem;
     line-height: normal;
   }
 }

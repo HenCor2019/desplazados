@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Concepts from '../../assets/images/Support/concepts.png';
 import Report from '../../assets/images/Support/report.png';
 import Statistics from '../../assets/images/Support/statistics.png';
-import Hoverable from '../../wrappers/Hoverable/Hoverable';
 
 import { LazySection } from '../../HOC/LazySection/LazySection';
 
@@ -32,8 +31,8 @@ function SupportMainSect() {
     return (
         <div className="h-full w-full flex items-center">
             <main className="h-auto w-full grid lg-2:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:grid-rows-min gap-4 p-0 sm:p-8 lg-2:p-4">
-                <div className="h-auto flex sm:w-full items-center lg-2:items-end justify-start sm:justify-center lg-2:justify-start xl-2:justify-end p-4 sm:p-0">
-                    <Hoverable src={ Concepts }
+                <div className="h-auto flex sm:w-full items-center lg-2:items-end justify-start sm:justify-center lg-2:justify-start p-4 sm:p-0">
+                    <img src={ Concepts }
                         HtmlTag="img" 
                         alt="Concepto" 
                         style={ style1 } 
@@ -43,8 +42,8 @@ function SupportMainSect() {
                         onHoverOut={() => setConceptsHover(false)} 
                         loading="lazy" />
                 </div>
-                <div className="flex h-auto w-full justify-end sm:items-center lg-2:items-start sm:justify-center lg-2:justify-start lg-2:col-span-2 xl-2:ml-36 xl-2:p-0 xl-2:transform xl-2:-translate-y-10 sm:p-8 p-4">
-                    <Hoverable src={ Statistics } 
+                <div className="flex h-auto w-full justify-end sm:items-center lg-2:items-start sm:justify-center lg-2:justify-start lg-2:col-span-2 sm:p-8 p-4">
+                    <img src={ Statistics } 
                         HtmlTag="img" 
                         alt="Estadísticas" 
                         style={ style2 } 
@@ -59,7 +58,7 @@ function SupportMainSect() {
                     Luego de la sentencia 411-2017 de la Corte Suprema de Justicia de El Salvador, el Estado se vio obligado a reconocer y legislar en favor de las víctimas de desplazamiento forzado por violencia. Tres años después, se aprobó una ley que carece de reglamento. Aunque existen acuerdos internacionales, como la Convención sobre Refugiados de 1951 y las Declaraciones de Cartagena y de Brasil, en El Salvador son documentos muertos. ¿A qué se enfrentan las familias cuando buscan apoyo de parte del Estado?</p>
                 </div>
                 <div className="flex sm:w-full items-center lg-2:items-start justify-start sm:justify-center lg-2:justify-start row-start-3 row-end-4 sm:row-start-auto sm:row-end-auto p-4 sm:p-0">
-                    <Hoverable src={ Report } 
+                    <img src={ Report } 
                         HtmlTag="img" 
                         alt="Reporte" 
                         style={ style3 } 

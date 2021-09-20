@@ -1,9 +1,7 @@
 import React from 'react';
 
-import Hoverable from '../../wrappers/Hoverable/Hoverable';
-
 const Image = ({ img, alt, grayscale, position, onMouseEnter, onMouseLeave, handleOnClick }) => (
-    <Hoverable 
+    <div 
         onHoverIn={onMouseEnter}
         onHoverOut={onMouseLeave}
         onClick={handleOnClick}
@@ -15,7 +13,7 @@ const Image = ({ img, alt, grayscale, position, onMouseEnter, onMouseLeave, hand
             className="w-9/12 sm:w-10/12 md:w-full lg:w-80"
             loading={"lazy"}
         />
-    </Hoverable>
+    </div>
 );
 
 export default Image;
