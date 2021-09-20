@@ -18,7 +18,7 @@ const Reportages = () => {
     }
 
     return (
-        <main className="p-0 md:p-4">
+        <main className="p-0 md:p-4 xl-2:p-8">
             <div className="w-full flex flex-nowrap mb-2 md:mb-4 p-4">
                 <p className="font-sans text-title bg-white md:w-11/12 w-full p-4 xl-2:text-5xl">LOS SALVADOREÑOS QUE DEJAN TODO PARA SALVAR LA VIDA</p>
                 <img src={TitleDeco} className="md:w-20 hidden md:inline-block" alt="Los salvadoreños que dejan todo para salvar la vida" />
