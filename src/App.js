@@ -101,7 +101,7 @@ function App() {
           </Section>
         </Route>
 
-        <Route exact path="/la-espera/meanwhile">
+        <Route exact path="/la-espera/mientras-tanto">
           <Helmet>
             <title> Desplazados - Mientras esperamos </title>
           </Helmet>
@@ -114,7 +114,7 @@ function App() {
           </Section>
         </Route>
 
-        <Route exact path="/la-espera/gallery">
+        <Route exact path="/la-espera/galeria">
           <Helmet>
             <title> Desplazados - Galería </title>
           </Helmet>
@@ -127,7 +127,7 @@ function App() {
           </Section>
         </Route>
 
-        <Route exact path="/la-espera/process">
+        <Route exact path="/la-espera/proceso">
           <Helmet>
             <title> Desplazados - Procesos </title>
           </Helmet>
