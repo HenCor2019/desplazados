@@ -19,8 +19,7 @@ const poadcastPlayerStyle = {
   backgroundRepeat: 'no-repeat'
 }
 
-// export default LazySection(function Poadcast() {
-export default function Poadcast() {
+export default LazySection(function Poadcast() {
   const [activeAudio, setActiveAudio] = useState(audios[0])
 
   const customIcons = {
@@ -133,4 +132,4 @@ export default function Poadcast() {
     </main>
   )
 }
-//)
+)
