@@ -3,7 +3,7 @@ const Section1 = () => {
         <section className="mt-2 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-8 p-4 mb-4 md:mb-0">
                 <div>
                     <p className="font-acumin text-gray-500 text-2xl mb-6">"Vos sabés como estamos en el país, podés investigar por tu propia cuenta y cuando sepás dónde está tu hijo, nos venís a decir para irlo a levantar"</p>
-                    <p className="font-acumin text-black-700 leading-5 text-justify">
+                    <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify">
                         Le dijo el fiscal encargado del caso a Jackeline, quien después de buscar a su hijo desaparecido hacía 5 meses, no perdía la esperanza de obtener una respuesta de parte de la Fiscalía General de la República (FGR), encargada de las investigaciones de todos los hechos de violencia en El Salvador.
                         <br /><br />
                         Marco, un joven -bien parecido, alto y fornido- como lo describe su padre, salió la tarde del 13 de enero a realizar su servicio social. Él formaba parte del programa de alfabetización que implementó el Gobierno de El Salvador durante el mandato de Salvador Sánchez Cerén (2014-2019). Como siempre, dejó a sus hermanos en casa, caminó por las polvorientas calles de su comunidad, pero nunca regresó. Era un joven servicial. Así lo recuerdan vecinos y amigos de la familia.
@@ -12,7 +12,7 @@ const Section1 = () => {
                     </p>
                 </div>
                 <div>
-                    <p className="font-acumin text-black-700 leading-5 text-justify">
+                    <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify">
                         Quizás por eso la pandilla de la zona, la MS-13, se había fijado en él. Según él contó a sus padres, lo acosaban en la escuela y le decían que tarde o temprano, se tendría que unir a ellos.
                         <br /><br />
                         El día que desapareció, sus padres pusieron la denuncia en la Policía Nacional Civil (PNC). Agentes llegaron hasta la casa, hicieron investigaciones, interrogaron personas, pero nada. Parecía que a Marco se lo había tragado la tierra.
@@ -26,14 +26,14 @@ const Section1 = () => {
                 </div>
                 <div>
                     <div className="bg-white p-5 shadow-md my-6 lg:mb-6 lg-mt-0">
-                        <p className="font-acumin text-black-700 leading-5 text-justify italic text-lg font-thin">
+                        <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify italic text-lg font-thin">
                             “Toda persona tiene derecho a la vida, a la integridad física y moral, a la libertad, a la seguridad, al trabajo, a la propiedad y posesión, y a ser protegida en la conservación y defensa de los mismos”
                         </p>
                         <p className="font-acumin text-black-700 italic mt-4 text-sm">
                             Art.2, Constitución de la República de El Salvador
                         </p>
                     </div>
-                    <p className="font-acumin text-black-700 leading-5 text-justify">
+                    <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify">
                         Ellos comunicaron a las autoridades lo que estaba sucediendo. Un policía que conocía el caso les recomendó mudarse de la comunidad. Pero en El Salvador, con apenas poco más de 20 mil kilómetros cuadrados, es bastante difícil moverse sin llamar la atención. Sobre todo, cuando las amenazas vienen de una pandilla, cuya presencia está extendida casi a nivel nacional.
                         <br /><br />
                         Tanto para Jackeline, empleada de una fábrica, como para Roberto, trabajador por cuenta propia, era difícil pensar en mudarse por su propia cuenta. Económicamente no alcanzaban a pagar un alquiler y al mismo tiempo suplir todos los gastos de la casa.

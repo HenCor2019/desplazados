@@ -4,7 +4,7 @@ const Section2 = () => {
     return (
         <section className="h-full mt-4 md:mt-8 lg:grid lg:grid-cols-3 lg:grids-rows-4 lg:grid-flow-col lg:gap-8 bg-brownie-gray p-4 mb-4 md:mb-0">
             <div className="row-span-3">
-                <p className="font-acumin text-black-700 leading-5 text-justify">
+                <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify">
                     El reconocimiento del desplazamiento forzado en El Salvador es reciente. En 2017, la Sala de lo Constitucional de la Corte Suprema de Justicia, emitió la sentencia 411 a favor de una familia que sufrió desplazamiento. Este caso fue acompañado por Cristosal, una organización que desde 2015 apoya a víctimas de este fenómeno.
                     <br /><br />
                     Fue hasta enero de 2020 que la Asamblea Legislativa aprobó una Ley, obedeciendo a la sentencia, para la atención y protección integral de víctimas de desplazamiento forzado, adscribiendo esta responsabilidad a la Dirección de Atención a Víctimas, una dependencia del Ministerio de Seguridad Pública.
@@ -25,12 +25,12 @@ const Section2 = () => {
                 </div>
             </div>
             <div className="lg:col-start-2 lg:col-end-3">
-                <p className="font-acumin text-black-700 leading-5 text-justify">
+                <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify">
                     Con errores y aciertos, dice Rina Montti de Cristosal, las organizaciones de la sociedad civil, que forman parte de la Mesa contra el Desplazamiento Forzado, han apoyado y adquirido experiencia en el acompañamiento de familias que son víctimas del problema.
                 </p>
             </div>
             <div className="lg:col-start-3 lg:col-end-4">
-                <p className="font-acumin text-black-700 leading-5 text-justify mt-6 lg:mt-0">
+                <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify mt-6 lg:mt-0">
                     Pero, hace hincapié, en que el papel de las organizaciones debería ser como contralores y asesores, verificando el cumplimiento de leyes nacionales y acuerdos internacionales que amparan a las víctimas, y no asumiendo las responsabilidades que corresponden al Estado.
                 </p>
             </div>
