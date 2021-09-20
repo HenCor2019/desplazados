@@ -12,7 +12,7 @@ function Statistics() {
     <main className="p-8 md:p-10">
       <img
         src={Title}
-        className="w-60 md:w-64 block mb-12 xl-2:w-2/6"
+        className="w-72 block mb-12 xl-2:w-2/6"
         alt="Número que son personas"
       />
       <StatisticsInfo
@@ -54,5 +54,5 @@ function Statistics() {
   )
 }
 
-export default Statistics
+export default LazySection(Statistics)
 
