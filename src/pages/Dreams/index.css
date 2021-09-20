@@ -37,9 +37,21 @@
   }
 }
 
-@media (min-width: 450px) and (max-width: 640px) {
+@media (min-width: 450px) and (max-width: 500px) {
   .audio-player-container {
-    width: auto;
+    width: 85%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 560px) {
+  .audio-player-container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 640px) {
+  .audio-player-container {
+    width: 70%;
   }
 }
 
@@ -69,6 +81,12 @@
   .rhap_main-controls {
     margin: 0 0 0 2.5rem;
   }
+
+@media (min-width: 1440px) {
+  .rhap_container {
+    width: 85%;
+  }
+}
 
   .audio-player-container {
     width: 100%;

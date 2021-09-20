@@ -77,11 +77,11 @@ export default function Poadcast() {
                 alt={activeAudio.title}
               />
 
-              <p className="w-3/4 sm:w-auto my-6 font-sans text-sm md:text-sm lg:text-base text-center tracking-wider">
+              <p className="w-3/4 sm:w-auto md:w-4/6 lg:w-1/2 my-6 font-sans text-sm md:text-sm lg:text-base text-center tracking-wider">
                 {activeAudio.title}
               </p>
 
-              <div className="audio-player-container sm:w-3/4 lg:w-5/6 xl:w-3/4 mt-2">
+              <div className="audio-player-container mt-2">
                 <AudioPlayer
                   autoPlay={true}
                   // className="w-1/4 bg-transparent"
