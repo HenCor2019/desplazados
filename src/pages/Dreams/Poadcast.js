@@ -19,7 +19,8 @@ const poadcastPlayerStyle = {
   backgroundRepeat: 'no-repeat'
 }
 
-export default LazySection(function Poadcast() {
+// export default LazySection(function Poadcast() {
+export default function Poadcast() {
   const [activeAudio, setActiveAudio] = useState(audios[0])
 
   const customIcons = {
@@ -64,14 +65,14 @@ export default LazySection(function Poadcast() {
       <section className="grid w-full h-auto grid-cols-1 grid-rows-2 xl:grid-cols-2 xl:grid-rows-1">
         <div className="relative w-full h-full flex justify-center items-center order-5 md:my-2 lg:m-0">
           <div style={poadcastPlayerStyle} className="relative w-full h-full">
-            <div className="audio-player absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8/12 h-auto flex flex-col justify-center items-center pl-2 relative">
+            <div className="audio-player absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8/12 xl-2:w-6/12 h-auto flex flex-col justify-center items-center pl-2 relative">
               <img
                 src={QueSoniamos}
-                className="-top-24 absolute transform z-20 w-36 sm:hidden"
+                className="-top-24 absolute transform z-20 w-28 sm:hidden"
                 alt="¿Que soñamos?"
               />
               <img
-                className="w-40 sm:w-60 lg:w-8/12 xl:w-10/12"
+                className="w-1/2 lg:w-1/3 xl:w-1/2" 
                 src={activeAudio.image}
                 alt={activeAudio.title}
               />
@@ -80,10 +81,10 @@ export default LazySection(function Poadcast() {
                 {activeAudio.title}
               </p>
 
-              <div className="audio-player-container sm:w-3/4 lg:w-5/6 xl:w-full">
+              <div className="audio-player-container sm:w-3/4 lg:w-5/6 xl:w-3/4 mt-2">
                 <AudioPlayer
                   autoPlay={true}
-                  className="w-full bg-transparent"
+                  // className="w-1/4 bg-transparent"
                   autoPlayAfterSrcChange={true}
                   src={activeAudio.src}
                   onEnded={onEnded}
@@ -103,7 +104,7 @@ export default LazySection(function Poadcast() {
         <div className="flex flex-col justify-center items-center order-6 sm:order-1 xl:order-5">
           <img
             src={QueSoniamos}
-            className="hidden sm:block w-8/12"
+            className="hidden sm:block sm:w-6/12 md:w-5/12 lg:w-4/12 xl:w-6/12 xl-2:w-5/12"
             alt="¿Que soñamos?"
           />
 
@@ -132,4 +133,4 @@ export default LazySection(function Poadcast() {
     </main>
   )
 }
-)
+//)

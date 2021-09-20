@@ -4,10 +4,17 @@
   color: red;
 }
 
+.rhap_main {
+  width: 90%;
+  margin: auto;
+}
+
 .rhap_container {
   border: none;
   box-shadow: none;
   background-color: transparent;
+  width: 100%;
+  margin: auto;
 }
 
 .rhap_bar-color,
@@ -27,10 +34,6 @@
 @media (min-width: 300px) {
   .audio-player-container {
     width: 100%;
-  }
-
-  .rhap_main-controls {
-    margin: 0 0 0 0.5rem;
   }
 }
 
@@ -57,12 +60,22 @@
 }
 
 @media (min-width: 1024px) {
-  .audio-player-container {
-    width: 83%;
+  .rhap_container {
+    width: 68%;
   }
 }
 
 @media (min-width: 1280px) {
+  .rhap_main-controls {
+    margin: 0 0 0 2.5rem;
+  }
+
+  .audio-player-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1800px) {
   .rhap_main-controls {
     margin: 0 0 0 2.5rem;
   }
