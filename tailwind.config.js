@@ -71,6 +71,7 @@ module.exports = {
         'xl-h': { raw: '(min-height: 1280px)' },
         '2xl-h': { raw: '(min-height: 1536px)' },
         'lg-2': { raw: '(min-width: 1025px)' },
+        'xl-2': { raw: '(min-width: 1800px)' },
       },      
       spacing: {
         '9/50': '1.125rem',
@@ -97,7 +98,9 @@ module.exports = {
         '15/100': '15%',
         '90/100': '90%',
         '13/100w': '13vh',
-        '87/100w': '87vh'
+        '87/100w': '87vh',
+        '40/100w': '40vh',
+        '55/100w': '55vh',
       },
       inset: {
         '40/100': '40%',
