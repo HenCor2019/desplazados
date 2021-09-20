@@ -17,8 +17,8 @@ export const ConfigProvider = (props) => {
 
   useEffect(()=> {
     setIsSmallMobile(width <= 640);
-    setIsMobile(width <= 768);
-    setIsTablet(width > 768 && width <= 1024);
+    setIsMobile(width <= 767);
+    setIsTablet(width > 767 && width <= 1024);
     setIsMonitor(width > 1024);
   }, [width]);
 
