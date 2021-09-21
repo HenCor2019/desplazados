@@ -29,7 +29,8 @@ function ReportagesTabs() {
 
   return (
     <>
-      <SelectedTab Section={selectedTab.section} />
+      {/* <SelectedTab Section={selectedTab.section} /> */}
+      <selectedTab.section />
       <ul className='grid grid-rows-1 grid-flow-col m-4'>
         <Tab
           name='Anterior'

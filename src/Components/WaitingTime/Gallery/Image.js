@@ -7,7 +7,7 @@ function Image({ img, alt, position, onClick, isMobile }) {
 
   return (
     <div
-      className={`p-6 md:p-4 lg:p-0 flex justify-center items-center ${position} relative order-5 overflow-hidden`}
+      className={`p-6 md:p-4 lg:p-0 flex justify-center items-center ${position} relative order-5`}
       onMouseEnter={() => setIsImageHover(true)}
       onMouseLeave={() => setIsImageHover(false)}
       onClick={() => onClick(img)}
