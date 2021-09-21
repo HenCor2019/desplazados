@@ -1,35 +1,81 @@
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import './style.css';
-import Section1 from '../Sections/Section1'
-import Section2 from '../Sections/Section2'
-import Section3 from '../Sections/Section3'
-import Section4 from '../Sections/Section4'
-import Section5 from '../Sections/Section5'
+import React, { useState } from "react";
+import SelectedTab from "./SelectedTab";
+import Tab from "./Tab";
 
-export default () => (
-    <Tabs>
-        <TabList>
-            <Tab>1</Tab>
-            <Tab>2</Tab>
-            <Tab>3</Tab>
-            <Tab>4</Tab>
-            <Tab>5</Tab>
-        </TabList>
+import Section1 from "../Sections/Section1";
+import Section2 from "../Sections/Section2";
+import Section3 from "../Sections/Section3";
+import Section4 from "../Sections/Section4";
+import Section5 from "../Sections/Section5";
 
-        <TabPanel>
-            <Section1 />
-        </TabPanel>
-        <TabPanel>
-            <Section2 />
-        </TabPanel>
-        <TabPanel>
-            <Section3 />
-        </TabPanel>
-        <TabPanel>
-            <Section4 />
-        </TabPanel>
-        <TabPanel>
-            <Section5 />
-        </TabPanel>
-    </Tabs>
-);
+function ReportagesTabs() {
+  const [selectedTab, setSelectedTab] = useState(tabs[0]);
+
+  function onClickHandler(name, index) {
+    if (name == "Anterior") {
+      if (index != 0) {
+        index--;
+        setSelectedTab(tabs[index]);
+      }
+    } else if (name == "Siguiente") {
+      if (index != tabs.length - 1) {
+        index++;
+        setSelectedTab(tabs[index]);
+      }
+    } else {
+      setSelectedTab(tabs[index]);
+    }
+  }
+
+  return (
+    <>
+      {/* <SelectedTab Section={selectedTab.section} /> */}
+      <selectedTab.section />
+      <ul className='grid grid-rows-1 grid-flow-col m-4'>
+        <Tab
+          name='Anterior'
+          index={selectedTab.index}
+          onClick={onClickHandler}
+        />
+        {tabs.map((tab) => (
+          <Tab name={tab.name} index={tab.index} onClick={onClickHandler} />
+        ))}
+        <Tab
+          name='Siguiente'
+          index={selectedTab.index}
+          onClick={onClickHandler}
+        />
+      </ul>
+    </>
+  );
+}
+
+const tabs = [
+  {
+    name: 1,
+    section: Section1,
+    index: 0,
+  },
+  {
+    name: 2,
+    section: Section2,
+    index: 1,
+  },
+  {
+    name: 3,
+    section: Section3,
+    index: 2,
+  },
+  {
+    name: 4,
+    section: Section4,
+    index: 3,
+  },
+  {
+    name: 5,
+    section: Section5,
+    index: 4,
+  },
+];
+
+export default ReportagesTabs;

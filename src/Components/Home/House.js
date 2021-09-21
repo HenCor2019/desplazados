@@ -12,7 +12,8 @@ const House = ({ houseImg, textImg, alt, line, filter, onMouseEnter, onMouseLeav
                 className="inline-block relative w-1/3 min-w-house-width cursor-pointer"
                 onHoverIn={onMouseEnter}
                 onHoverOut={onMouseLeave}
-                onClick={ () => { push(pathname) } }>
+                onClick={ () => { push(pathname) } }
+                doubleTap={true}>
                 <img
                     src={houseImg}
                     alt={alt}
