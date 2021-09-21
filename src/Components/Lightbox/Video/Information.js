@@ -8,11 +8,11 @@ export default function Information({ src, title, description }) {
         loading="lazy"
       />
 
-      <h1 className="lg:w-auto font-sans absolute top-0 text-center md:px-4 lg:px-7 pt-2 lg:pt-5 ml-4 lg:ml-7 mt-7 xl:w-auto 2xl:w-full md:mt-0 2xl:font-base">
+      <h1 className="lg:w-auto font-sans absolute top-0 text-center md:px-4 lg:px-7 pt-2 lg:pt-5 ml-4 lg:ml-7 mt-7 xl:w-auto 2xl:w-full md:mt-0 xl:text-xl 2xl:px-12 2xl:text-2xl">
         {title}
       </h1>
 
-      <p className="w-full text-justify text-base lg:text-base 2xl:text-lg leading-tight transform -translate-y-1/2 md:-translate-y-1/4 xl:-translate-y-1/2 pt-16 pr-2">
+      <p className="w-full text-justify text-base lg:text-lg xl:text-base 2xl:text-xl leading-tight transform -translate-y-1/2 md:-translate-y-1/4 xl:-translate-y-1/2 pt-16 pr-2">
         {description}
       </p>
     </div>
