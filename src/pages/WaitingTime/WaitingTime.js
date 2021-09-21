@@ -32,15 +32,15 @@ function WaitingTime() {
     }
 
     const handleOnProcess = () => {
-        push('/la-espera/process')
+        push('/la-espera/proceso')
     }
 
     const handleOnGallery = () => {
-        push('/la-espera/gallery')
+        push('/la-espera/galeria')
     }
 
     const handleOnMeanwhile = () => {
-        push('/la-espera/meanwhile')
+        push('/la-espera/mientras-tanto')
     }
 
     return (
