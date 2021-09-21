@@ -67,7 +67,7 @@ export const galleryPhotos = [
   {
     title: 'Mi animal favorito',
     description:
-      '“Siempre me han gustado los lobos, por el pelo y porque siempre andan en manada. Ami hermano le gustan los zorros. Ahí se encuentran conviviendo en el bosque”.',
+      '“Siempre me han gustado los lobos, por el pelo y porque siempre andan en manada. A mi hermano le gustan los zorros. Ahí se encuentran conviviendo en el bosque”.',
     author: 'Milton y Jacob, 8 y 16 años de edad.',
     src: ImageFour,
     thumbnail: ThumbnailFour,
@@ -149,38 +149,45 @@ export const comicImages = [
   },
 
   {
-    index: 2,
-    src: ComicOne
+    index: 1,
+    src: ComicOne,
+    name: 'Migración'
   },
 
   {
     index: 2,
-    src: ComicTwo
+    src: ComicTwo,
+    name: 'Desaparición forzada'
   },
 
   {
     index: 3,
-    src: ComicThree
+    src: ComicThree,
+    name: 'Violencia y acoso por las pandillas'
   },
 
   {
     index: 4,
-    src: ComicFour
+    src: ComicFour,
+    name: 'Violación'
   },
 
   {
     index: 5,
-    src: ComicFive
+    src: ComicFive,
+    name: 'Colaboración con la justicia'
   },
 
   {
     index: 6,
-    src: ComicSix
+    src: ComicSix,
+    name: 'Crimen organizado'
   },
 
   {
     index: 7,
-    src: ComicSeven
+    src: ComicSeven,
+    name: 'Cambio de vida'
   },
 
   {
