@@ -5,7 +5,9 @@
 
 .css-148o527-ItemComponent {
   border-bottom: none !important;
+  padding: 0.76rem;
 }
+
 .css-148o527-ItemComponent.react-dropdown-select-item-selected {
   background-color: #424746 !important ;
 }
@@ -13,4 +15,3 @@
 .css-148o527-ItemComponent:hover {
   background-color: #424746 !important ;
 }
-
