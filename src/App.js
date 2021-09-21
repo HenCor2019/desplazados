@@ -22,6 +22,8 @@ import CausesBanner from './assets/images/Causes/causes-banner.png'
 import CausesPortBanner from './assets/images/Banners/Mobile/causes-banner.png'
 import CausesPortBanner2 from './assets/images/Banners/Mobile/causes.png'
 import CausesBannerText from './assets/images/Causes/green_banner_text.png'
+import CausesDrawingsBanner from './assets/images/Banners/banner-drawings.png'
+import CausesStoryBanner from './assets/images/Banners/banner-story.png'
 import CausesSect from './pages/Causes/index'
 import CausesGallery from './pages/Gallery/index'
 import DreamsBanner from './assets/images/Dreams/dreams-banner.png'
@@ -33,6 +35,9 @@ import DreamsGallery from './pages/DreamsGallery'
 import Dreams from './pages/Dreams/index'
 import WaitingTimeGallery from './pages/WaitingTime/WaitingTimeGallery'
 import WaitingSmallBanner from './assets/images/Banners/wait-s-banner.png'
+import WaitingGalleryBanner from './assets/images/Banners/wait-gallery-banner.png'
+import WaitingProcessBanner from './assets/images/Banners/wait-process-banner.png'
+import WaitingVideosBanner from './assets/images/Banners/wait-videos-banner.png'
 import WaitingTimeProcess from './pages/WaitingTime/Process'
 import Poadcast from './pages/Dreams/Poadcast'
 
@@ -74,7 +79,7 @@ function App() {
           <Helmet>
             <title> Desplazados - Comic </title>
           </Helmet>
-          <Section bannerLand={CausesBannerText} bannerPort={CausesPortBanner2}>
+          <Section bannerLand={CausesStoryBanner} bannerPort={CausesPortBanner2}>
             <Comic />
           </Section>
         </Route>
@@ -84,7 +89,7 @@ function App() {
             <title> Desplazados - Galería </title>
           </Helmet>
 
-          <Section bannerLand={CausesBannerText} bannerPort={CausesPortBanner2}>
+          <Section bannerLand={CausesDrawingsBanner} bannerPort={CausesPortBanner2}>
             <CausesGallery />
           </Section>
         </Route>
@@ -107,7 +112,7 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={WaitingSmallBanner}
+            bannerLand={WaitingVideosBanner}
             bannerPort={WaitingPortBanner2}
           >
             <Meanwhile />
@@ -120,7 +125,7 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={WaitingSmallBanner}
+            bannerLand={WaitingGalleryBanner}
             bannerPort={WaitingPortBanner2}
           >
             <WaitingTimeGallery />
@@ -133,7 +138,7 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={WaitingSmallBanner}
+            bannerLand={WaitingProcessBanner}
             bannerPort={WaitingPortBanner2}
           >
             <WaitingTimeProcess />
