@@ -25,7 +25,7 @@ export default function Lightbox(props) {
   }
 
   return (
-    <div className="lightbox w-full h-full flex justify-between lg:justify-around content-center z-40 sm:p-3">
+    <div className="lightbox w-full h-full flex justify-center content-center z-40 sm:p-3">
       <Button
         src={BtnChangeImage}
         alt="playbutton prev desplazados"
@@ -35,7 +35,7 @@ export default function Lightbox(props) {
         opacity={newImage.index === 0 ? 'opacity-0' : 'opacity-100'}
       />
 
-      <div className="w-full flex items-center lg:justify-center lg:flex-row">
+      <div className="w-full lg:w-4/5 flex items-center lg:justify-center lg:flex-row">
         <LightboxImage content={newImage} handleOnClick={onClick} />
       </div>
 

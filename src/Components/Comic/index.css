@@ -1,0 +1,30 @@
+.react-dropdown-select-dropdown > * {
+  background-color: #7c7c7cee;
+  color: #e0e0e0;
+}
+
+.css-148o527-ItemComponent {
+  border-bottom: none !important;
+}
+.css-148o527-ItemComponent.react-dropdown-select-item-selected {
+  background-color: #424746 !important ;
+}
+
+.css-148o527-ItemComponent:hover {
+  background-color: #424746 !important ;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+svg > g > g > path {
+  background-color: #1fa737;
+}
+
+.page-options {
+  background-image: url('../../assets/images/Lightbox/Image/background_gallery_comic.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
