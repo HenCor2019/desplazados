@@ -1,56 +1,65 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 
 import useWindowsDimensions from "../../Hooks/UseWindowsDimensions";
 import useOnClickOutside from "../../Hooks/UseOnClickOutside";
 
-import { useConfigContext } from '../../contexts/ConfigContext';
+import { useConfigContext } from "../../contexts/ConfigContext";
 
-const Hoverable = ({ onHoverIn=()=>{}, onHoverOut=()=>{}, onClick=()=>{}, HtmlTag="div",...rest }) => {
+const Hoverable = ({
+  onHoverIn = () => {},
+  onHoverOut = () => {},
+  onClick = () => {},
+  doubleTap = false,
+  HtmlTag = "div",
+  ...rest
+}) => {
   const mainRef = useRef();
 
   const { isTouchable } = useConfigContext();
   const [isClicked, setIsClicked] = useState(false);
 
-  useEffect(()=> {
-    if(isClicked) {
+  useEffect(() => {
+    if (isClicked) {
       onHoverIn();
-    }else {
+    } else {
       onHoverOut();
     }
   }, [isClicked]);
 
-  useOnClickOutside(mainRef, ()=> {
+  useOnClickOutside(mainRef, () => {
     isTouchable && setIsClicked(false);
   });
 
   const onMouseEnterHandler = (e) => {
-    !isTouchable  && onHoverIn();
-  }
+    !isTouchable && onHoverIn();
+  };
 
   const onMouseLeaveHandler = (e) => {
-    !isTouchable  && onHoverOut();
-  }
+    !isTouchable && onHoverOut();
+  };
 
   const onClickHandler = (e) => {
-    if(!isTouchable ) {
+    if (!isTouchable) {
       onClick();
     } else {
-      if(!isClicked) {
+      if (!isClicked && doubleTap) {
         setIsClicked(true);
-      }else {
+      } else {
         setIsClicked(false);
         onClick();
       }
     }
-  }
+  };
 
-  return(
-    <HtmlTag ref={mainRef}
+  return (
+    <HtmlTag
+      ref={mainRef}
       {...rest}
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
-      onClick={onClickHandler}/>
+      onClick={onClickHandler}
+    />
   );
-}
+};
 
 export default Hoverable;

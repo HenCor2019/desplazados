@@ -1,3 +1,5 @@
+import Hoverable from "../../wrappers/Hoverable/Hoverable";
+
 export default function CauseImage(props) {
   const {
     Image,
@@ -12,7 +14,7 @@ export default function CauseImage(props) {
   } = props
 
   return (
-    <div
+    <Hoverable
       className={`${rowspan} ${colspan} w-full h-3/4 sm:h-full mx-auto`}
       onHoverIn={() => handleMouseEnter(setGrayscale)}
       onHoverOut={handleMouseLeave}
@@ -23,6 +25,6 @@ export default function CauseImage(props) {
           grayscale ? ' grayscale' : ''
         }`}
       />
-    </div>
+    </Hoverable>
   )
 }
