@@ -8,7 +8,7 @@ import NuevaOportunidadAudio from '../../../assets/audios/Gladis_nueva_oportunid
 import VidaNormalAudio from '../../../assets/audios/Joaquin_vida_normal_como_antes_VM.mp3'
 import PazTranquilidadAudio from '../../../assets/audios/Lucia_paz_tranquilidad_VM.mp3'
 import PermisoAudio from '../../../assets/audios/Marcos_cuando_tenga_el_permiso_de_trabajar_VM.mp3'
-import SalirAdelanteAudio from '../../../assets/audios/Maritza_tenemos_que_salir_adelante_VM.mp3'
+import SalirAdelanteAudio from '../../../assets/audios/Maritza_tenemos_que_salir_adelante.mp3'
 
 export const audios = [
   {

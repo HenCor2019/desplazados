@@ -73,6 +73,7 @@ export default (function Poadcast() {
           <div className='flex justify-center items-center'>
             <div style={poadcastPlayerStyle} className='w-auto h-auto p-8 sm:p-16 xl-2:p-24'>
               <div className='audio-player flex flex-col justify-center items-center'>
+              <div className="w-full h-16 sm:h-0"></div>
                 <img
                   className='w-1/2 lg:w-1/3 xl:w-1/2'
                   src={activeAudio.image}
