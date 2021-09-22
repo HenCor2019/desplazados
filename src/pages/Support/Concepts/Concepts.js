@@ -26,4 +26,4 @@ const Concepts = () => {
     )
 }
 
-export default LazySection(Concepts)
+export default Concepts
