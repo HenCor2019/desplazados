@@ -22,10 +22,10 @@ import ImageTen from '../../../assets/images/Dreams/Gallery/gallery/10.png'
 
 export const dreamGallery = [
   {
-    title: 'Un hogar de colores',
+    title: 'Jardines llenos de vida',
     description:
-      '“Una casa con mi mamá, mi papá, un sol radiante y espacios donde jugar”',
-    author: 'Karla, 9 años de edad ',
+      '“A mi y a mis hermanas nos gusta jugar bastante, por eso quisiera un jardín bien grande para andar jugando mica”.',
+    author: 'Juan, 13 años de edad',
     src: ImageOne,
     imgPosition:'md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2',
     thumbnail: ThumbnailOne,
@@ -33,13 +33,13 @@ export const dreamGallery = [
   },
 
   {
-    title: 'Una casa con piscina',
+    title: 'Acuarela para el futuro',
     description:
-      '“Quiero que nuestra casa sea grande, con piscina para poder jugar con mi hermana y tener espacio para movernos”',
-    author: 'Fernando, 9 años de edad ',
+      '“Estoy nerviosa, me pregunto cómo será la casa donde viviremos. Podría pintarla igual, la voy a extrañar”.',
+    author: 'Jorge, 14 años de edad',
+    imgPosition: 'md:col-start-4 md:col-end-6 md:row-start-3 md:row-end-5',
     src: ImageTwo,
-    imgPosition: 'md:col-start-3 md:col-end-5 md:row-start-1 md:row-end-2',
-    thumbnail: ThumbnailTwo,
+    thumbnail: ThumbnailEight,
     index: 1
   },
 
@@ -67,21 +67,21 @@ export const dreamGallery = [
   },
 
   {
-    title: 'El sol radiante y el cielo azul',
+    title: 'Un hogar de colores',
     description:
-      '“Yo sueño con llegar a un lugar como donde jugaba cuando estaba pequeño. Con un sol fuerte y el cielo azul, azulito. Y una casa grande donde quepamos todos”',
-    author: 'Marcos, 14 años de edad ',
-    src: ImageFive,
+      '“Una casa con mi mamá, mi papá, un sol radiante y espacios donde jugar”.',
+    author: 'Karla, 9 años de edad',
     imgPosition: 'md:col-start-4 md:col-end-6 md:row-start-2 md:row-end-3',
+    src: ImageFive,
     thumbnail: ThumbnailFive,
     index: 4
   },
 
   {
-    title: 'La casa trasplantada',
+    title: 'El sueño de una casa morada',
     description:
-      '“Lo que yo quisiera es poder llevarme mi casa. No se donde iremos, pero no quisiera dejarla, quisiera poder llevarmela conmigo”',
-    author: 'Antonio, 7 años de edad ',
+      '“Una vez soñé unos campos grandes, con unas montañas verdes y en el fondo una casita morada. Esa si era mi casita, morada, como de cuento”.',
+    author: 'Margarita, 11 años de edad',
     src: ImageSix,
     imgPosition: 'md:col-start-1 md:col-end-2 md:row-start-4 md:row-end-5',
     thumbnail: ThumbnailSix,
@@ -89,10 +89,10 @@ export const dreamGallery = [
   },
 
   {
-    title: 'El sueño de una casa morada',
+    title: 'Mi casa y la vida en recortes',
     description:
-      '“Una vez soñé unos campos grandes, con unas montañas verdes y en el fondo una casita morada. Esa si era mi casita, morada, como de cuento”',
-    author: 'Margarita, 15 años de edad ',
+      '“Nos hemos movido tantas veces de casa, que cada parte del papel es una de esas. No tenemos una pero espero con ansias tenerla, pintarla. Me acordaré de todas”.',
+    author: 'Marina, 16 años de edad',
     src: ImageSeven,
     imgPosition: 'md:col-start-2 md:col-end-4 md:row-start-4 md:row-end-5',
     thumbnail: ThumbnailSeven,
@@ -100,32 +100,32 @@ export const dreamGallery = [
   },
 
   {
-    title: 'Mi casa y la vida en recortes',
+    title: 'Una casa con piscina',
     description:
-      '“Nos hemos movido tantas veces de casa, que cada parte del papel es una de esas. No tenemos una pero espero con ansias tenerla, pintarla. Me acordaré de todas”',
-    author: 'Marina, 16 años de edad ',
+      '“Quiero que nuestra casa sea grande, con piscina para poder jugar con mi hermana y tener espacio para movernos”.',
+    author: 'Fernando, 9 años de edad',
+    imgPosition: 'md:col-start-3 md:col-end-5 md:row-start-1 md:row-end-2',
     src: ImageEight,
-    imgPosition: 'md:col-start-4 md:col-end-6 md:row-start-3 md:row-end-5',
-    thumbnail: ThumbnailEight,
+    thumbnail: ThumbnailTwo,
     index: 7
   },
 
   {
-    title: 'Acuarela para el futuro',
+    title: 'El sol radiante y el cielo azul',
     description:
-      '“Estoy nerviosa, me pregunto cómo será la casa donde viviremos. Podría pintarla igual, la voy a extrañar”',
-    author: 'Jorge, 14 años de edad ',
-    src: ImageNine,
+      '“Yo sueño con llegar a un lugar como donde jugaba cuando estaba pequeño. Con un sol fuerte y el cielo azul, azulito. Y una casa grande donde quepamos todos”.',
+    author: 'Marcos, 14 años de edad',
     imgPosition: 'md:col-start-1 md:col-end-4 md:row-start-5 md:row-end-6',
+    src: ImageNine,
     thumbnail: ThumbnailNine,
     index: 8
   },
 
   {
-    title: 'Jardines llenos de vida',
+    title: 'La casa trasplantada',
     description:
-      '“A mi y a mis hermanas nos gusta jugar bastante, por eso quisiera un jardín bien grande para andar jugando mica”',
-    author: 'Juan, 13 años de edad ',
+      '“Lo que yo quisiera es poder llevarme mi casa. No se donde iremos, pero no quisiera dejarla, quisiera poder llevármela conmigo”.',
+    author: 'Antonio, 7 años de edad',
     src: ImageTen,
     imgPosition: 'md:col-start-4 md:col-end-6 md:row-start-5 md:row-end-6',
     thumbnail: ThumbnailTen,

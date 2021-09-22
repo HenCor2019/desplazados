@@ -153,7 +153,7 @@ const galleryImage = [
     title: "Limites marcados.",
     description:
       "“En el cuarto donde estamos solo cabe un camarote y el ropero, todos dormimos en el camarote, mi mamá, mi papá, mi hermana y yo, casi no hay espacio”.",
-    author: "Carlos, 13 años de edad",
+    author: "Alex, 14 años de edad",
     imgPosition: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
     thumbnail: Image6,
     src: ImageGallery6,
@@ -190,7 +190,7 @@ const galleryImage = [
     index: 8,
   },
   {
-    title: "Fruta congelada.",
+    title: "Frutas congeladas.",
     description:
       "“A veces en las tardes sacamos la fruta que tenemos congelada en la refri y nos la comemos así, nos gusta la fruta congelada”.",
     author: "Camila, 13 años de edad",

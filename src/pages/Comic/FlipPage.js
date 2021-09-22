@@ -7,6 +7,8 @@ import Button from '../../Components/Comic/Button'
 import CompleteComic from '../../Components/Comic/Comic'
 import InnerButtons from '../../Components/Comic/InnerButtons'
 
+import '../../Components/Comic/index.css'
+
 const Comic = () => {
   const {
     isMobile,

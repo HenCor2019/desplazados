@@ -101,8 +101,8 @@ function Home() {
           )}
           {isDreamsShown && (
             <p className='font-sans'>
-              “Quiero tener mi trabajo, vivir en paz y crecer a mis hijas. Tengo
-              que acceder a irme no me queda de otra”, caso Marquina.
+              “Quiero tener mi trabajo, vivir en paz y ver crecer a mis hijas. Tengo que acceder a
+              irme no me queda de otra”, caso Marquina.
             </p>
           )}
           {isHelpShown && (

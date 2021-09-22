@@ -6,7 +6,7 @@ export default function Image({ content, cols, rows, onClick, isMobile }) {
 
   return (
     <div className={`${sm} ${cols.md} ${rows.md} order-5`}>
-      <div className="w-full sm:grid sm:grid-cols-2 md:block h-full text-gray-700 overflow-hidden">
+      <div className="w-full sm:grid sm:grid-cols-2 md:block h-full text-gray-700">
         <img
           src={source}
           alt={`gallery image desplazados ${title} ${author}`}

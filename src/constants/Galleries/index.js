@@ -43,10 +43,10 @@ export const galleryPhotos = [
   },
 
   {
-    title: 'Mi personaje favorito.',
+    title: 'Mi personaje favorito de la tele.',
     description:
-      '“A mi y a mi hermanita nos gusta ver todas las tardes los BT21 (serie animada).  Tata es mi personaje favorito y el conejo Cooky es el de mi hermana… ahora, con estos vamos a jugar”',
-    author: 'Karla, 8 años de edad ',
+      '“A mí y a mi hermanita nos gusta ver todas las tardes los BT21 (serie animada). Tata es mi personaje favorito y el conejo Cooky es el de mi hermana... ahora, con estos vamos a jugar”.',
+    author: 'Yoselyn y Wendy, 7 y 9 años de edad',
     src: ImageTwo,
     thumbnail: ThumbnailTwo,
     isCauseGallery: true,
@@ -87,7 +87,7 @@ export const galleryPhotos = [
   },
 
   {
-    title: 'Mis marionetas',
+    title: 'Mis marionetas de origami',
     description:
       '“El gatito Lex, el Perrito Fili, la patita Lola y el zorro Pepe son una familia feliz y juegan todos los días”.',
     author: 'Yesi, 8 años de edad',
