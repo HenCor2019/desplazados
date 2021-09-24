@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react'
 import ReactPlayer from 'react-player'
+import { useConfigContext } from '../../contexts/ConfigContext'
 
 const styles = {
   reactPlayer: 'pointer-events-none z-0 h-screen fixed',
@@ -11,6 +13,35 @@ const styles = {
 }
 
 export default function VideoPlayer({ url, playing, handleOnSkip }) {
+  const [width, setWidth] = useState('110vw')
+  const [height, setHeight] = useState('140vw')
+
+  const {
+    isMobile,
+    isTablet,
+    isMonitor,
+    isSmallMobile,
+    isXlMonitor,
+    is2XlMonitor
+  } = useConfigContext()
+
+  useEffect(() => {
+    if (is2XlMonitor) {
+      setWidth('128vw')
+      setHeight('119vh')
+    }
+
+    if (isXlMonitor) {
+      setWidth('135vw')
+      setHeight('117vh')
+    }
+
+    if (isMonitor) {
+      setWidth('108vw')
+      setHeight('117vh')
+    }
+  }, [isXlMonitor, is2XlMonitor, isMonitor, isTablet])
+
   return (
     <>
       <ReactPlayer
@@ -18,8 +49,8 @@ export default function VideoPlayer({ url, playing, handleOnSkip }) {
         url={url}
         onEnded={handleOnSkip}
         playing={playing}
-        width="110vw"
-        height="143vh"
+        width={width}
+        height={height}
         config={{
           youtube: {
             controls: 0,
