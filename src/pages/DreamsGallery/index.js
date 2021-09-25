@@ -38,7 +38,7 @@ function DreamsGallery() {
           {dreamGallery.map((dreamImage) => (
             <>
               <Image
-                key={dreamImage.src+dreamImage.index}
+                key={dreamImage.src + dreamImage.index}
                 content={dreamImage}
                 onClick={handleOnClick}
                 isMobile={isMobile}
@@ -56,9 +56,9 @@ function DreamsGallery() {
           </div>
           <div className="w-full h-full flex justify-start items-center">
             <p className="text-base text-justify font-acumin p-4">
-              Los colores, las acuarelas, la plastilina, el origami y el
-              collage cuentan cuáles son los sueños más genuinos de niñas y
-              niños que sufren desplazamiento forzado por violencia.
+              Los colores, las acuarelas, la plastilina, el origami y el collage
+              cuentan cuáles son los sueños más genuinos de niñas y niños que
+              sufren desplazamiento forzado por violencia.
             </p>
           </div>
         </div>

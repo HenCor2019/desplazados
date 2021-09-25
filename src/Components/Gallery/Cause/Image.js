@@ -9,7 +9,7 @@ export default function Image({ content, cols, rows, onClick, isMobile }) {
       <div className="w-full sm:grid sm:grid-cols-2 md:block h-full text-gray-700 overflow-hidden">
         <img
           src={source}
-          alt={`gallery image desplazados ${title} ${author}`}
+          alt="gallery"
           onClick={() => onClick(content)}
           className="px-4 sm:px-0 m-auto sm:m-0 w-full sm:w-full h-auto sm:h-full object-contain sm:object-cover transform cursor-pointer transition-transform md:scale-110 md:hover:scale-100"
           loading="lazy"

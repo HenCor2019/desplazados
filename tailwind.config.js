@@ -55,7 +55,7 @@ module.exports = {
       },
       fontSize: {
         'ultra-xs': '.65rem',
-        'title': '1.7rem',
+        title: '1.7rem'
       },
       gridTemplateRows: {
         infographic: '50px 1fr'
@@ -71,14 +71,14 @@ module.exports = {
         'xl-h': { raw: '(min-height: 1280px)' },
         '2xl-h': { raw: '(min-height: 1536px)' },
         'lg-2': { raw: '(min-width: 1025px)' },
-        'xl-2': { raw: '(min-width: 1800px)' },
+        'xl-2': { raw: '(min-width: 1800px)' }
       },
       borderWidth: {
-       '3': '3px',
+        3: '3px'
       },
       spacing: {
-        '9/50': '1.125rem',
-       },
+        '9/50': '1.125rem'
+      },
       colors: {
         time: '#b18422',
         homeText: '#2a2c2b',
@@ -103,7 +103,7 @@ module.exports = {
         '13/100w': '13vh',
         '87/100w': '87vh',
         '40/100w': '40vh',
-        '55/100w': '55vh',
+        '55/100w': '55vh'
       },
       inset: {
         '40/100': '40%',
@@ -115,7 +115,7 @@ module.exports = {
         '15/100': '15%',
         '1/4': '25%',
         '3/4': '75%',
-        'section': '550px',
+        section: '550px',
         'house-width': '300px',
         'support-image': '250px',
         'dreams-note': '95px'
@@ -125,22 +125,22 @@ module.exports = {
         'half-screen': '50vh'
       },
       maxHeight: {
-        nav: '12rem',
+        nav: '12rem'
       },
       flex: {
         rigid: '1 0',
         gallery: '2 1'
       },
       flexShrink: {
-        '3': 3,
-        '2': 2,
+        3: 3,
+        2: 2
       },
       gridTemplateColumns: {
         causesGallery: '33fr 22fr 5fr 18fr 22fr',
         dreamsGallery: '20fr 5fr 30fr 5fr 40fr'
       },
       gridTemplateRows: {
-        causesGallery: '34% 11% 11% 15% 24%',
+        causesGallery: '23fr 11fr 11fr 15fr 24fr',
         dreamsGallery: '2fr 3fr 1fr 2fr 2fr'
       }
     }

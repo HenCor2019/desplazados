@@ -36,7 +36,7 @@ export default LazySection(function () {
       <Bullet src={CausesBullet} />
 
       <div className="md:w-11/12 lg:w-4/5 m-auto md:mt-10 xl:mt-0 sm:p-5 md:p-0 md:pb-4">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row md:grid-cols-causesGallery gap-2">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row md:grid-cols-causesGallery md:grid-rows-causesGallery flex-gallery gap-2 min-h-0 min-w-0">
           <Message
             text={'text-xs lg:text-base font-acumin'}
             cols={{ md: 'md:col-start-1 md:col-end-3' }}
