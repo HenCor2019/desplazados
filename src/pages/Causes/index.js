@@ -56,4 +56,4 @@ function Causes() {
   )
 }
 
-export default LazySection(Causes)
+export default Causes

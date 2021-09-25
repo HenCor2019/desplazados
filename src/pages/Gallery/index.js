@@ -11,7 +11,7 @@ import { galleryPhotos, gridDimensions } from '../../constants/Galleries'
 import { useConfigContext } from '../../contexts/ConfigContext'
 import { LazySection } from '../../HOC/LazySection/LazySection'
 
-export default LazySection(function () {
+export default function CausesGallery() {
   const { isMobile } = useConfigContext()
   const [isActive, setIsActive] = useState(false)
   const [activePhoto, setActiveImage] = useState(galleryPhotos[0])
@@ -55,4 +55,4 @@ export default LazySection(function () {
       </div>
     </>
   )
-})
+}
