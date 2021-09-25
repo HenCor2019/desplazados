@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player'
 import { useConfigContext } from '../../contexts/ConfigContext'
 
 const styles = {
-  reactPlayer: 'pointer-events-none z-0 h-screen fixed',
+  reactPlayer: 'lg:pointer-events-none z-0 h-screen fixed',
 
   buttonContainer:
     'w-full absolute text-gray-100 z-40 self-end flex justify-end',
@@ -40,6 +40,11 @@ export default function VideoPlayer({ url, playing, handleOnSkip }) {
       setWidth('108vw')
       setHeight('117vh')
     }
+
+    if (isMobile || isTablet) {
+      setWidth('100vw')
+      setHeight('100vh')
+    }
   }, [isXlMonitor, is2XlMonitor, isMonitor, isTablet])
 
   return (
@@ -51,11 +56,13 @@ export default function VideoPlayer({ url, playing, handleOnSkip }) {
         playing={playing}
         width={width}
         height={height}
+        playsinline={true}
         config={{
           youtube: {
             controls: 0,
             showinfo: 0,
-            autohide: 1
+            autohide: 1,
+            autoplay: true
           }
         }}
       />
