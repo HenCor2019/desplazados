@@ -15,7 +15,7 @@ function Image({ img, alt, position, onClick, isMobile }) {
       <img
         src={source}
         alt={alt}
-        className="object-contain transform transition-transform md:scale-110 md:hover:scale-100 p-4 sm:p-2 md:p-0 md:h-full md:w-full cursor-pointer"
+        className="object-contain transform transition-transform md:scale-100 md:hover:scale-110 p-4 sm:p-2 md:p-0 md:h-full md:w-full cursor-pointer"
         loading={'lazy'}
       />
     </div>
