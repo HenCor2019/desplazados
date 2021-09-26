@@ -2,7 +2,7 @@ import Landscape from './Lanscape/Landscape'
 import Portrait from './Portrait/Portrait'
 import Tablet from './Tablet/Tablet'
 import { useConfigContext } from "../../../contexts/ConfigContext";
-import { LazySection } from '../../../HOC/LazySection/LazySection';
+//import { LazySection } from '../../../HOC/LazySection/LazySection';
 
 const Concepts = () => {
     const { isMobile } = useConfigContext();
@@ -26,4 +26,4 @@ const Concepts = () => {
     )
 }
 
-export default LazySection(Concepts)
+export default Concepts

@@ -1,7 +1,7 @@
 const Section3 = () => {
     return (
-        <section className="mt-4 md:mt-6 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-8 p-4 mb-4 md:mb-0">
-            <div>
+        <section className="mt-4 md:mt-6 lg:grid lg:grid-cols-3 lg:grid-flow-col p-4 mb-4 md:mb-0">
+            <div className="lg:pr-8">
                 <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify">
                     Roberto no se quedó de brazos cruzados. Emprendió una búsqueda de apoyo. Fue a la alcaldía de su municipio, el edil aceptó ayudarles, pero los pandilleros al darse cuenta de esto, también lo amenazaron y este desistió por temor a represalias. Buscó ayuda en la Asamblea Legislativa, con un diputado que conocía desde hace mucho tiempo, pero tampoco encontró la respuesta que esperaba.
                     <br /><br />
@@ -15,7 +15,7 @@ const Section3 = () => {
                     Jackeline recuerda el día en que llegaron hasta la Embajada de Canadá y el vigilante les pidió que le contaran el caso, para al final decirles que ese tipo de ayuda no la daban ahí. -Aquí solamente pueden venir con cita y a sacar visa de turistas-, les dijo.
                 </p>
             </div>
-            <div>
+            <div className="lg:pl-8">
                 <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify">
                     Se desplazaron también hasta la sede de la Organización Internacional para las Migraciones (OIM) en donde ni siquiera les abrieron la puerta. Visitaron a Cristosal, pero les expresaron que no daban el tipo de apoyo que ellos buscaban.
                     <br /><br />

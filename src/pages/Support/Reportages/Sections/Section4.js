@@ -2,8 +2,8 @@ import SimpleVideoPlayer from '../../../../Components/VideoPlayer/SimpleVideoPla
 
 const Section4 = () => {
     return (
-        <section className="h-full mt-4 md:mt-6 lg:grid lg:grid-cols-3 lg:grids-rows-4 lg:grid-flow-col lg:gap-8 bg-brownie-gray p-4 mb-4 md:mb-0">
-            <div className="row-span-3">
+        <section className="h-full mt-4 md:mt-6 lg:grid lg:grid-cols-3 lg:grids-rows-4 lg:grid-flow-col bg-brownie-gray p-4 mb-4 md:mb-0">
+            <div className="row-span-3 lg:pr-8">
                 <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify">
                     Los procesos de acompañamiento a víctimas de desplazamiento forzado han ido cambiando con los años. Cristosal, COMCAVIS-TRANS, SSPAS, la Iglesia Luterana y el IDHUCA sostienen que sus programas surgieron de manera progresiva. Algunas organizaciones comenzaron con proyectos sobre migración y retorno. Pero cada vez, de 2014 en adelante, fueron más frecuentes los casos de personas que buscaban protección frente a un persecutor que amenazaba su integridad física.
                     <br /><br />
@@ -34,7 +34,7 @@ const Section4 = () => {
                     Jimena López, del Idhuca, explica que cuando la reubicación es interna, la restitución de los derechos es mucho más rápida, en comparación con las personas que salen de El Salvador.  Estas últimas deben tener una orientación cultural y someterse al proceso legal que el país de acogida determine para reconocerles en calidad de refugiados.
                 </p>
             </div>
-            <div className="lg:col-start-3 lg:col-end-4">
+            <div className="lg:col-start-3 lg:col-end-4 lg:pl-8">
                 <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify mt-6 lg:mt-0">
                     Aunque la cantidad de familias que se evacuan internacionalmente han bajado, no han dejado de existir, esto en los casos en los que el nivel amenaza es tan grande que las familias han sufrido múltiples movilizaciones de emergencia.
                     <br /><br />

@@ -2,8 +2,8 @@ import SimpleVideoPlayer from '../../../../Components/VideoPlayer/SimpleVideoPla
 
 const Section2 = () => {
     return (
-        <section className="h-full mt-4 md:mt-6 lg:grid lg:grid-cols-3 lg:grids-rows-4 lg:grid-flow-col lg:gap-8 bg-brownie-gray p-4 mb-4 md:mb-0">
-            <div className="row-span-3">
+        <section className="h-full mt-4 md:mt-6 lg:grid lg:grid-cols-3 lg:grids-rows-4 lg:grid-flow-col bg-brownie-gray p-4 mb-4 md:mb-0">
+            <div className="row-span-3 lg:pr-8">
                 <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify mb-6">
                     El reconocimiento del desplazamiento forzado en El Salvador es reciente. En 2017, la Sala de lo Constitucional de la Corte Suprema de Justicia, emitió la sentencia 411 a favor de una familia que sufrió desplazamiento. Este caso fue acompañado por Cristosal, una organización que desde 2015 apoya a víctimas de este fenómeno.
                 </p>
@@ -32,7 +32,7 @@ const Section2 = () => {
                     Con errores y aciertos, dice Rina Montti de Cristosal, las organizaciones de la sociedad civil, que forman parte de la Mesa contra el Desplazamiento Forzado, han apoyado y adquirido experiencia en el acompañamiento de familias que son víctimas del problema.
                 </p>
             </div>
-            <div className="lg:col-start-3 lg:col-end-4">
+            <div className="lg:col-start-3 lg:col-end-4 lg:pl-8">
                 <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify mt-6 lg:mt-0 mb-6">
                     Pero, hace hincapié, en que el papel de las organizaciones debería ser como contralores y asesores, verificando el cumplimiento de leyes nacionales y acuerdos internacionales que amparan a las víctimas, y no asumiendo las responsabilidades que corresponden al Estado.
                 </p>

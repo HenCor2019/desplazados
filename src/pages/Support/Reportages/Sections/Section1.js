@@ -1,7 +1,7 @@
 const Section1 = () => {
     return (
-        <section className="mt-2 lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-8 p-4 mb-4 md:mb-0">
-                <div>
+        <section className="mt-2 lg:grid lg:grid-cols-3 lg:grid-flow-col p-4 mb-4 md:mb-0">
+                <div className="lg:pr-8">
                     <p className="font-acumin text-gray-500 text-2xl mb-6">"Vos sabés como estamos en el país, podés investigar por tu propia cuenta y cuando sepás dónde está tu hijo, nos venís a decir para irlo a levantar"</p>
                     <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify">
                         Le dijo el fiscal encargado del caso a Jackeline, quien después de buscar a su hijo desaparecido hacía 5 meses, no perdía la esperanza de obtener una respuesta de parte de la Fiscalía General de la República (FGR), encargada de las investigaciones de todos los hechos de violencia en El Salvador.
@@ -24,7 +24,7 @@ const Section1 = () => {
                         El acoso era cada vez mayor. A diario llegaban a casa a amedrentarlos. En la escuela, a su segundo hijo, lo empezaron a amenazar. -Te va a pasar lo mismo que a tu hermano-, le decían. Por eso decidieron que ninguno de sus hijos debía asistir más a clases.
                     </p>
                 </div>
-                <div>
+                <div div className="lg:pl-8">
                     <div className="bg-white p-5 shadow-md my-6 lg:mb-6 lg-mt-0">
                         <p className="font-acumin text-black-700 leading-5 xl-2:leading-6 text-justify italic text-lg font-thin">
                             “Toda persona tiene derecho a la vida, a la integridad física y moral, a la libertad, a la seguridad, al trabajo, a la propiedad y posesión, y a ser protegida en la conservación y defensa de los mismos”
