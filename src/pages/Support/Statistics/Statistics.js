@@ -1,10 +1,10 @@
 import StatisticsInfo from './StatisticsInfo'
-import Title from '../../../assets/images/Support/Statistics/statistics-title.png'
-import Timeline1 from '../../../assets/images/Support/Statistics/timeline-1.png'
-import Timeline2 from '../../../assets/images/Support/Statistics/timeline-2.png'
-import Chart1 from '../../../assets/images/Support/Statistics/chart-1.png'
-import Chart2 from '../../../assets/images/Support/Statistics/chart-2.png'
-import Chart3 from '../../../assets/images/Support/Statistics/chart-3.png'
+import Title from '../../../assets/images/support/Statistics/statistics-title.png'
+import Timeline1 from '../../../assets/images/support/Statistics/timeline-1.png'
+import Timeline2 from '../../../assets/images/support/Statistics/timeline-2.png'
+import Chart1 from '../../../assets/images/support/Statistics/chart-1.png'
+import Chart2 from '../../../assets/images/support/Statistics/chart-2.png'
+import Chart3 from '../../../assets/images/support/Statistics/chart-3.png'
 import { LazySection } from '../../../HOC/LazySection/LazySection';
 
 function Statistics() {

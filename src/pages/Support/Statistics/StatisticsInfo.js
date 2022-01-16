@@ -1,5 +1,5 @@
 import React from 'react'
-import PaperTexture from '../../../assets/images/Support/Statistics/paper-texture.png'
+import PaperTexture from '../../../assets/images/support/Statistics/paper-texture.png'
 
 const StatisticsInfo = ({ sectionClasses, imgSrc, imgAlt, divClasses, description }) => (
     <section className={ sectionClasses }>

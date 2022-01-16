@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Title from '../../../../assets/images/Support/Concepts/concepts-title.png'
+import Title from '../../../../assets/images/support/Concepts/concepts-title.png'
 import Concept from '../../../../Components/Concepts/Concept'
 import { concepts } from '../../../../constants/Concepts/SupportConcepts'
 import NotesImages from '../NotesImages';
@@ -10,8 +10,8 @@ const Landscape = () => {
 
     const handleOnClick = (conceptInformation) => {
         setActive(!isActive);
-        
-        if(conceptInformation) setActiveConcept(conceptInformation);
+
+        if (conceptInformation) setActiveConcept(conceptInformation);
     }
 
     return (
@@ -24,7 +24,7 @@ const Landscape = () => {
             <ul className="md:flex md:flex-wrap md:items-center md:content-center md:justify-evenly p-2">
 
                 {concepts.map((concept) => (
-                    <Concept 
+                    <Concept
                         key={concept.index}
                         position={concept.position}
                         src={concept.src}

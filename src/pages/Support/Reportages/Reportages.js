@@ -1,4 +1,4 @@
-import TitleDeco from '../../../assets/images/Support/Reportage/purple-paper-min.png'
+import TitleDeco from '../../../assets/images/support/Reportage/purple-paper-min.png'
 import Landscape from './Sections/Landscape/Landscape';
 import Portrait from './Sections/Portrait/Portrait';
 

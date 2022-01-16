@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Title from '../../../../assets/images/Support/Concepts/concepts-title.png'
+import Title from '../../../../assets/images/support/Concepts/concepts-title.png'
 import ConceptTablet from '../../../../Components/Concepts/ConceptTablet'
 import { concepts } from '../../../../constants/Concepts/SupportConcepts'
 
