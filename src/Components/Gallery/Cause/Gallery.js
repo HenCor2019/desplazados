@@ -1,5 +1,4 @@
-import { Fragment } from 'react'
-import { secondaryCauseMessage } from '../../../constants/Causes'
+import { causesMessages } from '../../../constants/Causes'
 import Image from './Image'
 import Message from './Message'
 
@@ -11,12 +10,12 @@ export default function Gallery({ photos, onClick, dimensions, isMobile }) {
           return (
             <>
               <Message
-                key={photo.src + secondaryCauseMessage}
+                key={photo.src + causesMessages.secondaryCauseMessage}
                 text={'text-xs lg:text-base font-acumin'}
                 cols={{ md: 'md:col-start-5 md:col-end-6' }}
                 rows={{ md: 'md:row-start-3 md:row-end-5' }}
                 order={{ base: 'order-6', sm: 'sm:order-2', md: 'md:order-5' }}
-                message={secondaryCauseMessage}
+                message={causesMessages.secondaryCauseMessage}
               />
 
               <Image

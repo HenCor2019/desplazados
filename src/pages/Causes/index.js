@@ -4,8 +4,7 @@ import { ReactComponent as Gallery } from '../../assets/images/Causes/gallery.sv
 import { ReactComponent as Story } from '../../assets/images/Causes/story.svg'
 import CauseImage from '../../Components/Causes/Image'
 import Footer from '../../Components/Causes/Footer'
-import { MESSAGE } from '../../constants/Causes/index'
-import { LazySection } from '../../HOC/LazySection/LazySection'
+import { causesMessages } from '../../constants/Causes/index'
 
 import '../../Components/Causes/index.css'
 
@@ -51,7 +50,7 @@ function Causes() {
         route="galeria"
       />
 
-      <Footer message={MESSAGE} />
+      <Footer message={causesMessages.initialCauseMessage} />
     </main>
   )
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { comicImages } from '../../constants/Galleries'
+import { comicImages } from '../../constants/Galleries/Comic/Comic'
 import { useConfigContext } from '../../contexts/ConfigContext'
 import { LazySection } from '../../HOC/LazySection/LazySection'
 import Dropdown from '../../Components/Dropdown/Dropdown'

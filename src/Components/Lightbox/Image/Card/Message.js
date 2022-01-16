@@ -1,4 +1,4 @@
-import { smallImages } from '../../../../constants/Galleries'
+import { smallImages } from '../../../../constants/Galleries/Causes/Dimensions'
 
 export default function CardMessage({ content }) {
   const { title, description, author, isCauseGallery = false } = content

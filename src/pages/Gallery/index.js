@@ -6,10 +6,10 @@ import '../../Components/Gallery/Cause/Gallery.css'
 import Message from '../../Components/Gallery/Cause/Message'
 import Lightbox from '../../Components/Lightbox/Image/index'
 import Modal from '../../Components/Modal/Modal'
-import { principalCauseMessage } from '../../constants/Causes'
-import { galleryPhotos, gridDimensions } from '../../constants/Galleries'
+import { causesMessages } from '../../constants/Causes'
+import { galleryPhotos } from '../../constants/Galleries/Causes/Causes'
+import {  gridDimensions } from '../../constants/Galleries/Causes/Dimensions'
 import { useConfigContext } from '../../contexts/ConfigContext'
-import { LazySection } from '../../HOC/LazySection/LazySection'
 
 export default function CausesGallery() {
   const { isMobile } = useConfigContext()
@@ -42,7 +42,7 @@ export default function CausesGallery() {
             cols={{ md: 'md:col-start-1 md:col-end-3' }}
             rows={{ md: 'md:row-start-1 md:row-end-2' }}
             order={{ base: 'order-1', sm: 'sm:order-1', md: 'md:order-5' }}
-            message={principalCauseMessage}
+            message={causesMessages.principalCauseMessage}
           />
 
           <Gallery
