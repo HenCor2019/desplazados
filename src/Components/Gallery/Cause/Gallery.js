@@ -1,4 +1,4 @@
-import { causesMessages } from '../../../constants/Causes'
+import { causesMessages } from '../../../causes/constants/messages'
 import Image from './Image'
 import Message from './Message'
 

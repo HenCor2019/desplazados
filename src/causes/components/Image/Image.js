@@ -1,4 +1,4 @@
-import Hoverable from "../../wrappers/Hoverable/Hoverable";
+import Hoverable from "wrappers/Hoverable/Hoverable";
 
 export default function CauseImage(props) {
   const {

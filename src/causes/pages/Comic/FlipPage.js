@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react'
-import { comicImages } from '../../constants/Galleries/Comic/Comic'
-import { useConfigContext } from '../../contexts/ConfigContext'
-import { LazySection } from '../../HOC/LazySection/LazySection'
-import Dropdown from '../../Components/Dropdown/Dropdown'
-import Button from '../../Components/Comic/Button'
-import CompleteComic from '../../Components/Comic/Comic'
-import InnerButtons from '../../Components/Comic/InnerButtons'
 
-import '../../Components/Comic/index.css'
+import { comicImages } from 'causes/constants/comic/Comic'
+
+import { useConfigContext } from 'contexts/ConfigContext'
+import { LazySection } from 'HOC/LazySection/LazySection'
+import Dropdown from 'Components/Dropdown/Dropdown'
+import Button from 'Components/Comic/Button'
+import CompleteComic from 'Components/Comic/Comic'
+import InnerButtons from 'Components/Comic/InnerButtons'
+
+import 'Components/Comic/index.css'
 
 const Comic = () => {
   const {
