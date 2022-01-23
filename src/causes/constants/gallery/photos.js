@@ -1,26 +1,26 @@
-import ThumbnailOne from '../../../assets/images/Causes/Gallery/1causas.png'
-import ThumbnailTwo from '../../../assets/images/Causes/Gallery/2causas.png'
-import ThumbnailThree from '../../../assets/images/Causes/Gallery/3causas.png'
-import ThumbnailFour from '../../../assets/images/Causes/Gallery/4causas.png'
-import ThumbnailFive from '../../../assets/images/Causes/Gallery/5causas.png'
-import ThumbnailSix from '../../../assets/images/Causes/Gallery/6causas.png'
-import ThumbnailSeven from '../../../assets/images/Causes/Gallery/7causas.png'
-import ThumbnailEight from '../../../assets/images/Causes/Gallery/8causas.png'
-import ThumbnailNine from '../../../assets/images/Causes/Gallery/9causas.png'
-import ThumbnailTen from '../../../assets/images/Causes/Gallery/10causas.png'
+import ThumbnailOne from 'causes/assets/images/gallery/thumbnails/1causas.png'
+import ThumbnailTwo from 'causes/assets/images/gallery/thumbnails/2causas.png'
+import ThumbnailThree from 'causes/assets/images/gallery/thumbnails/3causas.png'
+import ThumbnailFour from 'causes/assets/images/gallery/thumbnails/4causas.png'
+import ThumbnailFive from 'causes/assets/images/gallery/thumbnails/5causas.png'
+import ThumbnailSix from 'causes/assets/images/gallery/thumbnails/6causas.png'
+import ThumbnailSeven from 'causes/assets/images/gallery/thumbnails/7causas.png'
+import ThumbnailEight from 'causes/assets/images/gallery/thumbnails/8causas.png'
+import ThumbnailNine from 'causes/assets/images/gallery/thumbnails/9causas.png'
+import ThumbnailTen from 'causes/assets/images/gallery/thumbnails/10causas.png'
+ 
+import ImageOne from 'causes/assets/images/gallery/images/1texto.png'
+import ImageTwo from 'causes/assets/images/gallery/images/2texto.png'
+import ImageThree from 'causes/assets/images/gallery/images/3texto.png'
+import ImageFour from 'causes/assets/images/gallery/images/4texto.png'
+import ImageFive from 'causes/assets/images/gallery/images/5texto.png'
+import ImageSix from 'causes/assets/images/gallery/images/6texto.png'
+import ImageSeven from 'causes/assets/images/gallery/images/7texto.png'
+import ImageEight from 'causes/assets/images/gallery/images/8texto.png'
+import ImageNine from 'causes/assets/images/gallery/images/9texto.png'
+import ImageTen from 'causes/assets/images/gallery/images/10texto.png'
 
-import ImageOne from '../../../assets/images/Causes/Gallery/1texto.png'
-import ImageTwo from '../../../assets/images/Causes/Gallery/2texto.png'
-import ImageThree from '../../../assets/images/Causes/Gallery/3texto.png'
-import ImageFour from '../../../assets/images/Causes/Gallery/4texto.png'
-import ImageFive from '../../../assets/images/Causes/Gallery/5texto.png'
-import ImageSix from '../../../assets/images/Causes/Gallery/6texto.png'
-import ImageSeven from '../../../assets/images/Causes/Gallery/7texto.png'
-import ImageEight from '../../../assets/images/Causes/Gallery/8texto.png'
-import ImageNine from '../../../assets/images/Causes/Gallery/9texto.png'
-import ImageTen from '../../../assets/images/Causes/Gallery/10texto.png'
-
-export const galleryPhotos = [
+export const photos = [
   {
     title: 'Mi mascota preferida.',
     description:

@@ -1,10 +1,10 @@
-import { smallImages } from '../../../../constants/Galleries/Causes/Dimensions'
+import { dimensions } from 'causes/constants/gallery/dimensions'
 
 export default function CardMessage({ content }) {
   const { title, description, author, isCauseGallery = false } = content
 
   const style =
-    isCauseGallery && smallImages.includes(content.index) ? 'mr-8' : 'mr-0'
+    isCauseGallery && dimensions.includes(content.index) ? 'mr-8' : 'mr-0'
 
   return (
     <div

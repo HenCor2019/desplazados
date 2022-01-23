@@ -1,20 +1,25 @@
 import { useState } from 'react'
-import CausesBullet from 'assets/images/Causes/Gallery/gallery_bullet.png'
-import Bullet from 'Components/Gallery/Cause/Bullet'
-import Gallery from 'Components/Gallery/Cause/Gallery'
-import 'Components/Gallery/Cause/Gallery.css'
-import Message from 'Components/Gallery/Cause/Message'
-import Lightbox from 'Components/Lightbox/Image/index'
+
 import Modal from 'Components/Modal/Modal'
+import Lightbox from 'Components/Lightbox/Image/index'
+
+import { photos } from 'causes/constants/gallery/photos'
 import { causesMessages } from 'causes/constants/messages'
-import { galleryPhotos } from 'constants/Galleries/Causes/Causes'
-import {  gridDimensions } from 'constants/Galleries/Causes/Dimensions'
+import {  dimensions } from 'causes/constants/gallery/dimensions'
+
+import Gallery from 'causes/components/Gallery/Gallery'
+import Bullet from 'causes/components/Gallery/Bullet/Bullet'
+import Message from 'causes/components/Gallery/Message/Message'
+import CausesBullet from 'causes/assets/images/gallery/gallery_bullet.png'
+
 import { useConfigContext } from 'contexts/ConfigContext'
+
+import 'causes/pages/Gallery/styles/Gallery.css'
 
 export default function CausesGallery() {
   const { isMobile } = useConfigContext()
   const [isActive, setIsActive] = useState(false)
-  const [activePhoto, setActiveImage] = useState(galleryPhotos[0])
+  const [activePhoto, setActiveImage] = useState(photos[0])
 
   const onClickHandler = (imageInformation) => {
     setIsActive(!isActive)
@@ -28,7 +33,7 @@ export default function CausesGallery() {
           <Lightbox
             current={activePhoto}
             onClick={onClickHandler}
-            images={galleryPhotos}
+            images={photos}
           />
         </Modal>
       )}
@@ -46,10 +51,10 @@ export default function CausesGallery() {
           />
 
           <Gallery
-            photos={galleryPhotos}
+            photos={photos}
             onClick={onClickHandler}
             isMobile={isMobile}
-            dimensions={gridDimensions}
+            dimensions={dimensions}
           />
         </ul>
       </div>

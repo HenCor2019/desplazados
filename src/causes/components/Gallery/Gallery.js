@@ -1,6 +1,6 @@
-import { causesMessages } from '../../../causes/constants/messages'
-import Image from './Image'
-import Message from './Message'
+import Image from 'causes/components/Gallery/Image/Image'
+import { causesMessages } from 'causes/constants/messages'
+import Message from 'causes/components/Gallery/Message/Message'
 
 export default function Gallery({ photos, onClick, dimensions, isMobile }) {
   return (

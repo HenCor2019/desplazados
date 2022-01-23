@@ -23,12 +23,6 @@
   }
 }
 
-/* @media (min-height: 768px) {
- *   .lightbox-card-message {
- *     transform: translate(30%, 14%);
- *   }
- * } */
-
 @media (min-height: 1024px) {
   .lightbox-card-message {
     transform: translateY(-35%);
