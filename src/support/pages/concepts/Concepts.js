@@ -1,6 +1,6 @@
-import Landscape from './Lanscape/Landscape'
-import Portrait from './Portrait/Portrait'
-import Tablet from './Tablet/Tablet'
+import Landscape from './landscape/Landscape'
+import Portrait from './portrait/Portrait'
+import Tablet from './tablet/Tablet'
 import { useConfigContext } from "../../../contexts/ConfigContext";
 //import { LazySection } from '../../../HOC/LazySection/LazySection';
 

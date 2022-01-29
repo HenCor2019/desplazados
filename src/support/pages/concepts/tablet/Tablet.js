@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Title from '../../../../assets/images/support/Concepts/concepts-title.png'
-import ConceptTablet from '../../../../Components/Concepts/ConceptTablet'
-import { concepts } from '../../../../constants/Concepts/SupportConcepts'
+import Title from '../../../assets/images/concepts/concepts-title.png'
+import ConceptTablet from '../../../components/concepts/ConceptTablet'
+import { concepts } from '../../../constants/SupportConcepts'
 
 const Portrait = () => {
     const [isActive, setActive] = useState(false);

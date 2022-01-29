@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import Concepts from '../../assets/images/support/concepts.png';
-import Report from '../../assets/images/support/report.png';
-import Statistics from '../../assets/images/support/statistics.png';
+import Concepts from '../assets/images/concepts.png';
+import Report from '../assets/images/report.png';
+import Statistics from '../assets/images/statistics.png';
 
 import { LazySection } from '../../HOC/LazySection/LazySection';
 import Hoverable from '../../wrappers/Hoverable/Hoverable';

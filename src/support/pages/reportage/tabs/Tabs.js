@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import SelectedTab from "./SelectedTab";
 import Tab from "./Tab";
 
-import Section1 from "../Sections/Section1";
-import Section2 from "../Sections/Section2";
-import Section3 from "../Sections/Section3";
-import Section4 from "../Sections/Section4";
-import Section5 from "../Sections/Section5";
+import Section1 from "../sections/Section1";
+import Section2 from "../sections/Section2";
+import Section3 from "../sections/Section3";
+import Section4 from "../sections/Section4";
+import Section5 from "../sections/Section5";
 
 function ReportagesTabs() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
