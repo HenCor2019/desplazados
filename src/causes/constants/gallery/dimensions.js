@@ -1,4 +1,4 @@
-export const gridDimensions = [
+export const dimensions = [
   {
     cols: { sm: 'sm:col-start-1 sm:col-end-3', md: 'md:col-start-3 md:col-end-5' },
 
@@ -61,3 +61,4 @@ export const gridDimensions = [
 ]
 
 export const smallImages = [1,4,8,9]
+

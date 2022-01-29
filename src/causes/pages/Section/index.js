@@ -1,15 +1,13 @@
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
-import { ReactComponent as Gallery } from '../../assets/images/svgs/gallery.svg'
-import { ReactComponent as Story } from '../../assets/images/svgs/story.svg'
-
-import CauseImage from 'causes/components/Image/Image'
 import Footer from 'causes/components/Footer/Footer'
-
+import CauseImage from 'causes/components/Image/Image'
 import { causesMessages } from 'causes/constants/messages/index'
+import { ReactComponent as Gallery } from 'causes/assets/images/svgs/gallery.svg'
+import { ReactComponent as Story } from 'causes/assets/images/svgs/story.svg'
 
-import 'Components/Causes/index.css'
+import 'causes/assets/styles/index.css'
 
 function Causes() {
   const [galleryGrayscale, setGalleryGrayscale] = useState(false)
