@@ -1,4 +1,4 @@
-import Tabs from '../../Tabs/Tabs'
+import Tabs from '../../tabs/Tabs'
 
 const Portrait = () => {
     return (

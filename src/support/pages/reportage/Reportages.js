@@ -1,6 +1,6 @@
-import TitleDeco from '../../../assets/images/support/Reportage/purple-paper-min.png'
-import Landscape from './Sections/Landscape/Landscape';
-import Portrait from './Sections/Portrait/Portrait';
+import TitleDeco from '../../assets/images/reportage/purple-paper-min.png'
+import Landscape from './sections/landscape/Landscape';
+import Portrait from './sections/portrait/Portrait';
 
 import { useConfigContext } from "../../../contexts/ConfigContext";
 import { LazySection } from '../../../HOC/LazySection/LazySection';

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Title from '../../../../assets/images/support/Concepts/concepts-title.png'
-import Concept from '../../../../Components/Concepts/Concept'
-import { concepts } from '../../../../constants/Concepts/SupportConcepts'
+import Title from '../../../assets/images/concepts/concepts-title.png'
+import Concept from '../../../components/concepts/Concept'
+import { concepts } from '../../../constants/SupportConcepts'
 import NotesImages from '../NotesImages';
 
 const Landscape = () => {
