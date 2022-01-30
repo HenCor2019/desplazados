@@ -1,10 +1,10 @@
-import Podcast from "../../assets/images/Dreams/podcast-dreams.png";
-import Gallery from "../../assets/images/Dreams/gallery-dreams.png";
+import Podcast from "../../assets/images/podcast-dreams.png";
+import Gallery from "../../assets/images/gallery-dreams.png";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import Image from "../../Components/WaitingTime/Image";
-import { LazySection } from "../../HOC/LazySection/LazySection";
+import Image from "../../../Components/WaitingTime/Image";
+import { LazySection } from "../../../HOC/LazySection/LazySection";
 
 export default LazySection(function Dreams() {
   const [isPodcastHover, setIsPodcastHover] = useState(false);
