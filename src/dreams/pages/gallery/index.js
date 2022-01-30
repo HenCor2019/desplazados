@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import { dreamGallery } from '../../constants/Galleries/Dreams'
+import { dreamGallery } from '../../constants/gallery'
 
-import { useConfigContext } from '../../contexts/ConfigContext'
-import { LazySection } from '../../HOC/LazySection/LazySection'
+import { useConfigContext } from '../../../contexts/ConfigContext'
+import { LazySection } from '../../../HOC/LazySection/LazySection'
 
-import Image from '../../Components/Gallery/Dreams/Image'
+import Image from '../../components/gallery/Image'
 
-import title from '../../assets/images/Dreams/Gallery/title.png'
+import title from '../../assets/images/gallery/title.png'
 
-import Modal from '../../Components/Modal/Modal'
-import Lightbox from '../../Components/Lightbox/Image'
+import Modal from '../../../Components/Modal/Modal'
+import Lightbox from '../../../Components/Lightbox/Image'
 
 function DreamsGallery() {
   const [isActive, setIsActive] = useState(false)

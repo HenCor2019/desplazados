@@ -36,6 +36,52 @@
   display: none;
 }
 
+/* Poadcast styles */
+.audio-player-image-default {
+  width: 100%;
+  max-width: 160px;
+  height: 100%;
+  max-height: 130px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  background: url(../images/poadcast/default-audio.svg) no-repeat center / 50%;
+}
+
+.audio-player-image-default::before {
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  width: auto;
+  content: 'music';
+  font-size: 48px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.audio-player-image-default::after {
+  top: 0;
+  left: 0;
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: linear-gradient(to bottom, #ccbfa873, #8a6d3b59);
+}
+
+@media screen and(min-width: 768px) {
+  .audio-player-image-default {
+    width: 100%;
+    max-width: 216px;
+    height: 100%;
+    max-height: 190px;
+  }
+
+  .audio-player-image-default::before {
+    font-size: 68px;
+  }
+}
+
 /* @media (min-width: 300px) {
   .audio-player-container {
     width: 100%;

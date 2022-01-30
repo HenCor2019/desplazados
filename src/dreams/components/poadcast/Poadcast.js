@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
-import Paper from "../../assets/images/Dreams/Poadcast/podcast-bg.png";
-import PlayButton from "../../assets/images/Dreams/Poadcast/play1.png";
-import QueSoniamos from "../../assets/images/Dreams/Poadcast/quesonamos.png";
-import { ReactComponent as Backward } from "../../assets/svg/backward.svg";
-import { ReactComponent as Forward } from "../../assets/svg/forward.svg";
-import { ReactComponent as Pause } from "../../assets/svg/pause.svg";
-import { audios } from "../../constants/Dreams/Podcast";
-import { LazySection } from "../../HOC/LazySection/LazySection";
-import "./index.css";
+import Paper from "../../assets/images/poadcast/podcast-bg.png";
+import PlayButton from "../../assets/images/poadcast/play1.png";
+import QueSoniamos from "../../assets/images/poadcast/quesonamos.png";
+import { ReactComponent as Backward } from "../../../assets/svg/backward.svg";
+import { ReactComponent as Forward } from "../../../assets/svg/forward.svg";
+import { ReactComponent as Pause } from "../../../assets/svg/pause.svg";
+import { audios } from "../../constants/podcast";
+import "../../assets/css/padcast.css";
 
 const poadcastPlayerStyle = {
   backgroundImage: `url(${Paper})`,
