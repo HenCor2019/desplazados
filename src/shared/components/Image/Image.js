@@ -1,5 +1,5 @@
 import React from 'react';
-import Hoverable from '../../wrappers/Hoverable/Hoverable'
+import Hoverable from '../Hoverable/Hoverable'
 
 const Image = ({ img, alt, grayscale, position, onMouseEnter, onMouseLeave, handleOnClick }) => (
     <Hoverable 

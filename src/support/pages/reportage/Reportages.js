@@ -3,7 +3,7 @@ import Landscape from './sections/landscape/Landscape';
 import Portrait from './sections/portrait/Portrait';
 
 import { useConfigContext } from "../../../contexts/ConfigContext";
-import { LazySection } from '../../../HOC/LazySection/LazySection';
+import { LazySection } from '../../../shared/components/LazySection/LazySection';
 
 const Reportages = () => {
     const { isMobile } = useConfigContext();

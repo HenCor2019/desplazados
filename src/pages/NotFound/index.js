@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Banner from '../../assets/images/Home/TopPaper.png'
-import { LazySection } from '../../HOC/LazySection/LazySection';
+import { LazySection } from '../../shared/components/LazySection/LazySection';
 
 import './index.css'
 

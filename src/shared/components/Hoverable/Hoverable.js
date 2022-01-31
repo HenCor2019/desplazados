@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import useWindowsDimensions from "../../Hooks/UseWindowsDimensions";
-import useOnClickOutside from "../../Hooks/UseOnClickOutside";
+import useWindowsDimensions from "../../../Hooks/UseWindowsDimensions";
+import useOnClickOutside from "../../../Hooks/UseOnClickOutside";
 
-import { useConfigContext } from "../../contexts/ConfigContext";
+import { useConfigContext } from "../../../contexts/ConfigContext";
 
 const Hoverable = ({
   onHoverIn = () => {},

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link, useHistory } from 'react-router-dom';
-import Hoverable from '../../wrappers/Hoverable/Hoverable';
+import Hoverable from '../../shared/components/Hoverable/Hoverable';
 
 const House = ({ houseImg, textImg, alt, line, filter, onMouseEnter, onMouseLeave, isShown, flexes, pathname }) => {
     const { push } = useHistory();

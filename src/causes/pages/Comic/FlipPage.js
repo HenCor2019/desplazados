@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 
 import { useConfigContext } from 'contexts/ConfigContext'
-import { LazySection } from 'HOC/LazySection/LazySection'
+import { LazySection } from 'shared/components/LazySection/LazySection'
 
 import Button from 'causes/components/Comic/Button'
 import Dropdown from 'causes/components/Dropdown/Dropdown'

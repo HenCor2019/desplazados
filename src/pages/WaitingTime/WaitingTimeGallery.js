@@ -29,7 +29,7 @@ import Modal from '../../Components/Modal/Modal'
 import Lightbox from '../../Components/Lightbox/Image/index'
 
 import { useConfigContext } from '../../contexts/ConfigContext'
-import { LazySection } from '../../HOC/LazySection/LazySection'
+import { LazySection } from '../../shared/components/LazySection/LazySection'
 
 function WaitingTimeGallery() {
   const [isActive, setIsActive] = useState(false)

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { dreamGallery } from '../../constants/gallery'
 
 import { useConfigContext } from '../../../contexts/ConfigContext'
-import { LazySection } from '../../../HOC/LazySection/LazySection'
+import { LazySection } from '../../../shared/components/LazySection/LazySection'
 
 import Image from '../../components/gallery/Image'
 

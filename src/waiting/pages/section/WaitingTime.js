@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Image from "../../Components/WaitingTime/Image";
-import processImg from "../../assets/images/WaitingTime/process.png";
-import galleryImg from "../../assets/images/WaitingTime/gallery.png";
-import meanwhileImg from "../../assets/images/WaitingTime/meanwhile.png";
+import Image from "shared/components/Image/Image";
+import processImg from "waiting/assets/images/section/process.png";
+import galleryImg from "waiting/assets/images/section/gallery.png";
+import meanwhileImg from "waiting/assets/images/section/meanwhile.png";
 import { useHistory } from 'react-router-dom'
 
-import { LazySection } from "../../HOC/LazySection/LazySection";
+import { LazySection } from "shared/components/LazySection/LazySection";
 
 function WaitingTime() {
     const [isProcessHover, setProcessHover] = useState(false);

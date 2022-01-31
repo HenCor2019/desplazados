@@ -12,7 +12,7 @@ import Modal from '../../Components/Modal/Modal'
 import VideoLightbox from '../../Components/Lightbox/Video/index'
 import { useConfigContext } from '../../contexts/ConfigContext'
 
-import { LazySection } from '../../HOC/LazySection/LazySection'
+import { LazySection } from '../../shared/components/LazySection/LazySection'
 
 function WaitingTimeMeanwhile() {
   const [isActive, setIsActive] = useState(false)

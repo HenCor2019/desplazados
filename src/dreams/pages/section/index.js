@@ -3,8 +3,8 @@ import Gallery from "../../assets/images/gallery-dreams.png";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import Image from "../../../Components/WaitingTime/Image";
-import { LazySection } from "../../../HOC/LazySection/LazySection";
+import Image from "../../../shared/components/Image/Image";
+import { LazySection } from "../../../shared/components/LazySection/LazySection";
 
 export default LazySection(function Dreams() {
   const [isPodcastHover, setIsPodcastHover] = useState(false);

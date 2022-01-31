@@ -11,7 +11,7 @@ import Image4 from "../../assets/images/WaitingTime/infographic/4.png";
 import Image5 from "../../assets/images/WaitingTime/infographic/5.png";
 import Arrow from "../../assets/images/WaitingTime/infographic/arrow.png";
 
-import { LazySection } from "../../HOC/LazySection/LazySection";
+import { LazySection } from "../../shared/components/LazySection/LazySection";
 
 function WaitingTimeProcess() {
   const [selectedTab, setSelectedTab] = useState(Image1);
