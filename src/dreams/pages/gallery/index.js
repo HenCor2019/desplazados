@@ -8,7 +8,7 @@ import Image from '../../components/gallery/Image'
 
 import title from '../../assets/images/gallery/title.png'
 
-import Modal from '../../../Components/Modal/Modal'
+import Modal from '../../../shared/components/Modal/Modal'
 import Lightbox from '../../../Components/Lightbox/Image'
 
 function DreamsGallery() {

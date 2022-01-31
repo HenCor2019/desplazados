@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import Modal from 'Components/Modal/Modal'
+import Modal from 'shared/components/Modal/Modal'
 import Lightbox from 'Components/Lightbox/Image/index'
 
 import { photos } from 'causes/constants/gallery/photos'

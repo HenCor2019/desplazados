@@ -1,34 +1,38 @@
-import React, { useState } from 'react'
-import playButton from '../../../assets/images/Video/playbutton.png'
-import SimpleVideoPlayer from '../../VideoPlayer/SimpleVideoPlayer';
+import React, { useState } from 'react';
+import playButton from 'shared/assets/images/video/playbutton.png';
+import SimpleVideoPlayer from '../../../Components/VideoPlayer/SimpleVideoPlayer';
 
 function Image({ img, alt, position, isMobile, video, handleOnClick }) {
-
   const ComponentToShow = isMobile ? Video : ImageOfVideo;
 
   return (
-    <ComponentToShow img={img} alt={alt} position={position} video={video} handleOnClick={handleOnClick}/>
+    <ComponentToShow
+      img={img}
+      alt={alt}
+      position={position}
+      video={video}
+      handleOnClick={handleOnClick}
+    />
   );
 }
 
-function Video({img, alt, position, video}){
-  return(
+function Video({ img, alt, position, video }) {
+  return (
     <div className={`flex ${position} relative h-72 px-2 sm:h-auto sm:px-0`}>
-      <SimpleVideoPlayer embedId={video.embedId}/>
+      <SimpleVideoPlayer embedId={video.embedId} />
     </div>
   );
 }
 
-
-function ImageOfVideo({ img, alt, position, video, handleOnClick}){
+function ImageOfVideo({ img, alt, position, video, handleOnClick }) {
   const [isImageHover, setIsImageHover] = useState(false);
 
-  return(
+  return (
     <div
       className={`flex ${position} relative`}
       onMouseEnter={() => setIsImageHover(true)}
-      onMouseLeave={() => setIsImageHover(false)}>
-        
+      onMouseLeave={() => setIsImageHover(false)}
+    >
       <img
         src={img}
         alt={alt}
@@ -36,7 +40,7 @@ function ImageOfVideo({ img, alt, position, video, handleOnClick}){
         onClick={() => handleOnClick(video)}
         loading={'lazy'}
       />
-      {isImageHover && (
+      {isImageHover &&
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
           <img
             src={playButton}
@@ -45,11 +49,9 @@ function ImageOfVideo({ img, alt, position, video, handleOnClick}){
             loading={'lazy'}
             onClick={() => handleOnClick(video)}
           />
-        </div>
-      )}
+        </div>}
     </div>
-  )
+  );
 }
-
 
 export default Image;
