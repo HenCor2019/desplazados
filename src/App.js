@@ -1,4 +1,4 @@
-import Home from './pages/Home'
+import Home from './home/pages/Section/Home'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Section from './Components/Section/Section'
 
@@ -42,7 +42,7 @@ import Poadcast from './dreams/components/poadcast/Poadcast'
 import { Helmet } from 'react-helmet'
 import './assets/css/index.css'
 import Comic from './causes/pages/Comic/FlipPage'
-import NotFound from './pages/NotFound'
+import NotFound from './notFound/pages/section'
 
 function App() {
   return (

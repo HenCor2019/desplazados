@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import House from "../Components/Home/House";
-import house1 from "../assets/images/Home/House1.png";
-import house2 from "../assets/images/Home/House2.png";
-import house3 from "../assets/images/Home/House3.png";
-import house4 from "../assets/images/Home/House4.png";
-import house1Text from "../assets/images/Home/House1Text.png";
-import house2Text from "../assets/images/Home/House2Text.png";
-import house3Text from "../assets/images/Home/House3Text.png";
-import house4Text from "../assets/images/Home/House4Text.png";
-import firstLine from "../assets/images/Home/FirstLine.png";
-import secondLine from "../assets/images/Home/SecondLine.png";
-import topPaper from "../assets/images/Home/TopPaper.png";
-import Footer from "../Components/Home/Footer";
+import House from "home/components/House";
+import house1 from "home/assets/images/section/House1.png";
+import house2 from "home/assets/images/section/House2.png";
+import house3 from "home/assets/images/section/House3.png";
+import house4 from "home/assets/images/section/House4.png";
+import house1Text from "home/assets/images/section/House1Text.png";
+import house2Text from "home/assets/images/section/House2Text.png";
+import house3Text from "home/assets/images/section/House3Text.png";
+import house4Text from "home/assets/images/section/House4Text.png";
+import firstLine from "home/assets/images/section/FirstLine.png";
+import secondLine from "home/assets/images/section/SecondLine.png";
+import topPaper from "shared/assets/images/topPaper/TopPaper.png";
+import Footer from "home/components/Footer";
 
 function Home() {
   const [isReasonsShown, setIsReasonsShown] = useState(false);

@@ -249,7 +249,7 @@ table {
 }
 
 .background-waitingTimeGallery {
-  background-image: url(../images/WaitingTime/gallery/background.png);
+  background-image: url(../../shared/assets/images/background/background.png);
 }
 
 @media (max-width: 1024px) {

@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import Banner from '../../assets/images/Home/TopPaper.png'
-import { LazySection } from '../../shared/components/LazySection/LazySection';
+import { Link } from 'react-router-dom';
+import Banner from 'shared/assets/images/topPaper/TopPaper.png';
+import { LazySection } from 'shared/components/LazySection/LazySection';
 
-import './index.css'
+import './index.css';
 
 export default LazySection(function NotFound() {
   return (
@@ -25,6 +25,5 @@ export default LazySection(function NotFound() {
         loading="lazy"
       />
     </section>
-  )
-}
-)
+  );
+});
