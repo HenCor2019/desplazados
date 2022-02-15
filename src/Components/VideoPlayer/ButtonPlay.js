@@ -1,4 +1,4 @@
-import PlayImage from '../../assets/images/Video/playbutton.png'
+import PlayImage from 'shared/assets/images/video/playbutton.png';
 
 const styles = {
   containerDiv:

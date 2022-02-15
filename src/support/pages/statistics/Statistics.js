@@ -5,7 +5,7 @@ import Timeline2 from '../../assets/images/statistics/timeline-2.png'
 import Chart1 from '../../assets/images/statistics/chart-1.png'
 import Chart2 from '../../assets/images/statistics/chart-2.png'
 import Chart3 from '../../assets/images/statistics/chart-3.png'
-import { LazySection } from 'HOC/LazySection/LazySection';
+import { LazySection } from 'shared/components/LazySection/LazySection';
 
 function Statistics() {
   return (
