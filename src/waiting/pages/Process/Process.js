@@ -46,8 +46,8 @@ function WaitingTimeProcess() {
         <Image src={i18next.language == 'en' ? Image3_en : Image3_es} alt={t('thirdStep')} />
         <Subtitle name={t('fourthStep')} color="#FF881F" />
         <Image src={i18next.language == 'en' ? Image2_en : Image2_es} alt={t('fourthStep')} />
-        <Subtitle name="Soluciones duraderas" color="#009BF9" />
-        <Image src={i18next.language == 'en' ? Image1_en : Image1_es} alt="Soluciones duraderas" />
+        <Subtitle name={t('fifthStep')} color="#009BF9" />
+        <Image src={i18next.language == 'en' ? Image1_en : Image1_es} alt={t('fifthStep')} />
       </div>
     </div>
   );
