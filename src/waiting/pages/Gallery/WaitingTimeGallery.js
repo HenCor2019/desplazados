@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Image from 'waiting/components/ImageGallery/Image'
 import Text from 'waiting/components/TextGallery/Text'
-import Title from 'waiting/assets/images/gallery/Title.png'
+import Title_es from 'waiting/assets/images/gallery/Title_es.png'
+import Title_en from 'waiting/assets/images/gallery/Title_en.png'
 import Image1 from 'waiting/assets/images/gallery/1.png'
 import Image2 from 'waiting/assets/images/gallery/2.png'
 import Image3 from 'waiting/assets/images/gallery/3.png'
@@ -27,10 +28,17 @@ import './WaitingTimeGallery.css'
 import Modal from 'shared/components/Modal/Modal'
 import Lightbox from 'Components/Lightbox/Image/index'
 
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
+
 import { useConfigContext } from 'contexts/ConfigContext'
 import { LazySection } from 'shared/components/LazySection/LazySection'
 
 function WaitingTimeGallery() {
+  const [t] = useTranslation('waitingPagesGalleryGallery');
+
+  const galleryImage = setGalleryImage(t);
+
   const [isActive, setIsActive] = useState(false)
   const [activeImage, setActiveImage] = useState(galleryImage[0])
 
@@ -56,7 +64,8 @@ function WaitingTimeGallery() {
         <div className="flex justify-center items-center py-6 px-6 sm:px-0 xl:p-0 xl:justify-start xl:items-start md:w-11/12 lg:w-8/12">
           <img
             className={'w-full sm:w-3/4 md:w-3/5 lg:w-1/2 '}
-            src={Title}
+            //TODO replace title src
+            src={i18next.language == 'en' ? Title_en : Title_es}
             alt="La cotidianidad: la casa de espera y el albergue"
           />
         </div>
@@ -84,10 +93,7 @@ function WaitingTimeGallery() {
             ))}
             <div className="bg-time sm:bg-transparent lg:bg-white p-4 sm:px-10 md:px-5 lg:p-2 order-last sm:order-4 sm:col-start-1 sm:col-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 lg:border xl:border-2 xl-2:border-3 xl:border-gray-gallery border-solid">
               <p className="text-justify text-white sm:text-black font-acumin text-custom-gallery-size">
-                Al salir de casa, obligados por la violencia, las familias no
-                pueden llevar consigo muchas pertenencias. A veces se reubican
-                por sus propios medios, a veces es necesario un albergue. ¿Cómo
-                es vivir, desde los ojos de una niña o un niño, esta realidad?
+                {t('message')}
               </p>
             </div>
           </div>
@@ -97,107 +103,99 @@ function WaitingTimeGallery() {
   )
 }
 
-const galleryImage = [
-  {
-    title: 'Pasos de colores',
-    description:
-      '“Estos son mis zapatos que uso todos los días para jugar en mi casa”.',
-    imgPosition: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2',
-    author: 'Dani, 9 años de edad',
-    thumbnail: Image1,
-    src: ImageGallery1,
-    index: 0
-  },
-  {
-    title: 'Sopa rica.',
-    description:
-      '“Esta es la olla donde mi mami nos hace sopa de pollo… le queda bien rica”.',
-    author: 'José, 14 años de edad',
-    imgPosition: 'lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2',
-    thumbnail: Image2,
-    src: ImageGallery2,
-    index: 1
-  },
-  {
-    title: 'Desayuno con huevo.',
-    description:
-      '“Mi mamá me hace pan con huevo para desayunar, le pone salsa, huevo, queso y pan”.',
-    author: 'Flor, 10 años de edad',
-    imgPosition: 'lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2',
-    thumbnail: Image3,
-    src: ImageGallery3,
-    index: 2
-  },
-  {
-    title: 'Vidas nuevas.',
-    description:
-      '“Con mi mamá nos pusimos a sembrar semillas de una papaya que había salido dulce y nació”.',
-    author: 'Alberto, 15 años de edad',
-    imgPosition: 'lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-2',
-    thumbnail: Image4,
-    src: ImageGallery4,
-    index: 3
-  },
-  {
-    title: 'Geometría del hogar.',
-    description:
-      '“Esta es la puerta de la casa donde vivimos, casi siempre la mantenemos cerrada”.',
-    author: 'Carlos, 13 años de edad',
-    imgPosition: 'lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3',
-    thumbnail: Image5,
-    src: ImageGallery5,
-    index: 4
-  },
-  {
-    title: 'Limites marcados.',
-    description:
-      '“En el cuarto donde estamos solo cabe un camarote y el ropero, todos dormimos en el camarote, mi mamá, mi papá, mi hermana y yo, casi no hay espacio”.',
-    author: 'Alex, 14 años de edad',
-    imgPosition: 'lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3',
-    thumbnail: Image6,
-    src: ImageGallery6,
-    index: 5
-  },
-  {
-    title: 'Perro Balu.',
-    description:
-      '“Este me lo regaló mi abuelita, tiene muchos colores porque está feliz”.',
-    author: 'Valeria, 12 años de edad',
-    imgPosition: 'lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3',
-    thumbnail: Image7,
-    src: ImageGallery7,
-    index: 6
-  },
-  {
-    title: 'Kati Cat',
-    description:
-      '“Este es mi peluche preferido, me gustan los gatos, él duerme conmigo”.',
-    author: 'Karla, 9 años de edad',
-    imgPosition: 'lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-3',
-    thumbnail: Image8,
-    src: ImageGallery8,
-    index: 7
-  },
-  {
-    title: 'Disciplina Bucal.',
-    description:
-      '“Mi papá siempre nos dice que nos lavemos los dientes en la noche”.',
-    author: 'Jonathan, 11 años de edad',
-    imgPosition: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
-    thumbnail: Image9,
-    src: ImageGallery10,
-    index: 8
-  },
-  {
-    title: 'Frutas congeladas.',
-    description:
-      '“A veces en las tardes sacamos la fruta que tenemos congelada en la refri y nos la comemos así, nos gusta la fruta congelada”.',
-    author: 'Camila, 13 años de edad',
-    imgPosition: 'lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4',
-    thumbnail: Image10,
-    src: ImageGallery9,
-    index: 9
-  }
-]
+const setGalleryImage = (t) => {
+  return [
+    {
+      title: t('colorSteps.title'),
+      description: t('colorSteps.description'),
+      imgPosition: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2',
+      author: t('colorSteps.author'),
+      thumbnail: Image1,
+      src: ImageGallery1,
+      index: 0
+    },
+    {
+      title: t('tastySoup.title'),
+      description: t('tastySoup.description'),
+      author: t('tastySoup.author'),
+      imgPosition: 'lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2',
+      thumbnail: Image2,
+      src: ImageGallery2,
+      index: 1
+    },
+    {
+      title: t('eggsForBreakfast.title'),
+      description: t('eggsForBreakfast.description'),
+      author: t('eggsForBreakfast.author'),
+      imgPosition: 'lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2',
+      thumbnail: Image3,
+      src: ImageGallery3,
+      index: 2
+    },
+    {
+      title: t('newLives.title'),
+      description: t('newLives.description'),
+      author: t('newLives.author'),
+      imgPosition: 'lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-2',
+      thumbnail: Image4,
+      src: ImageGallery4,
+      index: 3
+    },
+    {
+      title: t('homeGeometry.title'),
+      description: t('homeGeometry.description'),
+      author: t('homeGeometry.author'),
+      imgPosition: 'lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3',
+      thumbnail: Image5,
+      src: ImageGallery5,
+      index: 4
+    },
+    {
+      title: t('visibleLimits.title'),
+      description: t('visibleLimits.description'),
+      author: t('visibleLimits.author'),
+      imgPosition: 'lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3',
+      thumbnail: Image6,
+      src: ImageGallery6,
+      index: 5
+    },
+    {
+      title: t('BaluTheDog.title'),
+      description: t('BaluTheDog.description'),
+      author: t('BaluTheDog.author'),
+      imgPosition: 'lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3',
+      thumbnail: Image7,
+      src: ImageGallery7,
+      index: 6
+    },
+    {
+      title: t('KatiCat.title'),
+      description: t('KatiCat.description'),
+      author: t('KatiCat.author'),
+      imgPosition: 'lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-3',
+      thumbnail: Image8,
+      src: ImageGallery8,
+      index: 7
+    },
+    {
+      title: t('oralDiscipline.title'),
+      description: t('oralDiscipline.description'),
+      author: t('oralDiscipline.author'),
+      imgPosition: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
+      thumbnail: Image9,
+      src: ImageGallery10,
+      index: 8
+    },
+    {
+      title: t('frozenFruits.title'),
+      description: t('frozenFruits.description'),
+      author: t('frozenFruits.author'),
+      imgPosition: 'lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4',
+      thumbnail: Image10,
+      src: ImageGallery9,
+      index: 9
+    }
+  ]
+}
 
 export default LazySection(WaitingTimeGallery)
