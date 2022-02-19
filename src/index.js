@@ -25,6 +25,8 @@ import causesPagesSection_en from './translations/en/causes/pages/section/causes
 import causesPagesSection_es from './translations/es/causes/pages/section/causes.json';
 import causesPagesGallery_en from './translations/en/causes/pages/gallery/gallery.json';
 import causesPagesGallery_es from './translations/es/causes/pages/gallery/gallery.json';
+import causesPagesComic_en from './translations/en/causes/pages/comic/comic.json';
+import causesPagesComic_es from './translations/es/causes/pages/comic/comic.json';
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -37,7 +39,8 @@ i18next.init({
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_es,
       waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_es,
       causesPagesSectionHome: causesPagesSection_es,
-      causesPagesGallery: causesPagesGallery_es
+      causesPagesGallery: causesPagesGallery_es,
+      causesPagesComic: causesPagesComic_es,
     },
     en: {
       homePageSectionHome: homePagesSectionHome_en,
@@ -46,7 +49,8 @@ i18next.init({
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_en,
       waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_en,
       causesPagesSectionHome: causesPagesSection_en,
-      causesPagesGallery: causesPagesGallery_en
+      causesPagesGallery: causesPagesGallery_en,
+      causesPagesComic: causesPagesComic_en,
     }
   }
 });

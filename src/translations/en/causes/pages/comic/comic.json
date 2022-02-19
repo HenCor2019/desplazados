@@ -1,0 +1,48 @@
+{
+  "page": "Go to page",
+  "placeholder": "Select page",
+  "comics": [
+  {
+    "index": 0
+  },
+
+  {
+    "index": 1,
+    "name": "Migration"
+  },
+
+  {
+    "index": 2,
+    "name": "Forced disappearance"
+  },
+
+  {
+    "index": 3,
+    "name": "Extortion"
+  },
+
+  {
+    "index": 4,
+    "name": "Rape"
+  },
+
+  {
+    "index": 5,
+    "name": "Collaboration with justice"
+  },
+
+  {
+    "index": 6,
+    "name": "Drug trafficking"
+  },
+
+  {
+    "index": 7,
+    "name": "Life change"
+  },
+
+  {
+    "index": 8
+  }
+]
+}

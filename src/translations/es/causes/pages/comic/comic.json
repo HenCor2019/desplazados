@@ -1,0 +1,48 @@
+{
+  "page": "Ir a página",
+  "placeholder": "Seleccionar",
+  "comics": [
+  {
+    "index": 0
+  },
+
+  {
+    "index": 1,
+    "name": "Migración"
+  },
+
+  {
+    "index": 2,
+    "name": "Desaparición forzada"
+  },
+
+  {
+    "index": 3,
+    "name": "Extorsiones"
+  },
+
+  {
+    "index": 4,
+    "name": "Violación"
+  },
+
+  {
+    "index": 5,
+    "name": "Colaboración con la justicia"
+  },
+
+  {
+    "index": 6,
+    "name": "Narcotráfico"
+  },
+
+  {
+    "index": 7,
+    "name": "Cambio de vida"
+  },
+
+  {
+    "index": 8
+  }
+]
+}
