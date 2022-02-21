@@ -1,9 +1,13 @@
+import '../../../assets/images/gallery/images/1texto.png'
+import '../../../assets/images/gallery/thumbnails/1causas.png'
+
 export default function Image({ content, cols, rows, onClick, isMobile }) {
   const { src, title, description, author, thumbnail } = content
   const source = isMobile ? src : thumbnail
 
   const { sm = 'sm:col-start-1 sm:col-end-3' } = cols
 
+  console.log({ source })
   return (
     <div className={`${sm} ${cols.md} ${rows.md} order-5`}>
       <div className="w-full sm:grid sm:grid-cols-2 md:block h-full text-gray-700 overflow-hidden">

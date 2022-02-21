@@ -1,0 +1,95 @@
+{
+  "principal": "Boys and girls that belong to families that had to move away because of  violence in El Salvador tell stories through color, plasticine, collage and origami about what they left behind after leaving home. From their television shows to their closest friends.",
+  "secondary": "Imagination, creativity, the learning process and their emotions were the key tools to create each product.",
+  "photos": [
+  {
+    "title": "My favorite pet",
+    "description":
+      "“My cat is called Jack, every morning he wakes up quite thirsty and hungry. The he goes and has fun in his sand box”.",
+    "author": "Karla, 8 years old.",
+    "isCauseGallery": true,
+    "index": 0
+  },
+
+  {
+    "title": "My favorite TV character.",
+    "description":
+      "“My little sister and I love to watch BT21 (an animated series) every afternoon. Tata is my favorite character, and my sister like Cooky the rabbit…, we are going to play with them”.",
+    "author": "Yoselyn and Wendy, 7 and 9 years old.",
+    "isCauseGallery": true,
+    "index": 1
+  },
+
+  {
+    "title": "Where I want to be",
+    "description":
+      "“I like the park, I like it when it has an apple tree, flowers, sun and clouds… she is my mom”.",
+    "author": "Clari, 8 years old.",
+    "isCauseGallery": true,
+    "index": 2
+  },
+
+  {
+    "title": "Mi favorite animal",
+    "description":
+      "“I have always liked wolves, because of their fur, and because they are always in a herd. My brother likes foxes. They live together in the woods”.",
+    "author": "Milton and Jacob, 8 and 16 years old..",
+    "isCauseGallery": true,
+    "index": 3
+  },
+
+  {
+    "title": "Merry Christmas.",
+    "description":
+      "“This is my paper Santa, I took it out to decorate our Christmas tree”.",
+    "author": "Yoselin, 13 years old.",
+    "isCauseGallery": true,
+    "index": 4
+  },
+
+  {
+    "title": "My origami puppets",
+    "description":
+      "“Lex the kitty, Fili the dog, Lola the duck and Pepe the fox are one happy family and they play every day”.",
+    "author": "Yesi, 8 years old.",
+    "isCauseGallery": true,
+    "index": 5
+  },
+
+  {
+    "title": "In the prairie",
+    "description":
+      "“The flying snail and the flying elephant are best friends and live together on the prairies of their home”.",
+    "author": "Marcos, 14 years old.",
+    "isCauseGallery": true,
+    "index": 6
+  },
+
+  {
+    "title": "Los juegos que extraño",
+    "description":
+      "“Lo que más extraño de donde vivíamos antes era jugar. Compraba -jacks-, saltaba peregrina y cuerda y a veces hasta de maestra. Eso es lo que quier ser”.",
+    "author": "Marta, 15 años",
+    "isCauseGallery": true,
+    "index": 7
+  },
+
+  {
+    "title": "Happy Valentine’s",
+    "description":
+      "“I made a letter out of paper rolls in the shape of a heart to give it to my mom on this special day”.",
+    "author": "Jeni, 13 years old.",
+    "isCauseGallery": true,
+    "index": 8
+  },
+
+  {
+    "title": "The rain and the sun",
+    "description":
+      "“My favorite moment of the day is when it rains, when I hear the thunders, and when the sun comes out”.",
+    "author": "Mayra, 15 years old.",
+    "isCauseGallery": true,
+    "index": 9
+  }
+]
+}
