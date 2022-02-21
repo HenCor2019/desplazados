@@ -21,6 +21,13 @@ import waitingPagesGalleryGallery_en from './translations/en/waiting/pages/galle
 import waitingPagesMeanwhileMeanwhile_es from './translations/es/waiting/pages/meanwhile/meanwhile.json';
 import waitingPagesMeanwhileMeanwhile_en from './translations/en/waiting/pages/meanwhile/meanwhile.json';
 
+import supportPage__es from './translations/es/support/supportPage.json';
+import supportPage__en from './translations/en/support/supportPage.json';
+import supportStatistics__es from './translations/es/support/pages/statistics.json';
+import supportStatistics__en from './translations/en/support/pages/statistics.json';
+import supportReportage__es from './translations/es/support/pages/reportage.json';
+import supportReportage__en from './translations/en/support/pages/reportage.json';
+
 i18next.init({
   interpolation: { escapeValue: false },
   lng: 'en',
@@ -30,14 +37,20 @@ i18next.init({
       waitingPagesSectionWaitingTime: waitingPagesSectionWaitingTime_es,
       waitingPagesProcessProcess: waitingPagesProcessProcess_es,
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_es,
-      waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_es
+      waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_es,
+      supportPage: supportPage__es,
+      supportStatistics: supportStatistics__es,
+      supportReportage: supportReportage__es,
     },
     en: {
       homePageSectionHome: homePagesSectionHome_en,
       waitingPagesSectionWaitingTime: waitingPagesSectionWaitingTime_en,
       waitingPagesProcessProcess: waitingPagesProcessProcess_en,
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_en,
-      waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_en
+      waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_en, 
+      supportPage: supportPage__en,
+      supportStatistics: supportStatistics__en,
+      supportReportage: supportReportage__en,
     }
   }
 });

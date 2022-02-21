@@ -4,10 +4,15 @@ import Concepts from '../assets/images/concepts.png';
 import Report from '../assets/images/report.png';
 import Statistics from '../assets/images/statistics.png';
 
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
+
 import { LazySection } from '../../shared/components/LazySection/LazySection';
 import Hoverable from '../../shared/components/Hoverable/Hoverable';
 
 function SupportMainSect() {
+    const [t] = useTranslation('supportPage');
+
     const { push } = useHistory();
     const [isConceptsHover, setConceptsHover] = useState(false);
     const [isReportHover, setReportHover] = useState(false);
@@ -56,7 +61,8 @@ function SupportMainSect() {
                 </div>
                 <div className="bg-blue-900 sm:bg-transparent h-auto w-full lg-2:pr-8 lg-2:col-span-2 sm:p-3 sm:p-0 row-start-4 row-end-5 sm:row-start-auto sm:row-end-auto">
                     <p className="h-auto text-justify sm:mt-6 sm:pl-8 text-sm sm:text-base lg-2:px-0 xl-2:w-7/12 xl-2:mx-auto xl-2:mt-16 leading-snug text-white sm:text-black-700 font-acumin p-4 sm:p-0">
-                    Luego de la sentencia 411-2017 de la Corte Suprema de Justicia de El Salvador, el Estado se vio obligado a reconocer y legislar en favor de las víctimas de desplazamiento forzado por violencia. Tres años después, se aprobó una ley que carece de reglamento. Aunque existen acuerdos internacionales, como la Convención sobre Refugiados de 1951 y las Declaraciones de Cartagena y de Brasil, en El Salvador son documentos muertos. ¿A qué se enfrentan las familias cuando buscan apoyo de parte del Estado?</p>
+                    {t('supportIntro')}
+                    </p>
                 </div>
                 <div className="flex sm:w-full items-center lg-2:items-start justify-start sm:justify-center lg-2:justify-start row-start-3 row-end-4 sm:row-start-auto sm:row-end-auto p-4 sm:p-0">
                     <Hoverable src={ Report } 
