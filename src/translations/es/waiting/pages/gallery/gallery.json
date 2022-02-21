@@ -1,0 +1,53 @@
+{
+  "message": "Al salir de casa, obligados por la violencia, las familias no pueden llevar consigo muchas pertenencias. A veces se reubican por sus propios medios, a veces es necesario un albergue. ¿Cómo es vivir, desde los ojos de una niña o un niño, esta realidad?",
+  "colorSteps": {
+    "title": "Pasos de colores",
+    "description": "“Estos son mis zapatos que uso todos los días para jugar en mi casa”.",
+    "author": "Dani, 9 años de edad"
+  },
+  "tastySoup": {
+    "title": "Sopa rica",
+    "description": "“Esta es la olla donde mi mami nos hace sopa de pollo… le queda bien rica”.",
+    "author": "José, 14 años de edad"
+  },
+  "eggsForBreakfast": {
+    "title": "Desayuno con huevo",
+    "description": "“Mi mamá me hace pan con huevo para desayunar, le pone salsa, huevo, queso y pan”.",
+    "author": "Flor, 10 años de edad"
+  },
+  "newLives": {
+    "title": "Vidas nuevas",
+    "description": "“Con mi mamá nos pusimos a sembrar semillas de una papaya que había salido dulce y nació”.",
+    "author": "Alberto, 15 años de edad"
+  },
+  "homeGeometry": {
+    "title": "Geometría del hogar",
+    "description": "“Esta es la puerta de la casa donde vivimos, casi siempre la mantenemos cerrada”.",
+    "author": "Carlos, 13 años de edad"
+  },
+  "visibleLimits": {
+    "title": "Límites marcados",
+    "description": "“En el cuarto donde estamos solo cabe un camarote y el ropero, todos dormimos en el camarote, mi mamá, mi papá, mi hermana y yo, casi no hay espacio”.",
+    "author": "Alex, 14 años de edad"
+  },
+  "BaluTheDog": {
+    "title": "Perro Balu",
+    "description": "“Este me lo regaló mi abuelita, tiene muchos colores porque está feliz”.",
+    "author": "Valeria, 12 años de edad"
+  },
+  "KatiCat": {
+    "title": "Kati Cat",
+    "description": "“Este es mi peluche preferido, me gustan los gatos, él duerme conmigo”.",
+    "author": "karla, 9 años de edad"
+  },
+  "oralDiscipline": {
+    "title": "Disciplina bucal",
+    "description": "“Mi papá siempre nos dice que nos lavemos los dientes en la noche”.",
+    "author": "Jonathan, 11 años de edad"
+  },
+  "frozenFruits": {
+    "title": "Frutas congeladas",
+    "description": "“A veces en las tardes sacamos la fruta que tenemos congelada en la refri y nos la comemos así, nos gusta la fruta congelada”.",
+    "author": "Camila, 13 años de edad"
+  }
+}
