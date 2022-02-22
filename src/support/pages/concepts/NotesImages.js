@@ -1,3 +1,5 @@
+import { getNoteImage } from "support/helpers/getNoteImage"
+
 const NotesImages = ({ content }) => {
     //Styles depending on the position of the image
     const leftStyle = "w-full mt-6 lg:col-start-1 lg:col-end-0"
@@ -5,10 +7,10 @@ const NotesImages = ({ content }) => {
     const rightStyle = "w-full mt-6 lg:col-start-3 lg:col-end-4 lg:mt-12"
     let style = "";
 
-    if(content.position == 0) {
+    if(content.position === 0) {
         style = leftStyle;
     }
-    else if(content.position == 1) {
+    else if(content.position === 1) {
         style = centerStyle;
     }
     else {
@@ -17,7 +19,7 @@ const NotesImages = ({ content }) => {
 
     return (
         <div className={style}>
-            <img src={content.src} alt={content.alt} className="m-auto"></img>
+            <img src={getNoteImage(content.index)} alt={content.alt} className="m-auto"></img>
         </div>
     )
 }

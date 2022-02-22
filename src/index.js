@@ -21,12 +21,12 @@ import waitingPagesGalleryGallery_en from './translations/en/waiting/pages/galle
 import waitingPagesMeanwhileMeanwhile_es from './translations/es/waiting/pages/meanwhile/meanwhile.json';
 import waitingPagesMeanwhileMeanwhile_en from './translations/en/waiting/pages/meanwhile/meanwhile.json';
 
-import supportPage__es from './translations/es/support/supportPage.json';
-import supportPage__en from './translations/en/support/supportPage.json';
-import supportStatistics__es from './translations/es/support/pages/statistics.json';
-import supportStatistics__en from './translations/en/support/pages/statistics.json';
-import supportReportage__es from './translations/es/support/pages/reportage.json';
-import supportReportage__en from './translations/en/support/pages/reportage.json';
+import supportPage_es from './translations/es/support/supportPage.json';
+import supportPage_en from './translations/en/support/supportPage.json';
+import supportStatistics_es from './translations/es/support/pages/statistics.json';
+import supportStatistics_en from './translations/en/support/pages/statistics.json';
+import supportReportage_es from './translations/es/support/pages/reportage.json';
+import supportReportage_en from './translations/en/support/pages/reportage.json';
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -38,9 +38,9 @@ i18next.init({
       waitingPagesProcessProcess: waitingPagesProcessProcess_es,
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_es,
       waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_es,
-      supportPage: supportPage__es,
-      supportStatistics: supportStatistics__es,
-      supportReportage: supportReportage__es,
+      supportPage: supportPage_es,
+      supportStatistics: supportStatistics_es,
+      supportReportage: supportReportage_es,
     },
     en: {
       homePageSectionHome: homePagesSectionHome_en,
@@ -48,9 +48,9 @@ i18next.init({
       waitingPagesProcessProcess: waitingPagesProcessProcess_en,
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_en,
       waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_en, 
-      supportPage: supportPage__en,
-      supportStatistics: supportStatistics__en,
-      supportReportage: supportReportage__en,
+      supportPage: supportPage_en,
+      supportStatistics: supportStatistics_en,
+      supportReportage: supportReportage_en,
     }
   }
 });
