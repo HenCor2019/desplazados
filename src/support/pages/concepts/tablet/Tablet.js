@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { getNoteImage } from 'support/helpers/getNoteImage';
 import i18next from 'i18next';
-import Title from '../../../assets/images/concepts/concepts-title.png';
+import title_es from '../../../assets/images/concepts/concepts-title_es.png';
+import title_en from '../../../assets/images/concepts/concepts-title_en.png';
 import ConceptTablet from '../../../components/concepts/ConceptTablet';
 import concepts_es from '../../../../translations/es/support/pages/concepts.json';
 import concepts_en from '../../../../translations/en/support/pages/concepts.json';
@@ -24,7 +25,7 @@ const Portrait = () => {
   return (
     <div>
       <img
-        src={Title}
+        src={i18next.language === 'en' ? title_en : title_es}
         className='w-64 md:w-72 lg:w-80 block mb-2'
         alt='Conceptos: Para conocer mejor'
       />

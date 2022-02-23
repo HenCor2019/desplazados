@@ -22,7 +22,7 @@ const Section2 = () => {
       </div>
       <div className='lg:row-span-2 lg:col-start-2 lg:col-end-4'>
         <div className='w-full h-72 lg:h-3/4 2xl:h-55/100w xl-2:px-20 mt-6 lg:mt-0'>
-          <SimpleVideoPlayer embedId='3FYF-ENXrPI' />
+          <SimpleVideoPlayer embedId={t('embedIDVideo1')} />
         </div>
         <div className='my-6 lg:mt-6 lg:h-1/4'>
           <p className='font-acumin text-black-700 leading-6 text-justify font-bold'>
