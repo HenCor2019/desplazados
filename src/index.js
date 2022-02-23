@@ -27,6 +27,12 @@ import supportStatistics_es from './translations/es/support/pages/statistics.jso
 import supportStatistics_en from './translations/en/support/pages/statistics.json';
 import supportReportage_es from './translations/es/support/pages/reportage.json';
 import supportReportage_en from './translations/en/support/pages/reportage.json';
+import causesPagesSection_en from './translations/en/causes/pages/section/causes.json';
+import causesPagesSection_es from './translations/es/causes/pages/section/causes.json';
+import causesPagesGallery_en from './translations/en/causes/pages/gallery/gallery.json';
+import causesPagesGallery_es from './translations/es/causes/pages/gallery/gallery.json';
+import causesPagesComic_en from './translations/en/causes/pages/comic/comic.json';
+import causesPagesComic_es from './translations/es/causes/pages/comic/comic.json';
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -41,6 +47,9 @@ i18next.init({
       supportPage: supportPage_es,
       supportStatistics: supportStatistics_es,
       supportReportage: supportReportage_es,
+      causesPagesSectionHome: causesPagesSection_es,
+      causesPagesGallery: causesPagesGallery_es,
+      causesPagesComic: causesPagesComic_es,
     },
     en: {
       homePageSectionHome: homePagesSectionHome_en,
@@ -51,6 +60,9 @@ i18next.init({
       supportPage: supportPage_en,
       supportStatistics: supportStatistics_en,
       supportReportage: supportReportage_en,
+      causesPagesSectionHome: causesPagesSection_en,
+      causesPagesGallery: causesPagesGallery_en,
+      causesPagesComic: causesPagesComic_en,
     }
   }
 });

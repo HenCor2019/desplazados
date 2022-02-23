@@ -7,10 +7,12 @@ import { LazySection } from 'shared/components/LazySection/LazySection'
 import Button from 'causes/components/Comic/Button'
 import Dropdown from 'causes/components/Dropdown/Dropdown'
 import CompleteComic from 'causes/components/Comic/Comic'
-import { comicImages } from 'causes/constants/comic/Comic'
 import InnerButtons from 'causes/components/Comic/InnerButtons'
 
+import { useTranslation } from 'react-i18next'
+
 import 'causes/components/Comic/index.css'
+import { addComicImages } from 'causes/constants/comic/helper'
 
 const Comic = () => {
   const {
@@ -22,6 +24,8 @@ const Comic = () => {
     is2XlMonitor
   } = useConfigContext()
 
+  const [t] = useTranslation('causesPagesComic')
+  const comicImages = addComicImages(t('comics', { returnObjects: true }) ?? [])
   const [flipPage, setFlipPage] = useState(null)
   const [width, setWidth] = useState(650)
   const [height, setHeight] = useState(510)
@@ -68,12 +72,12 @@ const Comic = () => {
   return (
     <>
       <Dropdown
-        placeholder="Ir a página"
+        placeholder={t('page') ?? 'Go to page'}
         options={comicImages.filter((image) => image.name !== undefined)}
         onChange={(values) => setCurrentPage(values)}
         label="name"
         value="index"
-        secondPlaceholder="Seleccionar"
+        secondPlaceholder={t('placeholder') ?? 'Select page'}
       />
 
       <section className="comic-container w-full sm:h-full md:h-5/6 2xl:h-full flex flex-col lg:flex-row justify-center items-center">

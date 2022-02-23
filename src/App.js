@@ -25,7 +25,7 @@ import WaitingPortBanner from './assets/images/Banners/Mobile/waiting-banner.png
 import WaitingPortBanner2 from './assets/images/Banners/Mobile/waiting.png'
 import WaitingTime from './waiting/pages/section/WaitingTime'
 import Meanwhile from './waiting/pages/Meanwhile/Meanwhile'
-import CausesBanner from 'causes/assets/images/gallery/causes-banner.png'
+import CausesBanner from 'causes/assets/images/gallery/banner/home-en.png'
 import CausesPortBanner from './assets/images/Banners/Mobile/causes-banner.png'
 import CausesPortBanner2 from './assets/images/Banners/Mobile/causes.png'
 import CausesDrawingsBanner from './assets/images/Banners/banner-drawings.png'
