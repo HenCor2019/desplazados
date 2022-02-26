@@ -36,7 +36,7 @@ import causesPagesComic_es from './translations/es/causes/pages/comic/comic.json
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'en',
+  lng: 'es',
   resources: {
     es: {
       homePageSectionHome: homePagesSectionHome_es,
