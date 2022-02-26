@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/css/index.css';
 import App from './App';
-//import Section from './Section';
-//import CausesDeco from './images/blue-deco.png';
 import reportWebVitals from './reportWebVitals';
 import { ConfigProvider } from './contexts/ConfigContext';
 import { I18nextProvider } from 'react-i18next';
@@ -36,7 +34,7 @@ import causesPagesComic_es from './translations/es/causes/pages/comic/comic.json
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'en',
+  lng: 'es',
   resources: {
     es: {
       homePageSectionHome: homePagesSectionHome_es,
