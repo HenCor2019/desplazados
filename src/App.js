@@ -19,6 +19,7 @@ import Dreams from './dreams/pages/section/index';
 import WaitingTimeGallery from './waiting/pages/Gallery/WaitingTimeGallery';
 import WaitingTimeProcess from './waiting/pages/Process/Process';
 import Poadcast from './dreams/components/poadcast/Poadcast';
+import { useTranslation } from 'react-i18next';
 
 // banners
 import { PodcastBanner } from 'shared/banners/podcast.banners';
@@ -79,6 +80,7 @@ import {
 import './assets/css/index.css';
 
 function App() {
+  const [t] = useTranslation('waitingPagesMeanwhileMeanwhile');
   return (
     <Router>
       <Switch>
