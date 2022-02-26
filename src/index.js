@@ -21,6 +21,12 @@ import waitingPagesGalleryGallery_en from './translations/en/waiting/pages/galle
 import waitingPagesMeanwhileMeanwhile_es from './translations/es/waiting/pages/meanwhile/meanwhile.json';
 import waitingPagesMeanwhileMeanwhile_en from './translations/en/waiting/pages/meanwhile/meanwhile.json';
 
+import supportPage_es from './translations/es/support/supportPage.json';
+import supportPage_en from './translations/en/support/supportPage.json';
+import supportStatistics_es from './translations/es/support/pages/statistics.json';
+import supportStatistics_en from './translations/en/support/pages/statistics.json';
+import supportReportage_es from './translations/es/support/pages/reportage.json';
+import supportReportage_en from './translations/en/support/pages/reportage.json';
 import causesPagesSection_en from './translations/en/causes/pages/section/causes.json';
 import causesPagesSection_es from './translations/es/causes/pages/section/causes.json';
 import causesPagesGallery_en from './translations/en/causes/pages/gallery/gallery.json';
@@ -38,6 +44,9 @@ i18next.init({
       waitingPagesProcessProcess: waitingPagesProcessProcess_es,
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_es,
       waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_es,
+      supportPage: supportPage_es,
+      supportStatistics: supportStatistics_es,
+      supportReportage: supportReportage_es,
       causesPagesSectionHome: causesPagesSection_es,
       causesPagesGallery: causesPagesGallery_es,
       causesPagesComic: causesPagesComic_es,
@@ -47,7 +56,10 @@ i18next.init({
       waitingPagesSectionWaitingTime: waitingPagesSectionWaitingTime_en,
       waitingPagesProcessProcess: waitingPagesProcessProcess_en,
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_en,
-      waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_en,
+      waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_en, 
+      supportPage: supportPage_en,
+      supportStatistics: supportStatistics_en,
+      supportReportage: supportReportage_en,
       causesPagesSectionHome: causesPagesSection_en,
       causesPagesGallery: causesPagesGallery_en,
       causesPagesComic: causesPagesComic_en,

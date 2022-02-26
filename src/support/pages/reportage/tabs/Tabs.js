@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import i18next from 'i18next';
 import Tab from "./Tab";
 
 import Section1 from "../sections/Section1";
@@ -11,13 +12,13 @@ function ReportagesTabs() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   function onClickHandler(name, index) {
-    if (name == "Anterior") {
-      if (index != 0) {
+    if (name === "Anterior" || name === "Previous") {
+      if (index !== 0) {
         index--;
         setSelectedTab(tabs[index]);
       }
-    } else if (name == "Siguiente") {
-      if (index != tabs.length - 1) {
+    } else if (name === "Siguiente" || name === "Next") {
+      if (index !== tabs.length - 1) {
         index++;
         setSelectedTab(tabs[index]);
       }
@@ -32,17 +33,19 @@ function ReportagesTabs() {
       <selectedTab.section />
       <ul className='grid grid-rows-1 grid-flow-col m-4'>
         <Tab
-          name='Anterior'
+          name={i18next.language === 'en' ? 'Previous' : 'Anterior'}
           index={selectedTab.index}
           onClick={onClickHandler}
+          selectedTab={selectedTab}
         />
         {tabs.map((tab) => (
-          <Tab name={tab.name} index={tab.index} onClick={onClickHandler} />
+          <Tab name={tab.name} index={tab.index} onClick={onClickHandler} selectedTab={selectedTab}/>
         ))}
         <Tab
-          name='Siguiente'
+          name={i18next.language === 'en' ? 'Next' : 'Siguiente'}
           index={selectedTab.index}
           onClick={onClickHandler}
+          selectedTab={selectedTab}
         />
       </ul>
     </>

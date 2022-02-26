@@ -1,3 +1,4 @@
+import i18next from 'i18next';
 import Home from './home/pages/Section/Home'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Section from './Components/Section/Section'
@@ -5,14 +6,20 @@ import Section from './Components/Section/Section'
 import YoutubeVideo from './pages/Video/index'
 import SupportMainSect from './support/components/SupportMainSect'
 import Statistics from './support/pages/statistics/Statistics'
-import StatisticsBanner from './support/assets/images/statistics/statistics-banner.png'
+import statisticsBanner_es from './support/assets/images/statistics/statistics-banner_es.png';
+import statisticsBanner_en from './support/assets/images/statistics/statistics-banner_en.png'
 import Reportages from './support/pages/reportage/Reportages'
-import ReportagesBanner from './support/assets/images/reportage/reportage-banner.png'
+import reportagesBanner_es from './support/assets/images/reportage/reportage-banner_es.png';
+import reportagesBanner_en from './support/assets/images/reportage/reportage-banner_en.png';
 import Concepts from './support/pages/concepts/Concepts'
-import ConceptsBanner from './support/assets/images/concepts/concepts-banner.png'
-import SupportBanner from './support/assets/images/support-main.png'
-import SupportPortBanner from './assets/images/Banners/Mobile/support-banner.png'
-import SupportPortBanner2 from './assets/images/Banners/Mobile/support.png'
+import conceptsBanner_es from './support/assets/images/concepts/concepts-banner_es.png';
+import conceptsBanner_en from './support/assets/images/concepts/concepts-banner_en.png';
+import supportBanner_es from './support/assets/banners/landscape/support-main_es.png';
+import supportBanner_en from './support/assets/banners/landscape/support-main_en.png';
+import supportPortBanner_es from './support/assets/banners/mobile/support-main_es.png';
+import supportPortInnerBanner_es from './support/assets/banners/mobile/support-inner_es.png';
+import supportPortBanner_en from './support/assets/banners/mobile/support-main_en.png';
+import supportPortInnerBanner_en from './support/assets/banners/mobile/support-inner_en.png';
 import WaitingTimeBanner from './assets/images/WaitingTime/largeBanner.png'
 import WaitingPortBanner from './assets/images/Banners/Mobile/waiting-banner.png'
 import WaitingPortBanner2 from './assets/images/Banners/Mobile/waiting.png'
@@ -178,7 +185,9 @@ function App() {
           <Helmet>
             <title> Desplazados - En busca de apoyo </title>
           </Helmet>
-          <Section bannerLand={SupportBanner} bannerPort={SupportPortBanner}>
+          <Section 
+              bannerLand={i18next.language === 'en' ? supportBanner_en : supportBanner_es} 
+              bannerPort={i18next.language === 'en' ? supportPortBanner_en : supportPortBanner_es}>
             <SupportMainSect />
           </Section>
         </Route>
@@ -186,7 +195,9 @@ function App() {
           <Helmet>
             <title> Desplazados - Conceptos </title>
           </Helmet>
-          <Section bannerLand={ConceptsBanner} bannerPort={SupportPortBanner2}>
+          <Section 
+            bannerLand={i18next.language === 'en' ? conceptsBanner_en : conceptsBanner_es} 
+            bannerPort={i18next.language === 'en' ? supportPortInnerBanner_en : supportPortInnerBanner_es}>
             <Concepts />
           </Section>
         </Route>
@@ -194,9 +205,9 @@ function App() {
           <Helmet>
             <title> Desplazados - Estadísticas </title>
           </Helmet>
-          <Section
-            bannerLand={StatisticsBanner}
-            bannerPort={SupportPortBanner2}
+          <Section 
+              bannerLand={i18next.language === 'en' ? statisticsBanner_en : statisticsBanner_es}
+              bannerPort={i18next.language === 'en' ? supportPortInnerBanner_en : supportPortInnerBanner_es}
           >
             <Statistics />
           </Section>
@@ -205,9 +216,9 @@ function App() {
           <Helmet>
             <title> Desplazados - Reportajes </title>
           </Helmet>
-          <Section
-            bannerLand={ReportagesBanner}
-            bannerPort={SupportPortBanner2}
+          <Section 
+            bannerLand={i18next.language === 'en' ? reportagesBanner_en : reportagesBanner_es}
+            bannerPort={i18next.language === 'en' ? supportPortInnerBanner_en : supportPortInnerBanner_es}
           >
             <Reportages />
           </Section>
