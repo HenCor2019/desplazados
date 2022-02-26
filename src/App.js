@@ -28,12 +28,18 @@ import { statisticsBanner_en, statisticsBanner_es } from 'shared/banners/statist
 import { reportagesBanner_en, reportagesBanner_es } from 'shared/banners/reportages.banners';
 
 import { 
-  WaitingProcessBanner,
-  WaitingVideosBanner,
-  WaitingGalleryBanner,
-  WaitingPortBanner2,
-  WaitingPortBanner,
-  WaitingTimeBanner
+  WaitingProcessBanner_es,
+  WaitingVideosBanner_es,
+  WaitingGalleryBanner_es,
+  WaitingPortBanner2_es,
+  WaitingPortBanner_es,
+  WaitingTimeBanner_es,
+  WaitingProcessBanner_en,
+  WaitingVideosBanner_en,
+  WaitingGalleryBanner_en,
+  WaitingPortBanner2_en,
+  WaitingPortBanner_en,
+  WaitingTimeBanner_en,
 } from 'shared/banners/waiting.banners';
 
 import { 
@@ -110,8 +116,8 @@ function App() {
             <title> Desplazados - Tiempo de Espera </title>
           </Helmet>
           <Section
-            bannerLand={WaitingTimeBanner}
-            bannerPort={WaitingPortBanner}
+            bannerLand={i18next.language === 'en' ? WaitingTimeBanner_en : WaitingTimeBanner_es}
+            bannerPort={i18next.language === 'en' ? WaitingPortBanner_en : WaitingPortBanner_es}
           >
             <WaitingTime />
           </Section>
@@ -123,8 +129,8 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={WaitingVideosBanner}
-            bannerPort={WaitingPortBanner2}
+            bannerLand={i18next.language === 'en' ? WaitingVideosBanner_en : WaitingVideosBanner_es}
+            bannerPort={i18next.language === 'en' ? WaitingPortBanner2_en : WaitingPortBanner2_es}
           >
             <Meanwhile />
           </Section>
@@ -136,8 +142,8 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={WaitingGalleryBanner}
-            bannerPort={WaitingPortBanner2}
+            bannerLand={i18next.language === 'en' ? WaitingGalleryBanner_en : WaitingGalleryBanner_es}
+            bannerPort={i18next.language === 'en' ? WaitingPortBanner2_en : WaitingPortBanner2_es}
           >
             <WaitingTimeGallery />
           </Section>
@@ -149,8 +155,8 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={WaitingProcessBanner}
-            bannerPort={WaitingPortBanner2}
+            bannerLand={i18next.language === 'en' ? WaitingProcessBanner_en : WaitingProcessBanner_es}
+            bannerPort={i18next.language === 'en' ? WaitingPortBanner2_en : WaitingPortBanner2_es}
           >
             <WaitingTimeProcess />
           </Section>

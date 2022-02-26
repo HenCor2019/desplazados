@@ -48,9 +48,8 @@ function WaitingTimeMeanwhile() {
       <div className="flex justify-center items-center h-full">
         <main className="bg-white-500 grid grid-cols-1 grid-flow-row gap-4 sm:gap-4 sm:grid-cols-2 sm:p-4 lg:grid-cols-3 lg:grid-cols-3 w-11/12">
           {galleryVideos.map((galleryVideos) => (
-            <>
+            <React.Fragment key={galleryVideos.img.toString()}>
               <Image
-                key={galleryVideos.img}
                 img={galleryVideos.img}
                 alt={galleryVideos.title}
                 isActive={isActive}
@@ -64,7 +63,7 @@ function WaitingTimeMeanwhile() {
                 position={galleryVideos.textPosition}
                 visibility={galleryVideos.textVisibility}
               />
-            </>
+            </React.Fragment>
           ))}
           <ImageWithText
             img={theme}

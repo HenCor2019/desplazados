@@ -1,65 +1,65 @@
-import React, { useState } from 'react'
-import Image from 'waiting/components/ImageGallery/Image'
-import Text from 'waiting/components/TextGallery/Text'
-import Title_es from 'waiting/assets/images/gallery/Title_es.png'
-import Title_en from 'waiting/assets/images/gallery/Title_en.png'
-import Image1 from 'waiting/assets/images/gallery/1.png'
-import Image2 from 'waiting/assets/images/gallery/2.png'
-import Image3 from 'waiting/assets/images/gallery/3.png'
-import Image4 from 'waiting/assets/images/gallery/4.png'
-import Image5 from 'waiting/assets/images/gallery/5.png'
-import Image6 from 'waiting/assets/images/gallery/6.png'
-import Image7 from 'waiting/assets/images/gallery/7.png'
-import Image8 from 'waiting/assets/images/gallery/8.png'
-import Image9 from 'waiting/assets/images/gallery/9.png'
-import Image10 from 'waiting/assets/images/gallery/10.png'
-import ImageGallery1 from 'waiting/assets/images/gallery/Image1.png'
-import ImageGallery2 from 'waiting/assets/images/gallery/Image2.png'
-import ImageGallery3 from 'waiting/assets/images/gallery/Image3.png'
-import ImageGallery4 from 'waiting/assets/images/gallery/Image4.png'
-import ImageGallery5 from 'waiting/assets/images/gallery/Image5.png'
-import ImageGallery6 from 'waiting/assets/images/gallery/Image6.png'
-import ImageGallery7 from 'waiting/assets/images/gallery/Image7.png'
-import ImageGallery8 from 'waiting/assets/images/gallery/Image8.png'
-import ImageGallery9 from 'waiting/assets/images/gallery/Image9.png'
-import ImageGallery10 from 'waiting/assets/images/gallery/Image10.png'
-import './WaitingTimeGallery.css'
+import React, { useState } from 'react';
+import Image from 'waiting/components/ImageGallery/Image';
+import Text from 'waiting/components/TextGallery/Text';
+import Title_es from 'waiting/assets/images/gallery/Title_es.png';
+import Title_en from 'waiting/assets/images/gallery/Title_en.png';
+import Image1 from 'waiting/assets/images/gallery/1.png';
+import Image2 from 'waiting/assets/images/gallery/2.png';
+import Image3 from 'waiting/assets/images/gallery/3.png';
+import Image4 from 'waiting/assets/images/gallery/4.png';
+import Image5 from 'waiting/assets/images/gallery/5.png';
+import Image6 from 'waiting/assets/images/gallery/6.png';
+import Image7 from 'waiting/assets/images/gallery/7.png';
+import Image8 from 'waiting/assets/images/gallery/8.png';
+import Image9 from 'waiting/assets/images/gallery/9.png';
+import Image10 from 'waiting/assets/images/gallery/10.png';
+import ImageGallery1 from 'waiting/assets/images/gallery/Image1.png';
+import ImageGallery2 from 'waiting/assets/images/gallery/Image2.png';
+import ImageGallery3 from 'waiting/assets/images/gallery/Image3.png';
+import ImageGallery4 from 'waiting/assets/images/gallery/Image4.png';
+import ImageGallery5 from 'waiting/assets/images/gallery/Image5.png';
+import ImageGallery6 from 'waiting/assets/images/gallery/Image6.png';
+import ImageGallery7 from 'waiting/assets/images/gallery/Image7.png';
+import ImageGallery8 from 'waiting/assets/images/gallery/Image8.png';
+import ImageGallery9 from 'waiting/assets/images/gallery/Image9.png';
+import ImageGallery10 from 'waiting/assets/images/gallery/Image10.png';
+import './WaitingTimeGallery.css';
 
-import Modal from 'shared/components/Modal/Modal'
-import Lightbox from 'Components/Lightbox/Image/index'
+import Modal from 'shared/components/Modal/Modal';
+import Lightbox from 'Components/Lightbox/Image/index';
 
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
-import { useConfigContext } from 'contexts/ConfigContext'
-import { LazySection } from 'shared/components/LazySection/LazySection'
+import { useConfigContext } from 'contexts/ConfigContext';
+import { LazySection } from 'shared/components/LazySection/LazySection';
 
 function WaitingTimeGallery() {
   const [t] = useTranslation('waitingPagesGalleryGallery');
 
   const galleryImage = setGalleryImage(t);
 
-  const [isActive, setIsActive] = useState(false)
-  const [activeImage, setActiveImage] = useState(galleryImage[0])
+  const [isActive, setIsActive] = useState(false);
+  const [activeImage, setActiveImage] = useState(galleryImage[0]);
 
-  const { isMobile, isTablet } = useConfigContext()
+  const { isMobile, isTablet } = useConfigContext();
 
-  const handleOnClick = (imageInformation) => {
-    setIsActive(!isActive)
-    if (imageInformation) setActiveImage(imageInformation)
-  }
+  const handleOnClick = imageInformation => {
+    setIsActive(!isActive);
+    if (imageInformation) setActiveImage(imageInformation);
+  };
 
   return (
     <div className="sm:flex sm:justify-center sm:items-center h-full w-full">
-      {!isMobile && isActive && (
+      {!isMobile &&
+        isActive &&
         <Modal>
           <Lightbox
             current={activeImage}
             onClick={handleOnClick}
             images={galleryImage}
           />
-        </Modal>
-      )}
+        </Modal>}
       <main className="flex flex-col justify-center items-center xl:justify-start xl:items-start w-full">
         <div className="flex justify-center items-center py-6 px-6 sm:px-0 xl:p-0 xl:justify-start xl:items-start md:w-11/12 lg:w-8/12">
           <img
@@ -71,10 +71,9 @@ function WaitingTimeGallery() {
         </div>
         <div className="flex justify-center items-start">
           <div className="grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 background-waitingTimeGallery bg-no-repeat bg-center bg-cover lg:gap-6 lg:p-6 lg:pr-10 m-2 xl-2:m-8">
-            {galleryImage.map((galleryImage) => (
-              <>
+            {galleryImage.map(galleryImage =>
+              <React.Fragment key={galleryImage.index}>
                 <Image
-                  key={galleryImage.index}
                   img={galleryImage}
                   alt={galleryImage.title}
                   position={galleryImage.imgPosition}
@@ -82,15 +81,14 @@ function WaitingTimeGallery() {
                   isMobile={isMobile}
                 />
                 {isTablet ||
-                  (isMobile && (
+                  (isMobile &&
                     <Text
                       title={galleryImage.title}
                       description={galleryImage.description}
                       author={galleryImage.author}
-                    />
-                  ))}
-              </>
-            ))}
+                    />)}
+              </React.Fragment>
+            )}
             <div className="bg-time sm:bg-transparent lg:bg-white p-4 sm:px-10 md:px-5 lg:p-2 order-last sm:order-4 sm:col-start-1 sm:col-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 lg:border xl:border-2 xl-2:border-3 xl:border-gray-gallery border-solid">
               <p className="text-justify text-white sm:text-black font-acumin text-custom-gallery-size">
                 {t('message')}
@@ -100,10 +98,10 @@ function WaitingTimeGallery() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
-const setGalleryImage = (t) => {
+const setGalleryImage = t => {
   return [
     {
       title: t('colorSteps.title'),
@@ -195,7 +193,7 @@ const setGalleryImage = (t) => {
       src: ImageGallery9,
       index: 9
     }
-  ]
-}
+  ];
+};
 
-export default LazySection(WaitingTimeGallery)
+export default LazySection(WaitingTimeGallery);
