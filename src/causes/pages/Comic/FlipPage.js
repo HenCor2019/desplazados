@@ -9,6 +9,7 @@ import Dropdown from 'causes/components/Dropdown/Dropdown'
 import CompleteComic from 'causes/components/Comic/Comic'
 import InnerButtons from 'causes/components/Comic/InnerButtons'
 
+import i18next from 'i18next';
 import { useTranslation } from 'react-i18next'
 
 import 'causes/components/Comic/index.css'
@@ -25,7 +26,8 @@ const Comic = () => {
   } = useConfigContext()
 
   const [t] = useTranslation('causesPagesComic')
-  const comicImages = addComicImages(t('comics', { returnObjects: true }) ?? [])
+  const comicImages = addComicImages(t('comics', { returnObjects: true }) ?? [], i18next.language)
+  console.log({ comicImages })
   const [flipPage, setFlipPage] = useState(null)
   const [width, setWidth] = useState(650)
   const [height, setHeight] = useState(510)
