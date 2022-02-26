@@ -16,6 +16,7 @@ import 'causes/assets/styles/index.css'
 
 function Causes() {
   const [t] = useTranslation('causesPagesSectionHome')
+  const language = i18next.language;
 
   const [galleryGrayscale, setGalleryGrayscale] = useState(false)
   const [storiesGrayscale, setStoriesGrayscale] = useState(false)
@@ -39,23 +40,25 @@ function Causes() {
     <main className="p-0 h-full sm:h-3/5 w-full sm:w-5/6 md:w-full mx-auto md:h-2/3 lg:h-4/5 mt-9 md:mt-10 sm:justify-center sm:content-center lg:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 xl:p-14">
       <CauseImage
         rowspan="row-span-3"
-        Image={i18next.language === 'en' ? Story_en : Story_es}
+        Image={language === 'en' ? Story_en : Story_es}
         onClick={onRouteChangeHandler}
         handleMouseEnter={handleMouseEnter}
         handleMouseLeave={handleMouseLeave}
         grayscale={storiesGrayscale}
         setGrayscale={setGalleryGrayscale}
+        language={language}
         route="comic"
       />
 
       <CauseImage
         rowspan="row-span-2"
-        Image={i18next.language === 'en' ? Gallery_en : Gallery_es}
+        Image={language === 'en' ? Gallery_en : Gallery_es}
         onClick={onRouteChangeHandler}
         handleMouseEnter={handleMouseEnter}
         handleMouseLeave={handleMouseLeave}
         grayscale={galleryGrayscale}
         setGrayscale={setStoriesGrayscale}
+        language={language}
         route="galeria"
       />
 

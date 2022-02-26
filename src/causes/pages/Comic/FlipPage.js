@@ -27,7 +27,6 @@ const Comic = () => {
 
   const [t] = useTranslation('causesPagesComic')
   const comicImages = addComicImages(t('comics', { returnObjects: true }) ?? [], i18next.language)
-  console.log({ comicImages })
   const [flipPage, setFlipPage] = useState(null)
   const [width, setWidth] = useState(650)
   const [height, setHeight] = useState(510)

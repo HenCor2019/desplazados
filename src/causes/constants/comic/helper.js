@@ -6,7 +6,6 @@ import ComicFour_es from 'causes/assets/images/comic/ES/layer_4.png'
 import ComicFive_es from 'causes/assets/images/comic/ES/layer_5.png'
 import ComicSix_es from 'causes/assets/images/comic/ES/layer_6.png'
 import ComicSeven_es from 'causes/assets/images/comic/ES/layer_7.png'
-
 import ComicBack from 'causes/assets/images/comic/back.png'
 
 import ComicZero_en from 'causes/assets/images/comic/EN/layer_0.png'
@@ -74,5 +73,6 @@ const comicImages = [
 
 export const addComicImages = (comic = [], lan = 'es') => comic.map((image, index) => {
   const src = comicImages[index][lan] ?? comicImages[index].default
+  console.log({ image, src, lan });
   return {...image, src}
 })
