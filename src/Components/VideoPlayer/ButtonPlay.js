@@ -1,4 +1,5 @@
 import PlayImage from 'shared/assets/images/video/playbutton.png';
+import i18next from 'i18next';
 
 const styles = {
   containerDiv:
@@ -21,6 +22,7 @@ const styles = {
 }
 
 export default function ButtonPlay({ handlePlaying, handleOnSkip }) {
+  const lan = i18next.language
   return (
     <div className={styles.containerDiv}>
       <div className={styles.buttonContainer}>
@@ -33,7 +35,7 @@ export default function ButtonPlay({ handlePlaying, handleOnSkip }) {
         </button>
         <div className={styles.buttonSkip}>
           <button className={styles.buttonSkipVideo} onClick={handleOnSkip}>
-            Saltar
+            { lan === 'en' ? 'Skip' : 'Saltar'}
           </button>
         </div>
       </div>

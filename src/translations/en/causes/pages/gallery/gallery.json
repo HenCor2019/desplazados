@@ -30,7 +30,7 @@
   },
 
   {
-    "title": "Mi favorite animal",
+    "title": "My favorite animal",
     "description":
       "“I have always liked wolves, because of their fur, and because they are always in a herd. My brother likes foxes. They live together in the woods”.",
     "author": "Milton and Jacob, 8 and 16 years old..",
@@ -66,10 +66,10 @@
   },
 
   {
-    "title": "Los juegos que extraño",
+    "title": "The games I miss to play",
     "description":
-      "“Lo que más extraño de donde vivíamos antes era jugar. Compraba -jacks-, saltaba peregrina y cuerda y a veces hasta de maestra. Eso es lo que quier ser”.",
-    "author": "Marta, 15 años",
+      "“What I miss the most where we lived before is to play. I used to buy jacks, play the hopscotch and jump the rope. And even played pretending  to be a teacher. That's what I want to be”. Marta, 15 years old”.",
+    "author": "Marta, 15 years old",
     "isCauseGallery": true,
     "index": 7
   },
