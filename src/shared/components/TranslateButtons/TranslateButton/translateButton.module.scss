@@ -1,0 +1,54 @@
+.translateButton {
+  padding: 0.5rem;
+
+  background: transparent;
+
+  width: auto;
+  height: 34px;
+
+  font: inherit;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.homepage {
+  border: 1px solid #292929;
+
+  color: #292929;
+
+  &:hover,
+  &:active {
+    background: #292929;
+    color: white;
+  }
+}
+
+.navbar___portrait {
+  color: white;
+
+  font-family: "Another Typewriter";
+
+  transition: all ease-in-out 250ms;
+
+  &:hover,
+  &:active {
+    border: 1px solid white;
+  }
+}
+
+.navbar___landscape {
+  padding: 1rem;
+
+  color: rgba(154, 153, 158, 1);
+
+  font-family: "Another Typewriter";
+
+  &:hover,
+  &:active {
+    color: rgba(154, 153, 158, 0.6);
+  }
+}

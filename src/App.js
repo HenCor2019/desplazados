@@ -1,33 +1,47 @@
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
 import i18next from 'i18next';
-import Home from './home/pages/Section/Home'
-import { HashRouter as Router, Switch, Route } from 'react-router-dom'
-import Section from './Components/Section/Section'
-import Comic from './causes/pages/Comic/FlipPage'
-import NotFound from './notFound/pages/section'
-import YoutubeVideo from './pages/Video/index'
-import SupportMainSect from './support/components/SupportMainSect'
-import Statistics from './support/pages/statistics/Statistics'
-import Reportages from './support/pages/reportage/Reportages'
-import Concepts from './support/pages/concepts/Concepts'
-import WaitingTime from './waiting/pages/section/WaitingTime'
-import Meanwhile from './waiting/pages/Meanwhile/Meanwhile'
-import CausesSect from './causes/pages/Section/index'
-import CausesGallery from './causes/pages/Gallery/index'
-import DreamsGallery from './dreams/pages/gallery'
-import Dreams from './dreams/pages/section/index'
-import WaitingTimeGallery from './waiting/pages/Gallery/WaitingTimeGallery'
-import WaitingTimeProcess from './waiting/pages/Process/Process'
-import Poadcast from './dreams/components/poadcast/Poadcast'
+import Home from './home/pages/Section/Home';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import Section from './Components/Section/Section';
+import Comic from './causes/pages/Comic/FlipPage';
+import NotFound from './notFound/pages/section';
+import YoutubeVideo from './pages/Video/index';
+import SupportMainSect from './support/components/SupportMainSect';
+import Statistics from './support/pages/statistics/Statistics';
+import Reportages from './support/pages/reportage/Reportages';
+import Concepts from './support/pages/concepts/Concepts';
+import WaitingTime from './waiting/pages/section/WaitingTime';
+import Meanwhile from './waiting/pages/Meanwhile/Meanwhile';
+import CausesSect from './causes/pages/Section/index';
+import CausesGallery from './causes/pages/Gallery/index';
+import DreamsGallery from './dreams/pages/gallery';
+import Dreams from './dreams/pages/section/index';
+import WaitingTimeGallery from './waiting/pages/Gallery/WaitingTimeGallery';
+import WaitingTimeProcess from './waiting/pages/Process/Process';
+import Poadcast from './dreams/components/poadcast/Poadcast';
 
 // banners
 import { PodcastBanner } from 'shared/banners/podcast.banners';
-import { DreamsBanner, DreamsGalleryBanner, DreamsPortBanner2, DreamsPortBanner } from 'shared/banners/dreams.banners';
-import { conceptsBanner_es, conceptsBanner_en } from 'shared/banners/concept.banners';
-import { statisticsBanner_en, statisticsBanner_es } from 'shared/banners/statistics.banners';
-import { reportagesBanner_en, reportagesBanner_es } from 'shared/banners/reportages.banners';
+import {
+  DreamsBanner,
+  DreamsGalleryBanner,
+  DreamsPortBanner2,
+  DreamsPortBanner
+} from 'shared/banners/dreams.banners';
+import {
+  conceptsBanner_es,
+  conceptsBanner_en
+} from 'shared/banners/concept.banners';
+import {
+  statisticsBanner_en,
+  statisticsBanner_es
+} from 'shared/banners/statistics.banners';
+import {
+  reportagesBanner_en,
+  reportagesBanner_es
+} from 'shared/banners/reportages.banners';
 
-import { 
+import {
   WaitingProcessBanner_es,
   WaitingVideosBanner_es,
   WaitingGalleryBanner_es,
@@ -39,30 +53,30 @@ import {
   WaitingGalleryBanner_en,
   WaitingPortBanner2_en,
   WaitingPortBanner_en,
-  WaitingTimeBanner_en,
+  WaitingTimeBanner_en
 } from 'shared/banners/waiting.banners';
 
-import { 
-  CausesBanner_en, 
+import {
+  CausesBanner_en,
   CausesPortBanner2,
   CausesPortBanner,
-  CausesBanner_es,CausesStoryBanner_en,
+  CausesBanner_es,
+  CausesStoryBanner_en,
   CausesStoryBanner_es,
-  CausesDrawingsBanner_en, 
-  CausesDrawingsBanner_es 
+  CausesDrawingsBanner_en,
+  CausesDrawingsBanner_es
 } from 'shared/banners/causes.banners';
 
-import { 
-  supportPortInnerBanner_en, 
+import {
+  supportPortInnerBanner_en,
   supportPortInnerBanner_es,
   supportPortBanner_es,
   supportBanner_es,
   supportBanner_en,
-  supportPortBanner_en,
+  supportPortBanner_en
 } from 'shared/banners/support.banners';
 
-
-import './assets/css/index.css'
+import './assets/css/index.css';
 
 function App() {
   return (
@@ -87,7 +101,12 @@ function App() {
             <title> Desplazados - Causas </title>
           </Helmet>
 
-          <Section bannerLand={i18next.language === 'en' ? CausesBanner_en : CausesBanner_es} bannerPort={CausesPortBanner}>
+          <Section
+            bannerLand={
+              i18next.language == 'en' ? CausesBanner_en : CausesBanner_es
+            }
+            bannerPort={CausesPortBanner}
+          >
             <CausesSect />
           </Section>
         </Route>
@@ -96,7 +115,14 @@ function App() {
           <Helmet>
             <title> Desplazados - Comic </title>
           </Helmet>
-          <Section bannerLand={i18next.language === 'en' ? CausesStoryBanner_en : CausesStoryBanner_es} bannerPort={CausesPortBanner2}>
+          <Section
+            bannerLand={
+              i18next.language == 'en'
+                ? CausesStoryBanner_en
+                : CausesStoryBanner_es
+            }
+            bannerPort={CausesPortBanner2}
+          >
             <Comic />
           </Section>
         </Route>
@@ -106,7 +132,14 @@ function App() {
             <title> Desplazados - Galería </title>
           </Helmet>
 
-          <Section bannerLand={i18next.language === 'en' ? CausesDrawingsBanner_en : CausesDrawingsBanner_es } bannerPort={CausesPortBanner2}>
+          <Section
+            bannerLand={
+              i18next.language == 'en'
+                ? CausesDrawingsBanner_en
+                : CausesDrawingsBanner_es
+            }
+            bannerPort={CausesPortBanner2}
+          >
             <CausesGallery />
           </Section>
         </Route>
@@ -116,8 +149,16 @@ function App() {
             <title> Desplazados - Tiempo de Espera </title>
           </Helmet>
           <Section
-            bannerLand={i18next.language === 'en' ? WaitingTimeBanner_en : WaitingTimeBanner_es}
-            bannerPort={i18next.language === 'en' ? WaitingPortBanner_en : WaitingPortBanner_es}
+            bannerLand={
+              i18next.language == 'en'
+                ? WaitingTimeBanner_en
+                : WaitingTimeBanner_es
+            }
+            bannerPort={
+              i18next.language == 'en'
+                ? WaitingPortBanner_en
+                : WaitingPortBanner_es
+            }
           >
             <WaitingTime />
           </Section>
@@ -129,8 +170,16 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={i18next.language === 'en' ? WaitingVideosBanner_en : WaitingVideosBanner_es}
-            bannerPort={i18next.language === 'en' ? WaitingPortBanner2_en : WaitingPortBanner2_es}
+            bannerLand={
+              i18next.language == 'en'
+                ? WaitingVideosBanner_en
+                : WaitingVideosBanner_es
+            }
+            bannerPort={
+              i18next.language == 'en'
+                ? WaitingPortBanner2_en
+                : WaitingPortBanner2_es
+            }
           >
             <Meanwhile />
           </Section>
@@ -142,8 +191,16 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={i18next.language === 'en' ? WaitingGalleryBanner_en : WaitingGalleryBanner_es}
-            bannerPort={i18next.language === 'en' ? WaitingPortBanner2_en : WaitingPortBanner2_es}
+            bannerLand={
+              i18next.language == 'en'
+                ? WaitingGalleryBanner_en
+                : WaitingGalleryBanner_es
+            }
+            bannerPort={
+              i18next.language == 'en'
+                ? WaitingPortBanner2_en
+                : WaitingPortBanner2_es
+            }
           >
             <WaitingTimeGallery />
           </Section>
@@ -155,8 +212,16 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={i18next.language === 'en' ? WaitingProcessBanner_en : WaitingProcessBanner_es}
-            bannerPort={i18next.language === 'en' ? WaitingPortBanner2_en : WaitingPortBanner2_es}
+            bannerLand={
+              i18next.language == 'en'
+                ? WaitingProcessBanner_en
+                : WaitingProcessBanner_es
+            }
+            bannerPort={
+              i18next.language == 'en'
+                ? WaitingPortBanner2_en
+                : WaitingPortBanner2_es
+            }
           >
             <WaitingTimeProcess />
           </Section>
@@ -198,9 +263,16 @@ function App() {
           <Helmet>
             <title> Desplazados - En busca de apoyo </title>
           </Helmet>
-          <Section 
-              bannerLand={i18next.language === 'en' ? supportBanner_en : supportBanner_es} 
-              bannerPort={i18next.language === 'en' ? supportPortBanner_en : supportPortBanner_es}>
+          <Section
+            bannerLand={
+              i18next.language == 'en' ? supportBanner_en : supportBanner_es
+            }
+            bannerPort={
+              i18next.language == 'en'
+                ? supportPortBanner_en
+                : supportPortBanner_es
+            }
+          >
             <SupportMainSect />
           </Section>
         </Route>
@@ -208,9 +280,16 @@ function App() {
           <Helmet>
             <title> Desplazados - Conceptos </title>
           </Helmet>
-          <Section 
-            bannerLand={i18next.language === 'en' ? conceptsBanner_en : conceptsBanner_es} 
-            bannerPort={i18next.language === 'en' ? supportPortInnerBanner_en : supportPortInnerBanner_es}>
+          <Section
+            bannerLand={
+              i18next.language == 'en' ? conceptsBanner_en : conceptsBanner_es
+            }
+            bannerPort={
+              i18next.language == 'en'
+                ? supportPortInnerBanner_en
+                : supportPortInnerBanner_es
+            }
+          >
             <Concepts />
           </Section>
         </Route>
@@ -218,9 +297,17 @@ function App() {
           <Helmet>
             <title> Desplazados - Estadísticas </title>
           </Helmet>
-          <Section 
-              bannerLand={i18next.language === 'en' ? statisticsBanner_en : statisticsBanner_es}
-              bannerPort={i18next.language === 'en' ? supportPortInnerBanner_en : supportPortInnerBanner_es}
+          <Section
+            bannerLand={
+              i18next.language == 'en'
+                ? statisticsBanner_en
+                : statisticsBanner_es
+            }
+            bannerPort={
+              i18next.language == 'en'
+                ? supportPortInnerBanner_en
+                : supportPortInnerBanner_es
+            }
           >
             <Statistics />
           </Section>
@@ -229,9 +316,17 @@ function App() {
           <Helmet>
             <title> Desplazados - Reportajes </title>
           </Helmet>
-          <Section 
-            bannerLand={i18next.language === 'en' ? reportagesBanner_en : reportagesBanner_es}
-            bannerPort={i18next.language === 'en' ? supportPortInnerBanner_en : supportPortInnerBanner_es}
+          <Section
+            bannerLand={
+              i18next.language == 'en'
+                ? reportagesBanner_en
+                : reportagesBanner_es
+            }
+            bannerPort={
+              i18next.language == 'en'
+                ? supportPortInnerBanner_en
+                : supportPortInnerBanner_es
+            }
           >
             <Reportages />
           </Section>
@@ -244,7 +339,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
