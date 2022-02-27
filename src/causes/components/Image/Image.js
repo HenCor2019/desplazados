@@ -23,8 +23,8 @@ export default function CauseImage(props) {
     >
       {
         language === 'en' 
-          ? <img src={Image} alt ='causes images home' className='w-full h-3/4 px-5 sm:px-2 sm:w-full md:w-2/3 mx-auto cursor-pointer'/> 
-          : <Image className='w-full px-5 sm:px-2 sm:w-full md:w-2/3 h-full mx-auto cursor-pointer'/>
+          ? <img src={Image} alt ='causes images home' className={`${grayscale ? 'grayscale' : ''} object-contain w-full h-full px-5 sm:px-2 sm:w-full md:w-2/3 mx-auto cursor-pointer`}/> 
+          : <Image className={`${grayscale ? 'grayscale' : ''} w-full px-5 sm:px-2 sm:w-full md:w-2/3 h-full mx-auto cursor-pointer`}/>
       }
     </Hoverable>
   )

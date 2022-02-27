@@ -5,7 +5,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Section from './Components/Section/Section';
 import Comic from './causes/pages/Comic/FlipPage';
 import NotFound from './notFound/pages/section';
-import YoutubeVideo from './pages/Video/index';
+import YoutubeVideo from 'introduction/video/index';
 import SupportMainSect from './support/components/SupportMainSect';
 import Statistics from './support/pages/statistics/Statistics';
 import Reportages from './support/pages/reportage/Reportages';

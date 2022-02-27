@@ -1,22 +1,17 @@
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-
-import Footer from 'causes/components/Footer/Footer'
-import CauseImage from 'causes/components/Image/Image'
-import { ReactComponent as Gallery_es } from 'causes/assets/images/svgs/gallery.svg'
-import { ReactComponent as Story_es } from 'causes/assets/images/svgs/story.svg'
-
-import Gallery_en from 'causes/assets/images/home/gallery.png'
-import Story_en from 'causes/assets/images/home/comic.png'
-
 import i18next from 'i18next'
 import { useTranslation } from 'react-i18next'
 
+import Footer from 'causes/components/Footer/Footer'
+import CauseImage from 'causes/components/Image/Image'
 import 'causes/assets/styles/index.css'
+import { getImages } from './helper/images'
 
 function Causes() {
   const [t] = useTranslation('causesPagesSectionHome')
   const language = i18next.language;
+  const { GalleryImage, StoryImage } = getImages(language)
 
   const [galleryGrayscale, setGalleryGrayscale] = useState(false)
   const [storiesGrayscale, setStoriesGrayscale] = useState(false)
@@ -38,29 +33,33 @@ function Causes() {
 
   return (
     <main className="p-0 h-full sm:h-3/5 w-full sm:w-5/6 md:w-full mx-auto md:h-2/3 lg:h-4/5 mt-9 md:mt-10 sm:justify-center sm:content-center lg:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 xl:p-14">
-      <CauseImage
-        rowspan="row-span-3"
-        Image={language === 'en' ? Story_en : Story_es}
-        onClick={onRouteChangeHandler}
-        handleMouseEnter={handleMouseEnter}
-        handleMouseLeave={handleMouseLeave}
-        grayscale={storiesGrayscale}
-        setGrayscale={setGalleryGrayscale}
-        language={language}
-        route="comic"
-      />
 
-      <CauseImage
-        rowspan="row-span-2"
-        Image={language === 'en' ? Gallery_en : Gallery_es}
-        onClick={onRouteChangeHandler}
-        handleMouseEnter={handleMouseEnter}
-        handleMouseLeave={handleMouseLeave}
-        grayscale={galleryGrayscale}
-        setGrayscale={setStoriesGrayscale}
-        language={language}
-        route="galeria"
-      />
+      <div className="row-span-2 my-7">
+        <CauseImage
+          Image={StoryImage}
+          onClick={onRouteChangeHandler}
+          handleMouseEnter={handleMouseEnter}
+          handleMouseLeave={handleMouseLeave}
+          grayscale={storiesGrayscale}
+          setGrayscale={setGalleryGrayscale}
+          language={language}
+          route="comic"
+        />
+      </div>
+
+      <div>
+        <CauseImage
+          rowspan="row-span-2"
+          Image={GalleryImage}
+          onClick={onRouteChangeHandler}
+          handleMouseEnter={handleMouseEnter}
+          handleMouseLeave={handleMouseLeave}
+          grayscale={galleryGrayscale}
+          setGrayscale={setStoriesGrayscale}
+          language={language}
+          route="galeria"
+        />
+      </div>
 
       <Footer message={footerMessage} />
     </main>
