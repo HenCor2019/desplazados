@@ -7,13 +7,18 @@ import { LazySection } from '../../../shared/components/LazySection/LazySection'
 import Image from '../../components/gallery/Image'
 
 import title from '../../assets/images/gallery/title.png'
+import titleEN from '../../assets/images/gallery/title_en.png';
 
 import Modal from '../../../shared/components/Modal/Modal'
 import Lightbox from '../../../Components/Lightbox/Image'
 
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
+
 function DreamsGallery() {
   const [isActive, setIsActive] = useState(false)
   const [activeImage, setActiveImage] = useState(dreamGallery[0])
+  const [t] = useTranslation('dreamsSectionPage')
 
   const { isMobile, isTablet } = useConfigContext()
 
@@ -49,7 +54,7 @@ function DreamsGallery() {
         <div className="flex flex-col sm:flex-row xl:flex-col justify-start items-center flex-rigid xl:flex-shrink-3 w-full order-1 xl:order-2 xl:max-w-sm">
           <div className="w-full h-full flex lg:justify-start justify-center items-center flex-shrink-2">
             <img
-              src={title}
+              src={i18next.language === 'en' ? titleEN : title}
               alt="Los sueños entre la realidad y la fantasía"
               className="object-contain w-2/3 sm:w-full 2xl:w-60 p-4 lg:p-0 lg:pl-4 lg:pt-2"
             />
