@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { dreamGallery } from '../../constants/gallery'
+import { setImagesThumbs } from '../../constants/gallery'
 
 import { useConfigContext } from '../../../contexts/ConfigContext'
 import { LazySection } from '../../../shared/components/LazySection/LazySection'
@@ -17,8 +17,11 @@ import { useTranslation } from 'react-i18next';
 
 function DreamsGallery() {
   const [isActive, setIsActive] = useState(false)
-  const [activeImage, setActiveImage] = useState(dreamGallery[0])
-  const [t] = useTranslation('dreamsSectionPage')
+  const [t] = useTranslation('dreamsGalleryPage')
+
+  const photosWithoutImages = t('photos', { returnObjects: true })
+  const photos = setImagesThumbs(photosWithoutImages);
+  const [activeImage, setActiveImage] = useState(photos[0])
 
   const { isMobile, isTablet } = useConfigContext()
 
@@ -34,13 +37,13 @@ function DreamsGallery() {
           <Lightbox
             current={activeImage}
             onClick={handleOnClick}
-            images={dreamGallery}
+            images={photos}
           />
         </Modal>
       )}
       <main className="flex flex-col xl:flex-row justify-around items-start h-full md:w-4/5 lg:5/5 xl:w-11/12">
         <div className="grid grid-cols-1 grid-flow-row md:grid-cols-dreamsGallery md:grid-rows-dreamGallery flex-gallery gap-2 min-h-0 min-w-0 p-2 order-2 xl:order-1">
-          {dreamGallery.map((dreamImage) => (
+          {photos.map((dreamImage) => (
             <>
               <Image
                 key={dreamImage.src + dreamImage.index}
@@ -61,9 +64,7 @@ function DreamsGallery() {
           </div>
           <div className="w-full h-full flex justify-start items-center">
             <p className="text-base text-justify font-acumin p-4">
-              Los colores, las acuarelas, la plastilina, el origami y el collage
-              cuentan cuáles son los sueños más genuinos de niñas y niños que
-              sufren desplazamiento forzado por violencia.
+              {t('message')}
             </p>
           </div>
         </div>

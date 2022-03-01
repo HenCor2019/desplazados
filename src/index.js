@@ -36,6 +36,8 @@ import introduction_es from 'translations/es/introduction/introduction.json'
 
 import dreamsPageSection_es from './translations/es/dreams/section/dreams.json'
 import dreamsPageSection_en from './translations/en/dreams/section/dreams.json'
+import dreamsGallerySection_es from './translations/es/dreams/gallery/gallery.json';
+import dreamsGallerySection_en from './translations/en/dreams/gallery/gallery.json';
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -54,6 +56,7 @@ i18next.init({
       causesPagesGallery: causesPagesGallery_es,
       causesPagesComic: causesPagesComic_es,
       dreamsSectionPage: dreamsPageSection_es,
+      dreamsGalleryPage: dreamsGallerySection_es,
       introduction: introduction_es
     },
     en: {
@@ -69,6 +72,7 @@ i18next.init({
       causesPagesGallery: causesPagesGallery_en,
       causesPagesComic: causesPagesComic_en,
       dreamsSectionPage: dreamsPageSection_en,
+      dreamsGalleryPage: dreamsGallerySection_en,
       introduction: introduction_en
     }
   }
