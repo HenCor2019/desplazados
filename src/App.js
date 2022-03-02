@@ -22,12 +22,16 @@ import Poadcast from './dreams/components/poadcast/Poadcast';
 import { useTranslation } from 'react-i18next';
 
 // banners
-import { PodcastBanner } from 'shared/banners/podcast.banners';
+import { PodcastBanner, PodcastBannerEN } from 'shared/banners/podcast.banners';
 import {
   DreamsBanner,
+  DreamsBannerEN,
   DreamsGalleryBanner,
+  DreamsGalleryBannerEN,
   DreamsPortBanner2,
-  DreamsPortBanner
+  DreamsPortBanner,
+  DreamsPortBannerEN,
+  DreamsPortBanner2EN,
 } from 'shared/banners/dreams.banners';
 import {
   conceptsBanner_es,
@@ -233,7 +237,18 @@ function App() {
           <Helmet>
             <title> Desplazados - Los Sueños </title>
           </Helmet>
-          <Section bannerLand={DreamsBanner} bannerPort={DreamsPortBanner}>
+          <Section
+            bannerLand={
+              i18next.language === 'en'
+              ? DreamsBannerEN
+              : DreamsBanner
+            } 
+            bannerPort={
+              i18next.language === 'en'
+              ? DreamsPortBannerEN
+              : DreamsPortBanner
+            }
+          >
             <Dreams />
           </Section>
         </Route>
@@ -243,7 +258,18 @@ function App() {
             <title> Desplazados - Poadcast </title>
           </Helmet>
 
-          <Section bannerLand={PodcastBanner} bannerPort={DreamsPortBanner2}>
+          <Section
+            bannerLand={
+              i18next.language === 'en'
+              ? PodcastBannerEN
+              : PodcastBanner
+            }
+            bannerPort={
+              i18next.language === 'en'
+              ? DreamsPortBanner2EN
+              : DreamsPortBanner2
+            }
+          >
             <Poadcast />
           </Section>
         </Route>
@@ -254,8 +280,16 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={DreamsGalleryBanner}
-            bannerPort={DreamsPortBanner2}
+            bannerLand={
+              i18next.language === 'en'
+              ? DreamsGalleryBannerEN
+              : DreamsGalleryBanner
+            }
+            bannerPort={
+              i18next.language === 'en'
+              ? DreamsPortBanner2EN
+              : DreamsPortBanner2
+            }
           >
             <DreamsGallery />
           </Section>
