@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 import "react-h5-audio-player/lib/styles.css";
 
 import Paper from "../../assets/images/poadcast/podcast-bg.png";
@@ -8,7 +10,8 @@ import QueSoniamos from "../../assets/images/poadcast/quesonamos.png";
 import { ReactComponent as Backward } from "../../../assets/svg/backward.svg";
 import { ReactComponent as Forward } from "../../../assets/svg/forward.svg";
 import { ReactComponent as Pause } from "../../../assets/svg/pause.svg";
-import { audios } from "../../constants/podcast";
+import { setAudios } from "../../constants/podcast";
+
 import "../../assets/css/padcast.css";
 
 const poadcastPlayerStyle = {
@@ -19,6 +22,10 @@ const poadcastPlayerStyle = {
 };
 
 export default (function Poadcast() {
+  
+  const [t] = useTranslation('dreamsPoadcastPage');
+  const audiosWithoutSrc = t('audios', { returnObjects: true })
+  const audios = setAudios(audiosWithoutSrc)
   const [activeAudio, setActiveAudio] = useState(audios[0]);
 
   const customIcons = {
@@ -84,7 +91,6 @@ export default (function Poadcast() {
                 <div className='audio-player-container mt-2'>
                   <AudioPlayer
                     autoPlay={true}
-                    // className="w-1/4 bg-transparent"
                     autoPlayAfterSrcChange={true}
                     src={activeAudio.src}
                     onEnded={onEnded}
@@ -109,9 +115,7 @@ export default (function Poadcast() {
           />
 
           <p className='text-justify text-sm font-acumin m-4 w-10/12'>
-            Mientras se encuentran en proceso de espera y reubicación las
-            perspectivas de esperanza y futuro siempre están latentes entre las
-            víctimas de desplazamiento forzado. Escuchemos algunas de ellas:
+            {t('message')}
           </p>
 
           <div className='flex flex-col justify-around items-center w-10/12 m-4'>
@@ -132,9 +136,3 @@ export default (function Poadcast() {
     </main>
   );
 });
-
-{
-  /* 
-
-*/
-}

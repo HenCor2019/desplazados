@@ -38,6 +38,9 @@ import dreamsPageSection_es from './translations/es/dreams/section/dreams.json'
 import dreamsPageSection_en from './translations/en/dreams/section/dreams.json'
 import dreamsGallerySection_es from './translations/es/dreams/gallery/gallery.json';
 import dreamsGallerySection_en from './translations/en/dreams/gallery/gallery.json';
+import dreamsPoadcastSection_en from './translations/en/dreams/podcast/poadcast.json';
+import dreamsPoadcastSection_es from './translations/es/dreams/podcast/poadcast.json';
+
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -57,6 +60,7 @@ i18next.init({
       causesPagesComic: causesPagesComic_es,
       dreamsSectionPage: dreamsPageSection_es,
       dreamsGalleryPage: dreamsGallerySection_es,
+      dreamsPoadcastPage: dreamsPoadcastSection_es,
       introduction: introduction_es
     },
     en: {
@@ -73,6 +77,7 @@ i18next.init({
       causesPagesComic: causesPagesComic_en,
       dreamsSectionPage: dreamsPageSection_en,
       dreamsGalleryPage: dreamsGallerySection_en,
+      dreamsPoadcastPage: dreamsPoadcastSection_en,
       introduction: introduction_en
     }
   }
