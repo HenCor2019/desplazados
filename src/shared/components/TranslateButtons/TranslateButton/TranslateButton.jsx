@@ -1,6 +1,6 @@
 import styles from './translateButton.module.scss';
 
-function TranslateButton({ onClick, text, type }) {
+function TranslateButton({ onClick, children, type }) {
   const style = {
     homepage: styles.homepage,
     'navbar-landscape': styles.navbar___landscape,
@@ -12,7 +12,7 @@ function TranslateButton({ onClick, text, type }) {
       className={`${styles.translateButton} ${style[type]}`}
       onClick={onClick}
     >
-      {text}
+      {children}
     </button>
   );
 }

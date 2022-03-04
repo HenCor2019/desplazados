@@ -35,7 +35,7 @@ const Landscape = props => {
           className="main-nav max-w-nav overflow-hidden flex justify-end p-4 pb-7 sticky top-0 z-20"
         >
           {linksComponents}
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center pt-3">
             <TranslateButtons type={'navbar-landscape'} />
           </div>
         </nav>

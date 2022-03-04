@@ -1,9 +1,6 @@
 .Home__TranslateButtons {
-  position: absolute;
-  left: 20px;
-  bottom: 10px;
-  z-index: 20;
-
+  margin-right: 5px;
+  margin-bottom: 3px;
   @media (min-width: 1280px) {
     left: auto;
     right: 20px;

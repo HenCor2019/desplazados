@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-import styles from './home.module.scss';
-
 import House from 'home/components/House';
 import house1 from 'home/assets/images/section/House1.png';
 import house2 from 'home/assets/images/section/House2.png';
@@ -22,8 +20,6 @@ import Footer from 'home/components/Footer';
 
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-
-import TranslateButtons from 'shared/components/TranslateButtons/TranslateButtons';
 
 function Home() {
   const [t, i18n] = useTranslation('homePageSectionHome');
@@ -168,9 +164,6 @@ function Home() {
             flexes={'justify-start items-end'}
             pathname="/apoyo"
           />
-        </div>
-        <div className={styles.Home__TranslateButtons}>
-          <TranslateButtons type={'homepage'} />
         </div>
       </main>
       <Footer />
