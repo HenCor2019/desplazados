@@ -10,6 +10,9 @@ import i18next from 'i18next';
 import homePagesSectionHome_es from './translations/es/home/pages/section/home.json';
 import homePagesSectionHome_en from './translations/en/home/pages/section/home.json';
 
+import notFoundPagesSectionNotFound_es from './translations/es/notFound/pages/section/notFound.json';
+import notFoundPagesSectionNotFound_en from './translations/en/notFound/pages/section/notFound.json';
+
 import waitingPagesSectionWaitingTime_es from './translations/es/waiting/pages/section/waitingTime.json';
 import waitingPagesSectionWaitingTime_en from './translations/en/waiting/pages/section/waitingTime.json';
 import waitingPagesProcessProcess_es from './translations/es/waiting/pages/process/process.json';
@@ -31,16 +34,15 @@ import causesPagesGallery_en from './translations/en/causes/pages/gallery/galler
 import causesPagesGallery_es from './translations/es/causes/pages/gallery/gallery.json';
 import causesPagesComic_en from './translations/en/causes/pages/comic/comic.json';
 import causesPagesComic_es from './translations/es/causes/pages/comic/comic.json';
-import introduction_en from 'translations/en/introduction/introduction.json'
-import introduction_es from 'translations/es/introduction/introduction.json'
+import introduction_en from 'translations/en/introduction/introduction.json';
+import introduction_es from 'translations/es/introduction/introduction.json';
 
-import dreamsPageSection_es from './translations/es/dreams/section/dreams.json'
-import dreamsPageSection_en from './translations/en/dreams/section/dreams.json'
+import dreamsPageSection_es from './translations/es/dreams/section/dreams.json';
+import dreamsPageSection_en from './translations/en/dreams/section/dreams.json';
 import dreamsGallerySection_es from './translations/es/dreams/gallery/gallery.json';
 import dreamsGallerySection_en from './translations/en/dreams/gallery/gallery.json';
 import dreamsPoadcastSection_en from './translations/en/dreams/podcast/poadcast.json';
 import dreamsPoadcastSection_es from './translations/es/dreams/podcast/poadcast.json';
-
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -48,6 +50,7 @@ i18next.init({
   resources: {
     es: {
       homePageSectionHome: homePagesSectionHome_es,
+      notFoundPagesSectionNotFound: notFoundPagesSectionNotFound_es,
       waitingPagesSectionWaitingTime: waitingPagesSectionWaitingTime_es,
       waitingPagesProcessProcess: waitingPagesProcessProcess_es,
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_es,
@@ -65,10 +68,11 @@ i18next.init({
     },
     en: {
       homePageSectionHome: homePagesSectionHome_en,
+      notFoundPagesSectionNotFound: notFoundPagesSectionNotFound_en,
       waitingPagesSectionWaitingTime: waitingPagesSectionWaitingTime_en,
       waitingPagesProcessProcess: waitingPagesProcessProcess_en,
       waitingPagesGalleryGallery: waitingPagesGalleryGallery_en,
-      waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_en, 
+      waitingPagesMeanwhileMeanwhile: waitingPagesMeanwhileMeanwhile_en,
       supportPage: supportPage_en,
       supportStatistics: supportStatistics_en,
       supportReportage: supportReportage_en,

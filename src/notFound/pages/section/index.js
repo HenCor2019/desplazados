@@ -2,9 +2,13 @@ import { Link } from 'react-router-dom';
 import Banner from 'shared/assets/images/topPaper/TopPaper.png';
 import { LazySection } from 'shared/components/LazySection/LazySection';
 
+import { useTranslation } from 'react-i18next';
+
 import './index.css';
 
 export default LazySection(function NotFound() {
+  const [t] = useTranslation('notFoundPagesSectionNotFound');
+
   return (
     <section className="p-3 sm:p-0 font-sans text-gray-500 min-w-full min-h-screen sm:h-screen flex flex-col">
       <div className="min-h-screen w-full sm:min-h-0 sm:h-3/4 flex flex-col justify-center items-center">
@@ -12,10 +16,10 @@ export default LazySection(function NotFound() {
           404
         </h1>
         <p className="text-gray-800 text-2xl my-4 text-center">
-          Lo sentimos, página no encontrada
+          {t('message')}
         </p>
         <Link className="underline text-xl" to="/home">
-          Inicio
+          {t('home')}
         </Link>
       </div>
       <img
