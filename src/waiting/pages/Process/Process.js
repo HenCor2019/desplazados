@@ -20,7 +20,7 @@ import { useTranslation } from 'react-i18next';
 
 import { LazySection } from 'shared/components/LazySection/LazySection';
 
-function WaitingTimeProcess() {
+function TimeProcess() {
   const [t] = useTranslation('waitingPagesProcessProcess');
 
   const [selectedTab, setSelectedTab] = useState(i18next.language == 'en' ? Image1_en : Image1_es);
@@ -53,4 +53,5 @@ function WaitingTimeProcess() {
   );
 }
 
-export default LazySection(WaitingTimeProcess);
+const WaitingTimeProcess = LazySection(TimeProcess);
+export { WaitingTimeProcess };

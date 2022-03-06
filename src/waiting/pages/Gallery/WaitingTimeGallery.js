@@ -34,7 +34,7 @@ import { useTranslation } from 'react-i18next';
 import { useConfigContext } from 'contexts/ConfigContext';
 import { LazySection } from 'shared/components/LazySection/LazySection';
 
-function WaitingTimeGallery() {
+function WaitingTime() {
   const [t] = useTranslation('waitingPagesGalleryGallery');
 
   const galleryImage = setGalleryImage(t);
@@ -198,4 +198,6 @@ const setGalleryImage = (t) => [
   },
 ];
 
-export default LazySection(WaitingTimeGallery);
+const WaitingTimeGallery = LazySection(WaitingTime);
+
+export { WaitingTimeGallery }

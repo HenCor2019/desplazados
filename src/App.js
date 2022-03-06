@@ -4,6 +4,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Section from 'shared/components/Section/Section';
 import YoutubeVideo from 'introduction/video/index';
 import { CausesHome, CausesGallery, CausesComic } from 'causes/pages';
+import { WaitingTime, WaitingTimeProcess, WaitingTimeMeanwhile, WaitingTimeGallery } from 'waiting/pages';
 import { PodcastBanner, PodcastBannerEN } from 'shared/banners/podcast.banners';
 import {
   DreamsBanner,
@@ -65,12 +66,8 @@ import SupportMainSect from './support/components/SupportMainSect';
 import Statistics from './support/pages/statistics/Statistics';
 import Reportages from './support/pages/reportage/Reportages';
 import Concepts from './support/pages/concepts/Concepts';
-import WaitingTime from './waiting/pages/section/WaitingTime';
-import Meanwhile from './waiting/pages/Meanwhile/Meanwhile';
 import DreamsGallery from './dreams/pages/gallery';
 import Dreams from './dreams/pages/section/index';
-import WaitingTimeGallery from './waiting/pages/Gallery/WaitingTimeGallery';
-import WaitingTimeProcess from './waiting/pages/Process/Process';
 import Poadcast from './dreams/components/poadcast/Poadcast';
 
 import './assets/css/index.css';
@@ -147,12 +144,12 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingTimeBanner_en
                 : WaitingTimeBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingPortBanner_en
                 : WaitingPortBanner_es
             }
@@ -168,17 +165,17 @@ function App() {
 
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingVideosBanner_en
                 : WaitingVideosBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingPortBanner2_en
                 : WaitingPortBanner2_es
             }
           >
-            <Meanwhile />
+            <WaitingTimeMeanwhile />
           </Section>
         </Route>
 
@@ -189,12 +186,12 @@ function App() {
 
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingGalleryBanner_en
                 : WaitingGalleryBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingPortBanner2_en
                 : WaitingPortBanner2_es
             }
@@ -210,12 +207,12 @@ function App() {
 
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingProcessBanner_en
                 : WaitingProcessBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingPortBanner2_en
                 : WaitingPortBanner2_es
             }
@@ -292,10 +289,10 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en' ? supportBanner_en : supportBanner_es
+              i18next.language === 'en' ? supportBanner_en : supportBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? supportPortBanner_en
                 : supportPortBanner_es
             }
@@ -309,10 +306,10 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en' ? conceptsBanner_en : conceptsBanner_es
+              i18next.language === 'en' ? conceptsBanner_en : conceptsBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? supportPortInnerBanner_en
                 : supportPortInnerBanner_es
             }
@@ -326,12 +323,12 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? statisticsBanner_en
                 : statisticsBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? supportPortInnerBanner_en
                 : supportPortInnerBanner_es
             }
@@ -345,12 +342,12 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? reportagesBanner_en
                 : reportagesBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? supportPortInnerBanner_en
                 : supportPortInnerBanner_es
             }

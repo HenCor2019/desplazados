@@ -13,7 +13,7 @@ import { LazySection } from 'shared/components/LazySection/LazySection';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
-function WaitingTime() {
+function Home() {
   const [t] = useTranslation('waitingPagesSectionWaitingTime');
 
   const [isProcessHover, setProcessHover] = useState(false);
@@ -92,4 +92,5 @@ function WaitingTime() {
   );
 }
 
-export default LazySection(WaitingTime);
+const WaitingTime = LazySection(Home);
+export { WaitingTime };

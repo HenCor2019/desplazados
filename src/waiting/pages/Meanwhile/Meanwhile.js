@@ -22,7 +22,7 @@ import { useTranslation } from 'react-i18next';
 
 import { LazySection } from 'shared/components/LazySection/LazySection';
 
-function WaitingTimeMeanwhile() {
+function Meanwhile() {
   const [t] = useTranslation('waitingPagesMeanwhileMeanwhile');
 
   const galleryVideos = setGalleryVideos(t);
@@ -139,4 +139,5 @@ const setGalleryVideos = (t) => [
   },
 ];
 
-export default LazySection(WaitingTimeMeanwhile);
+const WaitingTimeMeanwhile = LazySection(Meanwhile);
+export { WaitingTimeMeanwhile };
