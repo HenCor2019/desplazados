@@ -21,9 +21,10 @@ function WaitingTime() {
   const [isMeanwhileHover, setMeanwhileHover] = useState(false);
   const { push } = useHistory();
 
-  let process, gallery, meanwhile;
+  let process; let gallery; let
+    meanwhile;
   const grayscale = {
-    filter: 'grayscale(1)'
+    filter: 'grayscale(1)',
   };
 
   if (isProcessHover) {
@@ -56,21 +57,21 @@ function WaitingTime() {
       <main className="grid grid-cols-1 grid-flow-row gap-4 h-full sm:grid-cols-2 md:gap-0">
         <Image
           img={i18next.language == 'en' ? processImg_en : processImg_es}
-          alt={'Process'}
+          alt="Process"
           grayscale={process}
           onMouseEnter={() => setProcessHover(true)}
           onMouseLeave={() => setProcessHover(false)}
           handleOnClick={handleOnProcess}
-          position={'justify-start items-center sm:justify-center'}
+          position="justify-start items-center sm:justify-center"
         />
         <Image
           img={i18next.language == 'en' ? galleryImg_en : galleryImg_es}
-          alt={'Gallery'}
+          alt="Gallery"
           grayscale={gallery}
           onMouseEnter={() => setGalleryHover(true)}
           onMouseLeave={() => setGalleryHover(false)}
           handleOnClick={handleOnGallery}
-          position={'justify-end items-center sm:justify-center'}
+          position="justify-end items-center sm:justify-center"
         />
         <div className="bg-time order-1 text-white flex justify-center items-center sm:order-none sm:bg-transparent sm:text-black">
           <p className="text-sm sm:text-base text-justify leading-snug p-4 md:p-8 font-acumin">
@@ -79,12 +80,12 @@ function WaitingTime() {
         </div>
         <Image
           img={i18next.language == 'en' ? meanwhileImg_en : meanwhileImg_es}
-          alt={'Meanwhile'}
+          alt="Meanwhile"
           grayscale={meanwhile}
           onMouseEnter={() => setMeanwhileHover(true)}
           onMouseLeave={() => setMeanwhileHover(false)}
           handleOnClick={handleOnMeanwhile}
-          position={'justify-start items-center sm:justify-center'}
+          position="justify-start items-center sm:justify-center"
         />
       </main>
     </div>

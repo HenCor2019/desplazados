@@ -96,72 +96,80 @@ function Home() {
         className="w-full sticky z-10 top-0 left-0 bg-cover bg-bottom flex justify-end min-h-20 md:h-28 lg:h-32 xl-2:h-56"
       >
         <section className="p-1 h-14 text-ultra-xs sm:text-xs xl-2:text-xl font-sans text-center xl-2:w-4/12 w-full md:p-2 xl:w-5/12 text-homeText">
-          {isReasonsShown &&
+          {isReasonsShown
+            && (
             <p className="font-sans">
               {t('causes')}
-            </p>}
-          {isWaitingTimeShown &&
+            </p>
+            )}
+          {isWaitingTimeShown
+            && (
             <p className="font-sans">
               {t('waiting')}
-            </p>}
-          {isDreamsShown &&
+            </p>
+            )}
+          {isDreamsShown
+            && (
             <p className="font-sans">
               {t('hope')}
-            </p>}
-          {isHelpShown &&
+            </p>
+            )}
+          {isHelpShown
+            && (
             <p className="font-sans">
               {t('support')}
-            </p>}
+            </p>
+            )}
         </section>
       </div>
       <main className="flex md:flex-rigid p-4 sm:p-8 md:p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-6 md:gap-0 md:gap-x-32 overflow-y-auto w-full p-2">
           <House
             houseImg={house1}
-            alt={'Causes'}
+            alt="Causes"
             textImg={i18next.language == 'en' ? house1Text_en : house1Text_es}
             filter={reasonsGrayscale}
             onMouseEnter={ShowReasons}
             onMouseLeave={DontShowReasons}
             isShown={isReasonsShown}
             line={firstLine}
-            flexes={'justify-end items-end'}
+            flexes="justify-end items-end"
             pathname="/causas"
           />
           <House
             houseImg={house2}
-            alt={'Waiting time'}
+            alt="Waiting time"
             textImg={i18next.language == 'en' ? house2Text_en : house2Text_es}
             filter={waitingTimeGrayscale}
             onMouseEnter={ShowWaitingTime}
             onMouseLeave={DontShowWaitingTime}
             isShown={isWaitingTimeShown}
             line={secondLine}
-            flexes={'justify-start items-end'}
+            flexes="justify-start items-end"
             pathname="la-espera"
           />
           <House
             houseImg={house3}
-            alt={'Dreams'}
+            alt="Dreams"
             textImg={i18next.language == 'en' ? house3Text_en : house3Text_es}
             filter={dreamsGrayscale}
             onMouseEnter={ShowDreams}
             onMouseLeave={DontShowDreams}
             isShown={isDreamsShown}
             line={firstLine}
-            flexes={'justify-end items-end'}
+            flexes="justify-end items-end"
             pathname="/sueños"
           />
           <House
             houseImg={house4}
-            alt={'Help'}
+            alt="Help"
             textImg={i18next.language == 'en' ? house4Text_en : house4Text_es}
             filter={helpGrayscale}
             onMouseEnter={ShowHelp}
             onMouseLeave={DontShowHelp}
             isShown={isHelpShown}
             line={secondLine}
-            flexes={'justify-start items-end'}
+            flexes="justify-start items-end"
             pathname="/apoyo"
           />
         </div>

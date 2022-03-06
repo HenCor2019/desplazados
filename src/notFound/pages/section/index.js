@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 import './index.css';
 
-export default LazySection(function NotFound() {
+export default LazySection(() => {
   const [t] = useTranslation('notFoundPagesSectionNotFound');
 
   return (

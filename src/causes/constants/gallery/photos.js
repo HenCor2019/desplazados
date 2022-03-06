@@ -1,24 +1,24 @@
-import ThumbnailOne from 'causes/assets/images/gallery/thumbnails/1causas.png'
-import ThumbnailTwo from 'causes/assets/images/gallery/thumbnails/2causas.png'
-import ThumbnailThree from 'causes/assets/images/gallery/thumbnails/3causas.png'
-import ThumbnailFour from 'causes/assets/images/gallery/thumbnails/4causas.png'
-import ThumbnailFive from 'causes/assets/images/gallery/thumbnails/5causas.png'
-import ThumbnailSix from 'causes/assets/images/gallery/thumbnails/6causas.png'
-import ThumbnailSeven from 'causes/assets/images/gallery/thumbnails/7causas.png'
-import ThumbnailEight from 'causes/assets/images/gallery/thumbnails/8causas.png'
-import ThumbnailNine from 'causes/assets/images/gallery/thumbnails/9causas.png'
-import ThumbnailTen from 'causes/assets/images/gallery/thumbnails/10causas.png'
- 
-import ImageOne from 'causes/assets/images/gallery/images/1texto.png'
-import ImageTwo from 'causes/assets/images/gallery/images/2texto.png'
-import ImageThree from 'causes/assets/images/gallery/images/3texto.png'
-import ImageFour from 'causes/assets/images/gallery/images/4texto.png'
-import ImageFive from 'causes/assets/images/gallery/images/5texto.png'
-import ImageSix from 'causes/assets/images/gallery/images/6texto.png'
-import ImageSeven from 'causes/assets/images/gallery/images/7texto.png'
-import ImageEight from 'causes/assets/images/gallery/images/8texto.png'
-import ImageNine from 'causes/assets/images/gallery/images/9texto.png'
-import ImageTen from 'causes/assets/images/gallery/images/10texto.png'
+import ThumbnailOne from 'causes/assets/images/gallery/thumbnails/1causas.png';
+import ThumbnailTwo from 'causes/assets/images/gallery/thumbnails/2causas.png';
+import ThumbnailThree from 'causes/assets/images/gallery/thumbnails/3causas.png';
+import ThumbnailFour from 'causes/assets/images/gallery/thumbnails/4causas.png';
+import ThumbnailFive from 'causes/assets/images/gallery/thumbnails/5causas.png';
+import ThumbnailSix from 'causes/assets/images/gallery/thumbnails/6causas.png';
+import ThumbnailSeven from 'causes/assets/images/gallery/thumbnails/7causas.png';
+import ThumbnailEight from 'causes/assets/images/gallery/thumbnails/8causas.png';
+import ThumbnailNine from 'causes/assets/images/gallery/thumbnails/9causas.png';
+import ThumbnailTen from 'causes/assets/images/gallery/thumbnails/10causas.png';
+
+import ImageOne from 'causes/assets/images/gallery/images/1texto.png';
+import ImageTwo from 'causes/assets/images/gallery/images/2texto.png';
+import ImageThree from 'causes/assets/images/gallery/images/3texto.png';
+import ImageFour from 'causes/assets/images/gallery/images/4texto.png';
+import ImageFive from 'causes/assets/images/gallery/images/5texto.png';
+import ImageSix from 'causes/assets/images/gallery/images/6texto.png';
+import ImageSeven from 'causes/assets/images/gallery/images/7texto.png';
+import ImageEight from 'causes/assets/images/gallery/images/8texto.png';
+import ImageNine from 'causes/assets/images/gallery/images/9texto.png';
+import ImageTen from 'causes/assets/images/gallery/images/10texto.png';
 
 export const photos = [
   {
@@ -29,7 +29,7 @@ export const photos = [
     src: ImageOne,
     thumbnail: ThumbnailOne,
     isCauseGallery: true,
-    index: 0
+    index: 0,
   },
 
   {
@@ -40,7 +40,7 @@ export const photos = [
     src: ImageTwo,
     thumbnail: ThumbnailTwo,
     isCauseGallery: true,
-    index: 1
+    index: 1,
   },
 
   {
@@ -51,7 +51,7 @@ export const photos = [
     src: ImageThree,
     thumbnail: ThumbnailThree,
     isCauseGallery: true,
-    index: 2
+    index: 2,
   },
 
   {
@@ -62,7 +62,7 @@ export const photos = [
     src: ImageFour,
     thumbnail: ThumbnailFour,
     isCauseGallery: true,
-    index: 3
+    index: 3,
   },
 
   {
@@ -73,7 +73,7 @@ export const photos = [
     src: ImageSix,
     thumbnail: ThumbnailSix,
     isCauseGallery: true,
-    index: 4
+    index: 4,
   },
 
   {
@@ -84,7 +84,7 @@ export const photos = [
     src: ImageFive,
     thumbnail: ThumbnailFive,
     isCauseGallery: true,
-    index: 5
+    index: 5,
   },
 
   {
@@ -95,7 +95,7 @@ export const photos = [
     src: ImageSeven,
     thumbnail: ThumbnailSeven,
     isCauseGallery: true,
-    index: 6
+    index: 6,
   },
 
   {
@@ -106,7 +106,7 @@ export const photos = [
     src: ImageEight,
     thumbnail: ThumbnailEight,
     isCauseGallery: true,
-    index: 7
+    index: 7,
   },
 
   {
@@ -117,7 +117,7 @@ export const photos = [
     src: ImageNine,
     thumbnail: ThumbnailNine,
     isCauseGallery: true,
-    index: 8
+    index: 8,
   },
 
   {
@@ -128,7 +128,6 @@ export const photos = [
     src: ImageTen,
     thumbnail: ThumbnailTen,
     isCauseGallery: true,
-    index: 9
-  }
-]
-
+    index: 9,
+  },
+];

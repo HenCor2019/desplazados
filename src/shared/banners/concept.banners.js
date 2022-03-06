@@ -3,5 +3,5 @@ import conceptsBanner_en from 'support/assets/images/concepts/concepts-banner_en
 
 export {
   conceptsBanner_en,
-  conceptsBanner_es
-}
+  conceptsBanner_es,
+};

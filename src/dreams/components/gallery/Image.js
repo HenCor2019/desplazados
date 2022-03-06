@@ -1,6 +1,8 @@
 export default function Image({ content, onClick, isMobile }) {
-  const { src, title, description, author, thumbnail, imgPosition } = content
-  const source = isMobile ? src : thumbnail
+  const {
+    src, title, description, author, thumbnail, imgPosition,
+  } = content;
+  const source = isMobile ? src : thumbnail;
 
   return (
     <div className={`${imgPosition} order-5 mb-2 sm:mb-0`}>
@@ -20,5 +22,5 @@ export default function Image({ content, onClick, isMobile }) {
         </div>
       </div>
     </div>
-  )
+  );
 }

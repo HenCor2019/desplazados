@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-function Image({ img, alt, position, onClick, isMobile }) {
-  const [isImageHover, setIsImageHover] = useState(false)
+function Image({
+  img, alt, position, onClick, isMobile,
+}) {
+  const [isImageHover, setIsImageHover] = useState(false);
 
-  const source = isMobile ? img.src : img.thumbnail
+  const source = isMobile ? img.src : img.thumbnail;
 
   return (
     <div
@@ -16,10 +18,10 @@ function Image({ img, alt, position, onClick, isMobile }) {
         src={source}
         alt={alt}
         className="object-contain transform transition-transform md:scale-100 md:hover:scale-110 p-4 sm:p-2 md:p-0 md:h-full md:w-full cursor-pointer"
-        loading={'lazy'}
+        loading="lazy"
       />
     </div>
-  )
+  );
 }
 
-export default Image
+export default Image;

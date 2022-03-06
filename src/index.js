@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/css/index.css';
+import { I18nextProvider } from 'react-i18next';
+import i18next from 'i18next';
+import introduction_en from 'translations/en/introduction/introduction.json';
+import introduction_es from 'translations/es/introduction/introduction.json';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ConfigProvider } from './contexts/ConfigContext';
-import { I18nextProvider } from 'react-i18next';
-import i18next from 'i18next';
 
 import homePagesSectionHome_es from './translations/es/home/pages/section/home.json';
 import homePagesSectionHome_en from './translations/en/home/pages/section/home.json';
@@ -34,8 +36,6 @@ import causesPagesGallery_en from './translations/en/causes/pages/gallery/galler
 import causesPagesGallery_es from './translations/es/causes/pages/gallery/gallery.json';
 import causesPagesComic_en from './translations/en/causes/pages/comic/comic.json';
 import causesPagesComic_es from './translations/es/causes/pages/comic/comic.json';
-import introduction_en from 'translations/en/introduction/introduction.json';
-import introduction_es from 'translations/es/introduction/introduction.json';
 
 import dreamsPageSection_es from './translations/es/dreams/section/dreams.json';
 import dreamsPageSection_en from './translations/en/dreams/section/dreams.json';
@@ -64,7 +64,7 @@ i18next.init({
       dreamsSectionPage: dreamsPageSection_es,
       dreamsGalleryPage: dreamsGallerySection_es,
       dreamsPoadcastPage: dreamsPoadcastSection_es,
-      introduction: introduction_es
+      introduction: introduction_es,
     },
     en: {
       homePageSectionHome: homePagesSectionHome_en,
@@ -82,9 +82,9 @@ i18next.init({
       dreamsSectionPage: dreamsPageSection_en,
       dreamsGalleryPage: dreamsGallerySection_en,
       dreamsPoadcastPage: dreamsPoadcastSection_en,
-      introduction: introduction_en
-    }
-  }
+      introduction: introduction_en,
+    },
+  },
 });
 
 ReactDOM.render(
@@ -95,7 +95,7 @@ ReactDOM.render(
       </ConfigProvider>
     </I18nextProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,34 +1,33 @@
-import React, { useState } from 'react'
-import { setImagesThumbs } from '../../constants/gallery'
-
-import { useConfigContext } from '../../../contexts/ConfigContext'
-import { LazySection } from '../../../shared/components/LazySection/LazySection'
-
-import Image from '../../components/gallery/Image'
-
-import title from '../../assets/images/gallery/title.png'
-import titleEN from '../../assets/images/gallery/title_en.png';
-
-import Modal from '../../../shared/components/Modal/Modal'
-import Lightbox from '../../../Components/Lightbox/Image'
-
+import React, { useState } from 'react';
+import Lightbox from 'shared/components/Lightbox/Image/index';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
+import { setImagesThumbs } from '../../constants/gallery';
+
+import { useConfigContext } from '../../../contexts/ConfigContext';
+import { LazySection } from '../../../shared/components/LazySection/LazySection';
+
+import Image from '../../components/gallery/Image';
+
+import title from '../../assets/images/gallery/title.png';
+import titleEN from '../../assets/images/gallery/title_en.png';
+
+import Modal from '../../../shared/components/Modal/Modal';
 
 function DreamsGallery() {
-  const [isActive, setIsActive] = useState(false)
-  const [t] = useTranslation('dreamsGalleryPage')
+  const [isActive, setIsActive] = useState(false);
+  const [t] = useTranslation('dreamsGalleryPage');
 
-  const photosWithoutImages = t('photos', { returnObjects: true })
+  const photosWithoutImages = t('photos', { returnObjects: true });
   const photos = setImagesThumbs(photosWithoutImages);
-  const [activeImage, setActiveImage] = useState(photos[0])
+  const [activeImage, setActiveImage] = useState(photos[0]);
 
-  const { isMobile, isTablet } = useConfigContext()
+  const { isMobile, isTablet } = useConfigContext();
 
   const handleOnClick = (imageInformation) => {
-    setIsActive(!isActive)
-    if (imageInformation) setActiveImage(imageInformation)
-  }
+    setIsActive(!isActive);
+    if (imageInformation) setActiveImage(imageInformation);
+  };
 
   return (
     <div className="md:flex sm:min-w-0 md:justify-center md:items-center h-full">
@@ -44,14 +43,12 @@ function DreamsGallery() {
       <main className="flex flex-col xl:flex-row justify-around items-start h-full md:w-4/5 lg:5/5 xl:w-11/12">
         <div className="grid grid-cols-1 grid-flow-row md:grid-cols-dreamsGallery md:grid-rows-dreamGallery flex-gallery gap-2 min-h-0 min-w-0 p-2 order-2 xl:order-1">
           {photos.map((dreamImage) => (
-            <>
-              <Image
-                key={dreamImage.src + dreamImage.index}
-                content={dreamImage}
-                onClick={handleOnClick}
-                isMobile={isMobile}
-              />
-            </>
+            <Image
+              key={dreamImage.src + dreamImage.index}
+              content={dreamImage}
+              onClick={handleOnClick}
+              isMobile={isMobile}
+            />
           ))}
         </div>
         <div className="flex flex-col sm:flex-row xl:flex-col justify-start items-center flex-rigid xl:flex-shrink-3 w-full order-1 xl:order-2 xl:max-w-sm">
@@ -70,7 +67,7 @@ function DreamsGallery() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
-export default LazySection(DreamsGallery)
+export default LazySection(DreamsGallery);

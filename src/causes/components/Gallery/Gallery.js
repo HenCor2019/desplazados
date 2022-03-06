@@ -1,25 +1,26 @@
-import Image from 'causes/components/Gallery/Image/Image'
-import Message from 'causes/components/Gallery/Message/Message'
-import { useTranslation } from 'react-i18next'
+import { GalleryMessage, GalleryImage } from 'causes/components';
+import { useTranslation } from 'react-i18next';
 
-export default function Gallery({ photos, onClick, dimensions, isMobile }) {
-  const [t] = useTranslation('causesPagesGallery')
+export function Gallery({
+  photos, onClick, dimensions, isMobile,
+}) {
+  const [t] = useTranslation('causesPagesGallery');
   return (
     <>
       {photos.map((photo, index) => {
-        if (index === 4)
+        if (index === 4) {
           return (
             <>
-              <Message
+              <GalleryMessage
                 key={photo.src + t('secondary')}
-                text={'text-xs lg:text-base font-acumin'}
+                text="text-xs lg:text-base font-acumin"
                 cols={{ md: 'md:col-start-5 md:col-end-6' }}
                 rows={{ md: 'md:row-start-3 md:row-end-5' }}
                 order={{ base: 'order-6', sm: 'sm:order-2', md: 'md:order-5' }}
                 message={t('secondary')}
               />
 
-              <Image
+              <GalleryImage
                 key={photo.src}
                 content={photo}
                 onClick={onClick}
@@ -28,10 +29,11 @@ export default function Gallery({ photos, onClick, dimensions, isMobile }) {
                 isMobile={isMobile}
               />
             </>
-          )
+          );
+        }
 
         return (
-          <Image
+          <GalleryImage
             key={photo + index}
             content={photo}
             onClick={onClick}
@@ -39,8 +41,8 @@ export default function Gallery({ photos, onClick, dimensions, isMobile }) {
             rows={dimensions[index].rows}
             isMobile={isMobile}
           />
-        )
+        );
       })}
     </>
-  )
+  );
 }

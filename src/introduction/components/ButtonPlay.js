@@ -18,11 +18,11 @@ const styles = {
     'w-full text-gray-800 self-end flex justify-end items-end content-end absolute bottom-0 pb-10 pr-7 sm:pr-10',
 
   buttonSkipVideo:
-    'border-2 border-gray-600 font-bold rounded-full w-24 h-10 text-sm self-end uppercase shadow-sm'
-}
+    'border-2 border-gray-600 font-bold rounded-full w-24 h-10 text-sm self-end uppercase shadow-sm',
+};
 
 export default function ButtonPlay({ handlePlaying, handleOnSkip }) {
-  const lan = i18next.language
+  const lan = i18next.language;
   return (
     <div className={styles.containerDiv}>
       <div className={styles.buttonContainer}>
@@ -40,5 +40,5 @@ export default function ButtonPlay({ handlePlaying, handleOnSkip }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
