@@ -69,10 +69,12 @@ import Concepts from './support/pages/concepts/Concepts';
 import DreamsGallery from './dreams/pages/gallery';
 import Dreams from './dreams/pages/section/index';
 import Poadcast from './dreams/components/poadcast/Poadcast';
+import { useTranslation } from "react-i18next";
 
 import './assets/css/index.css';
 
 function App() {
+  const [t] = useTranslation("waitingPagesMeanwhileMeanwhile");
   return (
     <Router>
       <Switch>
