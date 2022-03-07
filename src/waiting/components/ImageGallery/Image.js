@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function Image({
   img, alt, position, onClick, isMobile,
 }) {
-  const [isImageHover, setIsImageHover] = useState(false);
+  const [, setIsImageHover] = useState(false);
 
   const source = isMobile ? img.src : img.thumbnail;
 

@@ -4,7 +4,7 @@ export default function Information({ src, title, description }) {
       <img
         src={src}
         className="w-full h-auto transform -translate-y-1/3"
-        alt="clip image desplazados"
+        alt="clip desplazados"
         loading="lazy"
       />
 

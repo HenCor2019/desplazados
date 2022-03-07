@@ -46,7 +46,7 @@ import dreamsPoadcastSection_es from './translations/es/dreams/podcast/poadcast.
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'en',
+  lng: 'es',
   resources: {
     es: {
       homePageSectionHome: homePagesSectionHome_es,

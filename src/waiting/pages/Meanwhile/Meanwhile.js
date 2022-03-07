@@ -46,7 +46,7 @@ function Meanwhile() {
         </Modal>
       )}
       <div className="flex justify-center items-center h-full">
-        <main className="bg-white-500 grid grid-cols-1 grid-flow-row gap-4 sm:gap-4 sm:grid-cols-2 sm:p-4 lg:grid-cols-3 lg:grid-cols-3 w-11/12">
+        <main className="bg-white-500 grid grid-cols-1 grid-flow-row gap-4 sm:gap-4 sm:grid-cols-2 sm:p-4 lg:grid-cols-3 w-11/12">
           {galleryVideos.map((galleryVideos) => (
             <React.Fragment key={galleryVideos.img.toString()}>
               <Image
@@ -86,7 +86,7 @@ const setGalleryVideos = (t) => [
     title: t('lucia.title'),
     description: t('lucia.description'),
     embedId: t('lucia.embedId'),
-    img: i18next.language == 'en' ? image1_en : image1_es,
+    img: i18next.language === 'en' ? image1_en : image1_es,
     imgPosition:
         'justify-center items-center order-5 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2',
     textPosition: 'justify-center items-center order-5',
@@ -97,7 +97,7 @@ const setGalleryVideos = (t) => [
     title: t('gladis.title'),
     description: t('gladis.description'),
     embedId: t('gladis.embedId'),
-    img: i18next.language == 'en' ? image2_en : image2_es,
+    img: i18next.language === 'en' ? image2_en : image2_es,
     imgPosition:
         'justify-center items-center order-5 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2',
     textPosition: 'justify-center items-center order-5',
@@ -108,7 +108,7 @@ const setGalleryVideos = (t) => [
     title: t('joaquin.title'),
     description: t('joaquin.description'),
     embedId: t('joaquin.embedId'),
-    img: i18next.language == 'en' ? image3_en : image3_es,
+    img: i18next.language === 'en' ? image3_en : image3_es,
     imgPosition:
         'justify-center items-center order-5 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3',
     textPosition: 'justify-center items-center order-5',
@@ -119,7 +119,7 @@ const setGalleryVideos = (t) => [
     title: t('marcos.title'),
     description: t('marcos.description'),
     embedId: t('marcos.embedId'),
-    img: i18next.language == 'en' ? image4_en : image4_es,
+    img: i18next.language === 'en' ? image4_en : image4_es,
     imgPosition:
         'justify-center items-center order-5 lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3',
     textPosition: 'justify-center items-center order-5',
@@ -130,7 +130,7 @@ const setGalleryVideos = (t) => [
     title: t('maritza.title'),
     description: t('maritza.description'),
     embedId: t('maritza.embedId'),
-    img: i18next.language == 'en' ? image5_en : image5_es,
+    img: i18next.language === 'en' ? image5_en : image5_es,
     imgPosition:
         'justify-center items-center order-5 lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4 2xl:pt-4',
     textPosition: 'justify-center items-center order-5',

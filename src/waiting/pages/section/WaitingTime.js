@@ -56,7 +56,7 @@ function Home() {
     <div className="sm:flex sm:min-w-0 sm:justify-center sm:items-center h-full">
       <main className="grid grid-cols-1 grid-flow-row gap-4 h-full sm:grid-cols-2 md:gap-0">
         <Image
-          img={i18next.language == 'en' ? processImg_en : processImg_es}
+          img={i18next.language === 'en' ? processImg_en : processImg_es}
           alt="Process"
           grayscale={process}
           onMouseEnter={() => setProcessHover(true)}
@@ -65,7 +65,7 @@ function Home() {
           position="justify-start items-center sm:justify-center"
         />
         <Image
-          img={i18next.language == 'en' ? galleryImg_en : galleryImg_es}
+          img={i18next.language === 'en' ? galleryImg_en : galleryImg_es}
           alt="Gallery"
           grayscale={gallery}
           onMouseEnter={() => setGalleryHover(true)}
@@ -79,7 +79,7 @@ function Home() {
           </p>
         </div>
         <Image
-          img={i18next.language == 'en' ? meanwhileImg_en : meanwhileImg_es}
+          img={i18next.language === 'en' ? meanwhileImg_en : meanwhileImg_es}
           alt="Meanwhile"
           grayscale={meanwhile}
           onMouseEnter={() => setMeanwhileHover(true)}

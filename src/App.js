@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet';
 import i18next from 'i18next';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Section from 'shared/components/Section/Section';
-import YoutubeVideo from 'introduction/video/index';
+import { YoutubeVideo } from 'introduction/pages';
 import { CausesHome, CausesGallery, CausesComic } from 'causes/pages';
 import { WaitingTime, WaitingTimeProcess, WaitingTimeMeanwhile, WaitingTimeGallery } from 'waiting/pages';
 import { PodcastBanner, PodcastBannerEN } from 'shared/banners/podcast.banners';

@@ -22,7 +22,7 @@ import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 function Home() {
-  const [t, i18n] = useTranslation('homePageSectionHome');
+  const [t] = useTranslation('homePageSectionHome');
 
   const [isReasonsShown, setIsReasonsShown] = useState(false);
   const [isWaitingTimeShown, setIsWaitingTimeShown] = useState(false);
@@ -127,7 +127,7 @@ function Home() {
           <House
             houseImg={house1}
             alt="Causes"
-            textImg={i18next.language == 'en' ? house1Text_en : house1Text_es}
+            textImg={i18next.language === 'en' ? house1Text_en : house1Text_es}
             filter={reasonsGrayscale}
             onMouseEnter={ShowReasons}
             onMouseLeave={DontShowReasons}
@@ -139,7 +139,7 @@ function Home() {
           <House
             houseImg={house2}
             alt="Waiting time"
-            textImg={i18next.language == 'en' ? house2Text_en : house2Text_es}
+            textImg={i18next.language === 'en' ? house2Text_en : house2Text_es}
             filter={waitingTimeGrayscale}
             onMouseEnter={ShowWaitingTime}
             onMouseLeave={DontShowWaitingTime}
@@ -151,7 +151,7 @@ function Home() {
           <House
             houseImg={house3}
             alt="Dreams"
-            textImg={i18next.language == 'en' ? house3Text_en : house3Text_es}
+            textImg={i18next.language === 'en' ? house3Text_en : house3Text_es}
             filter={dreamsGrayscale}
             onMouseEnter={ShowDreams}
             onMouseLeave={DontShowDreams}
@@ -163,7 +163,7 @@ function Home() {
           <House
             houseImg={house4}
             alt="Help"
-            textImg={i18next.language == 'en' ? house4Text_en : house4Text_es}
+            textImg={i18next.language === 'en' ? house4Text_en : house4Text_es}
             filter={helpGrayscale}
             onMouseEnter={ShowHelp}
             onMouseLeave={DontShowHelp}
