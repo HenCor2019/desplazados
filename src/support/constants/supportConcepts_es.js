@@ -28,19 +28,19 @@ import image25_es from '../assets/images/concepts/notes/es/image25_es.png';
 export const notesImages_es = [
   {
     index: 0,
-    src: image0_es
+    src: image0_es,
   },
   {
     index: 1,
-    src: image1_es
+    src: image1_es,
   },
   {
     index: 2,
-    src: image2_es
+    src: image2_es,
   },
   {
     index: 3,
-    src: image3_es
+    src: image3_es,
   },
   {
     index: 4,

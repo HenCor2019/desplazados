@@ -1,5 +1,7 @@
-export default function Message(props) {
-  const { text, cols, rows, order, message } = props
+export function GalleryMessage(props) {
+  const {
+    text, cols, rows, order, message,
+  } = props;
 
   return (
     <div
@@ -7,5 +9,5 @@ export default function Message(props) {
     >
       <p>{message}</p>
     </div>
-  )
+  );
 }

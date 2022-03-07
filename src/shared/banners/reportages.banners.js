@@ -3,5 +3,5 @@ import reportagesBanner_en from 'support/assets/images/reportage/reportage-banne
 
 export {
   reportagesBanner_en,
-  reportagesBanner_es
-}
+  reportagesBanner_es,
+};

@@ -1,2 +1,4 @@
-import PodcastBanner from 'assets/images/Banners/dream-podcast.png'
-export { PodcastBanner }
+import PodcastBanner from 'assets/images/Banners/dream-podcast.png';
+import PodcastBannerEN from 'assets/images/Banners/dreams-podcast-en.png';
+
+export { PodcastBanner, PodcastBannerEN };

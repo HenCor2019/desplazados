@@ -1,7 +1,9 @@
-import { BsCaretRightFill } from 'react-icons/bs'
+import { BsCaretRightFill } from 'react-icons/bs';
 
-export default function Button({ onClick, height, margin, rotate = '' }) {
-  const styles = { height: height }
+export function Button({
+  onClick, height, margin, rotate = '',
+}) {
+  const styles = { height };
   return (
     <div
       className={`hidden relative self-start left-page lg:flex justify-center items-center ${margin}`}
@@ -12,6 +14,5 @@ export default function Button({ onClick, height, margin, rotate = '' }) {
         onClick={onClick}
       />
     </div>
-  )
+  );
 }
-

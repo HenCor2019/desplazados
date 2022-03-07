@@ -1,13 +1,15 @@
 export default function Image({ content, onClick, isMobile }) {
-  const { src, title, description, author, thumbnail, imgPosition } = content
-  const source = isMobile ? src : thumbnail
+  const {
+    src, title, description, author, thumbnail, imgPosition,
+  } = content;
+  const source = isMobile ? src : thumbnail;
 
   return (
     <div className={`${imgPosition} order-5 mb-2 sm:mb-0`}>
       <div className=" w-full h-full grid grid-cols-1 sm:grid-cols-2 md:block text-gray-700 overflow-hidden">
         <img
           src={source}
-          alt={`gallery image desplazados ${title} ${author}`}
+          alt={`gallery desplazados ${title} ${author}`}
           onClick={() => onClick(content)}
           className="px-4 sm:px-0 sm:m-0 w-full h-full object-contain md:object-cover transform cursor-pointer transition-transform md:scale-110 md:hover:scale-100"
           loading="lazy"
@@ -20,5 +22,5 @@ export default function Image({ content, onClick, isMobile }) {
         </div>
       </div>
     </div>
-  )
+  );
 }

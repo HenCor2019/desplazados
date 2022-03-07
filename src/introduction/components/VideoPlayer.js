@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
-import ReactPlayer from 'react-player'
-import { useConfigContext } from '../../contexts/ConfigContext'
+import { useEffect, useState } from 'react';
+import ReactPlayer from 'react-player';
+import { useConfigContext } from '../../contexts/ConfigContext';
 
 const styles = {
   reactPlayer: 'xl:pointer-events-none z-0 h-screen fixed',
@@ -9,13 +9,13 @@ const styles = {
     'w-full absolute text-gray-100 z-40 self-end flex justify-end',
 
   buttonSkipVideo:
-    'bg-gray-500 font-bold rounded-full w-24 h-10 text-sm self-end uppercase mr-5 md:mr-10 mb-5 md:mb-9 shadow-md'
-}
+    'bg-gray-500 font-bold rounded-full w-24 h-10 text-sm self-end uppercase mr-5 md:mr-10 mb-5 md:mb-9 shadow-md',
+};
 
 export default function VideoPlayer({ url, playing, handleOnSkip }) {
-  const [width, setWidth] = useState('110vw')
-  const [height, setHeight] = useState('140vw')
-  const [muted, setMuted] = useState(false)
+  const [width, setWidth] = useState('110vw');
+  const [height, setHeight] = useState('140vw');
+  const [muted, setMuted] = useState(false);
 
   const {
     isMobile,
@@ -23,31 +23,31 @@ export default function VideoPlayer({ url, playing, handleOnSkip }) {
     isMonitor,
     isSmallMobile,
     isXlMonitor,
-    is2XlMonitor
-  } = useConfigContext()
+    is2XlMonitor,
+  } = useConfigContext();
 
   useEffect(() => {
     if (is2XlMonitor) {
-      setWidth('128vw')
-      setHeight('119vh')
+      setWidth('128vw');
+      setHeight('119vh');
     }
 
     if (isXlMonitor) {
-      setWidth('135vw')
-      setHeight('117vh')
+      setWidth('135vw');
+      setHeight('117vh');
     }
 
     if (isMonitor) {
-      setWidth('108vw')
-      setHeight('117vh')
+      setWidth('108vw');
+      setHeight('117vh');
     }
 
     if (isMobile || isTablet) {
-      setWidth('100vw')
-      setHeight('100vh')
-      setMuted(false)
+      setWidth('100vw');
+      setHeight('100vh');
+      setMuted(false);
     }
-  }, [isXlMonitor, is2XlMonitor, isMonitor, isTablet])
+  }, [isXlMonitor, is2XlMonitor, isMonitor, isTablet]);
 
   return (
     <>
@@ -59,14 +59,14 @@ export default function VideoPlayer({ url, playing, handleOnSkip }) {
         width={width}
         height={height}
         muted={muted}
-        playsinline={true}
+        playsinline
         config={{
           youtube: {
             controls: 0,
             showinfo: 0,
             autohide: 1,
-            autoplay: true
-          }
+            autoplay: true,
+          },
         }}
       />
 
@@ -79,5 +79,5 @@ export default function VideoPlayer({ url, playing, handleOnSkip }) {
         </button>
       </div>
     </>
-  )
+  );
 }

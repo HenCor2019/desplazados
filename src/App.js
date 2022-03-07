@@ -1,47 +1,33 @@
 import { Helmet } from 'react-helmet';
 import i18next from 'i18next';
-import Home from './home/pages/Section/Home';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
-import Section from './Components/Section/Section';
-import Comic from './causes/pages/Comic/FlipPage';
-import NotFound from './notFound/pages/section';
-import YoutubeVideo from 'introduction/video/index';
-import SupportMainSect from './support/components/SupportMainSect';
-import Statistics from './support/pages/statistics/Statistics';
-import Reportages from './support/pages/reportage/Reportages';
-import Concepts from './support/pages/concepts/Concepts';
-import WaitingTime from './waiting/pages/section/WaitingTime';
-import Meanwhile from './waiting/pages/Meanwhile/Meanwhile';
-import CausesSect from './causes/pages/Section/index';
-import CausesGallery from './causes/pages/Gallery/index';
-import DreamsGallery from './dreams/pages/gallery';
-import Dreams from './dreams/pages/section/index';
-import WaitingTimeGallery from './waiting/pages/Gallery/WaitingTimeGallery';
-import WaitingTimeProcess from './waiting/pages/Process/Process';
-import Poadcast from './dreams/components/poadcast/Poadcast';
-import { useTranslation } from 'react-i18next';
-
-// banners
-import { PodcastBanner } from 'shared/banners/podcast.banners';
+import Section from 'shared/components/Section/Section';
+import { YoutubeVideo } from 'introduction/pages';
+import { CausesHome, CausesGallery, CausesComic } from 'causes/pages';
+import { WaitingTime, WaitingTimeProcess, WaitingTimeMeanwhile, WaitingTimeGallery } from 'waiting/pages';
+import { PodcastBanner, PodcastBannerEN } from 'shared/banners/podcast.banners';
 import {
   DreamsBanner,
+  DreamsBannerEN,
   DreamsGalleryBanner,
+  DreamsGalleryBannerEN,
   DreamsPortBanner2,
-  DreamsPortBanner
+  DreamsPortBanner,
+  DreamsPortBannerEN,
+  DreamsPortBanner2EN,
 } from 'shared/banners/dreams.banners';
 import {
   conceptsBanner_es,
-  conceptsBanner_en
+  conceptsBanner_en,
 } from 'shared/banners/concept.banners';
 import {
   statisticsBanner_en,
-  statisticsBanner_es
+  statisticsBanner_es,
 } from 'shared/banners/statistics.banners';
 import {
   reportagesBanner_en,
-  reportagesBanner_es
+  reportagesBanner_es,
 } from 'shared/banners/reportages.banners';
-
 import {
   WaitingProcessBanner_es,
   WaitingVideosBanner_es,
@@ -54,9 +40,8 @@ import {
   WaitingGalleryBanner_en,
   WaitingPortBanner2_en,
   WaitingPortBanner_en,
-  WaitingTimeBanner_en
+  WaitingTimeBanner_en,
 } from 'shared/banners/waiting.banners';
-
 import {
   CausesBanner_en,
   CausesPortBanner2,
@@ -65,22 +50,29 @@ import {
   CausesStoryBanner_en,
   CausesStoryBanner_es,
   CausesDrawingsBanner_en,
-  CausesDrawingsBanner_es
+  CausesDrawingsBanner_es,
 } from 'shared/banners/causes.banners';
-
 import {
   supportPortInnerBanner_en,
   supportPortInnerBanner_es,
   supportPortBanner_es,
   supportBanner_es,
   supportBanner_en,
-  supportPortBanner_en
+  supportPortBanner_en,
 } from 'shared/banners/support.banners';
+import Home from './home/pages/Section/Home';
+import NotFound from './notFound/pages/section';
+import SupportMainSect from './support/components/SupportMainSect';
+import Statistics from './support/pages/statistics/Statistics';
+import Reportages from './support/pages/reportage/Reportages';
+import Concepts from './support/pages/concepts/Concepts';
+import DreamsGallery from './dreams/pages/gallery';
+import Dreams from './dreams/pages/section/index';
+import Poadcast from './dreams/components/poadcast/Poadcast';
 
 import './assets/css/index.css';
 
 function App() {
-  const [t] = useTranslation('waitingPagesMeanwhileMeanwhile');
   return (
     <Router>
       <Switch>
@@ -105,11 +97,11 @@ function App() {
 
           <Section
             bannerLand={
-              i18next.language == 'en' ? CausesBanner_en : CausesBanner_es
+              i18next.language === 'en' ? CausesBanner_en : CausesBanner_es
             }
             bannerPort={CausesPortBanner}
           >
-            <CausesSect />
+            <CausesHome />
           </Section>
         </Route>
 
@@ -119,13 +111,13 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? CausesStoryBanner_en
                 : CausesStoryBanner_es
             }
             bannerPort={CausesPortBanner2}
           >
-            <Comic />
+            <CausesComic />
           </Section>
         </Route>
 
@@ -136,7 +128,7 @@ function App() {
 
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? CausesDrawingsBanner_en
                 : CausesDrawingsBanner_es
             }
@@ -152,12 +144,12 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingTimeBanner_en
                 : WaitingTimeBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingPortBanner_en
                 : WaitingPortBanner_es
             }
@@ -173,17 +165,17 @@ function App() {
 
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingVideosBanner_en
                 : WaitingVideosBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingPortBanner2_en
                 : WaitingPortBanner2_es
             }
           >
-            <Meanwhile />
+            <WaitingTimeMeanwhile />
           </Section>
         </Route>
 
@@ -194,12 +186,12 @@ function App() {
 
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingGalleryBanner_en
                 : WaitingGalleryBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingPortBanner2_en
                 : WaitingPortBanner2_es
             }
@@ -215,12 +207,12 @@ function App() {
 
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingProcessBanner_en
                 : WaitingProcessBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? WaitingPortBanner2_en
                 : WaitingPortBanner2_es
             }
@@ -233,7 +225,18 @@ function App() {
           <Helmet>
             <title> Desplazados - Los Sueños </title>
           </Helmet>
-          <Section bannerLand={DreamsBanner} bannerPort={DreamsPortBanner}>
+          <Section
+            bannerLand={
+              i18next.language === 'en'
+                ? DreamsBannerEN
+                : DreamsBanner
+            }
+            bannerPort={
+              i18next.language === 'en'
+                ? DreamsPortBannerEN
+                : DreamsPortBanner
+            }
+          >
             <Dreams />
           </Section>
         </Route>
@@ -243,7 +246,18 @@ function App() {
             <title> Desplazados - Poadcast </title>
           </Helmet>
 
-          <Section bannerLand={PodcastBanner} bannerPort={DreamsPortBanner2}>
+          <Section
+            bannerLand={
+              i18next.language === 'en'
+                ? PodcastBannerEN
+                : PodcastBanner
+            }
+            bannerPort={
+              i18next.language === 'en'
+                ? DreamsPortBanner2EN
+                : DreamsPortBanner2
+            }
+          >
             <Poadcast />
           </Section>
         </Route>
@@ -254,8 +268,16 @@ function App() {
           </Helmet>
 
           <Section
-            bannerLand={DreamsGalleryBanner}
-            bannerPort={DreamsPortBanner2}
+            bannerLand={
+              i18next.language === 'en'
+                ? DreamsGalleryBannerEN
+                : DreamsGalleryBanner
+            }
+            bannerPort={
+              i18next.language === 'en'
+                ? DreamsPortBanner2EN
+                : DreamsPortBanner2
+            }
           >
             <DreamsGallery />
           </Section>
@@ -267,10 +289,10 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en' ? supportBanner_en : supportBanner_es
+              i18next.language === 'en' ? supportBanner_en : supportBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? supportPortBanner_en
                 : supportPortBanner_es
             }
@@ -284,10 +306,10 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en' ? conceptsBanner_en : conceptsBanner_es
+              i18next.language === 'en' ? conceptsBanner_en : conceptsBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? supportPortInnerBanner_en
                 : supportPortInnerBanner_es
             }
@@ -301,12 +323,12 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? statisticsBanner_en
                 : statisticsBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? supportPortInnerBanner_en
                 : supportPortInnerBanner_es
             }
@@ -320,12 +342,12 @@ function App() {
           </Helmet>
           <Section
             bannerLand={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? reportagesBanner_en
                 : reportagesBanner_es
             }
             bannerPort={
-              i18next.language == 'en'
+              i18next.language === 'en'
                 ? supportPortInnerBanner_en
                 : supportPortInnerBanner_es
             }

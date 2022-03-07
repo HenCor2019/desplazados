@@ -1,0 +1,76 @@
+{
+  "message": "Los colores, las acuarelas, la plastilina, el origami y el collage cuentan cuáles son los sueños más genuinos de niñas y niños que sufren desplazamiento forzado por violencia.",
+  "photos": [
+    {
+      "title": "Jardines llenos de vida",
+      "description": "“A mi y a mis hermanas nos gusta jugar bastante, por eso quisiera un jardín bien grande para andar jugando mica”.",
+      "author": "Juan, 13 años de edad",
+      "imgPosition": "md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2",
+      "index": 0
+    },
+    {
+      "title": "Acuarela para el futuro",
+      "description": "“Estoy nerviosa, me pregunto cómo será la casa donde viviremos. Podría pintarla igual, la voy a extrañar”.",
+      "author": "Jorge, 14 años de edad",
+      "imgPosition": "md:col-start-4 md:col-end-6 md:row-start-3 md:row-end-5",
+      "index": 1
+    },
+    {
+      "title": "Hogar rosa",
+      "description": "“Me gustaría que la casa donde nos vayamos a vivir tenga espacio y que sea rosada, el patio grande y que estemos todos juntos”",
+      "author": "Yesica, 15 años de edad",
+      "imgPosition": "md:col-start-5 md:col-end-6 md:row-start-1 md:row-end-2",
+      "isCauseGallery": true,
+      "index": 2
+    },
+    {
+      "title": "Verde esperanza",
+      "description": "“Busqué en internet y esta fue la casa que más me gustó, el verde es  mi color favorito”",
+      "author": "José, 16 años de edad ",
+      "imgPosition": "md:col-start-1 md:col-end-4 md:row-start-2 md:row-end-4",
+      "index": 3
+    },
+    {
+      "title": "Un hogar de colores",
+      "description": "“Una casa con mi mamá, mi papá, un sol radiante y espacios donde jugar”.",
+      "author": "Karla, 9 años de edad",
+      "imgPosition": "md:col-start-4 md:col-end-6 md:row-start-2 md:row-end-3",
+      "index": 4
+    },
+    {
+      "title": "El sueño de una casa morada",
+      "description": "“Una vez soñé unos campos grandes, con unas montañas verdes y en el fondo una casita morada. Esa si era mi casita, morada, como de cuento”.",
+      "author": "Margarita, 11 años de edad",
+      "imgPosition": "md:col-start-1 md:col-end-2 md:row-start-4 md:row-end-5",
+      "index": 5
+    },
+    {
+      "title": "Mi casa y la vida en recortes",
+      "description": "“Nos hemos movido tantas veces de casa, que cada parte del papel es una de esas. No tenemos una pero espero con ansias tenerla, pintarla. Me acordaré de todas”.",
+      "author": "Marina, 16 años de edad",
+      "imgPosition": "md:col-start-2 md:col-end-4 md:row-start-4 md:row-end-5",
+      "index": 6
+    },
+    {
+      "title": "Una casa con piscina",
+      "description": "“Quiero que nuestra casa sea grande, con piscina para poder jugar con mi hermana y tener espacio para movernos”.",
+      "author": "Fernando, 9 años de edad",
+      "imgPosition": "md:col-start-3 md:col-end-5 md:row-start-1 md:row-end-2",
+      "index": 7
+    },
+    {
+      "title": "El sol radiante y el cielo azul",
+      "description": "“Yo sueño con llegar a un lugar como donde jugaba cuando estaba pequeño. Con un sol fuerte y el cielo azul, azulito. Y una casa grande donde quepamos todos”.",
+      "author": "Marcos, 14 años de edad",
+      "imgPosition": "md:col-start-1 md:col-end-4 md:row-start-5 md:row-end-6",
+      "index": 8
+    },
+    {
+      "title": "La casa trasplantada",
+      "description": "“Lo que yo quisiera es poder llevarme mi casa. No se donde iremos, pero no quisiera dejarla, quisiera poder llevármela conmigo”.",
+      "author": "Antonio, 7 años de edad",
+      "imgPosition": "md:col-start-4 md:col-end-6 md:row-start-5 md:row-end-6",
+      "index": 9
+    }
+  ]
+}

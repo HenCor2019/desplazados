@@ -11,5 +11,5 @@ export {
   supportBanner_en,
   supportBanner_es,
   supportPortInnerBanner_en,
-  supportPortInnerBanner_es
-}
+  supportPortInnerBanner_es,
+};

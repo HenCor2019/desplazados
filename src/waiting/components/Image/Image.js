@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import playButton from 'shared/assets/images/video/playbutton.png';
-import SimpleVideoPlayer from '../../../Components/VideoPlayer/SimpleVideoPlayer';
+import SimpleVideoPlayer from 'shared/components/VideoPlayer/SimpleVideoPlayer';
 
-function Image({ img, alt, position, isMobile, video, handleOnClick }) {
+function Image({
+  img, alt, position, isMobile, video, handleOnClick,
+}) {
   const ComponentToShow = isMobile ? Video : ImageOfVideo;
 
   return (
@@ -16,7 +18,9 @@ function Image({ img, alt, position, isMobile, video, handleOnClick }) {
   );
 }
 
-function Video({ img, alt, position, video }) {
+function Video({
+  img, alt, position, video,
+}) {
   return (
     <div className={`flex ${position} relative h-72 px-2 sm:h-auto sm:px-0`}>
       <SimpleVideoPlayer embedId={video.embedId} />
@@ -24,7 +28,9 @@ function Video({ img, alt, position, video }) {
   );
 }
 
-function ImageOfVideo({ img, alt, position, video, handleOnClick }) {
+function ImageOfVideo({
+  img, alt, position, video, handleOnClick,
+}) {
   const [isImageHover, setIsImageHover] = useState(false);
 
   return (
@@ -38,18 +44,20 @@ function ImageOfVideo({ img, alt, position, video, handleOnClick }) {
         alt={alt}
         className="cursor-pointer w-9/12 sm:w-10/12 md:w-full lg:w-80 object-contain w-full"
         onClick={() => handleOnClick(video)}
-        loading={'lazy'}
+        loading="lazy"
       />
-      {isImageHover &&
+      {isImageHover
+        && (
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
           <img
             src={playButton}
-            alt={'playButton'}
+            alt="playButton"
             className="cursor-pointer w-4/12 md:w-5/12 object-contain"
-            loading={'lazy'}
+            loading="lazy"
             onClick={() => handleOnClick(video)}
           />
-        </div>}
+        </div>
+        )}
     </div>
   );
 }

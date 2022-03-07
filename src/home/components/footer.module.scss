@@ -1,0 +1,9 @@
+.Home__TranslateButtons {
+  margin-right: 5px;
+  margin-bottom: 3px;
+  @media (min-width: 1280px) {
+    left: auto;
+    right: 20px;
+    bottom: 15vh;
+  }
+}

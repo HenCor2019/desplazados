@@ -1,18 +1,18 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from 'react';
 
-import useWindowsDimensions from "../../../Hooks/UseWindowsDimensions";
-import useOnClickOutside from "../../../Hooks/UseOnClickOutside";
+import useWindowsDimensions from '../../../Hooks/UseWindowsDimensions';
+import useOnClickOutside from '../../../Hooks/UseOnClickOutside';
 
-import { useConfigContext } from "../../../contexts/ConfigContext";
+import { useConfigContext } from '../../../contexts/ConfigContext';
 
-const Hoverable = ({
+function Hoverable({
   onHoverIn = () => {},
   onHoverOut = () => {},
   onClick = () => {},
   doubleTap = false,
-  HtmlTag = "div",
+  HtmlTag = 'div',
   ...rest
-}) => {
+}) {
   const mainRef = useRef();
 
   const { isTouchable } = useConfigContext();
@@ -41,13 +41,11 @@ const Hoverable = ({
   const onClickHandler = (e) => {
     if (!isTouchable) {
       onClick();
+    } else if (!isClicked && doubleTap) {
+      setIsClicked(true);
     } else {
-      if (!isClicked && doubleTap) {
-        setIsClicked(true);
-      } else {
-        setIsClicked(false);
-        onClick();
-      }
+      setIsClicked(false);
+      onClick();
     }
   };
 
@@ -60,6 +58,6 @@ const Hoverable = ({
       onClick={onClickHandler}
     />
   );
-};
+}
 
 export default Hoverable;

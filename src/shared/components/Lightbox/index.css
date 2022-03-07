@@ -1,0 +1,31 @@
+.lightbox-image {
+  background-image: url('../../assets/images/lightbox/Image/background_gallery.png');
+  background-image: url('../../assets/images/lightbox/Image/background_gallery.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-close {
+  background-image: url('../../assets/images/lightbox/cerrar_button.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.lightbox-video-container {
+  background-image: url('../../assets/images/lightbox/Video/background_video.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lightbox-video-title {
+  background-image: url('../../assets/images/lightbox/Video/background_video_title.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

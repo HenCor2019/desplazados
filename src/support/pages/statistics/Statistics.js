@@ -1,22 +1,21 @@
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
+import { LazySection } from 'shared/components/LazySection/LazySection';
 import StatisticsInfo from './StatisticsInfo';
 
-import title_es from '../../assets/images/statistics/es/statistics-title_es.png'
-import timeline1_es from '../../assets/images/statistics/es/timeline-1_es.png'
-import timeline2_es from '../../assets/images/statistics/es/timeline-2_es.png'
-import chart1_es from '../../assets/images/statistics/es/chart-1_es.png'
-import chart2_es from '../../assets/images/statistics/es/chart-2_es.png'
-import chart3_es from '../../assets/images/statistics/es/chart-3_es.png'
+import title_es from '../../assets/images/statistics/es/statistics-title_es.png';
+import timeline1_es from '../../assets/images/statistics/es/timeline-1_es.png';
+import timeline2_es from '../../assets/images/statistics/es/timeline-2_es.png';
+import chart1_es from '../../assets/images/statistics/es/chart-1_es.png';
+import chart2_es from '../../assets/images/statistics/es/chart-2_es.png';
+import chart3_es from '../../assets/images/statistics/es/chart-3_es.png';
 
-import title_en from '../../assets/images/statistics/en/statistics-title_en.png'
-import timeline1_en from '../../assets/images/statistics/en/timeline-1_en.png'
-import timeline2_en from '../../assets/images/statistics/en/timeline-2_en.png'
-import chart1_en from '../../assets/images/statistics/en/chart-1_en.png'
-import chart2_en from '../../assets/images/statistics/en/chart-2_en.png'
-import chart3_en from '../../assets/images/statistics/en/chart-3_en.png'
-
-import { LazySection } from 'shared/components/LazySection/LazySection';
+import title_en from '../../assets/images/statistics/en/statistics-title_en.png';
+import timeline1_en from '../../assets/images/statistics/en/timeline-1_en.png';
+import timeline2_en from '../../assets/images/statistics/en/timeline-2_en.png';
+import chart1_en from '../../assets/images/statistics/en/chart-1_en.png';
+import chart2_en from '../../assets/images/statistics/en/chart-2_en.png';
+import chart3_en from '../../assets/images/statistics/en/chart-3_en.png';
 
 function Statistics() {
   const [t] = useTranslation('supportStatistics');
@@ -64,8 +63,7 @@ function Statistics() {
         description={t('statisticsServices')}
       />
     </main>
-  )
+  );
 }
 
-export default LazySection(Statistics)
-
+export default LazySection(Statistics);

@@ -1,0 +1,76 @@
+{
+  "message": "The colors, watercolors, plasticine, origami, collage. They reveal what are the most genuine dreams of the children that go through a forced displacement situation because of violence.",
+  "photos": [
+    {
+      "title": "Gardens full of life",
+      "description": "“My sisters and I love to play, that's why I would love to have a big garden to play tag”.",
+      "author": "Juan, 13 years old",
+      "imgPosition": "md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2",
+      "index": 0
+    },
+    {
+      "title": "Watercolor for the future",
+      "description": "“I am nervous, I wonder how our house will be like. I could paint it just like this one; I am going to miss it”.",
+      "author": "Jorge, 14 years old",
+      "imgPosition": "md:col-start-4 md:col-end-6 md:row-start-3 md:row-end-5",
+      "index": 1
+    },
+    {
+      "title": "Pink home",
+      "description": "“I would like to move into a pink house with lots of space, with a big backyard, so we can be all together”",
+      "author": "Yesica, 15 years old",
+      "imgPosition": "md:col-start-5 md:col-end-6 md:row-start-1 md:row-end-2",
+      "isCauseGallery": true,
+      "index": 2
+    },
+    {
+      "title": "Green as hope",
+      "description": "“I searched through the Internet, and this is the house that I liked the most, green is my favorite color”",
+      "author": "José, 16 years old",
+      "imgPosition": "md:col-start-1 md:col-end-4 md:row-start-2 md:row-end-4",
+      "index": 3
+    },
+    {
+      "title": "A home with colors",
+      "description": "“A house with my mom, my dad, a bright sun and places to play”.",
+      "author": "Karla, 9 years old",
+      "imgPosition": "md:col-start-4 md:col-end-6 md:row-start-2 md:row-end-3",
+      "index": 4
+    },
+    {
+      "title": "The dream about a purple house",
+      "description": "“Once I dreamt about these big fields, with green mountains and, at the end, a purple house. That sure was my little house, purple, as in a fairy tale”.",
+      "author": "Margarita, 11 years old",
+      "imgPosition": "md:col-start-1 md:col-end-2 md:row-start-4 md:row-end-5",
+      "index": 5
+    },
+    {
+      "title": "My house and life in a scrapbook",
+      "description": "“We have moved from home to home so many times, that every portion of the paper is one of them. We don’t have one, but I’m looking forward to; to paint it. I will remember all of them”.",
+      "author": "Marina, 16 years old",
+      "imgPosition": "md:col-start-2 md:col-end-4 md:row-start-4 md:row-end-5",
+      "index": 6
+    },
+    {
+      "title": "A house with a pool",
+      "description": "“I want our house to be big, with a pool to be able to play with my sister, and to have lots of space”.",
+      "author": "Fernando, 9 years old",
+      "imgPosition": "md:col-start-3 md:col-end-5 md:row-start-1 md:row-end-2",
+      "index": 7
+    },
+    {
+      "title": "Bright sun, blue sky",
+      "description": "“I dream about arriving to a place like the one I used to play at when I was a little child. With a bright sun and a blue sky, so blue. And a house big enough for all of us”.",
+      "author": "Marcos, 14 years old",
+      "imgPosition": "md:col-start-1 md:col-end-4 md:row-start-5 md:row-end-6",
+      "index": 8
+    },
+    {
+      "title": "A house to go",
+      "description": "“I would like to take my house with me. I don’t know where we will go, but I wish I did not have to leave it; I wish I could take it with me”.",
+      "author": "Antonio, 7 years old",
+      "imgPosition": "md:col-start-4 md:col-end-6 md:row-start-5 md:row-end-6",
+      "index": 9
+    }
+  ]
+}

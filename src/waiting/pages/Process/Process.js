@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import Subtitle from 'waiting/components/Subtitle/subtitle';
 import Image from 'waiting/components/ImageArrow/image';
 
@@ -20,14 +18,8 @@ import { useTranslation } from 'react-i18next';
 
 import { LazySection } from 'shared/components/LazySection/LazySection';
 
-function WaitingTimeProcess() {
+function TimeProcess() {
   const [t] = useTranslation('waitingPagesProcessProcess');
-
-  const [selectedTab, setSelectedTab] = useState(i18next.language == 'en' ? Image1_en : Image1_es);
-
-  function onClickHandler(currentImage) {
-    setSelectedTab(currentImage);
-  }
 
   return (
     <div className="flex justify-center items-center flex-rigid">
@@ -39,18 +31,19 @@ function WaitingTimeProcess() {
           {t('title')}
         </h1>
         <Subtitle name={t('firstStep')} color="#F76856" />
-        <Image src={i18next.language == 'en' ? Image5_en : Image5_es} alt={t('firstStep')} />
+        <Image src={i18next.language === 'en' ? Image5_en : Image5_es} alt={t('firstStep')} />
         <Subtitle name={t('secondStep')} color="#3722FF" />
-        <Image src={i18next.language == 'en' ? Image4_en : Image4_es} alt={t('secondStep')} />
+        <Image src={i18next.language === 'en' ? Image4_en : Image4_es} alt={t('secondStep')} />
         <Subtitle name={t('thirdStep')} color="#2D0775" />
-        <Image src={i18next.language == 'en' ? Image3_en : Image3_es} alt={t('thirdStep')} />
+        <Image src={i18next.language === 'en' ? Image3_en : Image3_es} alt={t('thirdStep')} />
         <Subtitle name={t('fourthStep')} color="#FF881F" />
-        <Image src={i18next.language == 'en' ? Image2_en : Image2_es} alt={t('fourthStep')} />
+        <Image src={i18next.language === 'en' ? Image2_en : Image2_es} alt={t('fourthStep')} />
         <Subtitle name={t('fifthStep')} color="#009BF9" />
-        <Image src={i18next.language == 'en' ? Image1_en : Image1_es} alt={t('fifthStep')} />
+        <Image src={i18next.language === 'en' ? Image1_en : Image1_es} alt={t('fifthStep')} />
       </div>
     </div>
   );
 }
 
-export default LazySection(WaitingTimeProcess);
+const WaitingTimeProcess = LazySection(TimeProcess);
+export { WaitingTimeProcess };
