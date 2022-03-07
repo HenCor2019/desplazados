@@ -1,0 +1,53 @@
+{
+  "message": "When families leave their home because of violence, they cannot take with them many of their personal belongings. Sometimes they relocate themselves through their own means, sometimes it is necessary to go to a shelter. What is like to live in this reality through the eyes of a child?",
+  "colorSteps": {
+    "title": "Color steps",
+    "description": "“These are my shoes, the ones I use every day to play in my house”.",
+    "author": "Dani, 9 years old."
+  },
+  "tastySoup": {
+    "title": "Tasty soup",
+    "description": "“This is my mom’s cooking pot where she makes chicken soup… she makes it so tasty”.",
+    "author": "José, 14 years old."
+  },
+  "eggsForBreakfast": {
+    "title": "Eggs for breakfast",
+    "description": "“My mom makes egg sandwiches for breakfast; she makes them with sauce, eggs, cheese and bread”.",
+    "author": "Flor, ten years old."
+  },
+  "newLives": {
+    "title": "New lives",
+    "description": "“My mom and I started sowing the seeds of a papaya that was sweet and it worked”.",
+    "author": "Alberto, 15 years old."
+  },
+  "homeGeometry": {
+    "title": "Home geometry",
+    "description": "“This is the door of the house where we live, we keep it closed most of the time”.",
+    "author": "Carlos, 13 years old."
+  },
+  "visibleLimits": {
+    "title": "Visible limits",
+    "description": "“In the space where we are there is just room for a bunk bed and a closet, we all sleep on the bunk bed, my mom, my dad, my sister and I; there is not much room”.",
+    "author": "Alex, 14 years old."
+  },
+  "BaluTheDog": {
+    "title": "Balu the dog",
+    "description": "“My grandmother gave it to me, he has many colors because he is happy”.",
+    "author": "Valeria, 12 years old."
+  },
+  "KatiCat": {
+    "title": "Kati Cat",
+    "description": "“This is my favorite stuffed animal; I like cats, he sleeps with me”.",
+    "author": "Karla, 9 years old."
+  },
+  "oralDiscipline": {
+    "title": "Oral discipline",
+    "description": "“My dad always tells us to brush our teeth at night”.",
+    "author": "Jonathan, 11 years old."
+  },
+  "frozenFruits": {
+    "title": "Frozen fruits",
+    "description": "“Sometimes in the afternoon we take out the frozen fruits from the fridge and we eat it like that, we like frozen fruit”.",
+    "author": "Camila, 13 years old."
+  }
+}

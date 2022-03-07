@@ -1,0 +1,178 @@
+.active-song,
+.rhap_progress-section,
+.audio-player svg {
+  color: red;
+}
+
+/* .rhap_main {
+  width: 90%;
+  margin: auto;
+} */
+
+.rhap_container {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  width: 100%;
+  margin: auto;
+}
+
+.rhap_bar-color,
+.rhap_progress-bar > [class^='rhap_progress'],
+.rhap_volume-indicator {
+  background-color: red;
+}
+
+.rhap_container {
+  padding: 0;
+}
+
+.rhap_volume-bar {
+  background-color: rgba(255, 0, 0, 0.4);
+
+}
+
+.rhap_volume-bar-area {
+  display: none;
+}
+
+/* Poadcast styles */
+.audio-player-image-default {
+  width: 100%;
+  max-width: 160px;
+  height: 100%;
+  max-height: 130px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  background: url(../images/poadcast/default-audio.svg) no-repeat center / 50%;
+}
+
+.audio-player-image-default::before {
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  width: auto;
+  content: 'music';
+  font-size: 48px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.audio-player-image-default::after {
+  top: 0;
+  left: 0;
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: linear-gradient(to bottom, #ccbfa873, #8a6d3b59);
+}
+
+@media screen and(min-width: 768px) {
+  .audio-player-image-default {
+    width: 100%;
+    max-width: 216px;
+    height: 100%;
+    max-height: 190px;
+  }
+
+  .audio-player-image-default::before {
+    font-size: 68px;
+  }
+}
+
+/* @media (min-width: 300px) {
+  .audio-player-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+  .audio-player-container {
+    width: 86%;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 500px) {
+  .audio-player-container {
+    width: 82%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 560px) {
+  .audio-player-container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 640px) {
+  .audio-player-container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 640px) {
+  .audio-player-container {
+    width: 75%;
+  }
+
+  .rhap_main-controls {
+    padding: 0 0 0 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .rhap_main-controls {
+    padding: 0 0 0 1.5rem;
+  }
+
+  .rhap_container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .rhap_container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rhap_main-controls {
+    padding: 0 0 0 1.3rem;
+  }
+  .rhap_container {
+    width: 95%;
+  }
+
+@media (min-width: 1440px) {
+  .rhap_container {
+    width: 89%;
+  }
+}
+
+  .audio-player-container {
+    width: 96%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .rhap_main-controls {
+    padding: 0 0 0 1.4rem;
+  }
+
+  .audio-player-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 3000px) {
+  .rhap_main-controls {
+    padding: 0 0 0 1.4rem;
+  }
+
+  .audio-player-container {
+    width: 70%;
+  }
+} */

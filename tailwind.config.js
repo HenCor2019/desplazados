@@ -86,7 +86,7 @@ module.exports = {
         'gray-200': '#c5c5c5',
         'brownie-gray': '#dddcdb',
         'black-700': '#444242',
-        'brownie-gray': '#dddcdb',
+        'brownie-gray-700': '#cfcdcc',
         'gray-500': '#9a999e',
         'gray-gallery': '#6b6b6b',
         cause: '#1fa737'

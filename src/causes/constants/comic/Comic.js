@@ -1,12 +1,12 @@
-import ComicZero from '../../../assets/images/Comic/cover.png'
-import ComicOne from '../../../assets/images/Comic/layer_1.png'
-import ComicTwo from '../../../assets/images/Comic/layer_2.png'
-import ComicThree from '../../../assets/images/Comic/layer_3.png'
-import ComicFour from '../../../assets/images/Comic/layer_4.png'
-import ComicFive from '../../../assets/images/Comic/layer_5.png'
-import ComicSix from '../../../assets/images/Comic/layer_6.png'
-import ComicSeven from '../../../assets/images/Comic/layer_7.png'
-import ComicEight from '../../../assets/images/Comic/back.png'
+import ComicZero from 'causes/assets/images/comic/cover.png'
+import ComicOne from 'causes/assets/images/comic/layer_1.png'
+import ComicTwo from 'causes/assets/images/comic/layer_2.png'
+import ComicThree from 'causes/assets/images/comic/layer_3.png'
+import ComicFour from 'causes/assets/images/comic/layer_4.png'
+import ComicFive from 'causes/assets/images/comic/layer_5.png'
+import ComicSix from 'causes/assets/images/comic/layer_6.png'
+import ComicSeven from 'causes/assets/images/comic/layer_7.png'
+import ComicEight from 'causes/assets/images/comic/back.png'
 
 export const comicImages = [
   {
