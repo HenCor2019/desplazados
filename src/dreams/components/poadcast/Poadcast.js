@@ -68,13 +68,6 @@ export default (function Poadcast() {
     <main className="sm:flex sm:justify-center sm:items-center h-auto w-full">
       <section className="grid grid-flow-row-dense w-full h-auto grid-cols-1 lg:grid-cols-3">
         <div className="relative w-full h-full grid grid-cols-1 grid-flow-row order-5 md:my-2 lg:m-0 lg:col-span-2">
-          <div className="absolute top-1 sm:relative z-20 flex justify-center items-center lg:hidden w-full">
-            <img
-              src={QueSoniamos}
-              className="sm:relative sm:bottom-auto sm:transform-none w-40 sm:w-80 md:w-80 lg:w-64 object-contain"
-              alt="¿Que soñamos?"
-            />
-          </div>
           <div className="flex-col items-center w-fit p-2/3">
             <div style={poadcastPlayerStyle} className="w-full h-2/3">
               <div className="audio-player flex justify-center items-center h-full w-full">
@@ -85,8 +78,8 @@ export default (function Poadcast() {
                   alt={activeAudio.title}
                 />
                 </div>
-                <div className="audio-player-container">
-                <p className="w-fit font-sans text-sm md:text-sm lg:text-base text-center">
+                <div className="audio-player-container w-1/3 lg:w-25 lg:pr-12">
+                <p className="font-sans text-sm md:text-sm lg:text-base text-justify">
                   {activeAudio.title}
                 </p>
                   <AudioPlayer
@@ -105,7 +98,7 @@ export default (function Poadcast() {
                 </div>
               </div>
             </div>
-              <div className="flex flex-col justify-center items-center content-center w-10/12 m-4 ml-20">
+              <div className="flex flex-col justify-center items-center content-center w-10/12 ml-20">
               {audios.map((audio) => (
                 <div
                   className={`${
@@ -114,8 +107,8 @@ export default (function Poadcast() {
                   onClick={() => setActiveAudio(audio)}
                   key={audio.title}
                 >
-                  <img src={PlayButton} className="w-10" alt="PlayButton" />
-                  <span className="font-sans ml-10">{audio.title}</span>
+                  <img src={PlayButton} className="w-12" alt="PlayButton" />
+                  <span className="font-sans font-bold ml-10">{audio.title}</span>
                 </div>
               ))}
             </div>
