@@ -26,10 +26,9 @@ export default (function Poadcast() {
   const audiosWithoutSrc = t('audios', { returnObjects: true });
   const audios = setAudios(audiosWithoutSrc);
   const [activeAudio, setActiveAudio] = useState(audios[0]);
-  console.log(activeAudio); 
 
   const customIcons = {
-    pause: <Pause className="h-10 w-10 cursor-pointer" />,
+    pause: <Pause className="h-10 w-10 cursor-pointer"  q/>,
     previous: (
       <Backward className="h-5 w-5 sm:h-9 sm:w-9 md:w-7 md:h-7 m-auto lg:w-9 lg:h-9 pl-1  cursor-pointer" />
     ),
@@ -81,7 +80,7 @@ export default (function Poadcast() {
                 </div>
                 <div className="audio-player-container w-2/3 sm:w-1/3 lg:w-25 lg:pr-12">
                 <p className="font-sans text-sm md:text-sm lg:text-base text-center pb-5">
-                  {activeAudio.message}
+                  {activeAudio.title}
                 </p>
                   <AudioPlayer
                     autoPlay
