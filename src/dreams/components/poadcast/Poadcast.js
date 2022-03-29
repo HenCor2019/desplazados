@@ -26,6 +26,7 @@ export default (function Poadcast() {
   const audiosWithoutSrc = t('audios', { returnObjects: true });
   const audios = setAudios(audiosWithoutSrc);
   const [activeAudio, setActiveAudio] = useState(audios[0]);
+  console.log(activeAudio); 
 
   const customIcons = {
     pause: <Pause className="h-10 w-10 cursor-pointer" />,
@@ -63,24 +64,24 @@ export default (function Poadcast() {
 
     setActiveAudio(audios[activeAudio.index - 1]);
   };
-  // grid grid-cols-1 grid-flow-row  sm:w-72 md:w-72 lg:w-64
+  
   return (
     <main className="sm:flex sm:justify-center sm:items-center h-auto w-full">
       <section className="grid grid-flow-row-dense w-full h-auto grid-cols-1 lg:grid-cols-3">
         <div className="relative w-full h-full grid grid-cols-1 grid-flow-row order-5 md:my-2 lg:m-0 lg:col-span-2">
           <div className="flex-col items-center w-fit p-2/3">
             <div style={poadcastPlayerStyle} className="w-full h-2/3">
-              <div className="audio-player flex justify-center items-center h-full w-full">
-                <div className='h-1/2 w-1/2'>
+              <div className="audio-player flex justify-center items-center h-full w-full flex-col lg:flex-row">
+                <div className='h-1/2 w-1/2 mb-4 lg:mb-0'>
                 <img
                   className="object-contain w-full h-full"
                   src={activeAudio.image}
                   alt={activeAudio.title}
                 />
                 </div>
-                <div className="audio-player-container w-1/3 lg:w-25 lg:pr-12">
-                <p className="font-sans text-sm md:text-sm lg:text-base text-justify">
-                  {activeAudio.title}
+                <div className="audio-player-container w-2/3 sm:w-1/3 lg:w-25 lg:pr-12">
+                <p className="font-sans text-sm md:text-sm lg:text-base text-center pb-5">
+                  {activeAudio.message}
                 </p>
                   <AudioPlayer
                     autoPlay
@@ -98,7 +99,7 @@ export default (function Poadcast() {
                 </div>
               </div>
             </div>
-              <div className="flex flex-col justify-center items-center content-center w-10/12 ml-20">
+              <div className="flex flex-col justify-center items-center content-center w-10/12 ml-6 lg:ml-20">
               {audios.map((audio) => (
                 <div
                   className={`${
@@ -114,7 +115,7 @@ export default (function Poadcast() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-start items-center order-5 mt-10">
+        <div className="class=flex flex-col justify-start items-center order-1 lg:order-5 lg:mt-10">
           <img
             src={QueSoniamos}
             className=""
@@ -124,8 +125,6 @@ export default (function Poadcast() {
           <p className="text-justify text-lg font-medium m-4 w-10/12">
             {t('message')}
           </p>
-
-          
         </div>
       </section>
     </main>

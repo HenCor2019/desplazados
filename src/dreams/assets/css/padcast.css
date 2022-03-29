@@ -18,7 +18,7 @@
 }
 
 .rhap_bar-color,
-.rhap_progress-bar > [class^='rhap_progress'],
+.rhap_progress-bar > [class^="rhap_progress"],
 .rhap_volume-indicator {
   background-color: red;
 }
@@ -29,7 +29,6 @@
 
 .rhap_volume-bar {
   background-color: rgba(255, 0, 0, 0.4);
-
 }
 
 .rhap_volume-bar-area {
@@ -53,7 +52,7 @@
   top: 30px;
   left: 10%;
   width: auto;
-  content: 'music';
+  content: "music";
   font-size: 48px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
@@ -62,7 +61,7 @@
 .audio-player-image-default::after {
   top: 0;
   left: 0;
-  content: '';
+  content: "";
   width: inherit;
   height: inherit;
   position: absolute;
@@ -79,6 +78,16 @@
 
   .audio-player-image-default::before {
     font-size: 68px;
+  }
+}
+
+.rhap_volume-container {
+  justify-content: flex-end;
+}
+
+@media screen and(min-width: 250px) {
+  .rhap_volume-container {
+    justify-content: flex-start;
   }
 }
 
