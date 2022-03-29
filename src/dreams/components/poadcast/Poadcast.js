@@ -25,8 +25,8 @@ export default (function Poadcast() {
   const [t] = useTranslation('dreamsPoadcastPage');
   const audiosWithoutSrc = t('audios', { returnObjects: true });
   const audios = setAudios(audiosWithoutSrc);
-  const [activeAudio, setActiveAudio] = useState(audios[0]);
-  console.log(activeAudio); 
+  const [index, setIndex] = useState(0)
+  const [activeAudio, setActiveAudio] = useState(audios[index]);
 
   const customIcons = {
     pause: <Pause className="h-10 w-10 cursor-pointer" />,
@@ -40,29 +40,35 @@ export default (function Poadcast() {
 
   const onEnded = () => {
     if (activeAudio.index === audios.length - 1) {
+      setIndex(0)
       setActiveAudio(audios[0]);
       return;
     }
 
+    setIndex(index + 1)
     setActiveAudio(audios[activeAudio.index + 1]);
   };
 
   const onNext = () => {
     if (activeAudio.index === audios.length - 1) {
+      setIndex(0)
       setActiveAudio(audios[0]);
       return;
     }
 
+    setIndex(index + 1)
     setActiveAudio(audios[activeAudio.index + 1]);
   };
 
   const onPrevious = () => {
     if (activeAudio.index === 0) {
+      setIndex(audios.length - 1)
       setActiveAudio(audios[audios.length - 1]);
       return;
     }
 
-    setActiveAudio(audios[activeAudio.index - 1]);
+    setIndex(index - 1)
+    setActiveAudio(audios[audios.length - 1]);
   };
   
   return (
@@ -75,13 +81,13 @@ export default (function Poadcast() {
                 <div className='h-1/2 w-1/2 mb-4 lg:mb-0'>
                 <img
                   className="object-contain w-full h-full"
-                  src={activeAudio.image}
-                  alt={activeAudio.title}
+                  src={audios[index].image}
+                  alt={audios[index].title}
                 />
                 </div>
                 <div className="audio-player-container w-2/3 sm:w-1/3 lg:w-25 lg:pr-12">
                 <p className="font-sans text-sm md:text-sm lg:text-base text-center pb-5">
-                  {activeAudio.message}
+                  {audios[index].title}
                 </p>
                   <AudioPlayer
                     autoPlay
