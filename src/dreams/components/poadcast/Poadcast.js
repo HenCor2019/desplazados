@@ -32,12 +32,12 @@ export default (function Poadcast() {
   const [activeAudio, setActiveAudio] = useState(audios[index]);
 
   const customIcons = {
-    pause: <Pause className="h-10 w-10 cursor-pointer"  q/>,
+    pause: <Pause className="h-10 w-10 cursor-pointer"/>,
     previous: (
-      <Backward className="h-5 w-5 sm:h-9 sm:w-9 md:w-7 md:h-7 m-auto lg:w-9 lg:h-9 pl-1  cursor-pointer" />
+      <Backward className="h-5 w-5 sm:h-9 sm:w-9 md:w-7 md:h-7 m-auto lg:w-9 lg:h-9 pl-1  cursor-pointer"/>
     ),
     next: (
-      <Forward className="h-5 w-5 sm:h-9 m-auto sm:w-9 md:w-7 md:h-7 lg:w-9 lg:h-9  pr-1 cursor-pointer" />
+      <Forward className="h-5 w-5 sm:h-9 m-auto sm:w-9 md:w-7 md:h-7 lg:w-9 lg:h-9  pr-1 cursor-pointer"/>
     ),
   };
 
@@ -89,7 +89,7 @@ export default (function Poadcast() {
                 />
                 </div>
                 <div className="audio-player-container w-2/3 sm:w-1/3 lg:w-25 lg:pr-12">
-                <p className="font-sans text-sm md:text-sm lg:text-base text-center pb-5">
+                <p className="font-sans text-sm md:text-sm lg:text-base text-center pb-5 md:pb-0">
                   {audios[index].title}
                 </p>
                   <AudioPlayer
@@ -124,7 +124,7 @@ export default (function Poadcast() {
             </div>
           </div>
         </div>
-        <div className="class=flex flex-col justify-start items-center order-1 lg:order-5 lg:mt-10">
+        <div className="flex flex-col justify-start items-center order-1 lg:order-5 lg:mt-10">
           <img
             src={i18next.language === 'en' ? QueSoniamosEN : QueSoniamos}
             className=""
