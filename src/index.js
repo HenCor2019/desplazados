@@ -44,6 +44,9 @@ import dreamsGallerySection_en from './translations/en/dreams/gallery/gallery.js
 import dreamsPoadcastSection_en from './translations/en/dreams/podcast/poadcast.json';
 import dreamsPoadcastSection_es from './translations/es/dreams/podcast/poadcast.json';
 
+import sharedSection_en from './translations/en/shared/sharedsection.json';
+import sharedSection_es from './translations/es/shared/sharedsection.json';
+
 i18next.init({
   interpolation: { escapeValue: false },
   lng: 'es',
@@ -65,6 +68,7 @@ i18next.init({
       dreamsGalleryPage: dreamsGallerySection_es,
       dreamsPoadcastPage: dreamsPoadcastSection_es,
       introduction: introduction_es,
+      sharedSection: sharedSection_es,
     },
     en: {
       homePageSectionHome: homePagesSectionHome_en,
@@ -83,6 +87,7 @@ i18next.init({
       dreamsGalleryPage: dreamsGallerySection_en,
       dreamsPoadcastPage: dreamsPoadcastSection_en,
       introduction: introduction_en,
+      sharedSection: sharedSection_en,
     },
   },
 });

@@ -43,18 +43,11 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
+  "browserslist": [
       ">0.2%",
       "not dead",
       "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  ],
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "gh-pages": "^3.2.3",
