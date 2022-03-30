@@ -6,7 +6,10 @@ import 'react-h5-audio-player/lib/styles.css';
 
 import Paper from '../../assets/images/poadcast/podcast-bg.png';
 import PlayButton from '../../assets/images/poadcast/play1.png';
+
 import QueSoniamos from '../../assets/images/poadcast/quesonamos.png';
+import QueSoniamosEN from '../../assets/images/poadcast/quesonamos_en.png';
+
 import { ReactComponent as Backward } from '../../../assets/svg/backward.svg';
 import { ReactComponent as Forward } from '../../../assets/svg/forward.svg';
 import { ReactComponent as Pause } from '../../../assets/svg/pause.svg';
@@ -123,7 +126,7 @@ export default (function Poadcast() {
         </div>
         <div className="class=flex flex-col justify-start items-center order-1 lg:order-5 lg:mt-10">
           <img
-            src={QueSoniamos}
+            src={i18next.language === 'en' ? QueSoniamosEN : QueSoniamos}
             className=""
             alt="¿Que soñamos?"
           />
