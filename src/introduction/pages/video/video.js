@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 export function YoutubeVideo() {
   const [t] = useTranslation('introduction');
-  const url = t('url') ?? 'https://youtu.be/H1OTcUY7vK4';
+  const url = t('url') ?? 'https://youtu.be/_ZogrnBdAUA';
   const [playing, setPlaying] = useState(false);
   const { push } = useHistory();
 
