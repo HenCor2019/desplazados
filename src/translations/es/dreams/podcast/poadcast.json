@@ -1,24 +1,29 @@
 {
   "message": "Mientras se encuentran en proceso de espera y reubicación las perspectivas de esperanza y futuro siempre están latentes entre las víctimas de desplazamiento forzado. Escuchemos algunas de ellas:",
-  "audios": [
+  "videos": [
     {
       "title": "“Una nueva oportunidad”",
+      "embedId": "oKhOxhzbswA",
       "index": 0
     },
     {
       "title": "“Deseo llevar una vida normal, como antes”",
+      "embedId": "-niq_nNGjqE",
       "index": 1
     },
     {
       "title": "“Paz, tranquilidad y seguridad”",
+      "embedId": "I__OyeUy_Eo",
       "index": 2
     },
     {
       "title": "“Cuando tenga el permiso de trabajar, luchar por mi vida”",
+      "embedId": "YRz3OONf_j8",
       "index": 3
     },
     {
       "title": "“Tenemos que salir adelante porque nos tenemos la una a la otra”",
+      "embedId": "oDsc0HqGlmw",
       "index": 4
     }
   ]
