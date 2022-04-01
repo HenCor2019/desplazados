@@ -44,11 +44,12 @@
     ]
   },
   "browserslist": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
   ],
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "autoprefixer": "^9.8.6",
     "gh-pages": "^3.2.3",
     "postcss": "^7.0.36",

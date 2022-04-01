@@ -80,8 +80,8 @@ export default (function Poadcast() {
       <section className="grid grid-flow-row-dense w-full h-auto grid-cols-1 lg:grid-cols-3">
         <div className="relative w-full h-full grid grid-cols-1 grid-flow-row order-5 md:my-2 lg:m-0 lg:col-span-2">
           <div className="flex-col items-center w-fit p-2/3">
-            <div style={poadcastPlayerStyle} className="flex justify-center items-center w-full h-2/3 bg-contain">
-              <div className='flex justify-center items-center w-11/12 py-4 px-3 sm:h-90/100 sm:px-14 sm:py-4 md:w-4/6 md:h-4/5 md:py-0 lg:w-full lg:px-6 xl:w-full xl:ml-24 xl:mr-16'>
+            <div style={poadcastPlayerStyle} className="flex justify-center items-center w-full h-full bg-contain lg:w-full">
+              <div className='flex justify-center items-center py-4 px-3 sm:h-90/100 sm:px-14 sm:py-4 md:w-4/6 md:h-4/5 md:py-0 lg:w-1/3 lg:px-6 xl:w-full xl:ml-36 xl:mr-32'>
                 <SimpleVideoPlayer
                   title='titulo'
                   embedId='YRz3OONf_j8'
@@ -97,7 +97,7 @@ export default (function Poadcast() {
                   onClick={() => setActiveAudio(audio)}
                   key={audio.title}
                 >
-                  <img src={PlayButton} className="w-12" alt="PlayButton" />
+                  <img src={PlayButton} className="w-12 xl:ml-28" alt="PlayButton" />
                   <span className="font-sans font-bold ml-10">{audio.title}</span>
                 </div>
               ))}
