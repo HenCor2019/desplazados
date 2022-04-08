@@ -13,7 +13,7 @@ import QueSoniamosEN from '../../assets/images/poadcast/quesonamos_en.png';
 import { ReactComponent as Backward } from '../../../assets/svg/backward.svg';
 import { ReactComponent as Forward } from '../../../assets/svg/forward.svg';
 import { ReactComponent as Pause } from '../../../assets/svg/pause.svg';
-import { setAudios } from '../../constants/podcast';
+import { audios, setAudios } from '../../constants/podcast';
 
 import '../../assets/css/padcast.css';
 import SimpleVideoPlayer from 'introduction/components/SimpleVideoPlayer';
@@ -27,9 +27,12 @@ const poadcastPlayerStyle = {
 
 export default (function Poadcast() {
   const [t] = useTranslation('dreamsPoadcastPage');
+  const audiosWithoutSrc = t('audios', { returnObjects: true });
+  const audios = setAudios(audiosWithoutSrc);
   const videos = t('videos', { returnObjects: true });
+  const [activeVideo, setActiveVideo] = useState(videos[index]);
   const [index, setIndex] = useState(0)
-  const [activeAudio, setActiveAudio] = useState(videos[index]);
+  const [activeAudio, setActiveAudio] = useState(audios[index]);
 
   const customIcons = {
     pause: <Pause className="h-10 w-10 cursor-pointer"/>,
@@ -41,38 +44,99 @@ export default (function Poadcast() {
     ),
   };
 
-  const onEnded = () => {
-    if (activeAudio.index === videos.length - 1) {
+  const onEndedVideo = () => {
+    if (activeVideo.index === videos.length - 1) {
       setIndex(0)
       setActiveAudio(videos[0]);
       return;
     }
 
     setIndex(index + 1)
-    setActiveAudio(videos[activeAudio.index + 1]);
+    setActiveAudio(audios[activeVideo.index + 1]);
+  };
+
+  const onEnded = () => {
+    if (activeAudio.index === audios.length - 1) {
+      setIndex(0)
+      setActiveAudio(audios[0]);
+      return;
+    }
+
+    setIndex(index + 1)
+    setActiveAudio(audios[activeAudio.index + 1]);
   };
 
   const onNext = () => {
-    if (activeAudio.index === videos.length - 1) {
+    if (activeAudio.index === audios.length - 1) {
       setIndex(0)
-      setActiveAudio(videos[0]);
+      setActiveAudio(audios[0]);
       return;
     }
 
     setIndex(index + 1)
-    setActiveAudio(videos[activeAudio.index + 1]);
+    setActiveAudio(audios[activeAudio.index + 1]);
   };
 
   const onPrevious = () => {
     if (activeAudio.index === 0) {
-      setIndex(videos.length - 1)
-      setActiveAudio(videos[videos.length - 1]);
+      setIndex(audios.length - 1)
+      setActiveAudio(audios[audios.length - 1]);
       return;
     }
 
     setIndex(index - 1)
-    setActiveAudio(videos[videos.length - 1]);
+    setActiveAudio(audios[audios.length - 1]);
   };
+
+  const poadcastVideo = () => {
+    return (
+      <SimpleVideoPlayer
+        title={activeAudio.title}
+        embedId={activeAudio.embedId}
+      />
+    );
+  }
+
+  const poadcastAudio = () => {
+    return (
+      <div className="flex flex-col justify-center items-center">
+        <div className='h-1/2 w-1/2 mb-4 lg:mb-0'>
+          <img
+            className="object-contain w-full h-full"
+            src={audios[index].image}
+            alt={audios[index].title}
+          />
+        </div>
+
+        <div className="audio-player-container w-2/3 sm:w-1/3 lg:w-25 lg:pr-12">
+          <p className="font-sans text-sm md:text-sm lg:text-base text-center pb-5 md:pb-0">
+          {audios[index].title}
+          </p>
+
+          <AudioPlayer
+            autoPlay
+            autoPlayAfterSrcChange
+            src={activeAudio.src}
+            onEnded={onEnded}
+            showJumpControls={false}
+            showSkipControls
+            customAdditionalControls={[RHAP_UI.LOOP]}
+            customVolumeControls={[RHAP_UI.VOLUME]}
+            onClickPrevious={onPrevious}
+            onClickNext={onNext}
+            customIcons={customIcons}
+            />
+        </div>
+      </div>  
+    );
+  }
+
+  const getPodcast = () => {
+    if (i18next.language === 'en') {
+      return poadcastVideo();
+    }
+    return poadcastAudio();
+  }
   
   return (
     <main className="sm:flex sm:justify-center sm:items-center h-auto w-full">
@@ -81,23 +145,24 @@ export default (function Poadcast() {
           <div className="flex-col items-center w-fit p-2/3">
             <div style={poadcastPlayerStyle} className="flex justify-center items-center w-full h-full bg-contain lg:w-full">
               <div className='flex justify-center items-center py-4 px-3 sm:h-90/100 sm:px-14 sm:py-4 md:w-4/6 md:h-4/5 md:py-0 lg:w-1/3 lg:px-6 xl:w-full xl:ml-40 xl:mr-32'>
-                <SimpleVideoPlayer
-                  title={activeAudio.title}
-                  embedId={activeAudio.embedId}
-                  />
+                <div className="flex flex-col justify-center items-center">
+                    <div className="flex flex-col justify-center items-center">
+                      {getPodcast()}
+                      </div> 
+                  </div>
               </div>
             </div>
               <div className="flex flex-col justify-center items-center content-center w-10/12 ml-6 lg:ml-20">
-              {videos.map((video) => (
+              {audios.map((audio) => (
                 <div
                   className={`${
-                    activeAudio.index === video.index ? 'active-song' : ''
+                    activeAudio.index === audio.index ? 'active-song' : ''
                   } flex flex-row justify-stretch items-center cursor-pointer w-full text-left m-2`}
-                  onClick={() => setActiveAudio(video)}
-                  key={video.title}
+                  onClick={() => setActiveAudio(audio)}
+                  key={audio.title}
                 >
-                  <img src={PlayButton} className="w-12 xl:ml-28" alt="PlayButton" />
-                  <span className="font-sans font-bold ml-10">{video.title}</span>
+                  <img src={PlayButton} className="w-12 xl:ml-28" alt="PlayButton"/>
+                  <span className="font-sans font-bold ml-10">{audio.title}</span>
                 </div>
               ))}
             </div>
@@ -118,3 +183,38 @@ export default (function Poadcast() {
     </main>
   );
 });
+/*
+ <SimpleVideoPlayer
+                  title={audios[index].image}
+                  embedId={audios[index].title}
+                  />
+                  */
+
+
+                  /* whole audio player thing
+                  <div className='h-1/2 w-1/2 mb-4 lg:mb-0'>
+                  <img
+                    className="object-contain w-full h-full"
+                    src={audios[index].image}
+                    alt={audios[index].title}
+                  />
+                </div>
+                <div className="audio-player-container w-2/3 sm:w-1/3 lg:w-25 lg:pr-12">
+                <p className="font-sans text-sm md:text-sm lg:text-base text-center pb-5 md:pb-0">
+                  {audios[index].title}
+                </p>
+                  <AudioPlayer
+                    autoPlay
+                    autoPlayAfterSrcChange
+                    src={activeAudio.src}
+                    onEnded={onEnded}
+                    showJumpControls={false}
+                    showSkipControls
+                    customAdditionalControls={[RHAP_UI.LOOP]}
+                    customVolumeControls={[RHAP_UI.VOLUME]}
+                    onClickPrevious={onPrevious}
+                    onClickNext={onNext}
+                    customIcons={customIcons}
+                  />
+                </div>
+                */
