@@ -91,12 +91,12 @@ export default (function Poadcast() {
 
  const poadcastVideo = () => {
   return (
-       <div className='flex justify-center items-center py-4 px-3 sm:h-90/100 sm:px-14 sm:py-4 md:w-4/6 md:h-4/5 md:py-0 lg:w-1/3 lg:px-6 xl:w-full'>
-   <SimpleVideoPlayer
-    title={activeAudio.title}
-    embedId={activeAudio.embedId}
-   />
-       </div>
+   <div className='flex justify-center items-center py-4 px-3 sm:h-90/100 sm:px-14 sm:py-4 md:w-4/6 md:h-4/5 md:py-0 lg:w-1/3 lg:px-6 xl:w-full xl:ml-40 xl:mr-32'>
+     <SimpleVideoPlayer
+      title={activeAudio.title}
+      embedId={activeAudio.embedId}
+     />
+   </div>
   );
  }
 
@@ -139,7 +139,7 @@ export default (function Poadcast() {
   return poadcastAudio();
  }
 
- const podcastWrapper = i18next.language === 'en' ?`flex justify-center items-center w-full h-full bg-contain lg:w-full xl:ml-40 xl:mr-32` : 'w-full h-2/3 flex justify-center flex-col md:flex-row'
+ const podcastWrapper = i18next.language === 'en' ?`flex justify-center items-center w-full h-full bg-contain lg:w-full` : 'w-full h-2/3 flex justify-center flex-col md:flex-row'
 
  return (
   <main className="sm:flex sm:justify-center sm:items-center h-auto w-full">
