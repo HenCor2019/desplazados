@@ -21,7 +21,7 @@ import SimpleVideoPlayer from 'introduction/components/SimpleVideoPlayer';
 const poadcastPlayerStyle = {
  backgroundImage: `url(${Paper})`,
  backgroundPosition: 'center',
- backgroundSize: 'contain',
+ backgroundSize: 'auto',
  backgroundRepeat: 'no-repeat',
 };
 
@@ -91,16 +91,18 @@ export default (function Poadcast() {
 
  const poadcastVideo = () => {
   return (
+       <div className='flex justify-center items-center py-4 px-3 sm:h-90/100 sm:px-14 sm:py-4 md:w-4/6 md:h-4/5 md:py-0 lg:w-1/3 lg:px-6 xl:w-full'>
    <SimpleVideoPlayer
     title={activeAudio.title}
     embedId={activeAudio.embedId}
    />
+       </div>
   );
  }
 
  const poadcastAudio = () => {
   return (
-   <div className="flex flex-col justify-center items-center">
+   <div className="audio-player flex justify-center items-center h-full w-full flex-col lg:flex-row">
     <div className='h-1/2 w-1/2 mb-4 lg:mb-0'>
      <img
       className="object-contain w-full h-full"
@@ -108,12 +110,10 @@ export default (function Poadcast() {
       alt={audios[index].title}
      />
     </div>
-
     <div className="audio-player-container w-2/3 sm:w-1/3 lg:w-25 lg:pr-12">
      <p className="font-sans text-sm md:text-sm lg:text-base text-center pb-5 md:pb-0">
       {audios[index].title}
      </p>
-
      <AudioPlayer
       autoPlay
       autoPlayAfterSrcChange
@@ -139,20 +139,14 @@ export default (function Poadcast() {
   return poadcastAudio();
  }
 
+ const podcastWrapper = i18next.language === 'en' ?`flex justify-center items-center w-full h-full bg-contain lg:w-full xl:ml-40 xl:mr-32` : 'w-full h-2/3 flex justify-center flex-col md:flex-row'
+
  return (
   <main className="sm:flex sm:justify-center sm:items-center h-auto w-full">
    <section className="grid grid-flow-row-dense w-full h-auto grid-cols-1 lg:grid-cols-3">
     <div className="relative w-full h-full grid grid-cols-1 grid-flow-row order-5 md:my-2 lg:m-0 lg:col-span-2">
      <div className="flex-col items-center w-fit p-2/3">
-      <div style={poadcastPlayerStyle} className="flex justify-center items-center w-full h-full bg-contain lg:w-full">
-       <div className='flex justify-center items-center py-4 px-3 sm:h-90/100 sm:px-14 sm:py-4 md:w-4/6 md:h-4/5 md:py-0 lg:w-1/3 lg:px-6 xl:w-full xl:ml-40 xl:mr-32'>
-        <div className="flex flex-col justify-center items-center">
-         <div className="flex flex-col justify-center items-center">
-          {getPodcast()}
-         </div>
-        </div>
-       </div>
-      </div>
+      <div style={poadcastPlayerStyle} className={podcastWrapper}>{getPodcast()}</div>
       <div className="flex flex-col justify-center items-center content-center w-10/12 ml-6 lg:ml-20">
        {audios.map((audio) => (
         <div
