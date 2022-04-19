@@ -29,11 +29,11 @@ export default (function Poadcast() {
  const [t] = useTranslation('dreamsPoadcastPage');
  const audiosWithoutSrc = t('audios', { returnObjects: true });
  const audios = setAudios(audiosWithoutSrc);
- const videos = t('videos', { returnObjects: true });
+ const videos = t('audios', { returnObjects: true });
  const [index, setIndex] = useState(0)
  const [activeVideo, setActiveVideo] = useState(videos[index]);
  const [activeAudio, setActiveAudio] = useState(audios[index]);
- console.log({ index, activeAudio })
+ console.log({ videos, activeVideo })
 
  const customIcons = {
   pause: <Pause className="h-10 w-10 cursor-pointer" />,
@@ -155,6 +155,7 @@ export default (function Poadcast() {
          onClick={() => {
                 setIndex(audio.index)
                 setActiveAudio(audio)
+                setActiveVideo(videos)
          }}
          key={audio.title}
         >
