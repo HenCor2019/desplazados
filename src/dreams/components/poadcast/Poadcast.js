@@ -91,17 +91,19 @@ export default (function Poadcast() {
 
  const poadcastVideo = () => {
   return (
+    <div className="h-full w-full">
    <SimpleVideoPlayer
     title={activeAudio.title}
     embedId={activeAudio.embedId}
    />
+   </div>
   );
  }
 
  const poadcastAudio = () => {
   return (
    <div className="flex flex-col justify-center items-center">
-    <div className='h-1/2 w-1/2 mb-4 lg:mb-0'>
+    <div className="h-1/2 w-1/2 pb-4 lg:mb-0">
      <img
       className="object-contain w-full h-full"
       src={audios[index].image}
@@ -109,11 +111,10 @@ export default (function Poadcast() {
      />
     </div>
 
-    <div className="audio-player-container w-2/3 sm:w-1/3 lg:w-25 lg:pr-12">
+    <div className="audio-player-container w-fit sm:w-1/3 lg:w-full lg:pr-12">
      <p className="font-sans text-sm md:text-sm lg:text-base text-center pb-5 md:pb-0">
       {audios[index].title}
      </p>
-
      <AudioPlayer
       autoPlay
       autoPlayAfterSrcChange
@@ -144,12 +145,10 @@ export default (function Poadcast() {
    <section className="grid grid-flow-row-dense w-full h-auto grid-cols-1 lg:grid-cols-3">
     <div className="relative w-full h-full grid grid-cols-1 grid-flow-row order-5 md:my-2 lg:m-0 lg:col-span-2">
      <div className="flex-col items-center w-fit p-2/3">
-      <div style={poadcastPlayerStyle} className="flex justify-center items-center w-full h-full bg-contain lg:w-full">
+      <div style={poadcastPlayerStyle} className="flex justify-center items-center w-full h-2/3 bg-contain lg:w-full">
        <div className='flex justify-center items-center py-4 px-3 sm:h-90/100 sm:px-14 sm:py-4 md:w-4/6 md:h-4/5 md:py-0 lg:w-1/3 lg:px-6 xl:w-full xl:ml-40 xl:mr-32'>
         <div className="flex flex-col justify-center items-center">
-         <div className="flex flex-col justify-center items-center">
           {getPodcast()}
-         </div>
         </div>
        </div>
       </div>
