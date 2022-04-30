@@ -1,4 +1,7 @@
-.active-song,
+.active-song {
+  text-decoration: underline;
+}
+
 .rhap_progress-section,
 .audio-player svg {
   color: red;

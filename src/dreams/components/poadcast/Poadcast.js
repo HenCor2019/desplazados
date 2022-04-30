@@ -91,7 +91,7 @@ export default (function Poadcast() {
 
  const poadcastVideo = () => {
   return (
-   <div className='flex justify-center items-center py-4 px-3 sm:h-90/100 sm:px-14 sm:py-4 md:w-4/6 md:h-4/5 md:py-0 lg:w-1/3 lg:px-6 xl:w-full xl:ml-40 xl:mr-32'>
+   <div className='sm:h-90/100 sm:px-11  md:w-full xl:w-full xl:ml-7 xl:mr-3 bg-cover'>
      <SimpleVideoPlayer
       title={activeAudio.title}
       embedId={activeAudio.embedId}
@@ -139,7 +139,7 @@ export default (function Poadcast() {
   return poadcastAudio();
  }
 
- const podcastWrapper = i18next.language === 'en' ?`flex justify-center items-center w-full h-full bg-contain lg:w-full` : 'w-full h-2/3 flex justify-center flex-col md:flex-row'
+ const podcastWrapper = i18next.language === 'en' ?`flex justify-center items-center w-full h-full bg-cover lg:w-full aspect-video` : 'w-full h-2/3 flex justify-center flex-col md:flex-row'
 
  return (
   <main className="sm:flex sm:justify-center sm:items-center h-auto w-full">
@@ -160,7 +160,7 @@ export default (function Poadcast() {
          key={audio.title}
         >
          <img src={PlayButton} className="w-12 xl:ml-28" alt="PlayButton" />
-         <span className="font-sans font-bold ml-10">{audio.title}</span>
+         <span className="font-sans ml-10">{audio.title}</span>
         </div>
        ))}
       </div>
@@ -173,7 +173,7 @@ export default (function Poadcast() {
       alt="¿Que soñamos?"
      />
 
-     <p className="text-justify text-lg font-medium m-4 w-10/12">
+     <p className="text-justify text-lg font-sans font-medium m-4 w-10/12">
       {t('message')}
      </p>
     </div>
