@@ -2,7 +2,7 @@
   width: 100%;
   background-image: url('../../../assets/images/poadcast/podcast-bg.png');
   background-repeat: no-repeat;
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 2rem 1rem 1.4rem 2rem;
 }
 
 .aspectRatio {
@@ -36,6 +36,6 @@
 
 @media(min-width: 1024px) {
   .wrapper {
-    padding: 3rem 2rem 2rem 3rem;
+    padding: 2rem 1.8rem 1.9rem 2.58rem;
   }
 }
