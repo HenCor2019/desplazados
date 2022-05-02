@@ -1,0 +1,87 @@
+:root {
+  --icon-size: 2.5rem;
+}
+.rhap_main.rhap_stacked {
+  margin: 4rem 0.21rem;
+}
+
+
+.rhap_main.rhap_stacked svg {
+  color: red;
+  font-size: var(--icon-size);
+}
+
+.customIcons {
+  color: red;
+  font-size: var(--icon-size);
+  cursor: pointer;
+}
+
+.rhap_button-clear svg {
+  color: red;
+  font-size: var(--icon-size);
+  cursor: pointer;
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.rhap_volume-button {
+  flex: auto;
+}
+
+.rhap_repeat-button, .rhap_main-controls-button, .rhap_volume-button {
+  width: auto;
+  height: auto;
+  font-size: var(--icon-size);
+  padding: 0.12rem;
+}
+
+.rhap_main.rhap_stacked .rhap_additional-controls {
+  height: 100%;
+}
+
+.rhap_controls-section {
+  margin: 0 0 0.54rem;
+
+}
+
+.rhap_progress-section {
+  margin: 0 0 0.54rem;
+  display: flex;
+  justify-content: center;
+}
+
+.rhap_volume-container {
+  justify-content: flex-end;
+}
+
+.rhap_progress-section,
+.audio-player svg {
+  color: red;
+}
+
+.rhap_container {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  width: 100%;
+  margin: auto;
+}
+
+.rhap_bar-color,
+.rhap_progress-bar > [class^="rhap_progress"],
+.rhap_volume-indicator {
+  background-color: red;
+}
+
+.rhap_container {
+  padding: 0;
+}
+
+.rhap_volume-bar {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.rhap_volume-bar-area {
+  display: none;
+}

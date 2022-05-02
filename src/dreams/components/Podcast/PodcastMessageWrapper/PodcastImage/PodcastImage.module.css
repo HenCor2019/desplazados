@@ -1,0 +1,17 @@
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.imgWrapper > img {
+  width: 70%;
+}
+
+@media(min-width: 1024px) {
+  .imgWrapper > img {
+    width: 90%;
+  }
+}

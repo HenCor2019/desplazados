@@ -68,7 +68,7 @@ import Reportages from './support/pages/reportage/Reportages';
 import Concepts from './support/pages/concepts/Concepts';
 import DreamsGallery from './dreams/pages/gallery';
 import Dreams from './dreams/pages/section/index';
-import Poadcast from './dreams/components/poadcast/Poadcast';
+import Podcast from './dreams/components/Podcast/Podcast';
 import { useTranslation } from "react-i18next";
 
 import './assets/css/index.css';
@@ -245,7 +245,7 @@ function App() {
 
         <Route exact path="/sueños/podcast">
           <Helmet>
-            <title> Desplazados - Poadcast </title>
+            <title> Desplazados - Podcast </title>
           </Helmet>
 
           <Section
@@ -260,7 +260,7 @@ function App() {
                 : DreamsPortBanner2
             }
           >
-            <Poadcast />
+            <Podcast />
           </Section>
         </Route>
 
