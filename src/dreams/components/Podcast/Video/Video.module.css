@@ -6,11 +6,10 @@
 }
 
 .aspectRatio {
-  --aspect-ratio: 16/9;
   position: relative;
   height: 0;
   width: 100%;
-  padding-bottom: calc(100%/(var(--aspect-ratio)));
+  padding-bottom: calc(100%/(16/9));
 }
 
 .aspectRatio > * {
