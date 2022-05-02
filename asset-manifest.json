@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/desplazados/static/css/main.b8e175a0.chunk.css",
-    "main.js": "/desplazados/static/js/main.ce518bf1.chunk.js",
-    "main.js.map": "/desplazados/static/js/main.ce518bf1.chunk.js.map",
+    "main.css": "/desplazados/static/css/main.9fe035c8.chunk.css",
+    "main.js": "/desplazados/static/js/main.3a421c7c.chunk.js",
+    "main.js.map": "/desplazados/static/js/main.3a421c7c.chunk.js.map",
     "runtime-main.js": "/desplazados/static/js/runtime-main.bce5cb8f.js",
     "runtime-main.js.map": "/desplazados/static/js/runtime-main.bce5cb8f.js.map",
     "static/css/2.9425160b.chunk.css": "/desplazados/static/css/2.9425160b.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.71371223.chunk.js.map": "/desplazados/static/js/3.71371223.chunk.js.map",
     "index.html": "/desplazados/index.html",
     "static/css/2.9425160b.chunk.css.map": "/desplazados/static/css/2.9425160b.chunk.css.map",
-    "static/css/main.b8e175a0.chunk.css.map": "/desplazados/static/css/main.b8e175a0.chunk.css.map",
+    "static/css/main.9fe035c8.chunk.css.map": "/desplazados/static/css/main.9fe035c8.chunk.css.map",
     "static/js/2.2abedb36.chunk.js.LICENSE.txt": "/desplazados/static/js/2.2abedb36.chunk.js.LICENSE.txt",
     "static/media/1.56867071.png": "/desplazados/static/media/1.56867071.png",
     "static/media/1.99020f93.png": "/desplazados/static/media/1.99020f93.png",
@@ -239,6 +239,7 @@
     "static/media/process_en.5d79b96d.png": "/desplazados/static/media/process_en.5d79b96d.png",
     "static/media/process_es.ff9851f7.png": "/desplazados/static/media/process_es.ff9851f7.png",
     "static/media/quesonamos.79930a07.png": "/desplazados/static/media/quesonamos.79930a07.png",
+    "static/media/quesonamos_en.42858f20.png": "/desplazados/static/media/quesonamos_en.42858f20.png",
     "static/media/reportage-banner_en.bed13e85.png": "/desplazados/static/media/reportage-banner_en.bed13e85.png",
     "static/media/reportage-banner_es.4f0af439.png": "/desplazados/static/media/reportage-banner_es.4f0af439.png",
     "static/media/reportage_en.c033a5a3.png": "/desplazados/static/media/reportage_en.c033a5a3.png",
@@ -280,7 +281,7 @@
     "static/js/runtime-main.bce5cb8f.js",
     "static/css/2.9425160b.chunk.css",
     "static/js/2.2abedb36.chunk.js",
-    "static/css/main.b8e175a0.chunk.css",
-    "static/js/main.ce518bf1.chunk.js"
+    "static/css/main.9fe035c8.chunk.css",
+    "static/js/main.3a421c7c.chunk.js"
   ]
 }
