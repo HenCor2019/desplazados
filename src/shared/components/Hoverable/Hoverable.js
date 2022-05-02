@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import useWindowsDimensions from '../../../Hooks/UseWindowsDimensions';
 import useOnClickOutside from '../../../Hooks/UseOnClickOutside';
 
 import { useConfigContext } from '../../../contexts/ConfigContext';
