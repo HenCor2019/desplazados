@@ -1,0 +1,42 @@
+.wrapper {
+  width: 100%;
+  background-image: url('../../../assets/images/poadcast/podcast-bg.png');
+  background-repeat: no-repeat;
+  padding: 2rem 1rem 2rem 2rem;
+}
+
+.aspectRatio {
+  --aspect-ratio: 16/9;
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: calc(100%/(var(--aspect-ratio)));
+}
+
+.aspectRatio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media(min-width: 650px) {
+  .wrapper {
+    padding: 4rem 4.5rem 2rem;
+  }
+}
+
+@media(min-width: 850px) {
+  .wrapper {
+    padding: 4rem 4.5rem 2rem;
+    background-size: cover;
+  }
+}
+
+@media(min-width: 1024px) {
+  .wrapper {
+    padding: 3rem 2rem 2rem 3rem;
+  }
+}

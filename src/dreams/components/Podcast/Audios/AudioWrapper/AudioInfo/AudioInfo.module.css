@@ -10,9 +10,24 @@
 }
 
 .imgWrapper{
-  width: 30%;
+  width: 20%;
 }
 
 .titleWrapper{
-  width: 70%;
+  width: 80%;
+}
+
+@media(min-width: 650px) {
+  .imgWrapper{
+    width: 10%;
+  }
+
+  .titleWrapper{
+    width: 70%;
+  }
+
+  .item{
+    gap: 0.32rem;
+    justify-content: flex-start;
+  }
 }
