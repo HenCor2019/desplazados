@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  padding: 1rem;
+}
+
+.message {
+  font-size: 1.30rem;
+  font-weight: 500;
+  color: rgba(0,0,0,0.88);
+  font-family: Another Typewriter,sans-serif;
+}

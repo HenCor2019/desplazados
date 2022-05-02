@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function SimpleVideoPlayer({ embedId, title }) {
   return (
     <iframe
-      className="w-full h-full"
+      className="w-full h-full aspect-video"
       width="auto"
       height="auto"
       src={`https://www.youtube.com/embed/${embedId}`}

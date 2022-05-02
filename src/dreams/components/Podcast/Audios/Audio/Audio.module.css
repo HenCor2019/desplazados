@@ -1,0 +1,53 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.54rem;
+  background-image: url('../../../../assets/images/poadcast/Papel.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Another Typewriter,sans-serif;
+}
+
+.wrapper .imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 1rem;
+}
+
+.wrapper .imgWrapper > img {
+  width: 90%;
+}
+
+.wrapper .audioWrapper {
+  width: 70%;
+}
+
+
+.innerWrapper {
+  width: 100%;
+}
+
+.title {
+  font-size: 1.12rem;
+  align-self: center;
+  width: 80%;
+  text-align: center;
+  margin: 0.342rem 0 0 0.21rem;
+  padding-left: 0.5rem;
+}
+
+@media(min-width: 600px)  {
+  .wrapper .imgWrapper > img {
+    width: 70%;
+  }
+
+  .wrapper {
+    width: 70%;
+  }
+}
