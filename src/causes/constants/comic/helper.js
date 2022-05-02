@@ -73,6 +73,5 @@ const comicImages = [
 
 export const addComicImages = (comic = [], lan = 'es') => comic.map((image, index) => {
   const src = comicImages[index][lan] ?? comicImages[index].default;
-  console.log({ image, src, lan });
   return { ...image, src };
 });

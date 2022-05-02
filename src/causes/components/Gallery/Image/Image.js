@@ -8,7 +8,6 @@ export function GalleryImage({
 
   const { sm = 'sm:col-start-1 sm:col-end-3' } = cols;
 
-  console.log({ source });
   return (
     <div className={`${sm} ${cols.md} ${rows.md} order-5`}>
       <div className="w-full sm:grid sm:grid-cols-2 md:block h-full text-gray-700 overflow-hidden">

@@ -15,6 +15,7 @@
 
 .titleWrapper{
   width: 80%;
+  cursor: pointer;
 }
 
 @media(min-width: 650px) {
@@ -30,4 +31,8 @@
     gap: 0.32rem;
     justify-content: flex-start;
   }
+}
+
+.active {
+  text-decoration: underline;
 }

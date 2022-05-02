@@ -9,7 +9,7 @@
   background-image: url('../../../../assets/images/poadcast/Papel.png');
   background-repeat: no-repeat;
   background-size: cover;
-  order: 0;
+  font-family: Another Typewriter,sans-serif;
 }
 
 .wrapper .imgWrapper {
@@ -31,6 +31,15 @@
 
 .innerWrapper {
   width: 100%;
+}
+
+.title {
+  font-size: 1.12rem;
+  align-self: center;
+  width: 80%;
+  text-align: center;
+  margin: 0.342rem 0 0 0.21rem;
+  padding-left: 0.5rem;
 }
 
 @media(min-width: 600px)  {
