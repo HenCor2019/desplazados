@@ -22,12 +22,8 @@ export default function LanguageSelection() {
 
     return(
         <div className="principalContainer">
-            <div className="containerLeft">
             <AsideBanner onClick = {onClick} onMouseOver={onMouseOver}/>
-            </div>
-            <div className="containerRight">
             <ShowLanguage message={message}/>
-            </div>
         </div>
     )
 };

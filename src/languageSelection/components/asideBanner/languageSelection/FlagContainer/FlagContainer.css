@@ -2,18 +2,36 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+    margin-top: 1.2rem;
 }
 
 .innerContainer h3{
-    font-size: 1.90rem;
+    font-size: 1.30rem;
     font-weight: 500;
     color: rgba(0,0,0,0.70);
     font-family: Another Typewriter,sans-serif;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
 
     cursor: pointer;
 }
 
 .innerContainer img{
     padding: 0.5rem;
+}
+
+@media(min-width: 1024px){
+  .innerContainer{
+    flex-direction: row;
+    margin-top: 0rem;
+  }
+
+  .innerContainer h3{
+      font-size: 1.90rem;
+      letter-spacing: 0.5rem;
+  }
+
+  .innerContainer img{
+      padding: 0.5rem;
+  }
 }

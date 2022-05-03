@@ -1,9 +1,13 @@
 .flagDis{
     display: flex;
-    flex-direction: column;
-
-    gap: 5rem;
-
+    gap: 1rem;
     justify-content: center;
     align-items: center;
+}
+
+@media(min-width: 1024px) {
+  .flagDis{
+    flex-direction: column;
+    gap: 5rem;
+  }
 }

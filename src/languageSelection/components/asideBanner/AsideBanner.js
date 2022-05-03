@@ -1,10 +1,6 @@
-import {
-    LanguageBanner
-} from 'languageSelection/assets';
-
 import FlagSelection from "./languageSelection/FlagSelection";
-import './AsideBanner.css';
 
+import './AsideBanner.css';
 
 export default function AsideBanner({onClick, onMouseOver}) {
 return(
