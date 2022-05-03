@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/desplazados/static/css/main.44697be2.chunk.css",
-    "main.js": "/desplazados/static/js/main.1b1efe88.chunk.js",
-    "main.js.map": "/desplazados/static/js/main.1b1efe88.chunk.js.map",
-    "runtime-main.js": "/desplazados/static/js/runtime-main.fd6c51ea.js",
-    "runtime-main.js.map": "/desplazados/static/js/runtime-main.fd6c51ea.js.map",
+    "main.js": "/desplazados/static/js/main.517e6891.chunk.js",
+    "main.js.map": "/desplazados/static/js/main.517e6891.chunk.js.map",
+    "runtime-main.js": "/desplazados/static/js/runtime-main.7d83401f.js",
+    "runtime-main.js.map": "/desplazados/static/js/runtime-main.7d83401f.js.map",
     "static/css/2.9425160b.chunk.css": "/desplazados/static/css/2.9425160b.chunk.css",
-    "static/js/2.3f491a28.chunk.js": "/desplazados/static/js/2.3f491a28.chunk.js",
-    "static/js/2.3f491a28.chunk.js.map": "/desplazados/static/js/2.3f491a28.chunk.js.map",
-    "static/js/3.2736a06c.chunk.js": "/desplazados/static/js/3.2736a06c.chunk.js",
-    "static/js/3.2736a06c.chunk.js.map": "/desplazados/static/js/3.2736a06c.chunk.js.map",
+    "static/js/2.b78afe13.chunk.js": "/desplazados/static/js/2.b78afe13.chunk.js",
+    "static/js/2.b78afe13.chunk.js.map": "/desplazados/static/js/2.b78afe13.chunk.js.map",
+    "static/js/3.75306320.chunk.js": "/desplazados/static/js/3.75306320.chunk.js",
+    "static/js/3.75306320.chunk.js.map": "/desplazados/static/js/3.75306320.chunk.js.map",
     "index.html": "/desplazados/index.html",
     "static/css/2.9425160b.chunk.css.map": "/desplazados/static/css/2.9425160b.chunk.css.map",
     "static/css/main.44697be2.chunk.css.map": "/desplazados/static/css/main.44697be2.chunk.css.map",
-    "static/js/2.3f491a28.chunk.js.LICENSE.txt": "/desplazados/static/js/2.3f491a28.chunk.js.LICENSE.txt",
+    "static/js/2.b78afe13.chunk.js.LICENSE.txt": "/desplazados/static/js/2.b78afe13.chunk.js.LICENSE.txt",
     "static/media/1.56867071.png": "/desplazados/static/media/1.56867071.png",
     "static/media/1.99020f93.png": "/desplazados/static/media/1.99020f93.png",
     "static/media/1.fb8eb29a.png": "/desplazados/static/media/1.fb8eb29a.png",
@@ -280,10 +280,10 @@
     "static/media/waiting_es.6653ccf0.png": "/desplazados/static/media/waiting_es.6653ccf0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fd6c51ea.js",
+    "static/js/runtime-main.7d83401f.js",
     "static/css/2.9425160b.chunk.css",
-    "static/js/2.3f491a28.chunk.js",
+    "static/js/2.b78afe13.chunk.js",
     "static/css/main.44697be2.chunk.css",
-    "static/js/main.1b1efe88.chunk.js"
+    "static/js/main.517e6891.chunk.js"
   ]
 }
