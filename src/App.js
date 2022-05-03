@@ -69,9 +69,11 @@ import Concepts from './support/pages/concepts/Concepts';
 import DreamsGallery from './dreams/pages/gallery';
 import Dreams from './dreams/pages/section/index';
 import Podcast from './dreams/components/Podcast/Podcast';
+import languageSelection from './languageSelection/page/Section/languageSelection';
 import { useTranslation } from "react-i18next";
 
 import './assets/css/index.css';
+import LanguageSelection from './languageSelection/page/Section/languageSelection';
 
 function App() {
   const [t] = useTranslation("waitingPagesMeanwhileMeanwhile");
@@ -81,6 +83,13 @@ function App() {
         <Route exact path="/">
           <Helmet>
             <title> Desplazados - Intro </title>
+          </Helmet>
+          <LanguageSelection />
+        </Route>
+
+        <Route exact path="/video">
+          <Helmet>
+            <title> Desplazados - Video </title>
           </Helmet>
           <YoutubeVideo />
         </Route>

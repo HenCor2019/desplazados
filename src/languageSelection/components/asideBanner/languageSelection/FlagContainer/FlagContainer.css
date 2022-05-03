@@ -1,0 +1,19 @@
+.innerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.innerContainer h3{
+    font-size: 1.90rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.70);
+    font-family: Another Typewriter,sans-serif;
+    letter-spacing: 0.5rem;
+
+    cursor: pointer;
+}
+
+.innerContainer img{
+    padding: 0.5rem;
+}

@@ -3,11 +3,12 @@ import ButtonPlay from 'introduction/components/ButtonPlay';
 import VideoPlayer from 'introduction/components/VideoPlayer';
 import { useHistory } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 export function YoutubeVideo() {
   const [t] = useTranslation('introduction');
   const url = t('url') ?? 'https://youtu.be/_ZogrnBdAUA';
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
   const { push } = useHistory();
 
   const handlePlaying = () => {

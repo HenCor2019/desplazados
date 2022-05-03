@@ -1,0 +1,16 @@
+.messageContainer {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageContainer h1{
+    font-size: 6.5rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.5);
+    font-family: Another Typewriter,sans-serif;
+    letter-spacing: 0.5rem;
+}

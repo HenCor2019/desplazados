@@ -32,4 +32,4 @@ export default function Podcast() {
       <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/>
     </main>
   )
-};
+};  
