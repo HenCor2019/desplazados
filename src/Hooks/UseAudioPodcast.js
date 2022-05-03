@@ -6,10 +6,10 @@ export const useAudioPodcast = (audios) => {
   const onEnded = () => {
     if (audio.index === audios.length - 1) {
        setAudio(audios[0]);
-     return;
-  }
+       return;
+    }
 
-  setAudio(audios[audio.index + 1]);
+    setAudio(audios[audio.index + 1]);
   };
 
   const onNext = () => {

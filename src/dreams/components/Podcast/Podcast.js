@@ -24,7 +24,7 @@ export default function Podcast() {
     handleOnSelect,
     onEnded,
     currentAudio
-  } = useAudioPodcast({ ...audios })
+  } = useAudioPodcast([ ...audios ])
 
   return (
     <main className={styles.main} >
