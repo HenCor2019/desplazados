@@ -1,13 +1,15 @@
 .wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
 
 .message {
   font-size: 1.30rem;
   font-weight: 500;
-  color: rgba(0,0,0,0.65);
-  font-family: Acumin,sans-serif;
+  color: #444242;
+  font-family: Acumin Variable Concept,sans-serif;
   padding-left: 3rem;
   padding-right: 3rem;
 }
