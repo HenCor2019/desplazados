@@ -4,6 +4,7 @@ export default function Image({ content, onClick, isMobile }) {
   } = content;
   const source = isMobile ? src : thumbnail;
 
+  
   return (
     <div className={`${imgPosition} order-5 mb-2 sm:mb-0`}>
       <div className=" w-full h-full grid grid-cols-1 sm:grid-cols-2 md:block text-gray-700 overflow-hidden">

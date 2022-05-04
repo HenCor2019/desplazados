@@ -6,6 +6,8 @@
 .message {
   font-size: 1.30rem;
   font-weight: 500;
-  color: rgba(0,0,0,0.88);
-  font-family: Another Typewriter,sans-serif;
+  color: rgba(0,0,0,0.65);
+  font-family: Acumin,sans-serif;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }

@@ -10,6 +10,6 @@
 
 @media(min-width: 1024px) {
   .list{
-    gap: 0.32rem;
+    gap: 1.5rem;
   }
 }
