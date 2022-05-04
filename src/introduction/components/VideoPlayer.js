@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import { useConfigContext } from '../../contexts/ConfigContext';
 
+import i18next from 'i18next';
+
 const styles = {
   reactPlayer: 'xl:pointer-events-none z-0 h-screen fixed',
 
@@ -16,6 +18,9 @@ export default function VideoPlayer({ url, playing, handleOnSkip }) {
   const [width, setWidth] = useState('110vw');
   const [height, setHeight] = useState('140vw');
   const [muted, setMuted] = useState(false);
+
+  const {language} = i18next;
+  const message = language == 'en' ? 'skip' : 'saltar';
 
   const {
     isMobile,
@@ -75,7 +80,7 @@ export default function VideoPlayer({ url, playing, handleOnSkip }) {
           onClick={() => handleOnSkip()}
           className={styles.buttonSkipVideo}
         >
-          Saltar
+          {message}
         </button>
       </div>
     </>
