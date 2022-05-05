@@ -29,6 +29,11 @@
   flex: auto;
 }
 
+.rhap_button-clear.rhap_volume-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .rhap_repeat-button, .rhap_main-controls-button, .rhap_volume-button {
   width: auto;
   height: auto;
