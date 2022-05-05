@@ -11,8 +11,26 @@ import { useTranslation } from 'react-i18next'
 import Audio from './Audios/Audio/Audio';
 import Video from './Video/Video';
 import { useAudioPodcast } from 'Hooks/UseAudioPodcast';
+import { useConfigContext } from 'contexts/ConfigContext';
 
 export default function Podcast() {
+  const { isTablet, isMobile } = useConfigContext();
+  const isSmall = isTablet || isMobile
+
+  const inlineStyles = i18next.language === 'en' || isSmall
+    ? {}
+    : {
+      flexDirection: 'row'
+    }
+
+  const audiosStyles = i18next.language === 'en' || isSmall
+    ? {}
+    : {
+      flexDirection: 'column-reverse',
+      width: '45%',
+      gap: '1rem'
+    }
+
   const [t] = useTranslation('dreamsPoadcastPage');
   const audiosWithoutSrc = t('audios', { returnObjects: true });
   const audios = setAudios(audiosWithoutSrc);
@@ -27,14 +45,16 @@ export default function Podcast() {
   } = useAudioPodcast([ ...audios ])
 
   return (
-    <main className={styles.main} >
-      <div className={styles.audios}>
-        {i18next.language === 'en' 
-          ? <Video onEnded={onEnded} embedId={currentAudio.embedId} /> 
-          : <Audio audio={audios[currentAudio.index]} onPrevious={onPrevious} onNext={onNext} onEnded={onEnded} />}
+    <main className={styles.main} style={inlineStyles} >
+      {i18next.language === 'es' && !isSmall && <Audio audio={audios[currentAudio.index]} onPrevious={onPrevious} onNext={onNext} onEnded={onEnded} /> }
+      <div className={styles.audios} style={audiosStyles}>
+        {i18next.language === 'en'  && <Video onEnded={onEnded} embedId={currentAudio.embedId} /> }
+        {i18next.language === 'es' && isSmall && <Audio audio={audios[currentAudio.index]} onPrevious={onPrevious} onNext={onNext} onEnded={onEnded} /> }
+        { i18next.language === 'es' && !isSmall && <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/> }
         <PodcastMessageWrapper src={DreamsSrc} message={message}/>
       </div>
-      <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/>
+      { i18next.language === 'en' && <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/> }
+      { i18next.language === 'es' && isSmall && <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/> }
     </main>
   )
 };  
