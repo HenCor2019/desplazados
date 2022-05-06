@@ -51,3 +51,9 @@
     width: 70%;
   }
 }
+
+@media(min-width: 1300px)  {
+  .wrapper {
+     background-size: contain;
+  }
+}

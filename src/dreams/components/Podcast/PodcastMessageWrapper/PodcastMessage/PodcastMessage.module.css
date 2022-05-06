@@ -12,4 +12,6 @@
   font-family: Acumin Variable Concept,sans-serif;
   padding-left: 3rem;
   padding-right: 3rem;
+  text-align: justify;
+  text-justify: inter-word;
 }

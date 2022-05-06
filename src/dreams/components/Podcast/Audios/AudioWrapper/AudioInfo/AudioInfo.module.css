@@ -35,6 +35,12 @@
   }
 }
 
+@media(min-width: 1300px) {
+  .titleWrapper .title{
+    white-space: nowrap;
+  }
+}
+
 .active {
   text-decoration: underline;
 }

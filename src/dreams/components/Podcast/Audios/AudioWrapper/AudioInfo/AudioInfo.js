@@ -10,7 +10,7 @@ export default function AudioInfo({ audio, currentIndex, handleOnSelect }) {
         <img src={Play} alt={audio.title} />
       </div>
       <div className={styles.titleWrapper}>
-        <p className={`${activeClassName}`} onClick={() => handleOnSelect(audio)}>{ audio.title }</p>
+        <p className={`${activeClassName} ${styles.title}`} onClick={() => handleOnSelect(audio)}>{ audio.title }</p>
       </div>
     </li>
   )
