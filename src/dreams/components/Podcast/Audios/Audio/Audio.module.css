@@ -56,4 +56,7 @@
   .wrapper {
      background-size: contain;
   }
+  .title {
+    padding: 0 1rem;
+  }
 }
