@@ -15,6 +15,7 @@ import { addImagesAndThumbnails } from 'causes/constants/gallery/helper';
 import { getImages } from './helper/getImages';
 
 import 'causes/pages/Gallery/styles/Gallery.css';
+import Footer from 'home/components/Footer';
 
 export function CausesGallery() {
   const [t] = useTranslation('causesPagesGallery');
@@ -31,37 +32,40 @@ export function CausesGallery() {
   };
 
   return (
-    <>
-      {!isMobile && isActive && (
-        <Modal>
-          <Lightbox
-            current={activePhoto}
-            onClick={onClickHandler}
-            images={photos}
-          />
-        </Modal>
-      )}
+    <div>
+      <div>
+        {!isMobile && isActive && (
+          <Modal>
+            <Lightbox
+              current={activePhoto}
+              onClick={onClickHandler}
+              images={photos}
+            />
+          </Modal>
+        )}
 
-      <GalleryTopic src={TopicImage} />
+        <GalleryTopic src={TopicImage} />
 
-      <div className="md:w-11/12 lg:w-4/5 m-auto md:mt-10 xl:mt-0 sm:p-5 md:p-0 md:pb-4">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row md:grid-cols-causesGallery md:grid-rows-causesGallery flex-gallery gap-2 min-h-0 min-w-0">
-          <GalleryMessage
-            text="text-xs lg:text-base font-acumin"
-            cols={{ md: 'md:col-start-1 md:col-end-3' }}
-            rows={{ md: 'md:row-start-1 md:row-end-2' }}
-            order={{ base: 'order-1', sm: 'sm:order-1', md: 'md:order-5' }}
-            message={t('principal')}
-          />
+        <div className="md:w-11/12 lg:w-4/5 m-auto md:mt-10 xl:mt-0 sm:p-5 md:p-0 md:pb-4">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row md:grid-cols-causesGallery md:grid-rows-causesGallery flex-gallery gap-2 min-h-0 min-w-0">
+            <GalleryMessage
+              text="text-xs lg:text-base font-acumin"
+              cols={{ md: 'md:col-start-1 md:col-end-3' }}
+              rows={{ md: 'md:row-start-1 md:row-end-2' }}
+              order={{ base: 'order-1', sm: 'sm:order-1', md: 'md:order-5' }}
+              message={t('principal')}
+            />
 
-          <Gallery
-            photos={photos}
-            onClick={onClickHandler}
-            isMobile={isMobile}
-            dimensions={dimensions}
-          />
-        </ul>
+            <Gallery
+              photos={photos}
+              onClick={onClickHandler}
+              isMobile={isMobile}
+              dimensions={dimensions}
+            />
+          </ul>
+        </div>
       </div>
-    </>
+      <Footer translateButtons={false} />
+    </div>
   );
 }

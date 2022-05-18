@@ -12,6 +12,7 @@ import Audio from './Audios/Audio/Audio';
 import Video from './Video/Video';
 import { useAudioPodcast } from 'Hooks/UseAudioPodcast';
 import { useConfigContext } from 'contexts/ConfigContext';
+import Footer from 'home/components/Footer';
 
 export default function Podcast() {
   const { isTablet, isMobile } = useConfigContext();
@@ -45,16 +46,19 @@ export default function Podcast() {
   } = useAudioPodcast([ ...audios ])
 
   return (
-    <main className={styles.main} style={inlineStyles} >
-      {i18next.language === 'es' && !isSmall && <Audio audio={audios[currentAudio.index]} onPrevious={onPrevious} onNext={onNext} onEnded={onEnded} /> }
-      <div className={styles.audios} style={audiosStyles}>
-        {i18next.language === 'en'  && <Video onEnded={onEnded} embedId={currentAudio.embedId} /> }
-        {i18next.language === 'es' && isSmall && <Audio audio={audios[currentAudio.index]} onPrevious={onPrevious} onNext={onNext} onEnded={onEnded} /> }
-        { i18next.language === 'es' && !isSmall && <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/> }
-        <PodcastMessageWrapper src={DreamsSrc} message={message}/>
-      </div>
-      { i18next.language === 'en' && <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/> }
-      { i18next.language === 'es' && isSmall && <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/> }
-    </main>
+    <div>
+      <main className={styles.main} style={inlineStyles} >
+        {i18next.language === 'es' && !isSmall && <Audio audio={audios[currentAudio.index]} onPrevious={onPrevious} onNext={onNext} onEnded={onEnded} /> }
+        <div className={styles.audios} style={audiosStyles}>
+          {i18next.language === 'en'  && <Video onEnded={onEnded} embedId={currentAudio.embedId} /> }
+          {i18next.language === 'es' && isSmall && <Audio audio={audios[currentAudio.index]} onPrevious={onPrevious} onNext={onNext} onEnded={onEnded} /> }
+          { i18next.language === 'es' && !isSmall && <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/> }
+          <PodcastMessageWrapper src={DreamsSrc} message={message}/>
+        </div>
+        { i18next.language === 'en' && <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/> }
+        { i18next.language === 'es' && isSmall && <Audios audios={audios} currentIndex={currentAudio.index} handleOnSelect={handleOnSelect}/> }
+      </main>
+      <Footer translateButtons={false} />
+    </div>
   )
-};  
+};

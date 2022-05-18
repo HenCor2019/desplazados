@@ -2,6 +2,7 @@ import Landscape from './landscape/Landscape';
 import Portrait from './portrait/Portrait';
 import Tablet from './tablet/Tablet';
 import { useConfigContext } from '../../../contexts/ConfigContext';
+import Footer from 'home/components/Footer';
 
 function Concepts() {
   const { isMobile } = useConfigContext();
@@ -17,9 +18,12 @@ function Concepts() {
   }
 
   return (
-    <main className="p-4">
-      { content }
-    </main>
+    <div>
+      <main className="p-4">
+        { content }
+      </main>
+      <Footer translateButtons={false} />
+    </div>
   );
 }
 

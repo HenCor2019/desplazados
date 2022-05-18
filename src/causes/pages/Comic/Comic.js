@@ -15,6 +15,7 @@ import { useTranslation } from 'react-i18next';
 
 import 'causes/components/Comic/index.css';
 import { addComicImages } from 'causes/constants/comic/helper';
+import Footer from 'home/components/Footer';
 
 function Comic() {
   const {
@@ -73,36 +74,39 @@ function Comic() {
   }, [currentPage]);
 
   return (
-    <>
-      <Dropdown
-        placeholder={t('page') ?? 'Go to page'}
-        options={comicImages.filter((image) => image.name !== undefined)}
-        onChange={(values) => setCurrentPage(values)}
-        label="name"
-        value="index"
-        secondPlaceholder={t('placeholder') ?? 'Select page'}
-      />
-
-      <section className="comic-container w-full sm:h-full md:h-5/6 2xl:h-full flex flex-col lg:flex-row justify-center items-center">
-        <Button
-          height={height}
-          margin="mr-5"
-          onClick={onPreviousPage}
-          rotate="-rotate-180"
+    <div>
+      <div>
+        <Dropdown
+          placeholder={t('page') ?? 'Go to page'}
+          options={comicImages.filter((image) => image.name !== undefined)}
+          onChange={(values) => setCurrentPage(values)}
+          label="name"
+          value="index"
+          secondPlaceholder={t('placeholder') ?? 'Select page'}
         />
 
-        <CompleteComic
-          width={width}
-          height={height}
-          refFlip={refFlipPage}
-          images={comicImages}
-        />
+        <section className="comic-container w-full sm:h-full md:h-5/6 2xl:h-full flex flex-col lg:flex-row justify-center items-center">
+          <Button
+            height={height}
+            margin="mr-5"
+            onClick={onPreviousPage}
+            rotate="-rotate-180"
+          />
 
-        <GotoPage onNext={onNextPage} onPrev={onPreviousPage} />
+          <CompleteComic
+            width={width}
+            height={height}
+            refFlip={refFlipPage}
+            images={comicImages}
+          />
 
-        <Button height={height} margin="ml-5" onClick={onNextPage} />
-      </section>
-    </>
+          <GotoPage onNext={onNextPage} onPrev={onPreviousPage} />
+
+          <Button height={height} margin="ml-5" onClick={onNextPage} />
+        </section>
+      </div>
+      <Footer translateButtons={false} />
+    </div>
   );
 }
 

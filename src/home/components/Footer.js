@@ -5,7 +5,7 @@ import TranslateButtons from 'shared/components/TranslateButtons/TranslateButton
 
 import styles from './footer.module.scss';
 
-function Footer() {
+function Footer({ translateButtons = true }) {
   return (
     <footer className="h-13/100w flex flex-wrap gap-8 items-end justify-end overflow-y-auto pb-2.5 z-10">
       <a
@@ -16,9 +16,12 @@ function Footer() {
       >
         <img src={logoUca} alt="logo UCA" />
       </a>
+      { translateButtons && (
       <div className={styles.Home__TranslateButtons}>
         <TranslateButtons type="homepage" />
       </div>
+      )
+      }
     </footer>
   );
 }

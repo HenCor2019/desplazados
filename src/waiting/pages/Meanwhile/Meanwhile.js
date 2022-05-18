@@ -21,6 +21,7 @@ import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 import { LazySection } from 'shared/components/LazySection/LazySection';
+import Footer from 'home/components/Footer';
 
 function Meanwhile() {
   const [t] = useTranslation('waitingPagesMeanwhileMeanwhile');
@@ -39,45 +40,48 @@ function Meanwhile() {
   };
 
   return (
-    <>
-      {!isSmallMobile && isActive && (
-        <Modal>
-          <VideoLightbox onClick={handleOnClick} video={activeVideo} />
-        </Modal>
-      )}
-      <div className="flex justify-center items-center h-full">
-        <main className="bg-white-500 grid grid-cols-1 grid-flow-row gap-4 sm:gap-4 sm:grid-cols-2 sm:p-4 lg:grid-cols-3 w-11/12">
-          {galleryVideos.map((galleryVideos) => (
-            <React.Fragment key={galleryVideos.img.toString()}>
-              <Image
-                img={galleryVideos.img}
-                alt={galleryVideos.title}
-                isActive={isActive}
-                position={galleryVideos.imgPosition}
-                handleOnClick={handleOnClick}
-                isMobile={isMobile}
-                video={galleryVideos}
-              />
-              <Text
-                text={galleryVideos.description}
-                position={galleryVideos.textPosition}
-                visibility={galleryVideos.textVisibility}
-              />
-            </React.Fragment>
-          ))}
-          <ImageWithText
-            img={theme}
-            alt="Theme"
-            position="justify-center items-center order-0 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
-            text={t('title')}
-          />
-          <Text
-            text={t('message')}
-            position="justify-center items-top order-1 text-justify lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-4 lg:px-10"
-          />
-        </main>
+    <div>
+      <div>
+        {!isSmallMobile && isActive && (
+          <Modal>
+            <VideoLightbox onClick={handleOnClick} video={activeVideo} />
+          </Modal>
+        )}
+        <div className="flex justify-center items-center h-full">
+          <main className="bg-white-500 grid grid-cols-1 grid-flow-row gap-4 sm:gap-4 sm:grid-cols-2 sm:p-4 lg:grid-cols-3 w-11/12">
+            {galleryVideos.map((galleryVideos) => (
+              <React.Fragment key={galleryVideos.img.toString()}>
+                <Image
+                  img={galleryVideos.img}
+                  alt={galleryVideos.title}
+                  isActive={isActive}
+                  position={galleryVideos.imgPosition}
+                  handleOnClick={handleOnClick}
+                  isMobile={isMobile}
+                  video={galleryVideos}
+                />
+                <Text
+                  text={galleryVideos.description}
+                  position={galleryVideos.textPosition}
+                  visibility={galleryVideos.textVisibility}
+                />
+              </React.Fragment>
+            ))}
+            <ImageWithText
+              img={theme}
+              alt="Theme"
+              position="justify-center items-center order-0 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
+              text={t('title')}
+            />
+            <Text
+              text={t('message')}
+              position="justify-center items-top order-1 text-justify lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-4 lg:px-10"
+            />
+          </main>
+        </div>
       </div>
-    </>
+      <Footer translateButtons={false} />
+    </div>
   );
 }
 

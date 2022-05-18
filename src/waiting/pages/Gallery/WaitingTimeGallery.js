@@ -33,6 +33,7 @@ import { useTranslation } from 'react-i18next';
 
 import { useConfigContext } from 'contexts/ConfigContext';
 import { LazySection } from 'shared/components/LazySection/LazySection';
+import Footer from 'home/components/Footer';
 
 function WaitingTime() {
   const [t] = useTranslation('waitingPagesGalleryGallery');
@@ -50,56 +51,59 @@ function WaitingTime() {
   };
 
   return (
-    <div className="sm:flex sm:justify-center sm:items-center h-full w-full">
-      {!isMobile
-        && isActive
-        && (
-        <Modal>
-          <Lightbox
-            current={activeImage}
-            onClick={handleOnClick}
-            images={galleryImage}
-          />
-        </Modal>
-        )}
-      <main className="flex flex-col justify-center items-center xl:justify-start xl:items-start w-full">
-        <div className="flex justify-center items-center py-6 px-6 sm:px-0 xl:p-0 xl:justify-start xl:items-start md:w-11/12 lg:w-8/12">
-          <img
-            className="w-full sm:w-3/4 md:w-3/5 lg:w-1/2 "
-            src={i18next.language === 'en' ? Title_en : Title_es}
-            alt="La cotidianidad: la casa de espera y el albergue"
-          />
-        </div>
-        <div className="flex justify-center items-start">
-          <div className="grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 background-waitingTimeGallery bg-no-repeat bg-center bg-cover lg:gap-6 lg:p-6 lg:pr-10 m-2 xl-2:m-8">
-            {galleryImage.map((galleryImage) => (
-              <React.Fragment key={galleryImage.index}>
-                <Image
-                  img={galleryImage}
-                  alt={galleryImage.title}
-                  position={galleryImage.imgPosition}
-                  onClick={handleOnClick}
-                  isMobile={isMobile}
-                />
-                {isTablet
-                  || (isMobile
-                    && (
-                    <Text
-                      title={galleryImage.title}
-                      description={galleryImage.description}
-                      author={galleryImage.author}
-                    />
-                    ))}
-              </React.Fragment>
-            ))}
-            <div className="bg-time sm:bg-transparent lg:bg-white p-4 sm:px-10 md:px-5 lg:p-2 order-last sm:order-4 sm:col-start-1 sm:col-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 lg:border xl:border-2 xl-2:border-3 xl:border-gray-gallery border-solid">
-              <p className="text-justify text-white sm:text-black font-acumin text-custom-gallery-size">
-                {t('message')}
-              </p>
+    <div>
+      <div className="sm:flex sm:justify-center sm:items-center h-full w-full">
+        {!isMobile
+          && isActive
+          && (
+          <Modal>
+            <Lightbox
+              current={activeImage}
+              onClick={handleOnClick}
+              images={galleryImage}
+            />
+          </Modal>
+          )}
+        <main className="flex flex-col justify-center items-center xl:justify-start xl:items-start w-full">
+          <div className="flex justify-center items-center py-6 px-6 sm:px-0 xl:p-0 xl:justify-start xl:items-start md:w-11/12 lg:w-8/12">
+            <img
+              className="w-full sm:w-3/4 md:w-3/5 lg:w-1/2 "
+              src={i18next.language === 'en' ? Title_en : Title_es}
+              alt="La cotidianidad: la casa de espera y el albergue"
+            />
+          </div>
+          <div className="flex justify-center items-start">
+            <div className="grid grid-cols-1 w-full md:w-8/12 grid-flow-row sm:grid-cols-2 lg:grid-cols-4 background-waitingTimeGallery bg-no-repeat bg-center bg-cover lg:gap-6 lg:p-6 lg:pr-10 m-2 xl-2:m-8">
+              {galleryImage.map((galleryImage) => (
+                <React.Fragment key={galleryImage.index}>
+                  <Image
+                    img={galleryImage}
+                    alt={galleryImage.title}
+                    position={galleryImage.imgPosition}
+                    onClick={handleOnClick}
+                    isMobile={isMobile}
+                  />
+                  {isTablet
+                    || (isMobile
+                      && (
+                      <Text
+                        title={galleryImage.title}
+                        description={galleryImage.description}
+                        author={galleryImage.author}
+                      />
+                      ))}
+                </React.Fragment>
+              ))}
+              <div className="bg-time sm:bg-transparent lg:bg-white p-4 sm:px-10 md:px-5 lg:p-2 order-last sm:order-4 sm:col-start-1 sm:col-end-3 lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-4 lg:border xl:border-2 xl-2:border-3 xl:border-gray-gallery border-solid">
+                <p className="text-justify text-white sm:text-black font-acumin text-custom-gallery-size">
+                  {t('message')}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
+      <Footer translateButtons={false} />
     </div>
   );
 }
